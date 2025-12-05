@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your app theme -->
+        <item name="android:editTextBackground">@drawable/rn_edit_text_material</item>
+         <item name="android:windowIsTranslucent">true</item> /
+    </style>
+
+    <!-- Launch (Splash) theme -->
+    <style name="LaunchTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Use drawable as window background -->
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+    </style>
+
+</resources>

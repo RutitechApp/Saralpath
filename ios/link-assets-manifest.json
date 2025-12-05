@@ -1,0 +1,17 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/OPTITimes-Roman.otf",
+      "sha1": "3786973ceb56c5a5be2e566e43095c9198b74416"
+    },
+    {
+      "path": "src/assets/fonts/Tinos-Bold.ttf",
+      "sha1": "64455f4b98381db03451edc117ae28192a1fd487"
+    },
+    {
+      "path": "src/assets/fonts/Tinos-Regular.ttf",
+      "sha1": "7986131e326593c805a13f9b0087fa52ae5f9c39"
+    }
+  ]
+}
