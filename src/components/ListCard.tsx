@@ -1,10 +1,10 @@
-import React from 'react';
-import { Text, Pressable, StyleSheet } from 'react-native';
-import { horizontalScale, verticalScale } from '../constants/responsive';
-import { ArrowForward, GridDoc } from '../assets/svgs/Home';
-import { useFontSize } from '../constants/FontSizeContext';
-import { useThemeColors } from '../constants/ThemeContext';
-import { useTranslation } from 'react-i18next';
+import React from "react";
+import { Text, Pressable, StyleSheet } from "react-native";
+import { horizontalScale, verticalScale } from "../constants/responsive";
+import { ArrowForward, GridDoc } from "../assets/svgs/Home";
+import { useFontSize } from "../constants/FontSizeContext";
+import { useThemeColors } from "../constants/ThemeContext";
+import { useTranslation } from "react-i18next";
 
 interface ListCardProps {
   data?: any;
@@ -26,7 +26,6 @@ const ListCard: React.FC<ListCardProps> = ({ data, onPress }) => {
           styles.textStyle,
           { fontSize: 14 * fontScale, color: colors.text },
         ]}
-        numberOfLines={2}
       >
         {t(data?.title)}
       </Text>
@@ -35,8 +34,8 @@ const ListCard: React.FC<ListCardProps> = ({ data, onPress }) => {
           height: verticalScale(24),
           width: verticalScale(24),
           backgroundColor: colors.imageBg,
-          justifyContent: 'center',
-          alignItems: 'center',
+          justifyContent: "center",
+          alignItems: "center",
           borderRadius: 5,
         }}
       >
@@ -52,8 +51,8 @@ const ListCard: React.FC<ListCardProps> = ({ data, onPress }) => {
 export default ListCard;
 const styles = StyleSheet.create({
   viewStyle: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     padding: 16,
     marginTop: verticalScale(15),
     borderRadius: 15,
@@ -61,6 +60,6 @@ const styles = StyleSheet.create({
   textStyle: {
     flex: 1,
     marginHorizontal: 15,
-    fontWeight: '600',
+    fontWeight: "600",
   },
 });

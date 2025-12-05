@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from "react";
 import {
   View,
   Text,
@@ -6,10 +6,10 @@ import {
   StyleSheet,
   FlatList,
   ScrollView,
-} from 'react-native';
-import Container from '../components/Container';
-import { ArrowBack, CloseIcon } from '../assets/svgs/Home';
-import { horizontalScale, verticalScale } from '../constants/responsive';
+} from "react-native";
+import Container from "../components/Container";
+import { ArrowBack, CloseIcon } from "../assets/svgs/Home";
+import { horizontalScale, verticalScale } from "../constants/responsive";
 import {
   bankingFinancialServices,
   biotechnology,
@@ -21,19 +21,29 @@ import {
   manufacturing,
   realEstateConstruction,
   renewableEnergy,
-} from '../constants/dummyData';
-import ListCard from '../components/ListCard';
-import { useNavigation, useRoute } from '@react-navigation/native';
+} from "../constants/dummyData";
+import ListCard from "../components/ListCard";
+import { useNavigation, useRoute } from "@react-navigation/native";
 import {
   BannerAd,
   BannerAdSize,
   TestIds,
-} from 'react-native-google-mobile-ads';
-import { useFontSize } from '../constants/FontSizeContext';
-import RBSheet from 'react-native-raw-bottom-sheet';
-import { useThemeColors } from '../constants/ThemeContext';
-import { useTranslation } from 'react-i18next';
-import { birthCertificateData } from '../constants/birthCertificateData';
+} from "react-native-google-mobile-ads";
+import { useFontSize } from "../constants/FontSizeContext";
+import RBSheet from "react-native-raw-bottom-sheet";
+import { useThemeColors } from "../constants/ThemeContext";
+import { useTranslation } from "react-i18next";
+import { birthCertificateData } from "../constants/identityDocuments/birthCertificateData";
+import { aadhaarCardData } from "../constants/identityDocuments/adharCardData";
+import { educationalCertificateData } from "../constants/identityDocuments/educationalCertificateData";
+import { panCardData } from "../constants/identityDocuments/panCardData";
+import { passportData } from "../constants/identityDocuments/passportData";
+import { drivingLicenseData } from "../constants/identityDocuments/drivingLicenseData";
+import { voterIdData } from "../constants/identityDocuments/voterIdData";
+import { marriageCertificateData } from "../constants/identityDocuments/marriageCertificateData";
+import { rationCardData } from "../constants/identityDocuments/rationCardData";
+import { electricityBillData } from "../constants/identityDocuments/electricityBillData";
+import { propertyTaxBillData } from "../constants/identityDocuments/propertyTaxBillData";
 
 const List = () => {
   const bannerRef = useRef<BannerAd>(null);
@@ -46,43 +56,66 @@ const List = () => {
   const [fData, setFData] = useState([{}]);
   const data = route?.params?.data;
   const [rData, setRData] = useState({});
+  const [selectedData, setSelectedData] = useState(null);
+
   const currentLanguage = i18n.language;
   useEffect(() => {
     switch (route?.params?.data?.title) {
-      case 'identity_documents':
+      case "identity_documents":
         setFData(identityDocumentData);
         break;
-      case 'food_beverage':
+      case "food_beverage":
         setFData(foodBeverage);
         break;
-      case 'manufacturing':
+      case "manufacturing":
         setFData(manufacturing);
         break;
-      case 'health_care_pharma':
+      case "health_care_pharma":
         setFData(healthPharma);
         break;
-      case 'international_trade':
+      case "international_trade":
         setFData(internationalTrade);
         break;
-      case 'bio_technology':
+      case "bio_technology":
         setFData(biotechnology);
         break;
-      case 'real_estate_construction':
+      case "real_estate_construction":
         setFData(realEstateConstruction);
         break;
-      case 'banking_financial_services':
+      case "banking_financial_services":
         setFData(bankingFinancialServices);
         break;
-      case 'information_technology':
+      case "information_technology":
         setFData(informationTechnology);
         break;
-      case 'renewable_energy':
+      case "renewable_energy":
         setFData(renewableEnergy);
         break;
       default:
         setFData([]);
     }
   }, [route?.params?.data?.title]);
+
+  const dataMap: { [key: string]: any } = {
+    birth_certificate:
+      birthCertificateData[currentLanguage] || birthCertificateData["en"],
+    aadhaar_card: aadhaarCardData[currentLanguage] || aadhaarCardData["en"],
+    educational_certificates:
+      educationalCertificateData[currentLanguage] ||
+      educationalCertificateData["en"],
+    pan_card: panCardData[currentLanguage] || panCardData["en"],
+    passport: passportData[currentLanguage] || passportData["en"],
+    driving_license:
+      drivingLicenseData[currentLanguage] || drivingLicenseData["en"],
+    voter_id: voterIdData[currentLanguage] || voterIdData["en"],
+    marriage_certificate:
+      marriageCertificateData[currentLanguage] || marriageCertificateData["en"],
+    ration_card: rationCardData[currentLanguage] || rationCardData["en"],
+    electricity_bill:
+      electricityBillData[currentLanguage] || electricityBillData["en"],
+    latest_property_tax_bill:
+      propertyTaxBillData[currentLanguage] || propertyTaxBillData["en"],
+  };
 
   return (
     <Container subContainer={styles.container}>
@@ -93,14 +126,21 @@ const List = () => {
         >
           <ArrowBack width={horizontalScale(20)} height={horizontalScale(20)} />
         </Pressable>
-        <Text
-          style={[
-            styles.textStyle,
-            { fontSize: 20 * fontScale, color: colors.primary },
-          ]}
+        <View
+          style={{
+            width: "70%",
+            alignItems: "center",
+          }}
         >
-          {t(data?.title)}
-        </Text>
+          <Text
+            style={[
+              styles.textStyle,
+              { fontSize: 20 * fontScale, color: colors.primary },
+            ]}
+          >
+            {t(data?.title)}
+          </Text>
+        </View>
         <Pressable style={styles.headerViewStyle}></Pressable>
       </View>
       <FlatList
@@ -111,8 +151,9 @@ const List = () => {
             <ListCard
               data={item}
               onPress={() => {
-                refRBSheet.current.open();
                 setRData(item);
+                setSelectedData(dataMap[item.title] || []);
+                refRBSheet.current.open();
               }}
             />
           );
@@ -127,11 +168,14 @@ const List = () => {
             ...styles.draggableIconStyle,
             backgroundColor: colors.subText,
           },
-          container: styles.containerStyle,
+          container: [
+            styles.containerStyle,
+            { backgroundColor: colors.background },
+          ],
         }}
         draggable
         customModalProps={{
-          animationType: 'slide',
+          animationType: "slide",
           statusBarTranslucent: true,
         }}
         customAvoidingViewProps={{
@@ -142,7 +186,7 @@ const List = () => {
           <Text
             style={[
               styles.textHeaderStyle,
-              { fontSize: 18 * fontScale, color: colors.primary },
+              { fontSize: 20 * fontScale, color: colors.primary },
             ]}
           >
             {t(rData?.title)}
@@ -157,26 +201,30 @@ const List = () => {
           <Text
             style={{
               color: colors.subText,
-              fontSize: 14 * fontScale,
-              fontWeight: '400',
+              fontSize: 16 * fontScale,
+              fontWeight: "400",
               marginTop: verticalScale(8),
             }}
           >
-            {birthCertificateData[currentLanguage]?.description ||
-              birthCertificateData['en'].description}
+            {selectedData?.description}
           </Text>
-          {(
-            birthCertificateData[currentLanguage]?.steps ||
-            birthCertificateData['en'].steps
-          ).map((stepObj: any, index: number) => (
+
+          {selectedData?.steps?.map((stepObj: any, index: number) => (
             <View key={index} style={{ marginTop: verticalScale(6) }}>
-              <Text style={{ fontWeight: '600', fontSize: 14 * fontScale }}>
-                {`${stepObj.step}. ${stepObj.title}`}
-              </Text>
               <Text
                 style={{
-                  fontWeight: '400',
-                  fontSize: 14 * fontScale,
+                  fontWeight: "600",
+                  fontSize: 18 * fontScale,
+                  color: colors.text,
+                }}
+              >
+                {`${stepObj.step}. ${stepObj.title}`}
+              </Text>
+
+              <Text
+                style={{
+                  fontWeight: "400",
+                  fontSize: 16 * fontScale,
                   color: colors.subText,
                 }}
               >
@@ -190,7 +238,7 @@ const List = () => {
         ref={bannerRef}
         unitId={TestIds.BANNER}
         size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
-        width={100}
+        width={horizontalScale(345)}
       />
     </Container>
   );
@@ -207,19 +255,21 @@ const styles = StyleSheet.create({
     height: horizontalScale(40),
     width: horizontalScale(40),
     borderRadius: horizontalScale(40) / 2,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
+    paddingHorizontal: horizontalScale(20),
   },
   textStyle: {
-    fontWeight: '600',
+    fontWeight: "600",
+    textAlign: "center",
   },
   viewStyle: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
   },
   containerStyle: {
-    height: '80%',
+    height: "80%",
     borderTopLeftRadius: horizontalScale(40),
     borderTopRightRadius: 40,
     paddingTop: verticalScale(10),
@@ -229,13 +279,13 @@ const styles = StyleSheet.create({
     width: horizontalScale(58),
     height: verticalScale(3),
   },
-  wrapperStyle: {},
+
   bottomSheetRawStyle: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
   },
   textHeaderStyle: {
-    fontWeight: '600',
+    fontWeight: "600",
   },
 });
