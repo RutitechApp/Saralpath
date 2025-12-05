@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "ComplianceChecklist.app"
-               BlueprintName = "ComplianceChecklist"
-               ReferencedContainer = "container:ComplianceChecklist.xcodeproj">
+               BuildableName = "Saralpath.app"
+               BlueprintName = "Saralpath"
+               ReferencedContainer = "container:Saralpath.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "ComplianceChecklistTests.xctest"
-               BlueprintName = "ComplianceChecklistTests"
-               ReferencedContainer = "container:ComplianceChecklist.xcodeproj">
+               BuildableName = "SaralpathTests.xctest"
+               BlueprintName = "SaralpathTests"
+               ReferencedContainer = "container:Saralpath.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ComplianceChecklist.app"
-            BlueprintName = "ComplianceChecklist"
-            ReferencedContainer = "container:ComplianceChecklist.xcodeproj">
+            BuildableName = "Saralpath.app"
+            BlueprintName = "Saralpath"
+            ReferencedContainer = "container:Saralpath.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ComplianceChecklist.app"
-            BlueprintName = "ComplianceChecklist"
-            ReferencedContainer = "container:ComplianceChecklist.xcodeproj">
+            BuildableName = "Saralpath.app"
+            BlueprintName = "Saralpath"
+            ReferencedContainer = "container:Saralpath.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
