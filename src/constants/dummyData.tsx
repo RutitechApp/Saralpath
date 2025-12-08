@@ -423,46 +423,42 @@ export const healthPharma = [
   },
   {
     id: 12,
-    title: "for_technical_and_manufacturing",
-  },
-  {
-    id: 13,
     title: "good_manufacturing_practice_gmp",
   },
   {
-    id: 14,
+    id: 13,
     title: "product_dossier",
   },
   {
-    id: 15,
+    id: 14,
     title: "pharmacovigilance_documents",
   },
   {
-    id: 16,
+    id: 15,
     title: "batch_manufacturing_record",
   },
   {
-    id: 17,
+    id: 16,
     title: "standard_operating_procedures_sops",
   },
   {
-    id: 18,
+    id: 17,
     title: "iso_13485_certificate",
   },
   {
-    id: 19,
+    id: 18,
     title: "import_export_code_iec",
   },
   {
-    id: 20,
+    id: 19,
     title: "customs_documents",
   },
   {
-    id: 21,
+    id: 20,
     title: "undertakings",
   },
   {
-    id: 22,
+    id: 21,
     title: "certificate_of_pharmaceutical_product_copp",
   },
 ];
@@ -514,22 +510,18 @@ export const internationalTrade = [
   },
   {
     id: 12,
-    title: "certificate_of_origin",
-  },
-  {
-    id: 13,
     title: "insurance_certificate",
   },
   {
-    id: 14,
+    id: 13,
     title: "import_export_code_iec",
   },
   {
-    id: 15,
+    id: 14,
     title: "customs_declaration_form",
   },
   {
-    id: 16,
+    id: 15,
     title: "insurance_policy",
   },
 ];
@@ -549,38 +541,34 @@ export const biotechnology = [
   },
   {
     id: 4,
-    title: "for_funding_and_programs",
-  },
-  {
-    id: 5,
     title: "biotechnology_ignition_grant_big",
   },
   {
-    id: 6,
+    id: 5,
     title: "biotechnology_industry_partnership_programme_bipp",
   },
   {
-    id: 7,
+    id: 6,
     title: "general_proposal_submissions",
   },
   {
-    id: 8,
+    id: 7,
     title: "manufacturing_license",
   },
   {
-    id: 9,
+    id: 8,
     title: "clinical_trial_applications",
   },
   {
-    id: 10,
+    id: 9,
     title: "drug_master_files_dmf",
   },
   {
-    id: 11,
+    id: 10,
     title: "gst_registration",
   },
   {
-    id: 12,
+    id: 11,
     title: "regulatory_approvals",
   },
 ];
@@ -656,30 +644,26 @@ export const realEstateConstruction = [
   },
   {
     id: 18,
-    title: "no_objection_certificates",
-  },
-  {
-    id: 19,
     title: "mother_deed",
   },
   {
-    id: 20,
+    id: 19,
     title: "society_noc",
   },
   {
-    id: 21,
+    id: 20,
     title: "tax_receipts",
   },
   {
-    id: 22,
+    id: 21,
     title: "joint_development_agreement",
   },
   {
-    id: 23,
+    id: 22,
     title: "land_documents",
   },
   {
-    id: 24,
+    id: 23,
     title: "land_use_certificate",
   },
 ];
