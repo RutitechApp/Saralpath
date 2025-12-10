@@ -36,7 +36,6 @@ export const governmentRegistrationData = {
       },
     ],
   },
-
   hi: {
     title: "सरकारी पंजीकरण",
     description:
@@ -74,7 +73,6 @@ export const governmentRegistrationData = {
       },
     ],
   },
-
   gu: {
     title: "સરકારી નોંધણી",
     description:
@@ -112,7 +110,6 @@ export const governmentRegistrationData = {
       },
     ],
   },
-
   bn: {
     title: "সরকারি নিবন্ধন",
     description:
@@ -150,7 +147,6 @@ export const governmentRegistrationData = {
       },
     ],
   },
-
   kok: {
     title: "सरकारी नोंदणी",
     description:
@@ -188,7 +184,6 @@ export const governmentRegistrationData = {
       },
     ],
   },
-
   kn: {
     title: "ಸರ್ಕಾರಿ ನೊಂದಣಿ",
     description:
@@ -226,7 +221,6 @@ export const governmentRegistrationData = {
       },
     ],
   },
-
   ml: {
     title: "സർക്കാരിന്റെ രജിസ്ട്രേഷനുകൾ",
     description:
@@ -264,7 +258,6 @@ export const governmentRegistrationData = {
       },
     ],
   },
-
   mr: {
     title: "सरकारी नोंदण्या",
     description:
@@ -302,7 +295,6 @@ export const governmentRegistrationData = {
       },
     ],
   },
-
   or: {
     title: "ସରକାରୀ ପଞ୍ଜୀକରଣ",
     description:
@@ -340,7 +332,6 @@ export const governmentRegistrationData = {
       },
     ],
   },
-
   te: {
     title: "సర్కారు రిజిస్ట్రేషన్లు",
     description:
@@ -378,7 +369,6 @@ export const governmentRegistrationData = {
       },
     ],
   },
-
   ta: {
     title: "அரசு பதிவு",
     description:

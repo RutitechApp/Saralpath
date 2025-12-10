@@ -30,7 +30,6 @@ export const medicalFitnessCertificateData = {
       },
     ],
   },
-
   hi: {
     title: "कर्मचारियों के लिए चिकित्सा फिटनेस प्रमाण पत्र",
     description:
@@ -62,7 +61,6 @@ export const medicalFitnessCertificateData = {
       },
     ],
   },
-
   gu: {
     title: "કર્મચારીઓ માટે ચિકિત્સા ફિટનેસ પ્રમાણપત્ર",
     description:
@@ -94,7 +92,6 @@ export const medicalFitnessCertificateData = {
       },
     ],
   },
-
   bn: {
     title: "কর্মচারীদের জন্য চিকিৎসা ফিটনেস সার্টিফিকেট",
     description:
@@ -125,7 +122,6 @@ export const medicalFitnessCertificateData = {
       },
     ],
   },
-
   kok: {
     title: "कर्मचार्यांक खातीर वैद्यकीय फिटनेस प्रमाणपत्र",
     description:
@@ -157,7 +153,6 @@ export const medicalFitnessCertificateData = {
       },
     ],
   },
-
   kn: {
     title: "ಕರ್ಮಚಾರಿ ವೈದ್ಯಕೀಯ ಫಿಟ್‌ನೆಸ್ ಪ್ರಮಾಣಪತ್ರಗಳು",
     description:
@@ -188,7 +183,6 @@ export const medicalFitnessCertificateData = {
       },
     ],
   },
-
   ml: {
     title: "നൂറണത്തിന്റെ മെഡിക്കൽ ഫിറ്റ്നസ് സർട്ടിഫിക്കറ്റ്",
     description:
@@ -220,7 +214,6 @@ export const medicalFitnessCertificateData = {
       },
     ],
   },
-
   mr: {
     title: "कर्मचार्यांसाठी वैद्यकीय फिटनेस प्रमाणपत्र",
     description:
@@ -252,7 +245,6 @@ export const medicalFitnessCertificateData = {
       },
     ],
   },
-
   or: {
     title: "କର୍ମଚାରୀଙ୍କ ପାଇଁ ଚିକିତ୍ସା ଫିଟନେସ୍ ସର୍ଟିଫିକେଟ୍",
     description:
@@ -283,7 +275,6 @@ export const medicalFitnessCertificateData = {
       },
     ],
   },
-
   te: {
     title: "ఉద్యోగుల కోసం వైద్య ఫిట్నెస్ సర్టిఫికెట్లు",
     description:
@@ -315,7 +306,6 @@ export const medicalFitnessCertificateData = {
       },
     ],
   },
-
   ta: {
     title: "ஊழியர்களுக்கான மருத்துவ பிட்னெஸ் சான்றிதழ்கள்",
     description:

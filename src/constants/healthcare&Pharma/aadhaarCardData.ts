@@ -1,4 +1,4 @@
-export const aadhaarCardData = {
+export const aadhaarCardDatas = {
   en: {
     title: "Aadhaar Card",
     description:

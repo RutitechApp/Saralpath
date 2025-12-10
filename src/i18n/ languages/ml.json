@@ -189,5 +189,16 @@
   "reporting_and_disclosure": "റിപ്പോർട്ടിംഗ്‌യും വെളിപ്പെടുത്തലും",
   "default": "ഡിഫോൾട്ട്",
   "light": "ലായറ്റ്",
-  "dark": "ഡാർക്ക്"
+  "dark": "ഡാർക്ക്",
+  "access_and_identity_control": "ആക്സസ് ആൻഡ് ഐഡന്റിറ്റി നിയന്ത്രണം",
+  "corporate_security_policies": "കോർപ്പറേറ്റ് സെക്യുറിറ്റി നയങ്ങൾ",
+  "incident_response": "സംഭവ പ്രതികരണം",
+  "data_loss_prevention": "ഡാറ്റാ നഷ്ടം തടയൽ",
+  "monitoring_and_reporting": "മോണിറ്ററിംഗ് ആൻഡ് റിപ്പോർട്ടിംഗ്",
+  "compliance_monitoring_and_auditing": "കമ്പ്ലയൻസ് മോണിറ്ററിംഗ് ആൻഡ് ഓഡിറ്റിംഗ്",
+  "data_privacy_and_cybersecurity": "ഡാറ്റാ സ്വകാര്യതയും സൈബർ സുരക്ഷയും",
+  "intellectual_property": "ബൗദ്ധിക സ്വത്ത്",
+  "licensing_and_registration": "ലൈസൻസിംഗ് ആൻഡ് രജിസ്ട്രേഷൻ",
+  "regulatory_compliance": "നിയന്ത്രണാനുസരണം പാലനം",
+  "risk_assessment": "റിസ്ക് അസസ്മെന്റ്"
 }

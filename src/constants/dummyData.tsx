@@ -368,10 +368,6 @@ export const manufacturing = [
   },
   {
     id: 26,
-    title: "authorization_for_handling_hazardous_waste",
-  },
-  {
-    id: 27,
     title: "training_plan_for_employees",
   },
 ];
@@ -768,47 +764,47 @@ export const bankingFinancialServices = [
 export const informationTechnology = [
   {
     id: 1,
-    title: "Access and identity control",
+    title: "access_and_identity_control",
   },
   {
     id: 2,
-    title: "Corporate security policies",
+    title: "corporate_security_policies",
   },
   {
     id: 3,
-    title: "Incident response",
+    title: "incident_response",
   },
   {
     id: 4,
-    title: "Data Loss Prevention",
+    title: "data_loss_prevention",
   },
   {
     id: 5,
-    title: "Monitoring and reporting",
+    title: "monitoring_and_reporting",
   },
   {
     id: 6,
-    title: "Compliance monitoring and auditing",
+    title: "compliance_monitoring_and_auditing",
   },
   {
     id: 7,
-    title: "Data privacy and cybersecurity",
+    title: "data_privacy_and_cybersecurity",
   },
   {
     id: 8,
-    title: "Intellectual property",
+    title: "intellectual_property",
   },
   {
     id: 9,
-    title: "Licensing and registration",
+    title: "licensing_and_registration",
   },
   {
     id: 10,
-    title: "Regulatory compliance",
+    title: "regulatory_compliance",
   },
   {
     id: 11,
-    title: "Risk assessment",
+    title: "risk_assessment",
   },
 ];
 

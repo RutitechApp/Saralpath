@@ -48,7 +48,6 @@ export const liquorLicenseData = {
       },
     ],
   },
-
   hi: {
     title: "शराब लाइसेंस",
     description:
@@ -95,7 +94,6 @@ export const liquorLicenseData = {
       },
     ],
   },
-
   gu: {
     title: "લિકર લાઈસન્સ",
     description:
@@ -136,7 +134,6 @@ export const liquorLicenseData = {
       { step: 7, title: "અરજીફી", details: "લાઈસન્સ પ્રકાર પ્રમાણે ફી ચૂકવો." },
     ],
   },
-
   bn: {
     title: "মদ লাইসেন্স",
     description:
@@ -181,7 +178,6 @@ export const liquorLicenseData = {
       },
     ],
   },
-
   kok: {
     title: "लिकर लाइसेंस",
     description:
@@ -221,7 +217,6 @@ export const liquorLicenseData = {
       { step: 7, title: "अर्ज फी", details: "लायसन्स प्रकारानुसार फी भरा." },
     ],
   },
-
   kn: {
     title: "ಶರಾಬ್ ಲೈಸೆನ್ಸ್",
     description:
@@ -266,7 +261,6 @@ export const liquorLicenseData = {
       },
     ],
   },
-
   ml: {
     title: "മദ്യം ലൈസൻസ്",
     description:
@@ -312,7 +306,6 @@ export const liquorLicenseData = {
       },
     ],
   },
-
   mr: {
     title: "दारू परवाना",
     description:
@@ -357,7 +350,6 @@ export const liquorLicenseData = {
       },
     ],
   },
-
   or: {
     title: "ମଦ ଲାଇସେନ୍ସ",
     description:
@@ -404,7 +396,6 @@ export const liquorLicenseData = {
       },
     ],
   },
-
   te: {
     title: "మద్యం లైసెన్స్",
     description:
@@ -450,7 +441,6 @@ export const liquorLicenseData = {
       },
     ],
   },
-
   ta: {
     title: "மதம் உரிமம்",
     description:

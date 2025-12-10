@@ -189,5 +189,16 @@
   "reporting_and_disclosure": "ವರದಿ ಮತ್ತು ಬಹಿರಂಗಪಡಿಸು",
   "default": "ಡೀಫಾಲ್ಟ್",
   "light": "ಹಳದಿ",
-  "dark": "ಮತ್ತಳಿವು"
+  "dark": "ಮತ್ತಳಿವು",
+  "access_and_identity_control": "ಪ್ರವೇಶ ಮತ್ತು ಗುರುತು ನಿಯಂತ್ರಣ",
+  "corporate_security_policies": "ಕಾರ್ಪೊರೇಟ್ ಭದ್ರತಾ ನೀತಿಗಳು",
+  "incident_response": "ಘಟನೆ ಪ್ರತಿಕ್ರಿಯೆ",
+  "data_loss_prevention": "ಡೇಟಾ ನಷ್ಟ ತಡೆಗೆ",
+  "monitoring_and_reporting": "ನಿಗಾ ಮತ್ತು ವರದಿ",
+  "compliance_monitoring_and_auditing": "ಅನುಪಾಲನೆ ನಿಗಾ ಮತ್ತು ಲೆಕ್ಕ ಪರಿಶೀಲನೆ",
+  "data_privacy_and_cybersecurity": "ಡೇಟಾ ಗೌಪ್ಯತೆ ಮತ್ತು ಸೈಬರ್ ಭದ್ರತೆ",
+  "intellectual_property": "ಬೌದ್ಧಿಕ ಆಸ್ತಿಗಳು",
+  "licensing_and_registration": "ಅನುಮತಿ ಮತ್ತು ನೋಂದಣಿ",
+  "regulatory_compliance": "ನಿಯಂತ್ರಣ ಅನುಪಾಲನೆ",
+  "risk_assessment": "ಅಪಾಯ ಮೌಲ್ಯಮಾಪನ"
 }

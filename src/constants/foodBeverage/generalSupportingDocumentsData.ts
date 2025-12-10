@@ -42,7 +42,6 @@ export const generalSupportingDocumentsData = {
       },
     ],
   },
-
   hi: {
     title: "सामान्य और सहायक दस्तावेज़",
     description:
@@ -85,7 +84,6 @@ export const generalSupportingDocumentsData = {
       },
     ],
   },
-
   gu: {
     title: "સામાન્ય અને સહાયક દસ્તાવેજો",
     description:
@@ -127,7 +125,6 @@ export const generalSupportingDocumentsData = {
       },
     ],
   },
-
   bn: {
     title: "সাধারণ এবং সহায়ক নথি",
     description:
@@ -169,7 +166,6 @@ export const generalSupportingDocumentsData = {
       },
     ],
   },
-
   kok: {
     title: "सामान्य आनी सहाय्यक दस्तऐवज",
     description:
@@ -211,7 +207,6 @@ export const generalSupportingDocumentsData = {
       },
     ],
   },
-
   kn: {
     title: "ಸಾಮಾನ್ಯ ಮತ್ತು ಸಹಾಯಕ ದಾಖಲೆಗಳು",
     description:
@@ -254,7 +249,6 @@ export const generalSupportingDocumentsData = {
       },
     ],
   },
-
   ml: {
     title: "സാധാരണവും സഹായക രേഖകളും",
     description:
@@ -297,7 +291,6 @@ export const generalSupportingDocumentsData = {
       },
     ],
   },
-
   mr: {
     title: "सामान्य आणि सहाय्यक दस्तऐवज",
     description:
@@ -338,7 +331,6 @@ export const generalSupportingDocumentsData = {
       },
     ],
   },
-
   or: {
     title: "ସାଧାରଣ ଏବଂ ସହାୟକ ଡକ୍ୟୁମେଣ୍ଟସ୍",
     description:
@@ -380,7 +372,6 @@ export const generalSupportingDocumentsData = {
       },
     ],
   },
-
   te: {
     title: "సాధారణ మరియు సపోర్టింగ్ డాక్యుమెంట్లు",
     description:
@@ -423,7 +414,6 @@ export const generalSupportingDocumentsData = {
       },
     ],
   },
-
   ta: {
     title: "பொது மற்றும் ஆதரவு ஆவணங்கள்",
     description:

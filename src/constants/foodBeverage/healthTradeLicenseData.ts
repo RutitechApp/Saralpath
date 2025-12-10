@@ -47,7 +47,6 @@ export const healthTradeLicenseData = {
       },
     ],
   },
-
   hi: {
     title: "स्वास्थ्य व्यापार लाइसेंस",
     description:
@@ -94,7 +93,6 @@ export const healthTradeLicenseData = {
       },
     ],
   },
-
   gu: {
     title: "હેલ્થ ટ્રેડ લાઇસન્સ",
     description:
@@ -138,7 +136,6 @@ export const healthTradeLicenseData = {
       },
     ],
   },
-
   bn: {
     title: "স্বাস্থ্য বাণিজ্য লাইসেন্স",
     description:
@@ -183,7 +180,6 @@ export const healthTradeLicenseData = {
       },
     ],
   },
-
   kok: {
     title: "आरोग्य व्यापार लाइसेंस",
     description:
@@ -227,7 +223,6 @@ export const healthTradeLicenseData = {
       },
     ],
   },
-
   kn: {
     title: "ಆರೋಗ್ಯ ವ್ಯವಹಾರ ಪರವಾನಗಿ",
     description:
@@ -271,7 +266,6 @@ export const healthTradeLicenseData = {
       },
     ],
   },
-
   ml: {
     title: "ആരോഗ്യ വ്യാപാര ലൈസൻസ്",
     description:
@@ -316,7 +310,6 @@ export const healthTradeLicenseData = {
       },
     ],
   },
-
   mr: {
     title: "आरोग्य व्यापार परवाना",
     description:
@@ -360,7 +353,6 @@ export const healthTradeLicenseData = {
       },
     ],
   },
-
   or: {
     title: "ସ୍ୱାସ୍ଥ୍ୟ ବ୍ୟବସାୟ ଲାଇସେନ୍ସ",
     description:
@@ -405,7 +397,6 @@ export const healthTradeLicenseData = {
       },
     ],
   },
-
   te: {
     title: "ఆరోగ్య వ్యాపార లైసెన్స్",
     description:
@@ -450,7 +441,6 @@ export const healthTradeLicenseData = {
       },
     ],
   },
-
   ta: {
     title: "அரோக்ய வர்த்தக உரிமம்",
     description:

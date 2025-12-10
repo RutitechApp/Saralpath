@@ -1,4 +1,4 @@
-export const bankAccountDetailsData = {
+export const bankAccountDetailsDatas = {
   en: {
     title: "Bank Account Details",
     description:

@@ -48,7 +48,6 @@ export const environmentalClearanceData = {
       },
     ],
   },
-
   hi: {
     title: "पर्यावरणीय स्वीकृति लाइसेंस",
     description:
@@ -96,7 +95,6 @@ export const environmentalClearanceData = {
       },
     ],
   },
-
   gu: {
     title: "પર્યાવરણીય મંજૂરી લાઈસન્સ",
     description:
@@ -144,7 +142,6 @@ export const environmentalClearanceData = {
       },
     ],
   },
-
   bn: {
     title: "পরিবেশ অনুমোদন লাইসেন্স",
     description:
@@ -190,7 +187,6 @@ export const environmentalClearanceData = {
       },
     ],
   },
-
   kok: {
     title: "पर्यावरण मंजूरी लाइसेंस",
     description:
@@ -237,7 +233,6 @@ export const environmentalClearanceData = {
       },
     ],
   },
-
   kn: {
     title: "ಪರಿಸರ ಅನುಮತಿ ಲೈಸೆನ್ಸ್",
     description:
@@ -283,7 +278,6 @@ export const environmentalClearanceData = {
       },
     ],
   },
-
   ml: {
     title: "പരിസ്ഥിതി അനുമതി ലൈസൻസ്",
     description:
@@ -330,7 +324,6 @@ export const environmentalClearanceData = {
       },
     ],
   },
-
   mr: {
     title: "पर्यावरण मंजुरी परवाना",
     description:
@@ -376,7 +369,6 @@ export const environmentalClearanceData = {
       },
     ],
   },
-
   or: {
     title: "ପରିବେଶ ସ୍ୱୀକୃତି ଲାଇସେନ୍ସ",
     description:
@@ -425,7 +417,6 @@ export const environmentalClearanceData = {
       },
     ],
   },
-
   te: {
     title: "పరిసరాల అనుమతి లైసెన్స్",
     description:
@@ -475,7 +466,6 @@ export const environmentalClearanceData = {
       },
     ],
   },
-
   ta: {
     title: "சுற்றுச்சூழல் அனுமதி உரிமம்",
     description:

@@ -189,5 +189,16 @@
   "reporting_and_disclosure": "রিপোর্টিং এবং তথ্য প্রকাশ",
   "default": "ডিফল্ট",
   "light": "হালকা",
-  "dark": "অন্ধকার"
+  "dark": "অন্ধকার",
+  "access_and_identity_control": "অ্যাক্সেস এবং পরিচয় নিয়ন্ত্রণ",
+  "corporate_security_policies": "কর্পোরেট নিরাপত্তা নীতি",
+  "incident_response": "ঘটনা প্রতিক্রিয়া",
+  "data_loss_prevention": "ডেটা ক্ষতি প্রতিরোধ",
+  "monitoring_and_reporting": "পর্যবেক্ষণ এবং রিপোর্টিং",
+  "compliance_monitoring_and_auditing": "অনুগামীতা পর্যবেক্ষণ এবং অডিটিং",
+  "data_privacy_and_cybersecurity": "ডেটা গোপনীয়তা এবং সাইবার নিরাপত্তা",
+  "intellectual_property": "মেধাস্বত্ব",
+  "licensing_and_registration": "লাইসেন্সিং এবং রেজিস্ট্রেশন",
+  "regulatory_compliance": "নিয়ন্ত্রক অনুগামীতা",
+  "risk_assessment": "ঝুঁকি মূল্যায়ন"
 }

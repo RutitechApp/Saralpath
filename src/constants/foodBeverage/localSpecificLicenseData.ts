@@ -53,7 +53,6 @@ export const localSpecificLicenseData = {
       },
     ],
   },
-
   hi: {
     title: "स्थानीय और विशिष्ट लाइसेंस",
     description:
@@ -102,7 +101,6 @@ export const localSpecificLicenseData = {
       },
     ],
   },
-
   gu: {
     title: "સ્થાનિક અને વિશિષ્ટ લાઇસન્સ",
     description:
@@ -151,7 +149,6 @@ export const localSpecificLicenseData = {
       },
     ],
   },
-
   bn: {
     title: "স্থানীয় এবং বিশেষ লাইসেন্স",
     description:
@@ -200,7 +197,6 @@ export const localSpecificLicenseData = {
       },
     ],
   },
-
   kok: {
     title: "स्थानिक आनी विशिष्ट लाइसेंस",
     description:
@@ -245,7 +241,6 @@ export const localSpecificLicenseData = {
       { step: 8, title: "फी", details: "स्थानिक नियमांनुसार फीस भरा." },
     ],
   },
-
   kn: {
     title: "ಸ್ಥಳೀಯ ಮತ್ತು ವಿಶಿಷ್ಟ ಪರವಾನಗಿ",
     description:
@@ -294,7 +289,6 @@ export const localSpecificLicenseData = {
       },
     ],
   },
-
   ml: {
     title: "പ്രാദേശികയും പ്രത്യേക ലൈസൻസ്",
     description:
@@ -343,7 +337,6 @@ export const localSpecificLicenseData = {
       },
     ],
   },
-
   mr: {
     title: "स्थानिक आणि विशिष्ट परवाना",
     description:
@@ -387,7 +380,6 @@ export const localSpecificLicenseData = {
       { step: 8, title: "फी", details: "स्थानिक नियमांनुसार फीस भरा." },
     ],
   },
-
   or: {
     title: "ସ୍ଥାନୀୟ ଏବଂ ବିଶେଷ ଲାଇସେନ୍ସ",
     description:
@@ -436,7 +428,6 @@ export const localSpecificLicenseData = {
       },
     ],
   },
-
   te: {
     title: "స్థానిక మరియు ప్రత్యేక లైసెన్స్",
     description:
@@ -486,7 +477,6 @@ export const localSpecificLicenseData = {
       },
     ],
   },
-
   ta: {
     title: "உள்ளூர் மற்றும் குறிப்பிட்ட உரிமம்",
     description:

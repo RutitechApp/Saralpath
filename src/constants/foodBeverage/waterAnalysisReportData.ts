@@ -29,7 +29,6 @@ export const waterAnalysisReportData = {
       },
     ],
   },
-
   hi: {
     title: "जल विश्लेषण रिपोर्ट",
     description:
@@ -60,7 +59,6 @@ export const waterAnalysisReportData = {
       },
     ],
   },
-
   gu: {
     title: "પાણી વિશ્લેષણ અહેવાલ",
     description:
@@ -91,7 +89,6 @@ export const waterAnalysisReportData = {
       },
     ],
   },
-
   bn: {
     title: "জল বিশ্লেষণ রিপোর্ট",
     description:
@@ -122,7 +119,6 @@ export const waterAnalysisReportData = {
       },
     ],
   },
-
   kok: {
     title: "पाणी विश्लेषण अहवाल",
     description:
@@ -153,7 +149,6 @@ export const waterAnalysisReportData = {
       },
     ],
   },
-
   kn: {
     title: "ಜಲ ವಿಶ್ಲೇಷಣಾ ವರದಿ",
     description:
@@ -184,7 +179,6 @@ export const waterAnalysisReportData = {
       },
     ],
   },
-
   ml: {
     title: "ജല വിശകലന റിപ്പോര്‍ട്ട്",
     description:
@@ -216,7 +210,6 @@ export const waterAnalysisReportData = {
       },
     ],
   },
-
   mr: {
     title: "पाणी विश्लेषण अहवाल",
     description:
@@ -247,7 +240,6 @@ export const waterAnalysisReportData = {
       },
     ],
   },
-
   or: {
     title: "ଜଳ ବିଶ୍ଳେଷଣ ରିପୋର୍ଟ",
     description:
@@ -278,7 +270,6 @@ export const waterAnalysisReportData = {
       },
     ],
   },
-
   te: {
     title: "నీటి విశ్లేషణ నివేదిక",
     description:
@@ -308,7 +299,6 @@ export const waterAnalysisReportData = {
       },
     ],
   },
-
   ta: {
     title: "தண்ணீர் பகுப்பாய்வு அறிக்கை",
     description:

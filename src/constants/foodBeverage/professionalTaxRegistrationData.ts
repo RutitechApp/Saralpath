@@ -48,7 +48,6 @@ export const professionalTaxRegistrationData = {
       },
     ],
   },
-
   hi: {
     title: "पेशेवर कर पंजीकरण",
     description:
@@ -96,7 +95,6 @@ export const professionalTaxRegistrationData = {
       },
     ],
   },
-
   gu: {
     title: "પ્રોફેશનલ ટેક્સ રજીસ્ટ્રેશન",
     description:
@@ -142,7 +140,6 @@ export const professionalTaxRegistrationData = {
       },
     ],
   },
-
   bn: {
     title: "পেশাদার কর নিবন্ধন",
     description:
@@ -189,7 +186,6 @@ export const professionalTaxRegistrationData = {
       },
     ],
   },
-
   kok: {
     title: "प्रोफेशनल टॅक्स नोंदणी",
     description:
@@ -234,7 +230,6 @@ export const professionalTaxRegistrationData = {
       },
     ],
   },
-
   kn: {
     title: "ವೃತ್ತಿಪರ ತೆರಿಗೆ ನೋಂದಣಿ",
     description:
@@ -283,7 +278,6 @@ export const professionalTaxRegistrationData = {
       },
     ],
   },
-
   ml: {
     title: "പ്രൊഫഷണൽ ടാക്‌സ് രജിസ്ട്രേഷൻ",
     description:
@@ -330,7 +324,6 @@ export const professionalTaxRegistrationData = {
       },
     ],
   },
-
   mr: {
     title: "व्यावसायिक कर नोंदणी",
     description:
@@ -375,7 +368,6 @@ export const professionalTaxRegistrationData = {
       },
     ],
   },
-
   or: {
     title: "ପ୍ରଫେସନାଲ୍ ଟ୍ୟାକ୍ସ ରଜିଷ୍ଟ୍ରେସନ୍",
     description:
@@ -419,7 +411,6 @@ export const professionalTaxRegistrationData = {
       },
     ],
   },
-
   te: {
     title: "ప్రొఫెషనల్ టాక్స్ రిజిస్ట్రేషన్",
     description:
@@ -466,7 +457,6 @@ export const professionalTaxRegistrationData = {
       },
     ],
   },
-
   ta: {
     title: "பிரொஃபஷனல் டாக்ஸ் பதிவு",
     description:

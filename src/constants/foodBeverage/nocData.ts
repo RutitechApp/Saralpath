@@ -36,7 +36,6 @@ export const nocData = {
       },
     ],
   },
-
   hi: {
     title: "अनापत्ति प्रमाण पत्र (NOCs)",
     description:
@@ -74,7 +73,6 @@ export const nocData = {
       },
     ],
   },
-
   gu: {
     title: "અનાપ્રતિ પ્રમાણપત્રો (NOCs)",
     description: "તમારા વ્યવસાય માટે જરૂરી સત્તાધિકારીઓ પાસેથી માન્ય NOCs આપો.",
@@ -110,7 +108,6 @@ export const nocData = {
       },
     ],
   },
-
   bn: {
     title: "অনাপত্তি সনদ (NOCs)",
     description:
@@ -148,7 +145,6 @@ export const nocData = {
       },
     ],
   },
-
   kok: {
     title: "अनापत्ति प्रमाणपत्र (NOCs)",
     description:
@@ -185,7 +181,6 @@ export const nocData = {
       },
     ],
   },
-
   kn: {
     title: "ಅನುಮತಿ ಪತ್ರ (NOCs)",
     description:
@@ -222,7 +217,6 @@ export const nocData = {
       },
     ],
   },
-
   ml: {
     title: "NOC (नो ऑब्जेक्शन सर्टिफिकेट्स)",
     description:
@@ -260,7 +254,6 @@ export const nocData = {
       },
     ],
   },
-
   mr: {
     title: "अनापत्ती प्रमाणपत्र (NOCs)",
     description:
@@ -297,7 +290,6 @@ export const nocData = {
       },
     ],
   },
-
   or: {
     title: "ନୋ ଅବଜେକ୍ସନ୍ ସର୍ଟିଫିକେଟ୍ (NOCs)",
     description:
@@ -333,7 +325,6 @@ export const nocData = {
       },
     ],
   },
-
   te: {
     title: "నో అబ్జెక్షన్ సర్టిఫికేట్స్ (NOCs)",
     description:
@@ -370,7 +361,6 @@ export const nocData = {
       },
     ],
   },
-
   ta: {
     title: "எதிர்ப்பு இல்லை சான்றிதழ்கள் (NOCs)",
     description:

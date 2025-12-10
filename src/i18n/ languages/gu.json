@@ -189,5 +189,16 @@
   "reporting_and_disclosure": "રિપોર્ટિંગ અને ખુલાસો",
   "default": "ડિફૉલ્ટ",
   "light": "લાઇટ",
-  "dark": "ડાર્ક"
+  "dark": "ડાર્ક",
+  "access_and_identity_control": "પ્રવેશ અને ઓળખ નિયંત્રણ",
+  "corporate_security_policies": "કોર્પોરેટ સુરક્ષા નીતિઓ",
+  "incident_response": "ઘટના પ્રતિસાદ",
+  "data_loss_prevention": "ડેટા નુકશાન અટકાવવું",
+  "monitoring_and_reporting": "નિરીક્ષણ અને રિપોર્ટિંગ",
+  "compliance_monitoring_and_auditing": "અનુપાલન નિરીક્ષણ અને ઓડિટિંગ",
+  "data_privacy_and_cybersecurity": "ડેટા ગોપનીયતા અને સાયબર સુરક્ષા",
+  "intellectual_property": "બૌદ્ધિક સંપત્તિ",
+  "licensing_and_registration": "લાઇસન્સિંગ અને નોંધણી",
+  "regulatory_compliance": "નિયમનકારક અનુરૂપતા",
+  "risk_assessment": "ખતરો મૂલ્યાંકન"
 }

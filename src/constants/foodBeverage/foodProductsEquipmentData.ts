@@ -30,7 +30,6 @@ export const foodProductsEquipmentData = {
       },
     ],
   },
-
   hi: {
     title: "खाद्य उत्पाद और उपकरणों की सूची",
     description:
@@ -62,7 +61,6 @@ export const foodProductsEquipmentData = {
       },
     ],
   },
-
   gu: {
     title: "ખાદ્ય ઉત્પાદનો અને સાધનોની યાદી",
     description:
@@ -93,7 +91,6 @@ export const foodProductsEquipmentData = {
       },
     ],
   },
-
   bn: {
     title: "খাদ্যপণ্য এবং সরঞ্জামের তালিকা",
     description:
@@ -124,7 +121,6 @@ export const foodProductsEquipmentData = {
       },
     ],
   },
-
   kok: {
     title: "खाद्य उत्पाद आनी उपकरणांची यादी",
     description:
@@ -156,7 +152,6 @@ export const foodProductsEquipmentData = {
       },
     ],
   },
-
   kn: {
     title: "ಆಹಾರ ಉತ್ಪನ್ನಗಳು ಮತ್ತು ಉಪಕರಣಗಳ ಪಟ್ಟಿ",
     description:
@@ -187,7 +182,6 @@ export const foodProductsEquipmentData = {
       },
     ],
   },
-
   ml: {
     title: "ആഹാര ഉൽപ്പന്നങ്ങളും ഉപകരണങ്ങളും പട്ടിക",
     description:
@@ -218,7 +212,6 @@ export const foodProductsEquipmentData = {
       },
     ],
   },
-
   mr: {
     title: "अन्न उत्पादने आणि उपकरणांची यादी",
     description:
@@ -250,7 +243,6 @@ export const foodProductsEquipmentData = {
       },
     ],
   },
-
   or: {
     title: "ଆହାର ପ୍ରତିଷ୍ଠାନ ଓ ସାମଗ୍ରୀର ତାଲିକା",
     description:
@@ -281,7 +273,6 @@ export const foodProductsEquipmentData = {
       },
     ],
   },
-
   te: {
     title: "ఆహార ఉత్పత్తులు మరియు పరికరాల జాబితా",
     description:
@@ -313,7 +304,6 @@ export const foodProductsEquipmentData = {
       },
     ],
   },
-
   ta: {
     title: "உணவுப் பொருட்கள் மற்றும் உபகரணங்களின் பட்டியல்",
     description:

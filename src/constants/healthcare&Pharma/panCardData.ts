@@ -1,4 +1,4 @@
-export const panCardData = {
+export const panCardDatas = {
   en: {
     title: "PAN Card",
     description:

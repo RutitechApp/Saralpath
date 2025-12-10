@@ -36,7 +36,6 @@ export const drugMasterFileData = {
       },
     ],
   },
-
   hi: {
     title: "ड्रग मास्टर फाइल (DMF)",
     description:
@@ -74,7 +73,6 @@ export const drugMasterFileData = {
       },
     ],
   },
-
   gu: {
     title: "ડ્રગ માસ્ટર ફાઈલ (DMF)",
     description:
@@ -112,7 +110,6 @@ export const drugMasterFileData = {
       },
     ],
   },
-
   bn: {
     title: "ড্রাগ মাস্টার ফাইল (DMF)",
     description:
@@ -150,7 +147,6 @@ export const drugMasterFileData = {
       },
     ],
   },
-
   kok: {
     title: "ड्रग मास्टर फायल (DMF)",
     description:
@@ -188,7 +184,6 @@ export const drugMasterFileData = {
       },
     ],
   },
-
   kn: {
     title: "ಔಷಧ ಮಾಸ್ಟರ್ ಫೈಲ್‌ಗಳು (DMF)",
     description:
@@ -226,7 +221,6 @@ export const drugMasterFileData = {
       },
     ],
   },
-
   ml: {
     title: "ഡ്രഗ് മാസ്റ്റർ ഫയൽ (DMF)",
     description:
@@ -264,7 +258,6 @@ export const drugMasterFileData = {
       },
     ],
   },
-
   mr: {
     title: "ड्रग मास्टर फाइल (DMF)",
     description:
@@ -302,7 +295,6 @@ export const drugMasterFileData = {
       },
     ],
   },
-
   or: {
     title: "ଡ୍ରଗ୍ ମାଷ୍ଟର ଫାଇଲ୍ (DMF)",
     description:
@@ -340,7 +332,6 @@ export const drugMasterFileData = {
       },
     ],
   },
-
   te: {
     title: "డ్రగ్ మాస్టర్ ఫైల్ (DMF)",
     description:
@@ -378,7 +369,6 @@ export const drugMasterFileData = {
       },
     ],
   },
-
   ta: {
     title: "டிரக் மாஸ்டர் கோப்பு (DMF)",
     description:

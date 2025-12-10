@@ -24,7 +24,6 @@ export const passportPhotosData = {
       },
     ],
   },
-
   hi: {
     title: "पासपोर्ट आकार की तस्वीरें",
     description:
@@ -50,7 +49,6 @@ export const passportPhotosData = {
       },
     ],
   },
-
   gu: {
     title: "પાસપોર્ટ કદની તસવીરો",
     description:
@@ -76,7 +74,6 @@ export const passportPhotosData = {
       },
     ],
   },
-
   bn: {
     title: "পাসপোর্ট সাইজের ছবি",
     description:
@@ -102,7 +99,6 @@ export const passportPhotosData = {
       },
     ],
   },
-
   kok: {
     title: "पासपोर्ट आकाराचे फोटो",
     description: "नोंदणी वा अर्ज खातीर ताजे पासपोर्ट आकाराचे फोटो सादर करा.",
@@ -126,7 +122,6 @@ export const passportPhotosData = {
       },
     ],
   },
-
   kn: {
     title: "ಪಾಸ್‌ಪೋರ್ಟ್ ಗಾತ್ರದ ಫೋಟೋಗಳು",
     description:
@@ -151,7 +146,6 @@ export const passportPhotosData = {
       },
     ],
   },
-
   ml: {
     title: "പാസ്പോർട്ട് സൈസ് ഫോട്ടോകൾ",
     description:
@@ -177,7 +171,6 @@ export const passportPhotosData = {
       },
     ],
   },
-
   mr: {
     title: "पासपोर्ट आकाराच्या छायाचित्रे",
     description:
@@ -203,7 +196,6 @@ export const passportPhotosData = {
       },
     ],
   },
-
   or: {
     title: "ପାସପୋର୍ଟ ସାଇଜର ଫଟୋଗ୍ରାଫ୍",
     description:
@@ -228,7 +220,6 @@ export const passportPhotosData = {
       },
     ],
   },
-
   te: {
     title: "పాస్‌పోర్ట్ పరిమాణ ఫోటోలు",
     description:
@@ -254,7 +245,6 @@ export const passportPhotosData = {
       },
     ],
   },
-
   ta: {
     title: "பாஸ்போர்ட் அளவு புகைப்படங்கள்",
     description:

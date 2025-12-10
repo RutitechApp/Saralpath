@@ -190,5 +190,16 @@
   "reporting_and_disclosure": "Reporting and disclosure",
   "default": "Default",
   "light": "Light",
-  "dark": "Dark"
+  "dark": "Dark",
+  "access_and_identity_control": "Access and identity control",
+  "corporate_security_policies": "Corporate security policies",
+  "incident_response": "Incident response",
+  "data_loss_prevention": "Data Loss Prevention",
+  "monitoring_and_reporting": "Monitoring and reporting",
+  "compliance_monitoring_and_auditing": "Compliance monitoring and auditing",
+  "data_privacy_and_cybersecurity": "Data privacy and cybersecurity",
+  "intellectual_property": "Intellectual property",
+  "licensing_and_registration": "Licensing and registration",
+  "regulatory_compliance": "Regulatory compliance",
+  "risk_assessment": "Risk assessment"
 }

@@ -30,7 +30,6 @@ export const layoutPlanData = {
       },
     ],
   },
-
   hi: {
     title: "किचन / प्रोसेसिंग यूनिट का लेआउट प्लान",
     description:
@@ -62,7 +61,6 @@ export const layoutPlanData = {
       },
     ],
   },
-
   gu: {
     title: "રસોડું / પ્રોસેસિંગ યુનિટનો લેઆઉટ પ્લાન",
     description:
@@ -92,7 +90,6 @@ export const layoutPlanData = {
       },
     ],
   },
-
   bn: {
     title: "রান্নাঘর / প্রক্রিয়াকরণ ইউনিটের লেআউট প্ল্যান",
     description:
@@ -124,7 +121,6 @@ export const layoutPlanData = {
       },
     ],
   },
-
   kok: {
     title: "किचन / प्रोसेसिंग युनिटाचो लेआउट प्लॅन",
     description:
@@ -150,7 +146,6 @@ export const layoutPlanData = {
       { step: 4, title: "सबमिशन", details: "लेआउट प्लॅन अर्जासोबत सबमिट करा." },
     ],
   },
-
   kn: {
     title: "ಅಡುಗೆಮನೆ / ಪ್ರೊಸೆಸಿಂಗ್ ಯುನಿಟ್‌ನ ಲೇಔಟ್ ಯೋಜನೆ",
     description:
@@ -181,7 +176,6 @@ export const layoutPlanData = {
       },
     ],
   },
-
   ml: {
     title: "കിച്ചൻ / പ്രോസസ്സിംഗ് യൂണിറ്റിന്റെ ലേഔട്ട് പ്ലാൻ",
     description:
@@ -212,7 +206,6 @@ export const layoutPlanData = {
       },
     ],
   },
-
   mr: {
     title: "किचन / प्रोसेसिंग युनिटचा लेआउट प्लॅन",
     description:
@@ -237,7 +230,6 @@ export const layoutPlanData = {
       { step: 4, title: "सादरीकरण", details: "लेआउट प्लॅन अर्जासह सादर करा." },
     ],
   },
-
   or: {
     title: "କିଚେନ୍ / ପ୍ରୋସେସିଂ ୟୁନିଟ୍ ଲେଆଉଟ୍ ପ୍ଲାନ୍",
     description:
@@ -268,7 +260,6 @@ export const layoutPlanData = {
       },
     ],
   },
-
   te: {
     title: "కిచెన్ / ప్రాసెసింగ్ యూనిట్ లేఔట్ ప్లాన్",
     description:
@@ -299,7 +290,6 @@ export const layoutPlanData = {
       },
     ],
   },
-
   ta: {
     title: "அடுப்பு / செயலாக்க அலகின் கட்டமைப்பு வரைபடம்",
     description:

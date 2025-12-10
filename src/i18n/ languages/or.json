@@ -189,5 +189,16 @@
   "reporting_and_disclosure": "ରିପୋର୍ଟିଂ ଏବଂ ଖୋଲାସା",
   "default": "ଡିଫଲ୍ଟ",
   "light": "ହାଲୁକା",
-  "dark": "ଗାଢ଼"
+  "dark": "ଗାଢ଼",
+  "access_and_identity_control": "ଅଭିଗମ ଏବଂ ପରିଚୟ ନିୟନ୍ତ୍ରଣ",
+  "corporate_security_policies": "କର୍ପୋରେଟ୍ ସୁରକ୍ଷା ନୀତିଗୁଡ଼ିକ",
+  "incident_response": "ଘଟଣା ପ୍ରତିକ୍ରିୟା",
+  "data_loss_prevention": "ଡାଟା ହାରାଇବାରୁ ସୁରକ୍ଷା",
+  "monitoring_and_reporting": "ନିରୀକ୍ଷଣ ଏବଂ ରିପୋର୍ଟିଂ",
+  "compliance_monitoring_and_auditing": "ଅନୁପାଳନ ନିରୀକ୍ଷଣ ଏବଂ ଅଡିଟିଂ",
+  "data_privacy_and_cybersecurity": "ଡାଟା ଗୋପନୀୟତା ଏବଂ ସାଇବର ସୁରକ୍ଷା",
+  "intellectual_property": "ମାନସିକ ସମ୍ପତ୍ତି",
+  "licensing_and_registration": "ଲାଇସେନ୍ସିଂ ଏବଂ ନିବନ୍ଧନ",
+  "regulatory_compliance": "ନିୟମକ ଅନୁପାଳନ",
+  "risk_assessment": "ଝୁମ୍ପ ବିଶ୍ଳେଷଣ"
 }

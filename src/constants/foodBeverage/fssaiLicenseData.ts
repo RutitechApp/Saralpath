@@ -65,7 +65,6 @@ export const fssaiLicenseData = {
       },
     ],
   },
-
   hi: {
     title: "एफएसएसएआई लाइसेंस",
     description:
@@ -127,7 +126,6 @@ export const fssaiLicenseData = {
       },
     ],
   },
-
   gu: {
     title: "FSSAI લાઈસન્સ",
     description:
@@ -179,7 +177,6 @@ export const fssaiLicenseData = {
       { step: 10, title: "ફી", details: "લાઈસન્સના પ્રકાર મુજબ ફી ભરો." },
     ],
   },
-
   bn: {
     title: "FSSAI লাইসেন্স",
     description:
@@ -234,7 +231,6 @@ export const fssaiLicenseData = {
       },
     ],
   },
-
   kok: {
     title: "FSSAI लाइसेंस",
     description:
@@ -280,7 +276,6 @@ export const fssaiLicenseData = {
       { step: 10, title: "फी", details: "लाइसेंस प्रकारानुसार फी." },
     ],
   },
-
   kn: {
     title: "FSSAI ಪರವಾನಗಿ",
     description:
@@ -326,7 +321,6 @@ export const fssaiLicenseData = {
       },
     ],
   },
-
   ml: {
     title: "FSSAI ലൈസൻസ്",
     description:
@@ -382,7 +376,6 @@ export const fssaiLicenseData = {
       { step: 10, title: "ഫീസ്", details: "ലൈസൻസ് തരം അനുസരിച്ച് ഫീസ്." },
     ],
   },
-
   mr: {
     title: "FSSAI परवाना",
     description:
@@ -424,7 +417,6 @@ export const fssaiLicenseData = {
       { step: 10, title: "फी", details: "परवान्याच्या प्रकारानुसार फी." },
     ],
   },
-
   or: {
     title: "FSSAI ଲାଇସେନ୍ସ",
     description:
@@ -462,7 +454,6 @@ export const fssaiLicenseData = {
       { step: 10, title: "ଶୁଳ୍କ", details: "ଲାଇସେନ୍ସ ପ୍ରକାର ଅନୁଯାୟୀ ଶୁଳ୍କ।" },
     ],
   },
-
   te: {
     title: "FSSAI లైసెన్స్",
     description:
@@ -504,7 +495,6 @@ export const fssaiLicenseData = {
       { step: 10, title: "ఫీజు", details: "లైసెన్స్ రకం ప్రకారం." },
     ],
   },
-
   ta: {
     title: "FSSAI உரிமம்",
     description:

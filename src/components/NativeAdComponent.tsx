@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import {
   NativeAdView,
   TestIds,
@@ -6,7 +6,8 @@ import {
   NativeAdEventType,
   NativeMediaAspectRatio,
   NativeMediaView,
-} from 'react-native-google-mobile-ads';
+} from "react-native-google-mobile-ads";
+import { verticalScale } from "../constants/responsive";
 
 const NativeAdCard = () => {
   const [nativeAd, setNativeAd] = useState<NativeAd>();
@@ -24,28 +25,28 @@ const NativeAdCard = () => {
       return;
     }
     nativeAd.addAdEventListener(NativeAdEventType.IMPRESSION, () => {
-      console.debug('Native ad impression');
+      console.debug("Native ad impression");
     });
     nativeAd.addAdEventListener(NativeAdEventType.CLICKED, () => {
-      console.debug('Native ad clicked');
+      console.debug("Native ad clicked");
     });
-    nativeAd.addAdEventListener(NativeAdEventType.PAID, payload => {
-      console.debug('Paid', payload);
+    nativeAd.addAdEventListener(NativeAdEventType.PAID, (payload) => {
+      console.debug("Paid", payload);
     });
     nativeAd.addAdEventListener(NativeAdEventType.VIDEO_PLAYED, () => {
-      console.debug('Native ad video played');
+      console.debug("Native ad video played");
     });
     nativeAd.addAdEventListener(NativeAdEventType.VIDEO_PAUSED, () => {
-      console.debug('Native ad video paused');
+      console.debug("Native ad video paused");
     });
     nativeAd.addAdEventListener(NativeAdEventType.VIDEO_ENDED, () => {
-      console.debug('Native ad video ended');
+      console.debug("Native ad video ended");
     });
     nativeAd.addAdEventListener(NativeAdEventType.VIDEO_MUTED, () => {
-      console.debug('Native ad video muted');
+      console.debug("Native ad video muted");
     });
     nativeAd.addAdEventListener(NativeAdEventType.VIDEO_UNMUTED, () => {
-      console.debug('Native ad video unmuted');
+      console.debug("Native ad video unmuted");
     });
     return () => nativeAd.destroy();
   }, [nativeAd]);
@@ -55,7 +56,7 @@ const NativeAdCard = () => {
   }
 
   return (
-    <NativeAdView nativeAd={nativeAd} style={{ paddingTop: 15 }}>
+    <NativeAdView nativeAd={nativeAd} style={{ paddingTop: verticalScale(20) }}>
       <NativeMediaView />
     </NativeAdView>
   );

@@ -1,9 +1,9 @@
-import React from 'react';
-import { View, TextInput, StyleSheet } from 'react-native';
-import { SearchIcon } from '../assets/svgs/Home';
-import { useTranslation } from 'react-i18next';
-import { useFontSize } from '../constants/FontSizeContext';
-import { useThemeColors } from '../constants/ThemeContext';
+import React from "react";
+import { View, TextInput, StyleSheet } from "react-native";
+import { SearchIcon } from "../assets/svgs/Home";
+import { useTranslation } from "react-i18next";
+import { useFontSize } from "../constants/FontSizeContext";
+import { useThemeColors } from "../constants/ThemeContext";
 
 interface SearchProps {
   searchText?: string;
@@ -13,7 +13,7 @@ interface SearchProps {
 const Search: React.FC<SearchProps> = ({ searchText, onSearchChangeText }) => {
   const { t } = useTranslation();
   const { fontScale } = useFontSize();
-  const { theme, setTheme, colors } = useThemeColors();
+  const { colors } = useThemeColors();
   return (
     <View
       style={[
@@ -23,12 +23,12 @@ const Search: React.FC<SearchProps> = ({ searchText, onSearchChangeText }) => {
     >
       <SearchIcon />
       <TextInput
-        placeholder={t('search_here')}
+        placeholder={t("search_here")}
         value={searchText}
         onChangeText={onSearchChangeText}
         style={[
           styles.textInputStyle,
-          { fontSize: 12 * fontScale, color: colors.background },
+          { fontSize: 12 * fontScale, color: colors.text },
         ]}
         placeholderTextColor={colors.text}
       />
@@ -40,8 +40,8 @@ export default Search;
 
 const styles = StyleSheet.create({
   viewStyle: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     marginTop: 15,
     borderRadius: 15,
     paddingHorizontal: 13,
@@ -49,6 +49,6 @@ const styles = StyleSheet.create({
   },
   textInputStyle: {
     marginHorizontal: 10,
-    fontWeight: '400',
+    fontWeight: "400",
   },
 });

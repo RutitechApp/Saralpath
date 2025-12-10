@@ -46,7 +46,6 @@ export const eatingHouseLicenseData = {
       },
     ],
   },
-
   hi: {
     title: "भोजनालय लाइसेंस",
     description:
@@ -94,7 +93,6 @@ export const eatingHouseLicenseData = {
       },
     ],
   },
-
   gu: {
     title: "ઇટિંગ હાઉસ લાઇસન્સ",
     description:
@@ -141,7 +139,6 @@ export const eatingHouseLicenseData = {
       },
     ],
   },
-
   bn: {
     title: "খাবার হাউস লাইসেন্স",
     description:
@@ -186,7 +183,6 @@ export const eatingHouseLicenseData = {
       },
     ],
   },
-
   kok: {
     title: "ईटिंग हाऊस लाइसेंस",
     description:
@@ -232,7 +228,6 @@ export const eatingHouseLicenseData = {
       },
     ],
   },
-
   kn: {
     title: "ಇಟಿಂಗ್ ಹೌಸ್ ಲೈಸೆನ್ಸ್",
     description:
@@ -278,7 +273,6 @@ export const eatingHouseLicenseData = {
       },
     ],
   },
-
   ml: {
     title: "ഇറ്റിങ് ഹൗസ് ലൈസൻസ്",
     description:
@@ -325,7 +319,6 @@ export const eatingHouseLicenseData = {
       },
     ],
   },
-
   mr: {
     title: "ईटिंग हाऊस परवाना",
     description:
@@ -372,7 +365,6 @@ export const eatingHouseLicenseData = {
       },
     ],
   },
-
   or: {
     title: "ଖାଦ୍ୟ ହାଉସ୍ ଲାଇସେନ୍ସ",
     description:
@@ -418,7 +410,6 @@ export const eatingHouseLicenseData = {
       },
     ],
   },
-
   te: {
     title: "ఇటింగ్ హౌస్ లైసెన్స్",
     description:
@@ -464,7 +455,6 @@ export const eatingHouseLicenseData = {
       },
     ],
   },
-
   ta: {
     title: "ஈட்டிங் ஹவுஸ் லைசன்ஸ்",
     description:

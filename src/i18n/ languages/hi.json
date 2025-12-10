@@ -189,5 +189,16 @@
   "reporting_and_disclosure": "रिपोर्टिंग और खुलासा",
   "default": "डिफ़ॉल्ट",
   "light": "हल्का",
-  "dark": "डार्क"
+  "dark": "डार्क",
+  "access_and_identity_control": "प्रवेश और पहचान नियंत्रण",
+  "corporate_security_policies": "कॉर्पोरेट सुरक्षा नीतियाँ",
+  "incident_response": "घटना प्रतिक्रिया",
+  "data_loss_prevention": "डेटा हानि रोकथाम",
+  "monitoring_and_reporting": "निगरानी और रिपोर्टिंग",
+  "compliance_monitoring_and_auditing": "अनुपालन निगरानी और ऑडिटिंग",
+  "data_privacy_and_cybersecurity": "डेटा गोपनीयता और साइबर सुरक्षा",
+  "intellectual_property": "बौद्धिक संपदा",
+  "licensing_and_registration": "लाइसेंसिंग और पंजीकरण",
+  "regulatory_compliance": "नियामक अनुपालन",
+  "risk_assessment": "जोखिम मूल्यांकन"
 }

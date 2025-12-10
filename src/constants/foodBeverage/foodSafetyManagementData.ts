@@ -45,7 +45,6 @@ export const foodSafetyManagementData = {
       },
     ],
   },
-
   hi: {
     title: "फूड सेफ्टी प्रबंधन योजना",
     description:
@@ -92,7 +91,6 @@ export const foodSafetyManagementData = {
       },
     ],
   },
-
   gu: {
     title: "ખાદ્ય સલામતી વ્યવસ્થાપન યોજના",
     description:
@@ -140,7 +138,6 @@ export const foodSafetyManagementData = {
       },
     ],
   },
-
   bn: {
     title: "ফুড সেফটি ম্যানেজমেন্ট প্ল্যান",
     description:
@@ -190,7 +187,6 @@ export const foodSafetyManagementData = {
       },
     ],
   },
-
   kok: {
     title: "फूड सेफ्टी मॅनेजमेंट योजना",
     description:
@@ -236,7 +232,6 @@ export const foodSafetyManagementData = {
       },
     ],
   },
-
   kn: {
     title: "ಆಹಾರ ಸುರಕ್ಷತಾ ನಿರ್ವಹಣಾ ಯೋಜನೆ",
     description:
@@ -282,7 +277,6 @@ export const foodSafetyManagementData = {
       },
     ],
   },
-
   ml: {
     title: "ഫുഡ് സേഫ്റ്റി മാനേജ്മെന്റ് പ്ലാൻ",
     description:
@@ -328,7 +322,6 @@ export const foodSafetyManagementData = {
       },
     ],
   },
-
   mr: {
     title: "फूड सेफ्टी व्यवस्थापन योजना",
     description:
@@ -373,7 +366,6 @@ export const foodSafetyManagementData = {
       },
     ],
   },
-
   or: {
     title: "ଫୁଡ୍ ସେଫ୍ଟି ମ୍ୟାନେଜମେଣ୍ଟ ପ୍ଲାନ୍",
     description:
@@ -418,7 +410,6 @@ export const foodSafetyManagementData = {
       },
     ],
   },
-
   te: {
     title: "ఫుడ్ సేఫ్టీ మేనేజ్‌మెంట్ ప్లాన్",
     description:
@@ -465,7 +456,6 @@ export const foodSafetyManagementData = {
       },
     ],
   },
-
   ta: {
     title: "உணவு பாதுகாப்பு மேலாண்மை திட்டம்",
     description:

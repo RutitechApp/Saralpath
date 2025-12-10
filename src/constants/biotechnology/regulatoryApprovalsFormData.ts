@@ -36,7 +36,6 @@ export const regulatoryApprovalsFormData = {
       },
     ],
   },
-
   hi: {
     title: "नियामक अनुमोदन",
     description:
@@ -74,7 +73,6 @@ export const regulatoryApprovalsFormData = {
       },
     ],
   },
-
   gu: {
     title: "નિયમનકારી મંજૂરીઓ",
     description:
@@ -109,7 +107,6 @@ export const regulatoryApprovalsFormData = {
       },
     ],
   },
-
   bn: {
     title: "নিয়ন্ত্রক অনুমোদন",
     description:
@@ -144,7 +141,6 @@ export const regulatoryApprovalsFormData = {
       },
     ],
   },
-
   ta: {
     title: "ஒழுங்குமுறை அனுமதிகள்",
     description:
@@ -181,7 +177,6 @@ export const regulatoryApprovalsFormData = {
       },
     ],
   },
-
   te: {
     title: "నియంత్రణ అనుమతులు",
     description:
@@ -216,7 +211,6 @@ export const regulatoryApprovalsFormData = {
       },
     ],
   },
-
   kn: {
     title: "ನಿಯಂತ್ರಣ ಅನುಮತಿಗಳು",
     description:
@@ -251,7 +245,6 @@ export const regulatoryApprovalsFormData = {
       },
     ],
   },
-
   ml: {
     title: "നിയന്ത്രണ അനുമതികൾ",
     description:
@@ -287,7 +280,6 @@ export const regulatoryApprovalsFormData = {
       },
     ],
   },
-
   mr: {
     title: "नियामक मंजुरी",
     description:
@@ -322,7 +314,6 @@ export const regulatoryApprovalsFormData = {
       },
     ],
   },
-
   or: {
     title: "ନିୟନ୍ତ୍ରଣ ଅନୁମୋଦନ",
     description:
@@ -357,7 +348,6 @@ export const regulatoryApprovalsFormData = {
       },
     ],
   },
-
   kok: {
     title: "नियामक मंजूर्यो",
     description:

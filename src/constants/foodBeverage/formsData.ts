@@ -30,7 +30,6 @@ export const formsData = {
       },
     ],
   },
-
   hi: {
     title: "आवेदन पत्र और घोषणा पत्र",
     description:
@@ -62,7 +61,6 @@ export const formsData = {
       },
     ],
   },
-
   gu: {
     title: "અરજી ફોર્મ અને ઘોષણા ફોર્મ",
     description:
@@ -93,7 +91,6 @@ export const formsData = {
       },
     ],
   },
-
   bn: {
     title: "আবেদন ফর্ম এবং ঘোষণা ফর্ম",
     description:
@@ -124,7 +121,6 @@ export const formsData = {
       },
     ],
   },
-
   kok: {
     title: "अर्ज फॉर्म आनी घोषणा फॉर्म",
     description:
@@ -154,7 +150,6 @@ export const formsData = {
       },
     ],
   },
-
   kn: {
     title: "ಅರ್ಜಿಕೆ ಫಾರ್ಮ್ ಮತ್ತು ಘೋಷಣಾ ಫಾರ್ಮ್",
     description:
@@ -185,7 +180,6 @@ export const formsData = {
       },
     ],
   },
-
   ml: {
     title: "അപ്ലിക്കേഷൻ & ഡിക്ലറേഷൻ ഫോമുകൾ",
     description:
@@ -216,7 +210,6 @@ export const formsData = {
       },
     ],
   },
-
   mr: {
     title: "अर्ज आणि घोषणापत्र फॉर्म्स",
     description:
@@ -247,7 +240,6 @@ export const formsData = {
       },
     ],
   },
-
   or: {
     title: "ଆବେଦନ ଓ ଘୋଷଣା ଫର୍ମ",
     description:
@@ -278,7 +270,6 @@ export const formsData = {
       },
     ],
   },
-
   te: {
     title: "అప్లికేషన్ & డిక్లరేషన్ ఫారమ్‌లు",
     description:
@@ -309,7 +300,6 @@ export const formsData = {
       },
     ],
   },
-
   ta: {
     title: "விண்ணப்பம் & பிரகடனப் படிவங்கள்",
     description:

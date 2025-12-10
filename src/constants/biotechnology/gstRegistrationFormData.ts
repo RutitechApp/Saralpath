@@ -36,7 +36,6 @@ export const gstRegistrationFormData = {
       },
     ],
   },
-
   hi: {
     title: "जीएसटी पंजीकरण",
     description:
@@ -74,7 +73,6 @@ export const gstRegistrationFormData = {
       },
     ],
   },
-
   gu: {
     title: "GST નોંધણી",
     description:
@@ -111,7 +109,6 @@ export const gstRegistrationFormData = {
       },
     ],
   },
-
   bn: {
     title: "জিএসটি নিবন্ধন",
     description:
@@ -145,7 +142,6 @@ export const gstRegistrationFormData = {
       },
     ],
   },
-
   kok: {
     title: "GST नोंदणी",
     description:
@@ -181,7 +177,6 @@ export const gstRegistrationFormData = {
       },
     ],
   },
-
   kn: {
     title: "ಜಿಎಸ್‌ಟಿ ನೋಂದಣಿ",
     description:
@@ -217,7 +212,6 @@ export const gstRegistrationFormData = {
       },
     ],
   },
-
   ml: {
     title: "ജിഎസ്ടി രജിസ്ട്രേഷൻ",
     description:
@@ -254,7 +248,6 @@ export const gstRegistrationFormData = {
       },
     ],
   },
-
   mr: {
     title: "GST नोंदणी",
     description:
@@ -289,7 +282,6 @@ export const gstRegistrationFormData = {
       },
     ],
   },
-
   or: {
     title: "ଜিএସଟି ରେଜିଷ୍ଟ୍ରେସନ୍",
     description:
@@ -323,7 +315,6 @@ export const gstRegistrationFormData = {
       },
     ],
   },
-
   te: {
     title: "GST నమోదు",
     description:
@@ -359,7 +350,6 @@ export const gstRegistrationFormData = {
       },
     ],
   },
-
   ta: {
     title: "GST பதிவு",
     description:

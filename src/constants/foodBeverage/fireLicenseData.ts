@@ -47,7 +47,6 @@ export const fireLicenseData = {
       },
     ],
   },
-
   hi: {
     title: "फायर लाइसेंस",
     description:
@@ -93,7 +92,6 @@ export const fireLicenseData = {
       },
     ],
   },
-
   gu: {
     title: "ફાયર લાઈસન્સ",
     description:
@@ -132,7 +130,6 @@ export const fireLicenseData = {
       { step: 7, title: "અરજીફી", details: "લાઈસન્સ પ્રકાર મુજબ ફી ચૂકવો." },
     ],
   },
-
   bn: {
     title: "ফায়ার লাইসেন্স",
     description:
@@ -175,7 +172,6 @@ export const fireLicenseData = {
       },
     ],
   },
-
   kok: {
     title: "फायर लाइसेंस",
     description:
@@ -214,7 +210,6 @@ export const fireLicenseData = {
       { step: 7, title: "अर्ज फी", details: "लायसन्स प्रकारानुसार फी भरा." },
     ],
   },
-
   kn: {
     title: "ಫೈರ್ ಲೈಸೆನ್ಸ್",
     description:
@@ -258,7 +253,6 @@ export const fireLicenseData = {
       },
     ],
   },
-
   ml: {
     title: "ഫയർ ലൈസൻസ്",
     description:
@@ -303,7 +297,6 @@ export const fireLicenseData = {
       },
     ],
   },
-
   mr: {
     title: "फायर परवाना",
     description:
@@ -346,7 +339,6 @@ export const fireLicenseData = {
       },
     ],
   },
-
   or: {
     title: "ଫାୟାର ଲାଇସେନ୍ସ",
     description:
@@ -389,7 +381,6 @@ export const fireLicenseData = {
       },
     ],
   },
-
   te: {
     title: "ఫైర్ లైసెన్స్",
     description:
@@ -432,7 +423,6 @@ export const fireLicenseData = {
       },
     ],
   },
-
   ta: {
     title: "அங்கு பாதுகாப்பு (Fire) உரிமம்",
     description:

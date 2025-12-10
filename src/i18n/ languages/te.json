@@ -189,5 +189,16 @@
   "reporting_and_disclosure": "రిపోర్టింగ్ మరియు తెలియజెప్పడం",
   "default": "డిఫాల్ట్",
   "light": "తేలికపాటి",
-  "dark": "గాఢం"
+  "dark": "గాఢం",
+  "access_and_identity_control": "ప్రవేశ మరియు గుర్తింపు నియంత్రణ",
+  "corporate_security_policies": "కార్పొరేట్ భద్రతా విధానాలు",
+  "incident_response": "ఘటనలకు ప్రతిస్పందన",
+  "data_loss_prevention": "డేటా నష్టం నివారణ",
+  "monitoring_and_reporting": "మానిటరింగ్ మరియు రిపోర్టింగ్",
+  "compliance_monitoring_and_auditing": "అనుగుణత పర్యవేక్షణ మరియు ఆడిటింగ్",
+  "data_privacy_and_cybersecurity": "డేటా గోప్యత మరియు సైబర్ భద్రత",
+  "intellectual_property": "మేధో సంపత్తి",
+  "licensing_and_registration": "లైసెన్సింగ్ మరియు రిజిస్ట్రేషన్",
+  "regulatory_compliance": "నియంత్రణ అనుగుణత",
+  "risk_assessment": "ప్రమాద మూల్యాంకనం"
 }

@@ -54,7 +54,6 @@ export const shopEstablishmentLicenseData = {
       },
     ],
   },
-
   hi: {
     title: "दुकान और प्रतिष्ठान लाइसेंस",
     description:
@@ -103,7 +102,6 @@ export const shopEstablishmentLicenseData = {
       },
     ],
   },
-
   gu: {
     title: "દુકાન અને એસ્ટેબ્લિશમેન્ટ લાઈસન્સ",
     description:
@@ -147,7 +145,6 @@ export const shopEstablishmentLicenseData = {
       { step: 8, title: "ફી", details: "રાજ્યના નિયમો અનુસાર ફી ભરો." },
     ],
   },
-
   bn: {
     title: "দোকান এবং প্রতিষ্ঠান লাইসেন্স",
     description:
@@ -196,7 +193,6 @@ export const shopEstablishmentLicenseData = {
       },
     ],
   },
-
   kok: {
     title: "दुकान आनी एस्टॅब्लिशमेंट लाइसेंस",
     description:
@@ -240,7 +236,6 @@ export const shopEstablishmentLicenseData = {
       { step: 8, title: "फी", details: "राज्य नियमांनुसार फी." },
     ],
   },
-
   kn: {
     title: "ಶಾಪ್ ಮತ್ತು ಎಸ್ಟಾಬ್ಲಿಶ್‌ಮೆಂಟ್ ಪರವಾನಗಿ",
     description:
@@ -285,7 +280,6 @@ export const shopEstablishmentLicenseData = {
       { step: 8, title: "ಶುಲ್ಕ", details: "ರಾಜ್ಯದ ನಿಯಮಾನುಸಾರ ಶುಲ್ಕ." },
     ],
   },
-
   ml: {
     title: "ഷോപ്പ് ആൻഡ് എസ്റ്റാബ്ലിഷ്‌മെന്റ് ലൈസൻസ്",
     description:
@@ -333,7 +327,6 @@ export const shopEstablishmentLicenseData = {
       },
     ],
   },
-
   mr: {
     title: "दुकान आणि एस्टॅब्लिशमेंट परवाना",
     description:
@@ -377,7 +370,6 @@ export const shopEstablishmentLicenseData = {
       { step: 8, title: "फी", details: "राज्य नियमांनुसार फी." },
     ],
   },
-
   or: {
     title: "ଦୋକାନ ଏବଂ ଏସ୍ଟାବ୍ଲିଶମେଣ୍ଟ ଲାଇସେନ୍ସ",
     description:
@@ -425,7 +417,6 @@ export const shopEstablishmentLicenseData = {
       },
     ],
   },
-
   te: {
     title: "షాప్ అండ్ ఎస్టాబ్లిష్‌మెంట్ లైసెన్స్",
     description:
@@ -473,7 +464,6 @@ export const shopEstablishmentLicenseData = {
       },
     ],
   },
-
   ta: {
     title: "ஷாப் மற்றும் நிறுவல் உரிமம்",
     description:

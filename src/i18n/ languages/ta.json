@@ -189,5 +189,16 @@
   "reporting_and_disclosure": "அறிக்கையும் வெளிப்படுத்தலும்",
   "default": "இயல்புநிலை",
   "light": "இலகு",
-  "dark": "இருண்ட"
+  "dark": "இருண்ட",
+  "access_and_identity_control": "அணுகல் மற்றும் அடையாளக் கட்டுப்பாடு",
+  "corporate_security_policies": "நிறுவன பாதுகாப்பு கொள்கைகள்",
+  "incident_response": "சம்பவத்திற்கான பதில்",
+  "data_loss_prevention": "தரவு இழப்பை தடுப்பது",
+  "monitoring_and_reporting": "மேற்பார்வை மற்றும் அறிக்கை",
+  "compliance_monitoring_and_auditing": "இணக்கத்தன்மை கண்காணிப்பு மற்றும் தணிக்கை",
+  "data_privacy_and_cybersecurity": "தரவு தனியுரிமை மற்றும் சைபர் பாதுகாப்பு",
+  "intellectual_property": "அறிவுசார் சொத்து",
+  "licensing_and_registration": "உரிமப்பதிவு மற்றும் பதிவு",
+  "regulatory_compliance": "ஒழுங்குமுறை இணக்கம்",
+  "risk_assessment": "அபாய மதிப்பீடு"
 }

@@ -1,4 +1,4 @@
-export const gstRegistrationData = {
+export const gstRegistrationDatas = {
   en: {
     title: "GST Registration",
     description:
