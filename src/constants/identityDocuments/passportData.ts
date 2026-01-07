@@ -1,4 +1,11 @@
-export const passportData = {
+export const passportData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Passport",
     description:
@@ -377,7 +384,7 @@ export const passportData = {
     ],
   },
 
-  kon: {
+  kok: {
     title: "पासपोर्ट",
     description:
       "पासपोर्ट हांव एक सरकारी दस्तावेज आसो जेंव एका व्यक्तीची ओळख आनी नागरिकत्व प्रमाणित करतलो, मुख्यतः आंतरराष्ट्रीय प्रवासाक उपयुजित आसो. पासपोर्टाची अर्ज करता, ओळख, पत्ता, जन्मतारीख, फोटो आनी जरी लागले तरी अतिरिक्त दस्तावेज दितले जायत.",

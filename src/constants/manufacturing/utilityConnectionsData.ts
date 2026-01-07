@@ -1,4 +1,11 @@
-export const utilityConnectionsData = {
+export const utilityConnectionsData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Proof of Utility Connections (Electricity, Water)",
     description:

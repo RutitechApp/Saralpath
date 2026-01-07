@@ -1,4 +1,11 @@
-export const regulatoryApprovalsFormData = {
+export const regulatoryApprovalsFormData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Regulatory Approvals",
     description:

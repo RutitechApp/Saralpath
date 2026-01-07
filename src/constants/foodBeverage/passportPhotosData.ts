@@ -1,4 +1,11 @@
-export const passportPhotosData = {
+export const passportPhotosData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Passport Sized Photographs",
     description:

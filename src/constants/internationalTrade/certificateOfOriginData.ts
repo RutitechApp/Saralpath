@@ -1,4 +1,11 @@
-export const certificateOfOriginData = {
+export const certificateOfOriginData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Certificate of Origin",
     steps: [

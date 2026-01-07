@@ -1,4 +1,11 @@
-export const businessLicensesDatas = {
+export const businessLicensesDatas: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Business Licenses",
     description:

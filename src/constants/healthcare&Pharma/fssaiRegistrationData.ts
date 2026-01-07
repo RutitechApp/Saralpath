@@ -1,4 +1,11 @@
-export const fssaiRegistrationData = {
+export const fssaiRegistrationData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "FSSAI Registration",
     description:

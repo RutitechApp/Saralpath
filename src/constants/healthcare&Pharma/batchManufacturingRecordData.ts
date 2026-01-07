@@ -1,4 +1,11 @@
-export const batchManufacturingRecordData = {
+export const batchManufacturingRecordData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+>  = {
   en: {
     title: "Batch Manufacturing Record (BMR)",
     description:

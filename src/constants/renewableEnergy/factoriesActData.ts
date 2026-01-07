@@ -1,4 +1,11 @@
-export const factoriesActData = {
+export const factoriesActData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Factories Act, 1948",
     description:

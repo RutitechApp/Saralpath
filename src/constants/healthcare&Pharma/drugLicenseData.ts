@@ -1,4 +1,11 @@
-export const drugLicenseData = {
+export const drugLicenseData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Drug License",
     description:

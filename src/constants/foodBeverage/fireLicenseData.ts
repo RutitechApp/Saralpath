@@ -1,4 +1,11 @@
-export const fireLicenseData = {
+export const fireLicenseData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Fire License",
     description:

@@ -1,4 +1,11 @@
-export const calibrationTestReportsData = {
+export const calibrationTestReportsData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Calibration and Test Reports from Recognized Labs",
     description:

@@ -1,4 +1,11 @@
-export const letterOfCreditData = {
+export const letterOfCreditData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Letter of Credit (LC)",
     steps: [

@@ -1,4 +1,11 @@
-export const gmpData = {
+export const gmpData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Good Manufacturing Practice (GMP)",
     description:

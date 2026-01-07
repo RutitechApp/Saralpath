@@ -1,4 +1,11 @@
-export const environmentalClearanceData = {
+export const environmentalClearanceData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Environmental Clearance License",
     description:

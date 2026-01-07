@@ -1,10 +1,10 @@
-import React from 'react';
-import { View, Text, StyleSheet, Pressable } from 'react-native';
-import { ArrowForward, GridDoc } from '../assets/svgs/Home';
-import { horizontalScale, verticalScale } from '../constants/responsive';
-import { useTranslation } from 'react-i18next';
-import { useFontSize } from '../constants/FontSizeContext';
-import { useThemeColors } from '../constants/ThemeContext';
+import React from "react";
+import { View, Text, StyleSheet, Pressable } from "react-native";
+import { ArrowForward, GridDoc } from "../assets/svgs/Home";
+import { horizontalScale, verticalScale } from "../constants/responsive";
+import { useTranslation } from "react-i18next";
+import { useFontSize } from "../constants/FontSizeContext";
+import { useThemeColors } from "../constants/ThemeContext";
 
 interface GridCardProps {
   data?: any;
@@ -35,14 +35,14 @@ const GridCard: React.FC<GridCardProps> = ({ data, onPress }) => {
             {t(data.title)}
           </Text>
         </View>
-        <Pressable
+        <View
           style={[styles.iconViewStyle, { backgroundColor: colors.imageBg }]}
         >
           <ArrowForward
             width={horizontalScale(10)}
             height={horizontalScale(10)}
           />
-        </Pressable>
+        </View>
       </View>
     </Pressable>
   );
@@ -53,20 +53,20 @@ export default GridCard;
 const styles = StyleSheet.create({
   viewStyle: {
     borderRadius: 15,
-    alignItems: 'center',
+    alignItems: "center",
     padding: horizontalScale(13),
     marginTop: verticalScale(15),
   },
   vStyle: {
     marginTop: verticalScale(10),
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
     flex: 1,
   },
   textStyle: {
     maxWidth: horizontalScale(90),
-    fontWeight: '600',
+    fontWeight: "600",
   },
   imageStyle: {
     paddingVertical: verticalScale(15),
@@ -76,9 +76,9 @@ const styles = StyleSheet.create({
   iconViewStyle: {
     height: verticalScale(24),
     width: verticalScale(24),
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     borderRadius: 5,
-    alignSelf: 'flex-end',
+    alignSelf: "flex-end",
   },
 });

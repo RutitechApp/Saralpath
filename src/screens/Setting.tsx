@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import Container from '../components/Container';
-import { Dropdown } from 'react-native-element-dropdown';
-import { appTheme, language } from '../constants/dummyData';
-import Slider from '@react-native-community/slider';
-import Button from '../components/Button';
-import fonts from '../utils/fonts';
-import { useNavigation } from '@react-navigation/native';
-import { horizontalScale, verticalScale } from '../constants/responsive';
-import { useTranslation } from 'react-i18next';
-import { getAppLanguage, setAppLanguage } from '../i18n/ index';
-import { useFontSize } from '../constants/FontSizeContext';
-import { useThemeColors } from '../constants/ThemeContext';
+import React, { useEffect, useState } from "react";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import Container from "../components/Container";
+import { Dropdown } from "react-native-element-dropdown";
+import { appTheme, language } from "../constants/dummyData";
+import Slider from "@react-native-community/slider";
+import Button from "../components/Button";
+import fonts from "../utils/fonts";
+import { CommonActions, useNavigation } from "@react-navigation/native";
+import { horizontalScale, verticalScale } from "../constants/responsive";
+import { useTranslation } from "react-i18next";
+import { getAppLanguage, setAppLanguage } from "../i18n/ index";
+import { useFontSize } from "../constants/FontSizeContext";
+import { useThemeColors } from "../constants/ThemeContext";
 
 const Setting = () => {
   const { t } = useTranslation();
@@ -22,11 +22,11 @@ const Setting = () => {
   useEffect(() => {
     (async () => {
       const savedLang = await getAppLanguage();
-      const found = language.find(l => l.code === savedLang);
+      const found = language.find((l) => l.code === savedLang);
       if (found) setSelectedLanguage(found);
     })();
   }, []);
-  const onLanguageChange = async item => {
+  const onLanguageChange = async (item) => {
     setSelectedLanguage(item);
     await setAppLanguage(item.code);
   };
@@ -35,7 +35,7 @@ const Setting = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   useEffect(() => {
     const nearest = ticks.reduce((prev, curr) =>
-      Math.abs(curr - fontScale) < Math.abs(prev - fontScale) ? curr : prev,
+      Math.abs(curr - fontScale) < Math.abs(prev - fontScale) ? curr : prev
     );
     setActiveIndex(ticks.indexOf(nearest));
   }, [fontScale]);
@@ -53,7 +53,7 @@ const Setting = () => {
       setFontScale(newScale);
     }
   };
-  console.log('theme', theme);
+  console.log("theme", theme);
   return (
     <Container subContainer={styles.container}>
       <Text
@@ -62,7 +62,7 @@ const Setting = () => {
           { fontSize: 20 * fontScale, color: colors.primary },
         ]}
       >
-        {t('app_setting')}
+        {t("app_setting")}
       </Text>
       <Text
         style={[
@@ -74,17 +74,17 @@ const Setting = () => {
           },
         ]}
       >
-        {t('choose_language')}
+        {t("choose_language")}
       </Text>
       <Dropdown
         style={[styles.dropdown, { backgroundColor: colors.cardBg }]}
         data={language}
         labelField="language"
         valueField="code"
-        placeholder={t('select_language')}
+        placeholder={t("select_language")}
         value={selectedLanguage?.code}
         onChange={onLanguageChange}
-        renderItem={item => (
+        renderItem={(item) => (
           <View style={styles.item}>
             <Text style={{ fontSize: 16 * fontScale, color: colors.text }}>
               {item.language}
@@ -94,7 +94,7 @@ const Setting = () => {
         containerStyle={{
           backgroundColor: colors.cardBg,
           borderRadius: 10,
-          overflow: 'hidden',
+          overflow: "hidden",
         }}
         placeholderStyle={[
           styles.textStyle,
@@ -120,7 +120,7 @@ const Setting = () => {
           },
         ]}
       >
-        {t('font_size')}
+        {t("font_size")}
       </Text>
 
       <View style={styles.row}>
@@ -138,9 +138,9 @@ const Setting = () => {
             step={0.01}
             value={fontScale}
             minimumTrackTintColor={colors.primary}
-            maximumTrackTintColor={'grey'}
+            maximumTrackTintColor={"grey"}
             thumbTintColor={colors.primary}
-            onValueChange={value => setFontScale(value)}
+            onValueChange={(value) => setFontScale(value)}
           />
         </View>
 
@@ -161,7 +161,7 @@ const Setting = () => {
           },
         ]}
       >
-        {t('app_theme')}
+        {t("app_theme")}
       </Text>
       <Dropdown
         style={[styles.dropdown, { backgroundColor: colors.cardBg }]}
@@ -169,9 +169,9 @@ const Setting = () => {
         labelField="label"
         valueField="title"
         value={theme}
-        placeholder={'Select Theme'}
-        onChange={item => setTheme(item.title)}
-        renderItem={item => (
+        placeholder={"Select Theme"}
+        onChange={(item) => setTheme(item.title)}
+        renderItem={(item) => (
           <View style={styles.item}>
             <Text style={{ fontSize: 16 * fontScale, color: colors.text }}>
               {item.label}
@@ -189,7 +189,7 @@ const Setting = () => {
         containerStyle={{
           backgroundColor: colors.cardBg,
           borderRadius: 10,
-          overflow: 'hidden',
+          overflow: "hidden",
         }}
         itemContainerStyle={{
           backgroundColor: colors.cardBg,
@@ -197,9 +197,16 @@ const Setting = () => {
         activeColor={colors.wrapper}
       />
       <Button
-        title={t('continue_btn')}
+        title={t("continue_btn")}
         btnStyle={styles.btnStyle}
-        onPress={() => navigation.navigate('Home')}
+        onPress={() => {
+          navigation.dispatch(
+            CommonActions.reset({
+              index: 0,
+              routes: [{ name: "Home" }],
+            })
+          );
+        }}
       />
     </Container>
   );
@@ -221,31 +228,31 @@ const styles = StyleSheet.create({
   },
 
   textStyle: {
-    fontWeight: '500',
+    fontWeight: "500",
   },
   rowViewStyle: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
     marginTop: verticalScale(20),
   },
   appSettingTextStyle: {
-    textAlign: 'center',
-    fontWeight: '700',
+    textAlign: "center",
+    fontWeight: "700",
   },
   container: {
     paddingHorizontal: horizontalScale(24),
     paddingTop: verticalScale(20),
   },
   btnStyle: {
-    position: 'absolute',
+    position: "absolute",
     bottom: verticalScale(50),
-    width: '100%',
-    alignSelf: 'center',
+    width: "100%",
+    alignSelf: "center",
   },
   row: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     marginTop: verticalScale(10),
   },
   btn: {
@@ -254,17 +261,17 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     borderWidth: 1.8,
     opacity: 0.5,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   btnText: {
     fontSize: 20,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     marginTop: -2,
   },
   tickContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    justifyContent: "space-between",
     paddingHorizontal: horizontalScale(12),
     marginTop: -12,
   },

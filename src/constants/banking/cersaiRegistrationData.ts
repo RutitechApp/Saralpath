@@ -1,4 +1,11 @@
-export const cersaiRegistrationData = {
+export const cersaiRegistrationData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "CERSAI Registration",
     description:

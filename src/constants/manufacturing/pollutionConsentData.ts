@@ -1,4 +1,11 @@
-export const pollutionConsentData = {
+export const pollutionConsentData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title:
       "Consent to Establish/Operate from the State Pollution Control Board",

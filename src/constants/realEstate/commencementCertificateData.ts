@@ -1,4 +1,11 @@
-export const commencementCertificateFormData = {
+export const commencementCertificateFormData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Commencement Certificate",
     description:

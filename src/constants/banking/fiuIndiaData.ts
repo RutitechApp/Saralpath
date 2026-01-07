@@ -1,4 +1,11 @@
-export const fiuIndData = {
+export const fiuIndData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Financial Intelligence Unit – India (FIU-IND)",
     description:

@@ -1,4 +1,11 @@
-export const laborLawsData = {
+export const laborLawsData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Labor Laws",
     description:

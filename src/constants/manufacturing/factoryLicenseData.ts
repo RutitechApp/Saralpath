@@ -1,4 +1,11 @@
-export const factoryLicenseData = {
+export const factoryLicenseData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Factory License from the State Government",
     description:

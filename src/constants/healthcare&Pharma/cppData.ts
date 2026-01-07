@@ -1,4 +1,11 @@
-export const cppData = {
+export const cppData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Certificate of Pharmaceutical Product (CPP)",
     steps: [

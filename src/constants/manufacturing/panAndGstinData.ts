@@ -1,4 +1,11 @@
-export const panAndGstinData = {
+export const panAndGstinData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "PAN Card and GSTIN (Goods and Services Tax Identification Number)",
     description:

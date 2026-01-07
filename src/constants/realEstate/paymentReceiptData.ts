@@ -1,4 +1,11 @@
-export const paymentReceiptFormData = {
+export const paymentReceiptFormData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Payment Receipt",
     description:

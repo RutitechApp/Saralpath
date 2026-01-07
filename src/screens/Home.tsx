@@ -64,6 +64,7 @@ const Home = () => {
         columnWrapperStyle={{
           justifyContent: "space-between",
         }}
+        contentContainerStyle={{ paddingVertical: verticalScale(20) }}
         showsVerticalScrollIndicator={false}
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (

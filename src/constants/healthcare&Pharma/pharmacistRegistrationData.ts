@@ -1,4 +1,11 @@
-export const pharmacistRegistrationData = {
+export const pharmacistRegistrationData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Pharmacist Registration Certificate",
     description:

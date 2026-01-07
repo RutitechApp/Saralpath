@@ -1,4 +1,11 @@
-export const proformaInvoiceData = {
+export const proformaInvoiceData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Proforma Invoice",
     steps: [

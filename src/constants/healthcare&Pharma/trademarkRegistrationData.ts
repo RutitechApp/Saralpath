@@ -1,4 +1,11 @@
-export const trademarkRegistrationData = {
+export const trademarkRegistrationData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Trademark Registration",
     description:

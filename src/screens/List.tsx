@@ -225,7 +225,7 @@ const List = () => {
   const [rData, setRData] = useState({});
   const [selectedData, setSelectedData] = useState(null);
 
-  const currentLanguage = i18n.language;
+  const currentLanguage = i18n.language as Language;
   useEffect(() => {
     switch (route?.params?.data?.title) {
       case "identity_documents":
@@ -675,6 +675,10 @@ const List = () => {
       reportingAndDisclosureData["en"],
   };
 
+  const adUnitId = __DEV__
+    ? TestIds.BANNER
+    : "ca-app-pub-3810123126111899/5904850139";
+
   return (
     <Container subContainer={styles.container}>
       <View style={styles.viewStyle}>
@@ -720,6 +724,7 @@ const List = () => {
       <RBSheet
         ref={refRBSheet}
         useNativeDriver={true}
+        closeOnPressBack={true}
         customStyles={{
           wrapper: { backgroundColor: colors.wrapper },
           draggableIcon: {
@@ -793,10 +798,16 @@ const List = () => {
             </View>
           ))}
         </ScrollView>
+        <BannerAd
+          ref={bannerRef}
+          unitId={adUnitId}
+          size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
+          width={horizontalScale(345)}
+        />
       </RBSheet>
       <BannerAd
         ref={bannerRef}
-        unitId={TestIds.BANNER}
+        unitId={adUnitId}
         size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
         width={horizontalScale(345)}
       />

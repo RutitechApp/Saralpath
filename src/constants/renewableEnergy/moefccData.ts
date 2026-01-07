@@ -1,4 +1,11 @@
-export const moefccData = {
+export const moefccData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Ministry of Environment, Forest and Climate Change",
     description:

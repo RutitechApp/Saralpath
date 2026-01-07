@@ -1,4 +1,11 @@
-export const loadDespatchRegistrationData = {
+export const loadDespatchRegistrationData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "RLDC / NLDC Registration",
     description:

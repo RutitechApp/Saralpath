@@ -1,4 +1,11 @@
-export const monitoringReportingData = {
+export const monitoringReportingData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Monitoring & Reporting",
     description:

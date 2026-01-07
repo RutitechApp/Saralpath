@@ -1,4 +1,11 @@
-export const billOfMaterialsData = {
+export const billOfMaterialsData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Bill of Materials (BoM)",
     description:

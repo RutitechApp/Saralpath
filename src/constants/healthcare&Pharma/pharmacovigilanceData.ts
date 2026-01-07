@@ -1,4 +1,11 @@
-export const pharmacovigilanceData = {
+export const pharmacovigilanceData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Pharmacovigilance Documents",
     description:

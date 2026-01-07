@@ -1,4 +1,11 @@
-export const indianElectricityGridCodeData = {
+export const indianElectricityGridCodeData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Indian Electricity Grid Code",
     description:

@@ -1,4 +1,11 @@
-export const sexualHarassmentActData = {
+export const sexualHarassmentActData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Sexual Harassment of Women at Workplace Act, 2013",
     description:

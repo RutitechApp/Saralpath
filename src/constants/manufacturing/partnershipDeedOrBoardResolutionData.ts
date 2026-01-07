@@ -1,4 +1,11 @@
-export const partnershipDeedOrBoardResolutionData = {
+export const partnershipDeedOrBoardResolutionData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Partnership Deed or Board Resolution",
     description:

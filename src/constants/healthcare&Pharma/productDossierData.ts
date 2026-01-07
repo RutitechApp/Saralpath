@@ -1,4 +1,11 @@
-export const productDossierData = {
+export const productDossierData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Product Dossier",
     description:

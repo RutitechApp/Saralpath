@@ -1,4 +1,11 @@
-export const importExportCodeData = {
+export const importExportCodeData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Import Export Code (IEC)",
     steps: [

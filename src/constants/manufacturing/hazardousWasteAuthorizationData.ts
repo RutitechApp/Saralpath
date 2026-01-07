@@ -1,4 +1,11 @@
-export const hazardousWasteAuthorizationData = {
+export const hazardousWasteAuthorizationData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Authorization for Handling Hazardous Waste",
     description:

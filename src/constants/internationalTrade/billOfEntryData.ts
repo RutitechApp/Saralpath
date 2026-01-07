@@ -1,4 +1,11 @@
-export const billOfEntryData = {
+export const billOfEntryData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Bill of Entry",
     steps: [

@@ -1,4 +1,11 @@
-export const billOfLadingData = {
+export const billOfLadingData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Bill of Lading / Airway Bill",
     steps: [

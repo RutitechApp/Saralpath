@@ -1,4 +1,11 @@
-export const inspectionCertificateData = {
+export const inspectionCertificateData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Inspection / Quality Check Certificate",
     steps: [

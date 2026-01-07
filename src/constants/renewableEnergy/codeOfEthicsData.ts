@@ -1,4 +1,11 @@
-export const codeOfEthicsData = {
+export const codeOfEthicsData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Code of Ethics",
     description:

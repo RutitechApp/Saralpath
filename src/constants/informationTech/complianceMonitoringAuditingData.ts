@@ -1,4 +1,11 @@
-export const complianceMonitoringAuditingData = {
+export const complianceMonitoringAuditingData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Compliance Monitoring & Auditing",
     description:
@@ -123,7 +130,6 @@ export const complianceMonitoringAuditingData = {
       },
     ],
   },
-
   kok: {
     title: "अनुपालन निरीक्षण आनी ऑडिटिंग",
     description:

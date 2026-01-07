@@ -1,4 +1,11 @@
-export const allotmentLetterFormData = {
+export const allotmentLetterFormData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Allotment Letter",
     description:

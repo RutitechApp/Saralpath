@@ -1,4 +1,11 @@
-export const identityAddressProofData = {
+export const identityAddressProofData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Identity & Address Proof",
     description:

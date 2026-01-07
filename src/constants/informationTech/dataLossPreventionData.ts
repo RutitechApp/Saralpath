@@ -1,4 +1,11 @@
-export const dataLossPreventionData = {
+export const dataLossPreventionData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Data Loss Prevention (DLP)",
     description:

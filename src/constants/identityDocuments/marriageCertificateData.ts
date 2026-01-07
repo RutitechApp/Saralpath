@@ -1,4 +1,11 @@
-export const marriageCertificateData = {
+export const marriageCertificateData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Marriage Certificate",
     description:

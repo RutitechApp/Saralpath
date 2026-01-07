@@ -1,4 +1,11 @@
-export const technicalData = {
+export const technicalData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Technical Data",
     description:

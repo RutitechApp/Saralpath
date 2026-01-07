@@ -1,4 +1,11 @@
-export const medicalFitnessCertificateData = {
+export const medicalFitnessCertificateData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Medical Fitness Certificates for Employees",
     description:

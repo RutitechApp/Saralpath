@@ -1,4 +1,11 @@
-export const insuranceCertificateData = {
+export const insuranceCertificateData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Insurance Certificate",
     steps: [

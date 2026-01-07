@@ -1,4 +1,11 @@
-export const electricityBillData = {
+export const electricityBillData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Electricity Bill",
     description:

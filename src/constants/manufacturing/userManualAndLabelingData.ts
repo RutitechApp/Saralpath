@@ -1,4 +1,11 @@
-export const userManualAndLabelingData = {
+export const userManualAndLabelingData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "User Manual and Labeling Artwork",
     description:

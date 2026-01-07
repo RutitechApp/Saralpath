@@ -1,4 +1,11 @@
-export const dataPrivacyAuditingData = {
+export const dataPrivacyAuditingData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Data Privacy & Cybersecurity Compliance Monitoring & Auditing",
     description:

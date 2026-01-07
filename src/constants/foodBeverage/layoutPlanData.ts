@@ -1,4 +1,11 @@
-export const layoutPlanData = {
+export const layoutPlanData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Layout Plan of Kitchen / Processing Unit",
     description:

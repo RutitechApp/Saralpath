@@ -1,4 +1,11 @@
-export const foodSafetyManagementData = {
+export const foodSafetyManagementData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Food Safety Management Plan",
     description:

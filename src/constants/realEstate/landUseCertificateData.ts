@@ -1,4 +1,11 @@
-export const landUseCertificateData = {
+export const landUseCertificateData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Land Use Certificate",
     description:

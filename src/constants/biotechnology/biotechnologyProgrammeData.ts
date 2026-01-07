@@ -1,4 +1,11 @@
-export const biotechnologyProgrammeData = {
+export const biotechnologyProgrammeData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Biotechnology Industry Partnership Programme (BIPP)",
     description:
@@ -429,7 +436,7 @@ export const biotechnologyProgrammeData = {
       },
     ],
   },
-  knk: {
+  kok: {
     title: "बायोटेक्नॉलॉजी इंडस्ट्री पार्टनरशिप प्रोग्राम (BIPP)",
     description:
       "BIRAC/DBT ह्या संस्थांकड्यान सुरू केल्लो एक प्रोग्राम, जे बायोटेक्नॉलॉजी स्टार्टअप/SME आनी इंडस्ट्री म्हजेनांचेर रणनीतिक भागीदारीक समर्थन दिता, ज्यान उत्पाद विकास आनी व्यावसायिकीकरण वेगान जावपाक मदत मेल्टा.",

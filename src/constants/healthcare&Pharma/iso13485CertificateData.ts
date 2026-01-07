@@ -1,4 +1,11 @@
-export const iso13485CertificateData = {
+export const iso13485CertificateData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "ISO 13485 Certificate",
     steps: [

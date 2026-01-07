@@ -1,4 +1,11 @@
-export const energyConservationActData = {
+export const energyConservationActData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Energy Conservation Act, 2022",
     description:

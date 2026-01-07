@@ -1,4 +1,11 @@
-export const reraRegistrationCertificateData = {
+export const reraRegistrationCertificateData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "RERA Registration Certificate",
     description:

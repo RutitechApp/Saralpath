@@ -1,4 +1,11 @@
-export const siteFactoryPlanData = {
+export const siteFactoryPlanData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Site Plan and Factory Layout Plan",
     description:

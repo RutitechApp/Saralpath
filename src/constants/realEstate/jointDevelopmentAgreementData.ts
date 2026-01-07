@@ -1,4 +1,11 @@
-export const jointDevelopmentAgreementFormData = {
+export const jointDevelopmentAgreementFormData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Joint Development Agreement (JDA)",
     description:

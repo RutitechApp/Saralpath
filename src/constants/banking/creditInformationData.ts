@@ -1,4 +1,11 @@
-export const creditInformationData = {
+export const creditInformationData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Credit Information",
     description:

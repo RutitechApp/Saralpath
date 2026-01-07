@@ -1,4 +1,11 @@
-export const reportingAndDisclosureData = {
+export const reportingAndDisclosureData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Reporting and Disclosure",
     description:

@@ -1,4 +1,11 @@
-export const shareholdersOrFoundersAgreementData = {
+export const shareholdersOrFoundersAgreementData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Shareholder / Founder's Agreement (If Applicable)",
     description:

@@ -1,4 +1,11 @@
-export const intellectualPropertyData = {
+export const intellectualPropertyData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Intellectual Property Compliance Monitoring & Auditing",
     description:

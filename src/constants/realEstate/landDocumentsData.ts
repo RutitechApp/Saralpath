@@ -1,4 +1,11 @@
-export const landDocumentsData = {
+export const landDocumentsData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Land Documents",
     description:

@@ -1,4 +1,11 @@
-export const licensingRegistrationData = {
+export const licensingRegistrationData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Licensing and Registration Compliance Monitoring & Auditing",
     description:

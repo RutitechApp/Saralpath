@@ -1,35 +1,42 @@
-export const directorKycData = {
+export const directorKycData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Director KYC",
     description:
       "Director KYC is the process of verifying the identity, address, and other details of directors of companies as required by the Ministry of Corporate Affairs (MCA) to ensure compliance and transparency.",
-    keyPoints: [
+    steps: [
       {
-        point: 1,
+        step: 1,
         title: "Filing Requirement",
         details:
           "All directors of Indian companies must file their KYC annually with MCA.",
       },
       {
-        point: 2,
+        step: 2,
         title: "Identity Verification",
         details:
           "Directors need to submit PAN, Aadhaar, and other identification documents.",
       },
       {
-        point: 3,
+        step: 3,
         title: "Address Verification",
         details:
           "Residential address must be verified through valid documents.",
       },
       {
-        point: 4,
+        step: 4,
         title: "Compliance",
         details:
           "Non-compliance can lead to deactivation of DIN (Director Identification Number).",
       },
       {
-        point: 5,
+        step: 5,
         title: "Update Information",
         details:
           "Directors must update their details promptly in case of changes.",
@@ -40,33 +47,33 @@ export const directorKycData = {
     title: "निदेशक KYC",
     description:
       "डायरेक्टर KYC कंपनी के निदेशकों की पहचान, पता और अन्य विवरणों की जांच की प्रक्रिया है, जैसा कि कॉर्पोरेट मामलों के मंत्रालय (MCA) द्वारा अनुपालन और पारदर्शिता सुनिश्चित करने के लिए आवश्यक है।",
-    keyPoints: [
+    steps: [
       {
-        point: 1,
+        step: 1,
         title: "फाइलिंग आवश्यकताएँ",
         details:
           "भारत की सभी कंपनियों के निदेशकों को MCA के साथ वार्षिक KYC दाखिल करना आवश्यक है।",
       },
       {
-        point: 2,
+        step: 2,
         title: "पहचान सत्यापन",
         details:
           "निदेशकों को PAN, Aadhaar और अन्य पहचान दस्तावेज़ जमा करने होंगे।",
       },
       {
-        point: 3,
+        step: 3,
         title: "पता सत्यापन",
         details:
           "निवासी पते को वैध दस्तावेज़ों के माध्यम से सत्यापित किया जाना चाहिए।",
       },
       {
-        point: 4,
+        step: 4,
         title: "अनुपालन",
         details:
           "अनुपालन न करने पर DIN (Director Identification Number) निष्क्रिय हो सकता है।",
       },
       {
-        point: 5,
+        step: 5,
         title: "सूचना अपडेट करें",
         details:
           "परिवर्तनों के मामले में निदेशकों को अपनी जानकारी तुरंत अपडेट करनी चाहिए।",
@@ -77,32 +84,32 @@ export const directorKycData = {
     title: "ડાયરેક્ટર KYC",
     description:
       "ડાયરેક્ટર KYC એ કંપનીના ડાયરેક્ટરોની ઓળખ, સરનામું અને અન્ય વિગતોની પુષ્ટિ કરવાની પ્રક્રિયા છે, જે કોર્પોરેટ બાબતો મંત્રાલય (MCA) દ્વારા અનુપાલન અને પારદર્શિતા સુનિશ્ચિત કરવા માટે જરૂરી છે.",
-    keyPoints: [
+    steps: [
       {
-        point: 1,
+        step: 1,
         title: "ફાઇલિંગ આવશ્યકતા",
         details:
           "ભારતીય કંપનીના તમામ ડાયરેક્ટરોને MCA સાથે વાર્ષિક KYC ફાઈલ કરવી જરૂરી છે.",
       },
       {
-        point: 2,
+        step: 2,
         title: "ઓળખ તપાસ",
         details:
           "ડાયરેક્ટરોને PAN, Aadhaar અને અન્ય ઓળખ દસ્તાવેજો સબમિટ કરવા પડશે.",
       },
       {
-        point: 3,
+        step: 3,
         title: "સરનામું તપાસ",
         details: "નિવાસી સરનામું માન્ય દસ્તાવેજો દ્વારા ચકાસવું આવશ્યક છે.",
       },
       {
-        point: 4,
+        step: 4,
         title: "અનુપાલન",
         details:
           "અનુપાલન ન થાય તો DIN (Director Identification Number) નિષ્ક્રિય થઈ શકે છે.",
       },
       {
-        point: 5,
+        step: 5,
         title: "માહિતી અપડેટ કરો",
         details:
           "ફેરફાર થાય તો ડાયરેક્ટરો તેમની વિગતો તાત્કાલિક અપડેટ કરવી જોઈએ.",
@@ -113,32 +120,32 @@ export const directorKycData = {
     title: "ডিরেক্টর KYC",
     description:
       "ডিরেক্টর KYC হল কোম্পানির পরিচালকদের পরিচয়, ঠিকানা এবং অন্যান্য বিবরণ যাচাই করার প্রক্রিয়া, যা কর্পোরেট বিষয়ক মন্ত্রক (MCA) দ্বারা প্রয়োজনীয়তা অনুযায়ী পালন ও স্বচ্ছতা নিশ্চিত করতে হয়।",
-    keyPoints: [
+    steps: [
       {
-        point: 1,
+        step: 1,
         title: "ফাইলিং প্রয়োজনীয়তা",
         details:
           "ভারতের সমস্ত কোম্পানির পরিচালকদের MCA-তে বার্ষিক KYC জমা দিতে হবে।",
       },
       {
-        point: 2,
+        step: 2,
         title: "পরিচয় যাচাই",
         details:
           "পরিচালকদের PAN, Aadhaar এবং অন্যান্য পরিচয়পত্র জমা দিতে হবে।",
       },
       {
-        point: 3,
+        step: 3,
         title: "ঠিকানা যাচাই",
         details: "বসবাসের ঠিকানা বৈধ নথির মাধ্যমে যাচাই করতে হবে।",
       },
       {
-        point: 4,
+        step: 4,
         title: "অনুপালন",
         details:
           "অনুপালন করলে DIN (Director Identification Number) নিষ্ক্রিয় হতে পারে।",
       },
       {
-        point: 5,
+        step: 5,
         title: "তথ্য আপডেট করুন",
         details:
           "পরিবর্তনের ক্ষেত্রে পরিচালকদের তাদের তথ্য দ্রুত আপডেট করতে হবে।",
@@ -149,32 +156,32 @@ export const directorKycData = {
     title: "डायरेक्टर KYC",
     description:
       "डायरेक्टर KYC ही कंपनीच्या संचालकांची ओळख, पत्ता आणि इतर तपशील तपासण्याची प्रक्रिया आहे, जी कॉर्पोरेट मामले मंत्रालय (MCA) द्वारे अनुपालन आणि पारदर्शकता सुनिश्चित करण्यासाठी आवश्यक आहे.",
-    keyPoints: [
+    steps: [
       {
-        point: 1,
+        step: 1,
         title: "फायलींग आवश्यकता",
         details:
           "सर्व भारतीय कंपनींच्या संचालकांनी MCA कडे वार्षिक KYC दाखल करणे आवश्यक आहे.",
       },
       {
-        point: 2,
+        step: 2,
         title: "ओळख सत्यापन",
         details:
           "संचालकांनी PAN, Aadhaar आणि इतर ओळखपत्रे सादर करणे आवश्यक आहे.",
       },
       {
-        point: 3,
+        step: 3,
         title: "पत्ता सत्यापन",
         details: "निवासी पत्ता वैध कागदपत्रांद्वारे तपासणे आवश्यक आहे.",
       },
       {
-        point: 4,
+        step: 4,
         title: "अनुपालन",
         details:
           "अनुपालन न केल्यास DIN (Director Identification Number) निष्क्रिय होऊ शकतो.",
       },
       {
-        point: 5,
+        step: 5,
         title: "माहिती अद्यतनित करा",
         details:
           "परिवर्तन झाल्यास संचालकांनी आपली माहिती त्वरीत अद्यतनित करावी.",
@@ -185,32 +192,32 @@ export const directorKycData = {
     title: "Director KYC",
     description:
       "Director KYC என்பது நிறுவன இயக்குனர்களின் அடையாளம், முகவரி மற்றும் பிற விவரங்களை சரிபார்ப்பதற்கான செயல்முறை, இது நிறுவனக் காரியங்கள் அமைச்சகம் (MCA) தேவையான விதிகளுக்கு ஏற்ப நடத்தப்படுகிறது.",
-    keyPoints: [
+    steps: [
       {
-        point: 1,
+        step: 1,
         title: "கோப்புமுறை தேவைகள்",
         details:
           "இந்திய நிறுவனத்தின் அனைத்து இயக்குனர்களும் MCA-வில் வருடாந்திர KYC தாக்கல் செய்ய வேண்டும்.",
       },
       {
-        point: 2,
+        step: 2,
         title: "அடையாள சரிபார்ப்பு",
         details:
           "இயக்குனர்கள் PAN, Aadhaar மற்றும் பிற அடையாள ஆவணங்களை சமர்ப்பிக்க வேண்டும்.",
       },
       {
-        point: 3,
+        step: 3,
         title: "முகவரி சரிபார்ப்பு",
         details: "வசிப்பிடம் மின்னணு ஆவணங்களின் மூலம் சரிபார்க்கப்பட வேண்டும்.",
       },
       {
-        point: 4,
+        step: 4,
         title: "காம்ப்ளையன்ஸ்",
         details:
           "பின்பற்றாதால் DIN (Director Identification Number) செயலிழக்கலாம்.",
       },
       {
-        point: 5,
+        step: 5,
         title: "தகவல் புதுப்பித்தல்",
         details:
           "மாற்றங்கள் ஏற்பட்டால் இயக்குனர்கள் விரைவாக தங்கள் விவரங்களை புதுப்பிக்க வேண்டும்.",
@@ -221,32 +228,32 @@ export const directorKycData = {
     title: "డైరెక్టర్ KYC",
     description:
       "డైరెక్టర్ KYC అనేది కంపెనీల డైరెక్టర్ల గుర్తింపు, చిరునామా మరియు ఇతర వివరాలను ధృవీకరించే ప్రక్రియ, ఇది కార్పొరేట్ వ్యవహారాల మంత్రిత్వ శాఖ (MCA) అవసరాల ప్రకారం నిర్వహించబడుతుంది.",
-    keyPoints: [
+    steps: [
       {
-        point: 1,
+        step: 1,
         title: "ఫైలింగ్ అవసరాలు",
         details:
           "భారత కంపెనీల అన్ని డైరెక్టర్లు MCA వద్ద వార్షిక KYC సమర్పించాలి.",
       },
       {
-        point: 2,
+        step: 2,
         title: "గుర్తింపు ధృవీకరణ",
         details:
           "డైరెక్టర్లు PAN, Aadhaar మరియు ఇతర గుర్తింపు పత్రాలను సమర్పించాలి.",
       },
       {
-        point: 3,
+        step: 3,
         title: "చిరునామా ధృవీకరణ",
         details: "వసతి చిరునామాను చెల్లుబాటు అయ్యే పత్రాలతో ధృవీకరించాలి.",
       },
       {
-        point: 4,
+        step: 4,
         title: "అనుగుణత",
         details:
           "అనుగుణతను పాటించకపోతే DIN (Director Identification Number) నిలిపివేయబడుతుంది.",
       },
       {
-        point: 5,
+        step: 5,
         title: "సమాచారం నవీకరణ",
         details:
           "మార్పులు జరిగినట్లయితే డైరెక్టర్లు తమ వివరాలను వెంటనే నవీకరించాలి.",
@@ -257,32 +264,32 @@ export const directorKycData = {
     title: "ಡೈರೆಕ್ಟರ್ KYC",
     description:
       "ಡೈರೆಕ್ಟರ್ KYC ಎಂಬುದು ಕಂಪನಿಯ ನಿರ್ದೇಶಕರ ಗುರುತಿನ ಮಾಹಿತಿ, ವಿಳಾಸ ಮತ್ತು ಇತರ ವಿವರಗಳನ್ನು ಪರಿಶೀಲಿಸುವ ಪ್ರಕ್ರಿಯೆ, ಇದು ಕಾರ್ಪೊರೇಟ್ ವ್ಯವಹಾರಗಳ ಮಂತ್ರಾಲಯ (MCA) ಅಗತ್ಯಗಳನ್ನು ಪಾಲಿಸಲು ಮತ್ತು ಪಾರದರ್ಶಕತೆಯನ್ನು ಖಾತ್ರಿಪಡಿಸಲು ಅಗತ್ಯವಿದೆ.",
-    keyPoints: [
+    steps: [
       {
-        point: 1,
+        step: 1,
         title: "ಫೈಲಿಂಗ್ ಅಗತ್ಯತೆ",
         details:
           "ಭಾರತದ ಎಲ್ಲಾ ಕಂಪನಿಯ ನಿರ್ದೇಶಕರು MCA ಬಳಿ ವಾರ್ಷಿಕ KYC ಸಲ್ಲಿಸಬೇಕು.",
       },
       {
-        point: 2,
+        step: 2,
         title: "ಗುರುತು ಪರಿಶೀಲನೆ",
         details:
           "ನಿರ್ದೇಶಕರು PAN, Aadhaar ಮತ್ತು ಇತರ ಗುರುತು ದಾಖಲೆಗಳನ್ನು ಸಲ್ಲಿಸಬೇಕು.",
       },
       {
-        point: 3,
+        step: 3,
         title: "ವಿಳಾಸ ಪರಿಶೀಲನೆ",
         details: "ನಿವಾಸ ವಿಳಾಸವನ್ನು ಮಾನ್ಯ ದಾಖಲೆಗಳ ಮೂಲಕ ಪರಿಶೀಲಿಸಬೇಕು.",
       },
       {
-        point: 4,
+        step: 4,
         title: "ಅನುಪಾಲನೆ",
         details:
           "ಅನುಪಾಲನೆ ಇಲ್ಲದಿದ್ದರೆ DIN (Director Identification Number) ನಿಷ್ಕ್ರಿಯಗೊಳ್ಳಬಹುದು.",
       },
       {
-        point: 5,
+        step: 5,
         title: "ಮಾಹಿತಿ ನವೀಕರಣ",
         details: "ಬದಲಾವಣೆಗಳಾದರೆ ನಿರ್ದೇಶಕರು ತಮ್ಮ ವಿವರಗಳನ್ನು ತಕ್ಷಣ ನವೀಕರಿಸಬೇಕು.",
       },
@@ -292,32 +299,32 @@ export const directorKycData = {
     title: "ഡയറക്ടർ KYC",
     description:
       "ഡയറക്ടർ KYC കമ്പനി ഡയറക്ടർമാരുടെ തിരിച്ചറിയൽ, വിലാസം, മറ്റ് വിശദാംശങ്ങൾ എന്നിവ പരിശോധിക്കുന്ന പ്രക്രിയയാണ്, ഇത് കോർപ്പറേറ്റ് കാര്യ മന്ത്രാലയം (MCA) ആവശ്യാനുസരണം നടത്തുന്നു.",
-    keyPoints: [
+    steps: [
       {
-        point: 1,
+        step: 1,
         title: "ഫയലിംഗ് ആവശ്യകത",
         details:
           "ഇന്ത്യയിലെ എല്ലാ കമ്പനികളുടെ ഡയറക്ടർമാരും MCA-യിൽ വാർഷിക KYC സമർപ്പിക്കണം.",
       },
       {
-        point: 2,
+        step: 2,
         title: "അടയാള പരിശോധന",
         details:
           "ഡയറക്ടർമാർ PAN, Aadhaar, മറ്റു തിരിച്ചറിയൽ രേഖകൾ സമർപ്പിക്കണം.",
       },
       {
-        point: 3,
+        step: 3,
         title: "വിലാസ പരിശോധന",
         details: "വാസസ്ഥല വിലാസം സാധുവായ രേഖകളിലൂടെ പരിശോധിക്കണം.",
       },
       {
-        point: 4,
+        step: 4,
         title: "അനുപാലനം",
         details:
           "അനുപാലനം ഇല്ലെങ്കിൽ DIN (Director Identification Number) നിരസിക്കപ്പെടും.",
       },
       {
-        point: 5,
+        step: 5,
         title: "വിവരം അപ്ഡേറ്റ് ചെയ്യുക",
         details:
           "മാറ്റങ്ങൾ സംഭവിച്ചാൽ ഡയറക്ടർമാർ ഉടനെ അവരുടെ വിവരങ്ങൾ അപ്ഡേറ്റ് ചെയ്യണം.",
@@ -328,32 +335,32 @@ export const directorKycData = {
     title: "ଡାଇରେକ୍ଟର KYC",
     description:
       "ଡାଇରେକ୍ଟର KYC ହେଉଛି କମ୍ପାନୀର ନିର୍ଦ୍ଦେଶକଙ୍କର ପରିଚୟ, ଠିକଣା ଏବଂ ଅନ୍ୟାନ୍ୟ ବିବରଣୀ ଯାଞ୍ଚ ପ୍ରକ୍ରିୟା, ଯାହା କର୍ପୋରେଟ୍ କାର୍ଯ୍ୟ ବିଭାଗ (MCA) ଆବଶ୍ୟକତା ଅନୁସାରେ ହେଉଛି।",
-    keyPoints: [
+    steps: [
       {
-        point: 1,
+        step: 1,
         title: "ଫାଇଲିଂ ଆବଶ୍ୟକତା",
         details:
           "ଭାରତର ସମସ୍ତ କମ୍ପାନୀ ନିର୍ଦ୍ଦେଶକଙ୍କୁ MCA ସହିତ ବାର୍ଷିକ KYC ଦାଖଲ କରିବାକୁ ପଡ଼ିବ।",
       },
       {
-        point: 2,
+        step: 2,
         title: "ପରିଚୟ ଯାଞ୍ଚ",
         details:
           "ନିର୍ଦ୍ଦେଶକଙ୍କୁ PAN, Aadhaar ଏବଂ ଅନ୍ୟାନ୍ୟ ପରିଚୟ ଦଲିଲ ସମର୍ପଣ କରିବାକୁ ପଡ଼ିବ।",
       },
       {
-        point: 3,
+        step: 3,
         title: "ଠିକଣା ଯାଞ୍ଚ",
         details: "ବସୋବାସ ଠିକଣାକୁ ବୈଧ ଦଲିଲ ମାଧ୍ୟମରେ ସତ୍ୟାପିତ କରାଯିବ।",
       },
       {
-        point: 4,
+        step: 4,
         title: "ଅନୁପାଳନ",
         details:
           "ଅନୁପାଳନ ନହେଲେ DIN (Director Identification Number) ନିଷ୍କ୍ରିୟ ହେବ।",
       },
       {
-        point: 5,
+        step: 5,
         title: "ସୂଚନା ଅଦ୍ୟତନ",
         details:
           "ପରିବର୍ତ୍ତନ ହେଲେ ନିର୍ଦ୍ଦେଶକମାନେ ତାଙ୍କର ବିବରଣୀ ତୁରନ୍ତ ଅଦ୍ୟତନ କରିବେ।",
@@ -364,32 +371,32 @@ export const directorKycData = {
     title: "डायरेक्टर KYC",
     description:
       "डायरेक्टर KYC हांव कंपनीचें डायरेक्टरांचो ओळख, पत्ता आनी दुसरे तपशील जाचो करपाची प्रक्रिया आसा, जें कॉर्पोरेट मामलेंचो मंत्रालय (MCA) कडेन लागणाऱ्या नियमांनुसार पालन खातीर आसा.",
-    keyPoints: [
+    steps: [
       {
-        point: 1,
+        step: 1,
         title: "फाईलिंग आवश्कता",
         details:
           "भारताचेर सगळ्या कंपनींचे डायरेक्टर MCA कडे वर्सिक KYC फाईल करप आवश्यक आसा.",
       },
       {
-        point: 2,
+        step: 2,
         title: "ओळख तपास",
         details:
           "डायरेक्टरानी PAN, Aadhaar आनी दुसरे ओळख दस्तावेज सादर करप आवश्यक आसा.",
       },
       {
-        point: 3,
+        step: 3,
         title: "पत्ता तपास",
         details: "निवास पत्ता योग्य दस्तावेजांद्वारे तपासपाचें.",
       },
       {
-        point: 4,
+        step: 4,
         title: "पालन",
         details:
           "पालन न केल्यास DIN (Director Identification Number) निष्क्रिय जाल्यार.",
       },
       {
-        point: 5,
+        step: 5,
         title: "माहिती अपडेट करप",
         details: "फेर बदल झाल्यार डायरेक्टरानी तांची माहिती तात्काळ अपडेट करप.",
       },

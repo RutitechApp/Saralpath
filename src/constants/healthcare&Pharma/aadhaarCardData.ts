@@ -1,4 +1,11 @@
-export const aadhaarCardDatas = {
+export const aadhaarCardDatas: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Aadhaar Card",
     description:

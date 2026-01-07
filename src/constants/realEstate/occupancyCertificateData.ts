@@ -1,4 +1,11 @@
-export const occupancyCertificateData = {
+export const occupancyCertificateData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Occupancy Certificate",
     description:

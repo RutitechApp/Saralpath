@@ -1,4 +1,11 @@
-export const shippingBillData = {
+export const shippingBillData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Shipping Bill",
     steps: [

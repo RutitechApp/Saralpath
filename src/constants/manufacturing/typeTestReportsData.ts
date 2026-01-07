@@ -1,4 +1,11 @@
-export const typeTestReportsData = {
+export const typeTestReportsData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Type Test / Testing Reports from Recognized Labs",
     description:

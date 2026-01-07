@@ -1,4 +1,11 @@
-export const nocData = {
+export const nocData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "No Objection Certificates (NOCs)",
     description:

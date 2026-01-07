@@ -1,4 +1,11 @@
-export const educationalCertificateData = {
+export const educationalCertificateData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Educational Certificate Attestation",
     description:

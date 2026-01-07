@@ -1,4 +1,11 @@
-export const memorandumAndArticlesData = {
+export const memorandumAndArticlesData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Memorandum of Association (MoA) and Articles of Association (AoA)",
     description:

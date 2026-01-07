@@ -1,4 +1,11 @@
-export const foodProductsEquipmentData = {
+export const foodProductsEquipmentData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "List of Food Products and Equipment",
     description:

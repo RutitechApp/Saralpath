@@ -1,4 +1,11 @@
-export const commercialInvoicePackingData = {
+export const commercialInvoicePackingData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Commercial Invoice cum Packing List",
     steps: [

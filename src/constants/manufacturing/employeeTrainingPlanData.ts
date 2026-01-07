@@ -1,4 +1,11 @@
-export const employeeTrainingPlanData = {
+export const employeeTrainingPlanData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Training Plan for Employees",
     description:

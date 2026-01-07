@@ -1,4 +1,11 @@
-export const fssaiLicenseData = {
+export const fssaiLicenseData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "FSSAI License",
     description:

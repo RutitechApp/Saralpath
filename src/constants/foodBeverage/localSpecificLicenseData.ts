@@ -1,4 +1,11 @@
-export const localSpecificLicenseData = {
+export const localSpecificLicenseData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Local and Specific License",
     description:

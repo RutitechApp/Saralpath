@@ -12,8 +12,12 @@ import { verticalScale } from "../constants/responsive";
 const NativeAdCard = () => {
   const [nativeAd, setNativeAd] = useState<NativeAd>();
 
+  const adUnitId = __DEV__
+    ? TestIds.NATIVE
+    : "ca-app-pub-3810123126111899/9189489022";
+
   useEffect(() => {
-    NativeAd.createForAdRequest(TestIds.GAM_NATIVE, {
+    NativeAd.createForAdRequest(adUnitId, {
       aspectRatio: NativeMediaAspectRatio.LANDSCAPE,
     })
       .then(setNativeAd)

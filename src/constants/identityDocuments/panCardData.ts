@@ -1,4 +1,11 @@
-export const panCardData = {
+export const panCardData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "PAN Card",
     description:

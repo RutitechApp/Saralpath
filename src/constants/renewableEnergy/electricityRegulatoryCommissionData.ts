@@ -1,4 +1,11 @@
-export const electricityRegulatoryCommissionData = {
+export const electricityRegulatoryCommissionData: Record<
+  Language,
+  {
+    title: string;
+    description?: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "CERC & SERC Rules",
     description:

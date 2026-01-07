@@ -1,4 +1,11 @@
-export const liquorLicenseData = {
+export const liquorLicenseData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Liquor License",
     description:

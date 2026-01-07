@@ -1,4 +1,11 @@
-export const accessIdentityControlData = {
+export const accessIdentityControlData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Access and Identity Control",
     description:

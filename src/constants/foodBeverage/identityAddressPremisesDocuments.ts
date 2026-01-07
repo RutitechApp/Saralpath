@@ -1,4 +1,11 @@
-export const identityAddressPremisesDocuments = {
+export const identityAddressPremisesDocuments: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Proof of Identity, Address, and Premises",
     description:

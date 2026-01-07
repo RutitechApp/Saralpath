@@ -1,4 +1,11 @@
-export const sopData = {
+export const sopData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Standard Operating Procedures (SOPs)",
     description:

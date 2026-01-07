@@ -1,12 +1,13 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
-import { Appearance } from 'react-native';
-import { dark, light } from '../utils/colors';
-import { loadTheme, saveTheme } from './themeStorage';
+import React, { createContext, useContext, useEffect, useState } from "react";
+import { Appearance } from "react-native";
+import { dark, light } from "../utils/colors";
+import { loadTheme, saveTheme } from "./themeStorage";
 
 const ThemeContext = createContext({
-  theme: 'light',
+  theme: "light",
   setTheme: () => {},
   colors: light,
+  appliedTheme: "",
 });
 
 interface ThemeProviderProps {
@@ -14,7 +15,7 @@ interface ThemeProviderProps {
 }
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-  const [theme, setTheme] = useState('default');
+  const [theme, setTheme] = useState("default");
 
   useEffect(() => {
     (async () => {
@@ -31,12 +32,14 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   };
 
   const systemPreference = Appearance.getColorScheme();
-  const appliedTheme = theme === 'default' ? systemPreference : theme;
+  const appliedTheme = theme === "default" ? systemPreference : theme;
 
-  const colors = appliedTheme === 'dark' ? dark : light;
+  const colors = appliedTheme === "dark" ? dark : light;
 
   return (
-    <ThemeContext.Provider value={{ theme, setTheme: changeTheme, colors }}>
+    <ThemeContext.Provider
+      value={{ theme, setTheme: changeTheme, colors, appliedTheme }}
+    >
       {children}
     </ThemeContext.Provider>
   );

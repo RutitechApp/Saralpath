@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Pressable, StyleSheet } from "react-native";
+import { Text, Pressable, StyleSheet, View } from "react-native";
 import { horizontalScale, verticalScale } from "../constants/responsive";
 import { ArrowForward, GridDoc } from "../assets/svgs/Home";
 import { useFontSize } from "../constants/FontSizeContext";
@@ -29,7 +29,7 @@ const ListCard: React.FC<ListCardProps> = ({ data, onPress }) => {
       >
         {t(data?.title)}
       </Text>
-      <Pressable
+      <View
         style={{
           height: verticalScale(24),
           width: verticalScale(24),
@@ -43,7 +43,7 @@ const ListCard: React.FC<ListCardProps> = ({ data, onPress }) => {
           width={horizontalScale(10)}
           height={horizontalScale(10)}
         />
-      </Pressable>
+      </View>
     </Pressable>
   );
 };

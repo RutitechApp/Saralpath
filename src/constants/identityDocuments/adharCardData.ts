@@ -1,4 +1,11 @@
-export const aadhaarCardData = {
+export const aadhaarCardData: Record<
+  Language,
+  {
+    title: string;
+    description: string;
+    steps: { step: number; title: string; details: string }[];
+  }
+> = {
   en: {
     title: "Aadhaar Card",
     description:
@@ -334,7 +341,7 @@ export const aadhaarCardData = {
     ],
   },
 
-  kon: {
+  kok: {
     title: "आधार कार्ड",
     description:
       "आधार हांव एक 12-अंकी खास ओळख क्रमांक जें UIDAI कडून दिल्लो जातो. नव्या आधाराक अर्ज करताना व्यक्तींनी ओळख पुरावो, पत्ता पुरावो आनी बायोमेट्रिक माहिती (फिंगरप्रिंट, आयरिस स्कॅन, फोटो) दाखवचो आसा.",
