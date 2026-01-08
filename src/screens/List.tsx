@@ -6,6 +6,7 @@ import {
   StyleSheet,
   FlatList,
   ScrollView,
+  Image,
 } from "react-native";
 import Container from "../components/Container";
 import { ArrowBack, CloseIcon } from "../assets/svgs/Home";
@@ -736,7 +737,6 @@ const List = () => {
             { backgroundColor: colors.background },
           ],
         }}
-        draggable
         customModalProps={{
           animationType: "slide",
           statusBarTranslucent: true,
@@ -745,6 +745,14 @@ const List = () => {
           enabled: false,
         }}
       >
+        <Image
+          source={require("../assets/images/line.png")}
+          style={{
+            alignSelf: "center",
+            marginTop: verticalScale(8),
+            marginBottom: verticalScale(10),
+          }}
+        />
         <View style={styles.bottomSheetRawStyle}>
           <View style={{ flex: 1, maxWidth: "90%" }}>
             <Text
