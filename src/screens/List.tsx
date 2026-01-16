@@ -22,6 +22,7 @@ import {
   manufacturing,
   realEstateConstruction,
   renewableEnergy,
+  tabData,
 } from "../constants/dummyData";
 import ListCard from "../components/ListCard";
 import { useNavigation, useRoute } from "@react-navigation/native";
@@ -212,6 +213,7 @@ import { sexualHarassmentActData } from "../constants/renewableEnergy/sexualHara
 import { complianceManagementSystemData } from "../constants/renewableEnergy/complianceManagementSystemData";
 import { codeOfEthicsData } from "../constants/renewableEnergy/codeOfEthicsData";
 import { reportingAndDisclosureData } from "../constants/renewableEnergy/reportingAndDisclosureData";
+import TabView from "../components/TabView";
 
 const List = () => {
   const bannerRef = useRef<BannerAd>(null);
@@ -223,9 +225,9 @@ const List = () => {
   const { t, i18n } = useTranslation();
   const [fData, setFData] = useState([{}]);
   const data = route?.params?.data;
-  const [rData, setRData] = useState({});
-  const [selectedData, setSelectedData] = useState(null);
 
+  const [selectedData, setSelectedData] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
   const currentLanguage = i18n.language as Language;
   useEffect(() => {
     switch (route?.params?.data?.title) {
@@ -263,12 +265,23 @@ const List = () => {
         setFData([]);
     }
   }, [route?.params?.data?.title]);
+  const handleOpen = (key: string) => {
+    const doc = dataMap[key];
+    if (!doc) {
+      console.warn("No data found for key:", key);
+      return;
+    }
+    setSelectedData(doc);
+    refRBSheet.current?.open();
+    setActiveIndex(0);
+  };
 
   const dataMap: { [key: string]: any } = {
     // identity_doc
     birth_certificate:
       birthCertificateData[currentLanguage] || birthCertificateData["en"],
-    aadhaar_card: aadhaarCardData[currentLanguage] || aadhaarCardData["en"],
+    identity_aadhaar_card:
+      aadhaarCardData[currentLanguage] || aadhaarCardData["en"],
     educational_certificates:
       educationalCertificateData[currentLanguage] ||
       educationalCertificateData["en"],
@@ -679,7 +692,6 @@ const List = () => {
   const adUnitId = __DEV__
     ? TestIds.BANNER
     : "ca-app-pub-3810123126111899/5904850139";
-
   return (
     <Container subContainer={styles.container}>
       <View style={styles.viewStyle}>
@@ -711,14 +723,7 @@ const List = () => {
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => {
           return (
-            <ListCard
-              data={item}
-              onPress={() => {
-                setRData(item);
-                setSelectedData(dataMap[item.title] || []);
-                refRBSheet.current.open();
-              }}
-            />
+            <ListCard data={item} onPress={() => handleOpen(item.title)} />
           );
         }}
       />
@@ -753,6 +758,7 @@ const List = () => {
             marginBottom: verticalScale(10),
           }}
         />
+
         <View style={styles.bottomSheetRawStyle}>
           <View style={{ flex: 1, maxWidth: "90%" }}>
             <Text
@@ -761,7 +767,7 @@ const List = () => {
                 { fontSize: 20 * fontScale, color: colors.primary },
               ]}
             >
-              {t(rData?.title)}
+              {selectedData?.title}
             </Text>
           </View>
           <CloseIcon
@@ -770,48 +776,87 @@ const List = () => {
             height={horizontalScale(24)}
           />
         </View>
-        <ScrollView style={{ marginBottom: verticalScale(20) }}>
-          <Text
-            style={{
-              color: colors.subText,
-              fontSize: 16 * fontScale,
-              fontWeight: "400",
-              marginTop: verticalScale(8),
-            }}
-          >
-            {selectedData?.description}
-          </Text>
-
-          {selectedData?.steps?.map((stepObj: any, index: number) => (
-            <View key={index} style={{ marginTop: verticalScale(6) }}>
-              <Text
-                style={{
-                  fontWeight: "600",
-                  fontSize: 18 * fontScale,
-                  color: colors.text,
-                }}
-              >
-                {`${stepObj.step}. ${stepObj.title}`}
-              </Text>
-
-              <Text
-                style={{
-                  fontWeight: "400",
-                  fontSize: 16 * fontScale,
-                  color: colors.subText,
-                }}
-              >
-                {stepObj.details}
-              </Text>
-            </View>
-          ))}
-        </ScrollView>
-        <BannerAd
-          ref={bannerRef}
-          unitId={adUnitId}
-          size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
-          width={horizontalScale(345)}
+        <TabView
+          tabData={tabData}
+          onPress={(index) => setActiveIndex(index)}
+          activeIndex={activeIndex}
         />
+        {activeIndex === 0 ? (
+          <ScrollView
+            contentContainerStyle={{}}
+            showsVerticalScrollIndicator={false}
+          >
+            <Text
+              style={{
+                color: colors.subText,
+                fontSize: 16 * fontScale,
+                fontWeight: "400",
+                marginTop: verticalScale(8),
+              }}
+            >
+              {selectedData?.description}
+            </Text>
+            {console.log("Selected Data:", selectedData)}
+            {selectedData?.steps?.map((stepObj: any, index: number) => (
+              <View key={index} style={{ marginTop: verticalScale(6) }}>
+                <Text
+                  style={{
+                    fontWeight: "600",
+                    fontSize: 18 * fontScale,
+                    color: colors.text,
+                  }}
+                >
+                  {`${stepObj.step}. ${stepObj.title}`}
+                </Text>
+
+                <Text
+                  style={{
+                    fontWeight: "400",
+                    fontSize: 16 * fontScale,
+                    color: colors.subText,
+                  }}
+                >
+                  {stepObj.details}
+                </Text>
+              </View>
+            ))}
+          </ScrollView>
+        ) : (
+          <View>
+            {selectedData?.eligibility?.map((item, index) => (
+              <Text
+                style={{
+                  fontSize: 16 * fontScale,
+                  color: colors.text,
+                  fontWeight: "400",
+                  marginTop: verticalScale(10),
+                }}
+                key={index}
+              >
+                {item}
+              </Text>
+            ))}
+          </View>
+        )}
+        {activeIndex === 0 ? (
+          <BannerAd
+            ref={bannerRef}
+            unitId={adUnitId}
+            size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
+            width={horizontalScale(345)}
+          />
+        ) : (
+          <View
+            style={{ position: "absolute", alignSelf: "center", bottom: 0 }}
+          >
+            <BannerAd
+              ref={bannerRef}
+              unitId={adUnitId}
+              size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
+              width={horizontalScale(345)}
+            />
+          </View>
+        )}
       </RBSheet>
       <BannerAd
         ref={bannerRef}

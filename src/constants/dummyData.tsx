@@ -954,3 +954,14 @@ export const msmeStartups = [
     title: "GST Certificate",
   },
 ];
+
+export const tabData = [
+  {
+    id: 1,
+    title: "info",
+  },
+  {
+    id: 2,
+    title: "eligibility",
+  },
+];

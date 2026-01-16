@@ -3,6 +3,7 @@ export const annualReturnData: Record<
   {
     title: string;
     description: string;
+    eligibility: string[];
     steps: { step: number; title: string; details: string }[];
   }
 > = {
@@ -10,6 +11,13 @@ export const annualReturnData: Record<
     title: "Annual Return",
     description:
       "Annual Return is a mandatory filing that companies submit to the Ministry of Corporate Affairs (MCA) to provide details of shareholders, directors, and financial summary for a particular financial year.",
+    eligibility: [
+      "All companies registered under the Companies Act, 2013",
+      "Limited Liability Partnerships (LLPs) registered with MCA",
+      "Directors and authorized signatories of the company or LLP",
+      "Entities with active Corporate Identification Number (CIN) or LLP Identification Number (LLPIN)",
+      "No age or gender restriction; eligibility depends on legal entity status",
+    ],
     steps: [
       {
         step: 1,
@@ -46,6 +54,13 @@ export const annualReturnData: Record<
     title: "वार्षिक रिटर्न",
     description:
       "वार्षिक रिटर्न एक अनिवार्य फाइलिंग है जो कंपनियां कॉर्पोरेट मामलों के मंत्रालय (MCA) को प्रस्तुत करती हैं, जिसमें शेयरधारकों, निदेशकों और वित्तीय वर्ष के लिए वित्तीय सारांश का विवरण होता है।",
+    eligibility: [
+      "सभी कंपनियाँ जो Companies Act, 2013 के अंतर्गत पंजीकृत हैं",
+      "लिमिटेड लाइबिलिटी पार्टनरशिप्स (LLPs) जो MCA के साथ पंजीकृत हैं",
+      "कंपनी या LLP के निदेशक और अधिकृत हस्ताक्षरकर्ता",
+      "सक्रिय Corporate Identification Number (CIN) या LLP Identification Number (LLPIN) वाले संगठन",
+      "कोई आयु या लिंग प्रतिबंध नहीं; पात्रता कानूनी इकाई की स्थिति पर निर्भर करती है",
+    ],
     steps: [
       {
         step: 1,
@@ -82,6 +97,13 @@ export const annualReturnData: Record<
     title: "વાર્ષિક રિટર્ન",
     description:
       "વાર્ષિક રિટર્ન એ ફરજિયાત ફાઇલિંગ છે જે કંપનીઓ કોર્પોરેટ બાબતો મંત્રાલય (MCA) ને સબમિટ કરે છે, જેમાં શેરહોલ્ડર્સ, ડાયરેક્ટરો અને નાણાકીય વર્ષ માટે નાણાકીય સારાંશનો વિગતવાર સમાવેશ થાય છે.",
+    eligibility: [
+      "બધી કંપનીઓ જે Companies Act, 2013 હેઠળ નોંધાયેલા છે",
+      "લિમિટેડ લાયેબિલિટી પાર્ટનરશિપ્સ (LLPs) જે MCA સાથે નોંધાયેલા છે",
+      "કંપની અથવા LLP ના નિર્દેશકો અને અધિકૃત સહીદારો",
+      "સક્રિય Corporate Identification Number (CIN) અથવા LLP Identification Number (LLPIN) ધરાવતા સંસ્થાઓ",
+      "કોઈ વય અથવા લિંગની મર્યાદા નથી; લાયકાત કાનૂની એકમની સ્થિતિ પર આધારિત છે",
+    ],
     steps: [
       {
         step: 1,
@@ -118,6 +140,13 @@ export const annualReturnData: Record<
     title: "বার্ষিক রিটার্ন",
     description:
       "বার্ষিক রিটার্ন হল একটি বাধ্যতামূলক ফাইলিং যা কোম্পানিগুলি কর্পোরেট বিষয়ক মন্ত্রক (MCA)-এর কাছে জমা দেয়, যাতে শেয়ারহোল্ডার, পরিচালক এবং নির্দিষ্ট অর্থবছরের আর্থিক সারসংক্ষেপের বিবরণ থাকে।",
+    eligibility: [
+      "সকল কোম্পানি যা Companies Act, 2013 অনুযায়ী নিবন্ধিত",
+      "লিমিটেড লায়াবিলিটি পার্টনারশিপস (LLPs) যা MCA-র সাথে নিবন্ধিত",
+      "কোম্পানি বা LLP-এর পরিচালক এবং অনুমোদিত স্বাক্ষরকারী",
+      "সক্রিয় Corporate Identification Number (CIN) বা LLP Identification Number (LLPIN) সহ প্রতিষ্ঠান",
+      "কোনো বয়স বা লিঙ্গের সীমাবদ্ধতা নেই; যোগ্যতা আইনগত সত্তার উপর নির্ভরশীল",
+    ],
     steps: [
       {
         step: 1,
@@ -154,6 +183,13 @@ export const annualReturnData: Record<
     title: "वार्षिक रिटर्न",
     description:
       "वार्षिक रिटर्न ही एक अनिवार्य फाइलिंग आहे जी कंपन्या कॉर्पोरेट मामले मंत्रालय (MCA) कडे सादर करतात, ज्यात भागधारक, संचालक आणि विशिष्ट आर्थिक वर्षासाठी आर्थिक सारांशाचा तपशील असतो.",
+    eligibility: [
+      "सर्व कंपन्या ज्या Companies Act, 2013 अंतर्गत नोंदणीकृत आहेत",
+      "लिमिटेड लायबिलिटी पार्टनरशिप्स (LLPs) ज्या MCA सोबत नोंदणीकृत आहेत",
+      "कंपनी किंवा LLP चे संचालक आणि अधिकृत सहीदार",
+      "सक्रिय Corporate Identification Number (CIN) किंवा LLP Identification Number (LLPIN) असलेल्या संस्था",
+      "वय किंवा लिंगावर कोणतीही मर्यादा नाही; पात्रता कायदेशीर घटकावर आधारित आहे",
+    ],
     steps: [
       {
         step: 1,
@@ -190,6 +226,13 @@ export const annualReturnData: Record<
     title: "ஆண்டாந்திர ரிட்டர்ன்",
     description:
       "ஆண்டாந்திர ரிட்டர்ன் என்பது நிறுவனங்கள் காப்பரேட் காரியங்கள் அமைச்சகம் (MCA) க்கு சமர்ப்பிக்கும் கட்டாயப் பூர்த்தி ஆகும், இதில் பங்குதாரர்கள், இயக்குநர்கள் மற்றும் குறிப்பிட்ட நிதியாண்டிற்கான நிதி சுருக்க விவரங்கள் உள்ளன.",
+    eligibility: [
+      "Companies Act, 2013 கீழ் பதிவு செய்யப்பட்ட அனைத்து நிறுவனங்களும்",
+      "MCA உடன் பதிவு செய்யப்பட்ட லிமிடெட் லைபிலிட்டி பார்ட்னர்ஷிப்கள் (LLPs)",
+      "நிறுவனம் அல்லது LLP இன் இயக்குநர்கள் மற்றும் அங்கீகாரம் பெற்ற கையெழுத்தாளர்கள்",
+      "செயலில் உள்ள Corporate Identification Number (CIN) அல்லது LLP Identification Number (LLPIN) கொண்ட நிறுவனங்கள்",
+      "வயது அல்லது பாலினத்திற்கு எந்த வரம்பும் இல்லை; தகுதி சட்டப்பூர்வமான நிறுவனம் நிலைமையைப் பொறுத்தது",
+    ],
     steps: [
       {
         step: 1,
@@ -227,6 +270,13 @@ export const annualReturnData: Record<
     title: "వార్షిక రిటర్న్",
     description:
       "వార్షిక రిటర్న్ అనేది కంపెనీలు కార్పొరేట్ వ్యవహారాల మంత్రిత్వ శాఖ (MCA) కు సమర్పించే తప్పనిసరి ఫైలింగ్, ఇందులో షేర్‌హోల్డర్లు, డైరెక్టర్లు మరియు నిర్దిష్ట ఆర్థిక సంవత్సరానికి సంబంధించిన ఆర్థిక సారాంశం ఉంటుంది.",
+    eligibility: [
+      "Companies Act, 2013 కింద నమోదు అయిన అన్ని కంపెనీలు",
+      "MCA తో నమోదు అయిన లిమిటెడ్ లయబిలిటీ పార్ట్‌నర్షిప్స్ (LLPs)",
+      "కంపెనీ లేదా LLP డైరెక్టర్లు మరియు అధికారం ఉన్న సంతకదారులు",
+      "సక్రియమైన Corporate Identification Number (CIN) లేదా LLP Identification Number (LLPIN) కలిగిన సంస్థలు",
+      "వయసు లేదా లింగంపై ఏ పరిమితం లేదు; అర్హత లీగల్ ఎంటిటీ స్థితిపై ఆధారపడి ఉంటుంది",
+    ],
     steps: [
       {
         step: 1,
@@ -262,6 +312,13 @@ export const annualReturnData: Record<
     title: "ವಾರ್ಷಿಕ ರಿಟರ್ನ್",
     description:
       "ವಾರ್ಷಿಕ ರಿಟರ್ನ್ ಕಂಪನಿಗಳು ಕಾರ್ಪೊರೇಟ್ ವ್ಯವಹಾರಗಳ ಮಂತ್ರಾಲಯ (MCA) ಗೆ ಸಲ್ಲಿಸುವ ಕಡ್ಡಾಯ ಫೈಲಿಂಗ್, ಇದರಲ್ಲಿ ಷೇರುದಾರರು, ನಿರ್ದೇಶಕರು ಮತ್ತು ನಿರ್ದಿಷ್ಟ ಹಣಕಾಸು ವರ್ಷದ ಹಣಕಾಸಿನ ಸಾರಾಂಶವಿರುತ್ತದೆ.",
+    eligibility: [
+      "Companies Act, 2013 ಅಡಿಯಲ್ಲಿ ನೋಂದಾಯಿತ ಎಲ್ಲಾ ಕಂಪನಿಗಳು",
+      "MCA ಜೊತೆ ನೋಂದಾಯಿತ ಲಿಮಿಟೆಡ್ ಲಾಯಬಿಲಿಟಿ ಪಾಲುದಾರಿಕೆಗಳು (LLPs)",
+      "ಕಂಪನಿ ಅಥವಾ LLP ಯ ನಿರ್ದೇಶಕರು ಮತ್ತು ಅಧಿಕೃತ ಸಹಿ ಪಡೆದವರು",
+      "ಸಕ್ರಿಯ Corporate Identification Number (CIN) ಅಥವಾ LLP Identification Number (LLPIN) ಹೊಂದಿರುವ ಸಂಸ್ಥೆಗಳು",
+      "ವಯಸ್ಸು ಅಥವಾ ಲಿಂಗದ ಯಾವುದೇ ಮಿತಿ ಇಲ್ಲ; ಅರ್ಹತೆ ಕಾನೂನು ಒಡೆಯದ ಘಟಕದ ಸ್ಥಿತಿಯ ಮೇಲೆ ಆಧಾರಿತವಾಗಿದೆ",
+    ],
     steps: [
       {
         step: 1,
@@ -297,6 +354,13 @@ export const annualReturnData: Record<
     title: "വാർഷിക റിട്ടേൺ",
     description:
       "വാർഷിക റിട്ടേൺ കമ്പനികൾ കോർപ്പറേറ്റ് കാര്യങ്ങൾ മന്ത്രാലയത്തിന് (MCA) സമർപ്പിക്കുന്ന നിർബന്ധമായ ഫയലിംഗ്, ഇതിൽ ഷെയർഹോൾഡർമാർ, ഡയറക്ടർമാർ, ഒരു നിർദ്ദിഷ്ട സാമ്പത്തിക വർഷത്തെ സാമ്പത്തിക സംക്ഷേപം എന്നിവ ഉൾപ്പെടുന്നു.",
+    eligibility: [
+      "Companies Act, 2013 പ്രകാരം രജിസ്റ്റർ ചെയ്ത എല്ലാ കമ്പനിയുമാണ്",
+      "MCA-യിൽ രജിസ്റ്റർ ചെയ്ത ലിമിറ്റഡ് ലൈബിലിറ്റി പാർട്ണർഷിപ്പുകൾ (LLPs)",
+      "കമ്പനിയും LLP-യും ഡയറക്ടർമാരും അധികാരം ഉള്ള ഒപ്പിടുന്നവർ",
+      "സജീവമായ Corporate Identification Number (CIN) അല്ലെങ്കിൽ LLP Identification Number (LLPIN) ഉള്ള സ്ഥാപനങ്ങൾ",
+      "വയസ്സോ ലിംഗമോ പരിധിയില്ല; യോഗ്യത നിയമപരമായ സംഘടനയുടെ നിലയിൽ ആശ്രിതമാണ്",
+    ],
     steps: [
       {
         step: 1,
@@ -333,6 +397,13 @@ export const annualReturnData: Record<
     title: "ବାର୍ଷିକ ରିଟର୍ନ୍",
     description:
       "ବାର୍ଷିକ ରିଟର୍ନ୍ ହେଉଛି ଏକ ବାଧ୍ୟତାମୂଳକ ଫାଇଲିଂ, ଯାହା କମ୍ପାନୀମାନେ କର୍ପୋରେଟ୍ କାର୍ଯ୍ୟ ବିଭାଗ (MCA) କୁ ଦାଖଲ କରନ୍ତି, ଯାହାରେ ଶେୟରହୋଲ୍ଡର, ନିର୍ଦ୍ଦେଶକ ଏବଂ ନିର୍ଦ୍ଦିଷ୍ଟ ଆର୍ଥିକ ବର୍ଷ ପାଇଁ ଆର୍ଥିକ ସାରାଂଶର ବିବରଣୀ ଥାଏ।",
+    eligibility: [
+      "Companies Act, 2013 ଅନୁସାରେ ନବନିୟମିତ ସମସ୍ତ କମ୍ପାନୀଗୁଡିକ",
+      "MCA ସହିତ ନବନିୟମିତ ଲିମିଟେଡ୍ ଲାୟାବିଲିଟି ପାର୍ଟନର୍‌ଶିପ୍‌ଗୁଡିକ (LLPs)",
+      "କମ୍ପାନୀ କିମ୍ବା LLP ର ନିର୍ଦ୍ଦେଶକମାନେ ଏବଂ ଅଧିକୃତ ସହିଦାର୍ମୀମାନେ",
+      "ସକ୍ରିୟ Corporate Identification Number (CIN) କିମ୍ବା LLP Identification Number (LLPIN) ଥିବା ସଂସ୍ଥାଗୁଡିକ",
+      "ବୟସ୍ କିମ୍ବା ଲିଙ୍ଗର କ forwardନୋ restriction ନାହିଁ; ଯୋଗ୍ୟତା କାନୁନିକ ଏକକର ଅବସ୍ଥା ଉପରେ ନିର୍ଭର କରେ",
+    ],
     steps: [
       {
         step: 1,
@@ -368,6 +439,13 @@ export const annualReturnData: Record<
     title: "वार्षिक रिटर्न",
     description:
       "वार्षिक रिटर्न हांव कंपन्यांक MCA कडे वर्सिक फाइल करपाची बंधनकारक प्रक्रिया आसा, जेंतां पायरीवर शेअरहोल्डर, डायरेक्टर आनी एक ठरावीक आर्थिक वर्षाचो आर्थिक सारांश दिल्या जातात.",
+    eligibility: [
+      "सगळ्या कंपन्या ज्या Companies Act, 2013 खातीर नोंदणीकृत आसा",
+      "MCA सोबत नोंदणीकृत लिमिटेड लायबिलिटी पार्टनरशिप्स (LLPs)",
+      "कंपनी वा LLP चे संचालक आनी अधिकृत सहीदार",
+      "सक्रिय Corporate Identification Number (CIN) वा LLP Identification Number (LLPIN) असलेल्या संस्था",
+      "वय वा लिंगाचो कोणतेंही मर्यादा ना; पात्रता कायदेशीर एककाच्या स्थितीवर अवलंबून आसा",
+    ],
     steps: [
       {
         step: 1,
