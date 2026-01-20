@@ -26,7 +26,7 @@ const Home = () => {
       setFilteredData(homeGridData);
     } else {
       const filtered = homeGridData.filter((item) =>
-        item.title.toLowerCase().includes(searchText.toLowerCase())
+        t(item.title).toLowerCase().includes(searchText.toLowerCase()),
       );
       setFilteredData(filtered);
     }
