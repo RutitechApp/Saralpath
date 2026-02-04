@@ -5,6 +5,7 @@ export const paymentReceiptFormData: Record<
     description?: string;
     eligibility: string[];
     steps: { step: number; title: string; details: string }[];
+    howToApply: any;
   }
 > = {
   en: {
@@ -49,6 +50,41 @@ export const paymentReceiptFormData: Record<
           "Keep a copy of the receipt for future reference or legal purposes.",
       },
     ],
+    howToApply: {
+      mode: ["Online", "Offline"],
+
+      applyWithin:
+        "A Payment Receipt is issued as proof of payment for services, fees, or transactions with a government or private authority.",
+
+      onlineSteps: [
+        "Visit the official payment portal or website of the concerned authority.",
+        "Login or select the relevant service for which payment is being made.",
+        "Fill in the required details such as payment amount, purpose, and payer information.",
+        "Complete the payment using the available online modes (UPI, net banking, card, etc.).",
+        "Download or receive the payment receipt digitally after successful transaction.",
+      ],
+
+      offlineSteps: [
+        "Visit the concerned office or service center.",
+        "Fill out the payment challan or form.",
+        "Make the payment via cash, cheque, or demand draft.",
+        "Collect the physical payment receipt from the office.",
+      ],
+
+      afterSubmission: [
+        "Verify that the receipt contains correct payment details.",
+        "Keep a copy for records or future reference.",
+      ],
+
+      processingTime:
+        "Immediate for online payments; 1–3 days for offline payments depending on processing.",
+
+      fees: ["Payment amount varies based on service or transaction type."],
+
+      authority: "Concerned Government Department / Service Provider",
+
+      note: "Payment receipt is proof of transaction and should be preserved for records or legal purposes.",
+    },
   },
 
   hi: {
@@ -93,6 +129,33 @@ export const paymentReceiptFormData: Record<
           "भविष्य के संदर्भ या कानूनी उद्देश्यों के लिए रसीद की एक प्रति सुरक्षित रखें।",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin: "पेमेंट रसीद भुगतान का प्रमाण देती है।",
+
+      onlineSteps: [
+        "संबंधित पोर्टल पर लॉगिन करें।",
+        "भुगतान विवरण भरें और ऑनलाइन भुगतान करें।",
+        "रसीद डाउनलोड करें।",
+      ],
+
+      offlineSteps: [
+        "कार्यालय में जाएँ।",
+        "फॉर्म भरें और भुगतान करें।",
+        "रसीद प्राप्त करें।",
+      ],
+
+      afterSubmission: ["रसीद की जानकारी सही है यह सुनिश्चित करें।"],
+
+      processingTime: "ऑनलाइन तुरंत; ऑफलाइन 1–3 दिन।",
+
+      fees: ["सेवा अनुसार शुल्क।"],
+
+      authority: "संबंधित विभाग / सेवा प्रदाता",
+
+      note: "भुगतान रसीद भविष्य के लिए सुरक्षित रखें।",
+    },
   },
 
   gu: {
@@ -136,6 +199,29 @@ export const paymentReceiptFormData: Record<
         details: "ભવિષ્યના સંદર્ભ અથવા કાનૂની હેતુઓ માટે રસીદની નકલ સાચવો.",
       },
     ],
+    howToApply: {
+      mode: ["ઓનલાઇન", "ઓફલાઇન"],
+
+      applyWithin: "પેમેન્ટ રસીદ ચુકવણીનો પુરાવો આપે છે.",
+
+      onlineSteps: [
+        "પોર્ટલ પર પ્રવેશ કરો.",
+        "ચુકવણી વિગતો ભરો અને ઓનલાઈન ચુકવણી કરો.",
+        "રસીદ ડાઉનલોડ કરો.",
+      ],
+
+      offlineSteps: ["કચેરીમાં જઈ ફોર્મ ભરો અને ચુકવણી કરો.", "રસીદ મેળવો."],
+
+      afterSubmission: ["રસીદની વિગતો તપાસો."],
+
+      processingTime: "ઓનલાઇન તરત; ઓફલાઇન 1–3 દિવસ.",
+
+      fees: ["સેવા મુજબ."],
+
+      authority: "સंबંધિત વિભાગ / સેવા પ્રદાતા",
+
+      note: "રસીદ રેકોર્ડ માટે રાખો.",
+    },
   },
 
   bn: {
@@ -180,6 +266,32 @@ export const paymentReceiptFormData: Record<
           "ভবিষ্যতের জন্য বা আইনগত কারণে রশিদের একটি অনুলিপি সংরক্ষণ করুন।",
       },
     ],
+    howToApply: {
+      mode: ["অনলাইন", "অফলাইন"],
+
+      applyWithin: "পেমেন্ট রসিদ হলো অর্থপ্রদানের প্রমাণ।",
+
+      onlineSteps: [
+        "পোর্টালে লগইন করুন।",
+        "পেমেন্ট তথ্য পূরণ করে অনলাইনে প্রদান করুন।",
+        "রসিদ ডাউনলোড করুন।",
+      ],
+
+      offlineSteps: [
+        "অফিসে যান, ফর্ম পূরণ করে অর্থ প্রদান করুন।",
+        "রসিদ সংগ্রহ করুন।",
+      ],
+
+      afterSubmission: ["রসিদ তথ্য সঠিক কিনা যাচাই করুন।"],
+
+      processingTime: "অনলাইন: তাৎক্ষণিক; অফলাইন: 1–3 দিন।",
+
+      fees: ["সেবার উপর নির্ভরশীল।"],
+
+      authority: "সংশ্লিষ্ট বিভাগ / সেবা প্রদানকারী",
+
+      note: "রসিদ সংরক্ষণ করুন।",
+    },
   },
 
   kok: {
@@ -220,6 +332,29 @@ export const paymentReceiptFormData: Record<
         details: "भविष्यासाठी किंवा कायदेशीर हेतूसाठी रसीद जतन करा.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin: "पेमेंट रसीद ही पैसे दिल्याचो पुरावो आसा.",
+
+      onlineSteps: [
+        "वेबसाइटावर लॉगिन करात.",
+        "पेमेंट तपशील भरून ऑनलाइन पैसे भरा.",
+        "रसीद डाउनलोड करात.",
+      ],
+
+      offlineSteps: ["कार्यालयांत अर्ज भरा व पैसे भरा.", "रसीद घ्या."],
+
+      afterSubmission: ["रसीद योग्य आसा कि नाही तपासा."],
+
+      processingTime: "ऑनलाइन: तात्काळ; ऑफलाइन: 1–3 दीस.",
+
+      fees: ["सेवेप्रमाणें."],
+
+      authority: "संबंधित विभाग / सेवा प्रदाता",
+
+      note: "रसीद रेकॉर्ड खातीर राखा.",
+    },
   },
 
   kn: {
@@ -263,6 +398,32 @@ export const paymentReceiptFormData: Record<
           "ಭವಿಷ್ಯದ ಉಲ್ಲೇಖ ಅಥವಾ ಕಾನೂನು ಉದ್ದೇಶಗಳಿಗಾಗಿ ರಸೀದಿಯ ಪ್ರತಿಯನ್ನು ಉಳಿಸಿ.",
       },
     ],
+    howToApply: {
+      mode: ["ಆನ್‌ಲೈನ್", "ಆಫ್‌ಲೈನ್"],
+
+      applyWithin: "ಪಾವತಿಪತ್ರವು ಪಾವತಿ ಸಾಕ್ಷ್ಯವಾಗಿ ನೀಡಲಾಗುತ್ತದೆ.",
+
+      onlineSteps: [
+        "ಪೋರ್ಟ್‌ಲ್‌ನಲ್ಲಿ ಲಾಗಿನ್ ಮಾಡಿ.",
+        "ಪಾವತಿ ವಿವರಗಳನ್ನು ನಿಂಪು ಮಾಡಿ, ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಪಾವತಿಸಿ.",
+        "ರಸೀದಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ.",
+      ],
+
+      offlineSteps: [
+        "ಕಚೇರಿಗೆ ಹೋಗಿ ಫಾರ್ಮ್ ಭರ್ತಿ ಮಾಡಿ ಪಾವತಿ ಮಾಡಿ.",
+        "ರಸೀದಿ ಪಡೆಯಿರಿ.",
+      ],
+
+      afterSubmission: ["ರಸೀದಿ ವಿವರಗಳನ್ನು ಪರಿಶೀಲಿಸಿ."],
+
+      processingTime: "ಆನ್‌ಲೈನ್ ತಕ್ಷಣ; ಆಫ್‌ಲೈನ್ 1–3 ದಿನಗಳು.",
+
+      fees: ["ಸೇವೆಯ ಪ್ರಕಾರ."],
+
+      authority: "ಸಂಬಂಧಿತ ಇಲಾಖೆ / ಸೇವೆ ಒದಗಿಸುವವರು",
+
+      note: "ರಸೀದಿ ದಾಖಲೆಗಾಗಿ ಉಳಿಸಿರಿ.",
+    },
   },
 
   ml: {
@@ -306,6 +467,32 @@ export const paymentReceiptFormData: Record<
           "ഭാവിയിലെ ആവശ്യത്തിനോ നിയമപരമായ ആവശ്യത്തിനോ റെസീറ്റ് സൂക്ഷിക്കുക.",
       },
     ],
+    howToApply: {
+      mode: ["ഓൺലൈൻ", "ഓഫ്‌ലൈൻ"],
+
+      applyWithin: "പേയ്മെന്റ് റെസീറ്റ് പണം നൽകിയതിന്റെ തെളിവായി ലഭിക്കും.",
+
+      onlineSteps: [
+        "വെബ് പോർട്ടലിൽ പ്രവേശിക്കുക.",
+        "പേയ്മെന്റ് വിവരങ്ങൾ നൽകി ഓൺലൈൻ പണം അടയ്‌ക്കുക.",
+        "റെസീറ്റ് ഡൗൺലോഡ് ചെയ്യുക.",
+      ],
+
+      offlineSteps: [
+        "ഓഫീസിൽ ഫോമും പണം അടച്ച് സമർപ്പിക്കുക.",
+        "റെസീറ്റ് കൈവശം വെയ്ക്കുക.",
+      ],
+
+      afterSubmission: ["റെസീറ്റ് വിശദാംശങ്ങൾ ശരിയായാണോ പരിശോധിക്കുക."],
+
+      processingTime: "ഓൺലൈൻ: തത്സമയം; ഓഫ്ലൈൻ: 1–3 ദിവസം.",
+
+      fees: ["സേവാ രൂപത്തിൽ വ്യത്യാസം."],
+
+      authority: "സംബന്ധിച്ച വകുപ്പ് / സേവനദാതാവ്",
+
+      note: "റെസീറ്റ് രേഖകൾക്കായി സൂക്ഷിക്കുക.",
+    },
   },
 
   mr: {
@@ -347,6 +534,29 @@ export const paymentReceiptFormData: Record<
         details: "भविष्यातील संदर्भ किंवा कायदेशीर हेतूसाठी रसीद जतन करा.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin: "पेमेंट रसीद ही पेमेंटचे प्रमाण दर्शवते.",
+
+      onlineSteps: [
+        "अधिकृत पोर्टलवर लॉगिन करा.",
+        "पेमेंट तपशील भरा व ऑनलाइन पेमेंट करा.",
+        "रसीद डाउनलोड करा.",
+      ],
+
+      offlineSteps: ["कार्यालयात फॉर्म भरा आणि पेमेंट करा.", "रसीद मिळवा."],
+
+      afterSubmission: ["रसीद तपशील योग्य आहेत का तपासा."],
+
+      processingTime: "ऑनलाइन: तत्काळ; ऑफलाइन: 1–3 दिवस.",
+
+      fees: ["सेवेवर अवलंबून."],
+
+      authority: "संबंधित विभाग / सेवा प्रदाता",
+
+      note: "रसीद रेकॉर्डसाठी सुरक्षित ठेवा.",
+    },
   },
 
   or: {
@@ -389,6 +599,32 @@ export const paymentReceiptFormData: Record<
         details: "ଭବିଷ୍ୟତ ଉଦ୍ଦେଶ୍ୟ କିମ୍ବା ଆଇନ ଉଦ୍ଦେଶ୍ୟ ପାଇଁ ରସିଦ ରଖନ୍ତୁ।",
       },
     ],
+    howToApply: {
+      mode: ["ଅନଲାଇନ୍", "ଅଫଲାଇନ୍"],
+
+      applyWithin: "ପେମେଣ୍ଟ ରସିଦ ଅଦାୟର ପ୍ରମାଣ।",
+
+      onlineSteps: [
+        "ୱେବପୋର୍ଟାଲରେ ଲଗଇନ୍ କରନ୍ତୁ।",
+        "ଚାର୍ଜ୍ ତଥ୍ୟ ଦେଇ ଅନଲାଇନ୍ ଅଦାୟ କରନ୍ତୁ।",
+        "ରସିଦ ଡାଉନଲୋଡ୍ କରନ୍ତୁ।",
+      ],
+
+      offlineSteps: [
+        "କାର୍ଯ୍ୟାଳୟକୁ ଯାଆନ୍ତୁ, ଫର୍ମ ଭରନ୍ତୁ ଏବଂ ଅଦାୟ କରନ୍ତୁ।",
+        "ରସିଦ ନେଉନ୍ତୁ।",
+      ],
+
+      afterSubmission: ["ରସିଦ ସଠିକ୍ କି ନାହିଁ ଯାଞ୍ଚ କରନ୍ତୁ।"],
+
+      processingTime: "ଅନଲାଇନ୍: ତତ୍କ୍ଷଣ; ଅଫଲାଇନ୍: 1–3 ଦିନ।",
+
+      fees: ["ସେବା ପ୍ରକାର ଅନୁଯାୟୀ।"],
+
+      authority: "ସମ୍ପର୍କିତ ବିଭାଗ / ସେବାଦାତା",
+
+      note: "ରସିଦ ରେକର୍ଡ ପାଇଁ ରଖନ୍ତୁ।",
+    },
   },
 
   te: {
@@ -432,6 +668,32 @@ export const paymentReceiptFormData: Record<
           "భవిష్యత్తు రిఫరెన్స్ లేదా చట్టపరమైన అవసరాల కోసం రసీదు భద్రంగా ఉంచండి.",
       },
     ],
+    howToApply: {
+      mode: ["ఆన్‌లైన్", "ఆఫ్‌లైన్"],
+
+      applyWithin: "చెల్లింపు రసీదు చెల్లింపునకు సాక్ష్యంగా ఇవ్వబడుతుంది.",
+
+      onlineSteps: [
+        "వెబ్ పోర్టల్‌లో లాగిన్ అవ్వండి.",
+        "చెల్లింపు వివరాలను నింపి ఆన్‌లైన్‌లో చెల్లించండి.",
+        "రసీదు డౌన్‌లోడ్ చేసుకోండి.",
+      ],
+
+      offlineSteps: [
+        "కార్యాలయంలో ఫారం భరించి చెల్లింపు చేయండి.",
+        "రసీదు సేకరించండి.",
+      ],
+
+      afterSubmission: ["రసీదు వివరాలు సరైనవో పరిశీలించండి."],
+
+      processingTime: "ఆన్‌లైన్ తక్షణం; ఆఫ్‌లైన్ 1–3 రోజులు.",
+
+      fees: ["సేవా రకం ఆధారంగా."],
+
+      authority: "సంబంధిత శాఖ / సేవా ప్రొవైడర్",
+
+      note: "రసీదు భవిష్యత్తులో ఉపయోగానికిగానూ భద్రంగా ఉంచండి.",
+    },
   },
 
   ta: {
@@ -476,5 +738,31 @@ export const paymentReceiptFormData: Record<
           "புதிய குறிப்புகள் அல்லது சட்ட நோக்கங்களுக்கு ரசீதை காப்பாற்றவும்.",
       },
     ],
+    howToApply: {
+      mode: ["ஆன்லைன்", "ஆஃப்லைன்"],
+
+      applyWithin: "பேமெண்ட் ரசீது கட்டணத்தின் சான்றிதழாக வழங்கப்படுகிறது.",
+
+      onlineSteps: [
+        "இணைய தளத்தில் நுழைக.",
+        "கட்டண விவரங்களை நிரப்பி ஆன்லைனில் செலுத்தவும்.",
+        "ரசீது பதிவிறக்கவும்.",
+      ],
+
+      offlineSteps: [
+        "அலுவலகம் சென்று படிவத்தை நிரப்பி கட்டணம் செலுத்தவும்.",
+        "ரசீது பெறவும்.",
+      ],
+
+      afterSubmission: ["ரசீது விவரங்கள் சரிபார்க்கவும்."],
+
+      processingTime: "ஆன்லைன் உடனடி; ஆஃப்லைன் 1–3 நாட்கள்.",
+
+      fees: ["சேவை சார்ந்து."],
+
+      authority: "சம்பந்தப்பட்ட துறை / சேவை வழங்குநர்",
+
+      note: "ரசீது பதிவு வைப்பதற்காக பாதுகாப்பாக வைக்கவும்.",
+    },
   },
 };

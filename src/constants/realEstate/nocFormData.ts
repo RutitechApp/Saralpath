@@ -5,6 +5,7 @@ export const nocFormData: Record<
     description?: string;
     eligibility: string[];
     steps: { step: number; title: string; details: string }[];
+    howToApply: any;
   }
 > = {
   en: {
@@ -49,6 +50,44 @@ export const nocFormData: Record<
           "Once verified, download or collect the No Objection Certificate from the authority.",
       },
     ],
+    howToApply: {
+      mode: ["Online", "Offline"],
+
+      applyWithin:
+        "A No Objection Certificate (NOC) is issued by a concerned authority stating that it has no objection for a specific activity such as construction, sale, loan approval, business operation, or utility connection.",
+
+      onlineSteps: [
+        "Visit the official website of the concerned authority issuing the NOC.",
+        "Select the relevant NOC service (Construction NOC, Fire NOC, Pollution NOC, etc.).",
+        "Fill in applicant and property/project details.",
+        "Upload required supporting documents.",
+        "Pay the applicable fees online.",
+        "Submit the application and note the reference number.",
+        "Download the NOC after approval.",
+      ],
+
+      offlineSteps: [
+        "Visit the concerned government department or authority office.",
+        "Collect and fill the NOC application form.",
+        "Attach required documents.",
+        "Submit the application and pay prescribed fees.",
+        "Collect acknowledgment receipt.",
+      ],
+
+      afterSubmission: [
+        "Application is verified by the authority.",
+        "Site inspection may be conducted if required.",
+        "NOC is issued upon successful verification.",
+      ],
+
+      processingTime: "7–30 days depending on the type of NOC and authority.",
+
+      fees: ["Fees vary based on NOC type and issuing authority."],
+
+      authority: "Concerned Government Department / Local Authority",
+
+      note: "NOC validity and requirements differ based on purpose and issuing authority.",
+    },
   },
 
   hi: {
@@ -92,6 +131,34 @@ export const nocFormData: Record<
         details: "सत्यापन के बाद प्राधिकारी से NOC डाउनलोड या प्राप्त करें।",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "एनओसी (No Objection Certificate) किसी कार्य के लिए संबंधित प्राधिकरण की स्वीकृति दर्शाता है।",
+
+      onlineSteps: [
+        "संबंधित विभाग की वेबसाइट पर जाएँ।",
+        "एनओसी सेवा चुनें।",
+        "विवरण भरकर दस्तावेज अपलोड करें।",
+        "शुल्क जमा करें।",
+      ],
+
+      offlineSteps: [
+        "संबंधित कार्यालय में आवेदन करें।",
+        "दस्तावेज जमा करें और शुल्क दें।",
+      ],
+
+      afterSubmission: ["दस्तावेजों का सत्यापन होगा।"],
+
+      processingTime: "7–30 कार्यदिवस।",
+
+      fees: ["एनओसी के प्रकार अनुसार।"],
+
+      authority: "संबंधित सरकारी विभाग",
+
+      note: "एनओसी उद्देश्य अनुसार अलग होती है।",
+    },
   },
 
   gu: {
@@ -134,6 +201,30 @@ export const nocFormData: Record<
         details: "સত্যાપન પછી સત્તાધિકારી પાસેથી NOC ડાઉનલોડ કરો અથવા મેળવો.",
       },
     ],
+    howToApply: {
+      mode: ["ઓનલાઇન", "ઓફલાઇન"],
+
+      applyWithin:
+        "એનઓસી એ સત્તાવાર મંજૂરી છે કે સંબંધિત સત્તાને કોઈ વાંધો નથી.",
+
+      onlineSteps: [
+        "સત્તાવાર વેબસાઇટ પર જાઓ.",
+        "NOC માટે અરજી કરો.",
+        "દસ્તાવેજ અપલોડ કરી ફી ભરો.",
+      ],
+
+      offlineSteps: ["સંબંધિત કચેરીમાં અરજી કરો.", "દસ્તાવેજો રજૂ કરો."],
+
+      afterSubmission: ["ચકાસણી બાદ એનઓસી આપવામાં આવશે."],
+
+      processingTime: "7–30 દિવસ.",
+
+      fees: ["એનઓસી પ્રકાર મુજબ."],
+
+      authority: "સરકારી વિભાગ / સ્થાનિક સત્તા",
+
+      note: "માન્યતા સમયગાળો બદલાય શકે છે.",
+    },
   },
 
   bn: {
@@ -178,6 +269,29 @@ export const nocFormData: Record<
           "যাচাই করার পরে কর্তৃপক্ষ থেকে NOC ডাউনলোড করুন বা সংগ্রহ করুন।",
       },
     ],
+    howToApply: {
+      mode: ["অনলাইন", "অফলাইন"],
+
+      applyWithin: "এনওসি প্রমাণ করে যে সংশ্লিষ্ট কর্তৃপক্ষের কোনো আপত্তি নেই।",
+
+      onlineSteps: [
+        "সংশ্লিষ্ট ওয়েবসাইটে যান।",
+        "এনওসি আবেদন করুন।",
+        "নথি আপলোড করে ফি দিন।",
+      ],
+
+      offlineSteps: ["অফিসে গিয়ে আবেদন করুন।", "নথি জমা দিন।"],
+
+      afterSubmission: ["যাচাইয়ের পর এনওসি প্রদান করা হবে।"],
+
+      processingTime: "৭–৩০ কার্যদিবস।",
+
+      fees: ["নির্ধারিত ফি।"],
+
+      authority: "সংশ্লিষ্ট বিভাগ",
+
+      note: "উদ্দেশ্য অনুযায়ী ভিন্ন হয়।",
+    },
   },
 
   kok: {
@@ -220,6 +334,25 @@ export const nocFormData: Record<
         details: "सत्यापनेनंतर प्राधिकरणाकडून NOC डाउनलोड किंवा मिळवा.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin: "एनओसी म्हणजे संबंधित कामाक हरकत ना आसा हाचो दाखलो.",
+
+      onlineSteps: ["अधिकृत वेबसाइटाक अर्ज करात."],
+
+      offlineSteps: ["संबंधित कार्यालयांत अर्ज दियात."],
+
+      afterSubmission: ["तपासणी उपरांत एनओसी मेळटा."],
+
+      processingTime: "7–30 दीस.",
+
+      fees: ["एनओसी प्रकाराप्रमाणें."],
+
+      authority: "संबंधित विभाग",
+
+      note: "वैधतेंचो काळ बदलू शकता.",
+    },
   },
 
   kn: {
@@ -262,6 +395,29 @@ export const nocFormData: Record<
         details: "ಪರಿಶೀಲನೆಯ ನಂತರ ಪ್ರಾಧಿಕಾರದಿಂದ NOC ಡೌನ್‌ಲೋಡ್ ಅಥವಾ ಪಡೆಯಿರಿ.",
       },
     ],
+    howToApply: {
+      mode: ["ಆನ್‌ಲೈನ್", "ಆಫ್‌ಲೈನ್"],
+
+      applyWithin:
+        "ಎನ್‌ಓಸಿ ಎಂದರೆ ನಿರ್ದಿಷ್ಟ ಕಾರ್ಯಕ್ಕೆ ಯಾವುದೇ ವಿರೋಧ ಇಲ್ಲ ಎಂಬ ಪ್ರಮಾಣಪತ್ರ.",
+
+      onlineSteps: [
+        "ಸಂಬಂಧಿತ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ.",
+        "ದಾಖಲೆ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ.",
+      ],
+
+      offlineSteps: ["ವಿಭಾಗದ ಕಚೇರಿಗೆ ಭೇಟಿ ನೀಡಿ.", "ಅರ್ಜಿಯನ್ನು ಸಲ್ಲಿಸಿ."],
+
+      afterSubmission: ["ಪರಿಶೀಲನೆಯ ನಂತರ ಎನ್‌ಓಸಿ ನೀಡಲಾಗುತ್ತದೆ."],
+
+      processingTime: "7–30 ಕಾರ್ಯದಿನಗಳು.",
+
+      fees: ["ಪ್ರಕಾರಾನುಸಾರ."],
+
+      authority: "ಸಂಬಂಧಿತ ಇಲಾಖೆ",
+
+      note: "ಮಾನ್ಯತಾ ಅವಧಿ ಬದಲಾಗಬಹುದು.",
+    },
   },
 
   ml: {
@@ -305,6 +461,26 @@ export const nocFormData: Record<
           "പരിശോധന കഴിഞ്ഞാൽ അതോറിറ്റിയ്ക്ക് നിന്നും NOC ഡൗൺലോഡ് ചെയ്യുക അല്ലെങ്കിൽ സ്വീകരിക്കുക.",
       },
     ],
+    howToApply: {
+      mode: ["ഓൺലൈൻ", "ഓഫ്‌ലൈൻ"],
+
+      applyWithin:
+        "എൻഒസി ബന്ധപ്പെട്ട അധികാരത്തിന് എതിരില്ലെന്ന് സൂചിപ്പിക്കുന്നു.",
+
+      onlineSteps: ["ഔദ്യോഗിക വെബ്‌സൈറ്റിൽ അപേക്ഷിക്കുക."],
+
+      offlineSteps: ["അധികൃത ഓഫീസിൽ അപേക്ഷ സമർപ്പിക്കുക."],
+
+      afterSubmission: ["പരിശോധനയ്ക്ക് ശേഷം എൻഒസി നൽകും."],
+
+      processingTime: "7–30 പ്രവർത്തിദിവസങ്ങൾ.",
+
+      fees: ["എൻഒസി തരം അനുസരിച്ച്."],
+
+      authority: "സർക്കാർ വകുപ്പ്",
+
+      note: "കാലാവധി വ്യത്യസ്തമാകും.",
+    },
   },
 
   mr: {
@@ -347,6 +523,25 @@ export const nocFormData: Record<
         details: "सत्यापनेनंतर प्राधिकरणाकडून NOC डाउनलोड करा किंवा मिळवा.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin: "एनओसी म्हणजे संबंधित प्राधिकरणाचा हरकत नसल्याचा दाखला.",
+
+      onlineSteps: ["अधिकृत वेबसाइटवर अर्ज करा."],
+
+      offlineSteps: ["संबंधित कार्यालयात अर्ज सादर करा."],
+
+      afterSubmission: ["तपासणीनंतर एनओसी मिळेल."],
+
+      processingTime: "7–30 कार्यदिवस.",
+
+      fees: ["एनओसी प्रकारानुसार."],
+
+      authority: "संबंधित विभाग",
+
+      note: "वैधतेचा कालावधी बदलू शकतो.",
+    },
   },
 
   or: {
@@ -390,6 +585,25 @@ export const nocFormData: Record<
           "ପରୀକ୍ଷା ପରେ କାର୍ଯ୍ୟାଳୟରୁ NOC ଡାଉନଲୋଡ୍ କରନ୍ତୁ କିମ୍ବା ପ୍ରାପ୍ତ କରନ୍ତୁ।",
       },
     ],
+    howToApply: {
+      mode: ["ଅନଲାଇନ୍", "ଅଫଲାଇନ୍"],
+
+      applyWithin: "ଏନଓସି ଅର୍ଥାତ୍ ସମ୍ପର୍କିତ କାର୍ଯ୍ୟରେ କୌଣସି ଆପତ୍ତି ନାହିଁ।",
+
+      onlineSteps: ["ଆଧିକାରିକ ୱେବସାଇଟରେ ଆବେଦନ କରନ୍ତୁ।"],
+
+      offlineSteps: ["କାର୍ଯ୍ୟାଳୟରେ ଆବେଦନ କରନ୍ତୁ।"],
+
+      afterSubmission: ["ଯାଞ୍ଚ ପରେ ଏନଓସି ମିଳିବ।"],
+
+      processingTime: "7–30 କାର୍ଯ୍ୟଦିନ।",
+
+      fees: ["ପ୍ରକାର ଅନୁଯାୟୀ।"],
+
+      authority: "ସମ୍ପର୍କିତ ବିଭାଗ",
+
+      note: "ମାନ୍ୟତା ସମୟ ଭିନ୍ନ ହୁଏ।",
+    },
   },
 
   te: {
@@ -433,6 +647,32 @@ export const nocFormData: Record<
           "తనిఖీ తరువాత, అధికారులు నుండి NOC డౌన్‌లోడ్ చేయండి లేదా పొందండి.",
       },
     ],
+    howToApply: {
+      mode: ["ఆన్‌లైన్", "ఆఫ్‌లైన్"],
+
+      applyWithin:
+        "ఎన్‌ఓ‌సి అనేది నిర్దిష్ట కార్యాచరణకు అభ్యంతరం లేదని సూచిస్తుంది.",
+
+      onlineSteps: [
+        "సంబంధిత అధికార వెబ్‌సైట్‌కు వెళ్లండి.",
+        "ఎన్‌ఓ‌సి దరఖాస్తు చేయండి.",
+      ],
+
+      offlineSteps: [
+        "శాఖ కార్యాలయంలో దరఖాస్తు చేయండి.",
+        "పత్రాలు సమర్పించండి.",
+      ],
+
+      afterSubmission: ["ధృవీకరణ అనంతరం ఎన్‌ఓ‌సి జారీ అవుతుంది."],
+
+      processingTime: "7–30 పని రోజులు.",
+
+      fees: ["ఎన్‌ఓ‌సి రకానుసారం."],
+
+      authority: "సంబంధిత శాఖ",
+
+      note: "చెల్లుబాటు కాలం మారవచ్చు.",
+    },
   },
 
   ta: {
@@ -477,5 +717,31 @@ export const nocFormData: Record<
           "சரிபார்ப்புக்குப் பிறகு அதிகாரத்திலிருந்து NOC ஐ பதிவிறக்கம் செய்யவும் அல்லது பெறவும்.",
       },
     ],
+    howToApply: {
+      mode: ["ஆன்லைன்", "ஆஃப்லைன்"],
+
+      applyWithin:
+        "என்ஓசி என்பது குறிப்பிட்ட செயல்பாட்டிற்கு எதிர்ப்பு இல்லை என்பதற்கான சான்றிதழ்.",
+
+      onlineSteps: [
+        "அதிகாரப்பூர்வ இணையதளத்தில் விண்ணப்பிக்கவும்.",
+        "ஆவணங்களை பதிவேற்றவும் மற்றும் கட்டணம் செலுத்தவும்.",
+      ],
+
+      offlineSteps: [
+        "துறை அலுவலகத்தில் விண்ணப்பிக்கவும்.",
+        "ஆவணங்களை சமர்ப்பிக்கவும்.",
+      ],
+
+      afterSubmission: ["சரிபார்ப்பு முடிந்த பின் என்ஓசி வழங்கப்படும்."],
+
+      processingTime: "7–30 வேலை நாட்கள்.",
+
+      fees: ["வகை பொறுத்து."],
+
+      authority: "சம்பந்தப்பட்ட துறை",
+
+      note: "செல்லுபடியாகும் காலம் மாறுபடும்.",
+    },
   },
 };

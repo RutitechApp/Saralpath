@@ -5,6 +5,7 @@ export const directorKycData: Record<
     description: string;
     eligibility: string[];
     steps: { step: number; title: string; details: string }[];
+    howToApply: any;
   }
 > = {
   en: {
@@ -50,6 +51,49 @@ export const directorKycData: Record<
           "Directors must update their details promptly in case of changes.",
       },
     ],
+    howToApply: {
+      mode: ["Online", "Offline"],
+
+      applyWithin:
+        "Director KYC (Know Your Customer) must be completed by all directors of companies as per the Companies Act, 2013 and MCA rules. Ensure compliance within the due dates to avoid penalties.",
+
+      onlineSteps: [
+        "Visit the Ministry of Corporate Affairs (MCA) portal at https://www.mca.gov.in/",
+        "Login using your Director Identification Number (DIN) and credentials",
+        "Navigate to 'MCA Services' > 'DIR-3 KYC' or 'Update Director KYC'",
+        "Fill in personal, contact, and professional details as required",
+        "Upload necessary documents such as PAN, Aadhaar, proof of address, and photograph",
+        "Submit the form and note the acknowledgment or SRN number",
+        "Download the confirmation receipt for records",
+      ],
+
+      offlineSteps: [
+        "Obtain the DIR-3 KYC form from the Registrar of Companies (RoC) office if offline submission is required",
+        "Fill in all required personal, contact, and professional details accurately",
+        "Attach supporting documents such as PAN, Aadhaar, address proof, and photograph",
+        "Submit the completed form to the RoC office",
+        "Collect the acknowledgment receipt confirming submission",
+      ],
+
+      afterSubmission: [
+        "The MCA will verify the submitted KYC details",
+        "Corrections may be requested if discrepancies are found",
+        "A confirmation of successful KYC update will be issued",
+        "Non-compliance may attract penalties under the Companies Act",
+      ],
+
+      processingTime:
+        "Typically 7–15 days depending on verification and MCA workload",
+
+      fees: [
+        "No fees for filing director KYC online; professional fees may apply if assistance is taken",
+      ],
+
+      authority:
+        "Ministry of Corporate Affairs (MCA), Government of India; Companies Act, 2013",
+
+      note: "Ensure all documents are valid and updated. Late or non-compliance may attract penalties under the Companies Act.",
+    },
   },
   hi: {
     title: "निदेशक KYC",
@@ -94,6 +138,48 @@ export const directorKycData: Record<
           "परिवर्तनों के मामले में निदेशकों को अपनी जानकारी तुरंत अपडेट करनी चाहिए।",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "डायरेक्टर KYC (Know Your Customer) सभी कंपनी के निदेशकों द्वारा कंपनियों अधिनियम, 2013 और MCA नियमों के अनुसार पूरा किया जाना चाहिए। नियत तिथियों के भीतर अनुपालन सुनिश्चित करें ताकि दंड से बचा जा सके।",
+
+      onlineSteps: [
+        "मिनिस्ट्री ऑफ कॉर्पोरेट अफेयर्स (MCA) पोर्टल पर जाएँ: https://www.mca.gov.in/",
+        "अपने डायरेक्टर आइडेंटिफिकेशन नंबर (DIN) और क्रेडेंशियल्स के साथ लॉगिन करें",
+        "'MCA Services' > 'DIR-3 KYC' या 'Update Director KYC' पर नेविगेट करें",
+        "आवश्यक व्यक्तिगत, संपर्क और पेशेवर विवरण भरें",
+        "PAN, Aadhaar, पता प्रमाण और फोटो जैसी आवश्यक दस्तावेज़ अपलोड करें",
+        "फॉर्म सबमिट करें और एcknowledgment या SRN नंबर नोट करें",
+        "रिकॉर्ड के लिए पुष्टि रसीद डाउनलोड करें",
+      ],
+
+      offlineSteps: [
+        "यदि ऑफ़लाइन जमा करना आवश्यक है, तो RoC कार्यालय से DIR-3 KYC फॉर्म प्राप्त करें",
+        "सभी आवश्यक व्यक्तिगत, संपर्क और पेशेवर विवरण सही ढंग से भरें",
+        "PAN, Aadhaar, पता प्रमाण और फोटो जैसे सहायक दस्तावेज संलग्न करें",
+        "भरे हुए फॉर्म को RoC कार्यालय में जमा करें",
+        "जमा होने की पुष्टि करने वाली एcknowledgment रसीद प्राप्त करें",
+      ],
+
+      afterSubmission: [
+        "MCA जमा किए गए KYC विवरणों को सत्यापित करेगा",
+        "यदि कोई विसंगति पाई जाती है, तो सुधार करने के लिए अनुरोध किया जा सकता है",
+        "सफल KYC अपडेट की पुष्टि जारी की जाएगी",
+        "अनुपालन न करने पर कंपनियों अधिनियम के तहत दंड लग सकता है",
+      ],
+
+      processingTime: "सत्यापन और MCA कार्यभार के आधार पर आमतौर पर 7–15 दिन",
+
+      fees: [
+        "ऑनलाइन डायरेक्टर KYC फाइलिंग के लिए कोई शुल्क नहीं; सहायता लेने पर पेशेवर शुल्क लागू हो सकता है",
+      ],
+
+      authority:
+        "मिनिस्ट्री ऑफ कॉर्पोरेट अफेयर्स (MCA), भारत सरकार; कंपनियों अधिनियम, 2013",
+
+      note: "सुनिश्चित करें कि सभी दस्तावेज़ वैध और अद्यतन हैं। देर से या अनुपालन न करने पर कंपनियों अधिनियम के तहत दंड लग सकता है।",
+    },
   },
   gu: {
     title: "ડાયરેક્ટર KYC",
@@ -137,6 +223,49 @@ export const directorKycData: Record<
           "ફેરફાર થાય તો ડાયરેક્ટરો તેમની વિગતો તાત્કાલિક અપડેટ કરવી જોઈએ.",
       },
     ],
+    howToApply: {
+      mode: ["ઓનલાઇન", "ઓફલાઇન"],
+
+      applyWithin:
+        "ડાયરેક્ટર KYC (Know Your Customer) તમામ કંપનીના ડિરેક્ટરો દ્વારા Companies Act, 2013 અને MCA નિયમોના અનુસંધાનમાં પૂર્ણ કરવું જરૂરી છે. સમયમર્યાદામાં પાલન સુનિશ્ચિત કરો જેથી દંડ ટાળી શકાય.",
+
+      onlineSteps: [
+        "Ministry of Corporate Affairs (MCA) પોર્ટલ પર જાઓ: https://www.mca.gov.in/",
+        "તમારા Director Identification Number (DIN) અને credentials સાથે લૉગિન કરો",
+        "'MCA Services' > 'DIR-3 KYC' અથવા 'Update Director KYC' પર જાઓ",
+        "આવશ્યક વ્યક્તિગત, સંપર્ક અને વ્યાવસાયિક વિગતો ભરો",
+        "PAN, Aadhaar, સરનામું પુરાવા અને ફોટા જેવા જરૂરી દસ્તાવેજ અપલોડ કરો",
+        "ફોર્મ સબમિટ કરો અને એcknowledgment અથવા SRN નંબર નોંધો",
+        "રેકોર્ડ માટે કન્ફર્મેશન રસીદ ડાઉનલોડ કરો",
+      ],
+
+      offlineSteps: [
+        "જો ઓફલાઇન સબમિશન જરૂરી હોય તો RoC ઓફિસમાંથી DIR-3 KYC ફોર્મ મેળવો",
+        "તમામ જરૂરી વ્યક્તિગત, સંપર્ક અને વ્યાવસાયિક વિગતો સાચી રીતે ભરો",
+        "PAN, Aadhaar, સરનામું પુરાવા અને ફોટા જેવા સહાયક દસ્તાવેજ જોડો",
+        "ભરેલો ફોર્મ RoC ઓફિસમાં સબમિટ કરો",
+        "સબમિશનની પુષ્ટિ માટે એcknowledgment રસીદ મેળવો",
+      ],
+
+      afterSubmission: [
+        "MCA સબમિટ કરેલા KYC વિગતોની ચકાસણી કરશે",
+        "કોઈ વિસંગતિ જોવા મળે તો સુધારા માટે વિનંતી કરી શકાય",
+        "સફળ KYC અપડેટની પુષ્ટિ આપવામાં આવશે",
+        "અનુસરણ ન કરવામાં Companies Act હેઠળ દંડ લાગુ પડી શકે",
+      ],
+
+      processingTime:
+        "સાધારણ રીતે ચકાસણી અને MCAના કામના ભાર પર આધાર રાખીને 7–15 દિવસમાં પૂર્ણ થાય છે",
+
+      fees: [
+        "ડાયરેક્ટર KYC ઓનલાઇન ફાઇલિંગ માટે કોઈ ફી નથી; મદદ લેતી વખતે વ્યાવસાયિક ફી લાગુ પડી શકે",
+      ],
+
+      authority:
+        "Ministry of Corporate Affairs (MCA), ભારત સરકાર; Companies Act, 2013",
+
+      note: "ખાતરી કરો કે તમામ દસ્તાવેજ માન્ય અને અપડેટેડ છે. મોડું અથવા અનુસરણ ન કરવા પર Companies Act હેઠળ દંડ લાગુ પડી શકે.",
+    },
   },
   bn: {
     title: "ডিরেক্টর KYC",
@@ -180,6 +309,49 @@ export const directorKycData: Record<
           "পরিবর্তনের ক্ষেত্রে পরিচালকদের তাদের তথ্য দ্রুত আপডেট করতে হবে।",
       },
     ],
+    howToApply: {
+      mode: ["অনলাইন", "অফলাইন"],
+
+      applyWithin:
+        "ডিরেক্টর KYC (Know Your Customer) সকল কোম্পানির পরিচালকদের দ্বারা Companies Act, 2013 এবং MCA নিয়ম অনুযায়ী সম্পন্ন করা আবশ্যক। নির্ধারিত সময়সীমার মধ্যে अनुपালন নিশ্চিত করুন যাতে জরিমানা এড়ানো যায়।",
+
+      onlineSteps: [
+        "Ministry of Corporate Affairs (MCA) পোর্টালে যান: https://www.mca.gov.in/",
+        "আপনার Director Identification Number (DIN) এবং credentials ব্যবহার করে লগইন করুন",
+        "'MCA Services' > 'DIR-3 KYC' বা 'Update Director KYC' বিভাগে যান",
+        "প্রয়োজনীয় ব্যক্তিগত, যোগাযোগ এবং পেশাদারী তথ্য পূরণ করুন",
+        "PAN, Aadhaar, ঠিকানার প্রমাণ এবং ফটোর মতো প্রয়োজনীয় নথি আপলোড করুন",
+        "ফর্ম জমা দিন এবং acknowledgment বা SRN নম্বর নোট করুন",
+        "রেকর্ডের জন্য নিশ্চিতকরণ রশিদ ডাউনলোড করুন",
+      ],
+
+      offlineSteps: [
+        "যদি অফলাইনে জমা দেওয়া প্রয়োজন হয়, তাহলে RoC অফিস থেকে DIR-3 KYC ফর্ম সংগ্রহ করুন",
+        "সমস্ত প্রয়োজনীয় ব্যক্তিগত, যোগাযোগ এবং পেশাগত তথ্য সঠিকভাবে পূরণ করুন",
+        "PAN, Aadhaar, ঠিকানার প্রমাণ এবং ফটো সহায়ক নথি সংযুক্ত করুন",
+        "পূর্ণ ফর্ম RoC অফিসে জমা দিন",
+        "জমা দেওয়ার নিশ্চিতকরণের acknowledgment রশিদ সংগ্রহ করুন",
+      ],
+
+      afterSubmission: [
+        "MCA জমা দেওয়া KYC তথ্য যাচাই করবে",
+        "যদি কোনো অসঙ্গতি পাওয়া যায়, সংশোধনের জন্য অনুরোধ করা হতে পারে",
+        "সফল KYC আপডেটের নিশ্চয়তা প্রদান করা হবে",
+        "অনুপালন না করার ক্ষেত্রে Companies Act অনুযায়ী জরিমানা হতে পারে",
+      ],
+
+      processingTime:
+        "সাধারণত যাচাই এবং MCA-এর কাজের চাপ অনুযায়ী 7–15 দিনের মধ্যে সম্পন্ন হয়",
+
+      fees: [
+        "ডিরেক্টর KYC অনলাইনে ফাইল করার জন্য কোন ফি নেই; সহায়তা নিলে পেশাদার ফি প্রযোজ্য হতে পারে",
+      ],
+
+      authority:
+        "Ministry of Corporate Affairs (MCA), ভারত সরকার; Companies Act, 2013",
+
+      note: "নিশ্চিত করুন যে সমস্ত নথি বৈধ এবং হালনাগাদ। বিলম্ব বা অনুপালনের ক্ষেত্রে Companies Act অনুযায়ী জরিমানা প্রযোজ্য।",
+    },
   },
   mr: {
     title: "डायरेक्टर KYC",
@@ -223,6 +395,49 @@ export const directorKycData: Record<
           "परिवर्तन झाल्यास संचालकांनी आपली माहिती त्वरीत अद्यतनित करावी.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "डायरेक्टर KYC (Know Your Customer) सर्व कंपन्यांच्या संचालकांनी Companies Act, 2013 आणि MCA नियमांनुसार पूर्ण करणे आवश्यक आहे. नियत तारखेपर्यंत पालन सुनिश्चित करा जेणेकरून दंड टाळता येईल.",
+
+      onlineSteps: [
+        "Ministry of Corporate Affairs (MCA) पोर्टलवर जा: https://www.mca.gov.in/",
+        "आपला Director Identification Number (DIN) आणि क्रेडेन्शियल्स वापरून लॉगिन करा",
+        "'MCA Services' > 'DIR-3 KYC' किंवा 'Update Director KYC' विभागात जा",
+        "आवश्यक वैयक्तिक, संपर्क आणि व्यावसायिक माहिती भरा",
+        "PAN, Aadhaar, पत्त्याचा पुरावा आणि फोटो यासारखी आवश्यक कागदपत्रे अपलोड करा",
+        "फॉर्म सबमिट करा आणि acknowledgment किंवा SRN नंबर नोंद करा",
+        "रेकॉर्डसाठी पुष्टीची पावती डाउनलोड करा",
+      ],
+
+      offlineSteps: [
+        "जर ऑफलाइन सबमिशन आवश्यक असेल तर RoC कार्यालयातून DIR-3 KYC फॉर्म मिळवा",
+        "सर्व आवश्यक वैयक्तिक, संपर्क आणि व्यावसायिक माहिती अचूक भरा",
+        "PAN, Aadhaar, पत्त्याचा पुरावा आणि फोटो यासारखी सहाय्यक कागदपत्रे संलग्न करा",
+        "पूर्ण फॉर्म RoC कार्यालयात सबमिट करा",
+        "सबमिशनची पुष्टी करणारी acknowledgment पावती मिळवा",
+      ],
+
+      afterSubmission: [
+        "MCA सबमिट केलेल्या KYC तपशीलांची पडताळणी करेल",
+        "जर कोणतीही विसंगती आढळली तर सुधारणा करण्यासाठी विनंती केली जाऊ शकते",
+        "यशस्वी KYC अपडेटची पुष्टी दिली जाईल",
+        "पालन न केल्यास Companies Act नुसार दंड लागू होऊ शकतो",
+      ],
+
+      processingTime:
+        "सामान्यतः पडताळणी आणि MCA च्या कामाच्या भारानुसार 7–15 दिवस लागतात",
+
+      fees: [
+        "डायरेक्टर KYC ऑनलाइन फाईलिंगसाठी कोणताही शुल्क नाही; मदत घेतल्यास व्यावसायिक शुल्क लागू होऊ शकते",
+      ],
+
+      authority:
+        "Ministry of Corporate Affairs (MCA), भारत सरकार; Companies Act, 2013",
+
+      note: "सर्व कागदपत्रे वैध आणि अद्यतनित आहेत याची खात्री करा. उशीर किंवा पालन न केल्यास Companies Act नुसार दंड लागू होईल.",
+    },
   },
   ta: {
     title: "Director KYC",
@@ -266,6 +481,49 @@ export const directorKycData: Record<
           "மாற்றங்கள் ஏற்பட்டால் இயக்குனர்கள் விரைவாக தங்கள் விவரங்களை புதுப்பிக்க வேண்டும்.",
       },
     ],
+    howToApply: {
+      mode: ["ஆன்லைன்", "ஆஃப்லைன்"],
+
+      applyWithin:
+        "அனைத்து நிறுவன இயக்குநர்கள் Companies Act, 2013 மற்றும் MCA விதிகளின் படி Director KYC (Know Your Customer) ஐ பூர்த்தி செய்ய வேண்டும். காலவரையறைக்குள் ஒழுங்குபடுத்தல் செய்யாதால் அபராதம் விதிக்கப்படலாம்.",
+
+      onlineSteps: [
+        "Ministry of Corporate Affairs (MCA) போர்ட்டல் பார்வையிடவும்: https://www.mca.gov.in/",
+        "உங்கள் Director Identification Number (DIN) மற்றும் credentials பயன்படுத்தி உள்நுழைக",
+        "'MCA Services' > 'DIR-3 KYC' அல்லது 'Update Director KYC' பகுதியில் செல்லவும்",
+        "தேவையான தனிப்பட்ட, தொடர்பு மற்றும் தொழில்முறை விவரங்களை நிரப்பவும்",
+        "PAN, Aadhaar, முகவரி ஆதாரம் மற்றும் புகைப்படம் போன்ற தேவையான ஆவணங்களை பதிவேற்றவும்",
+        "படிவத்தை சமர்ப்பித்து acknowledgment அல்லது SRN எண்ணை குறித்துக் கொள்ளவும்",
+        "பதிவுக்கு உறுதிப்பத்திரத்தை (confirmation receipt) பதிவிறக்கம் செய்யவும்",
+      ],
+
+      offlineSteps: [
+        "ஆஃப்லைனில் சமர்ப்பிக்க தேவையானால், RoC அலுவலையிலிருந்து DIR-3 KYC படிவத்தைப் பெறவும்",
+        "அனைத்து தேவையான தனிப்பட்ட, தொடர்பு மற்றும் தொழில்முறை விவரங்களை துல்லியமாக நிரப்பவும்",
+        "PAN, Aadhaar, முகவரி ஆதாரம் மற்றும் புகைப்படம் போன்ற ஆதார ஆவணங்களை இணைக்கவும்",
+        "நிரப்பப்பட்ட படிவத்தை RoC அலுவலகத்தில் சமர்ப்பிக்கவும்",
+        "சமர்ப்பிப்பை உறுதிப்படுத்தும் acknowledgment பெறவும்",
+      ],
+
+      afterSubmission: [
+        "MCA சமர்ப்பிக்கப்பட்ட KYC விவரங்களைச் சரிபார்க்கும்",
+        "ஏதேனும் முரண்பாடு கண்டுபிடிக்கப்பட்டால் திருத்தக் கோரலாம்",
+        "வெற்றிகரமான KYC புதுப்பிப்பின் உறுதிப்பத்திரம் வழங்கப்படும்",
+        "ஒழுங்குபடுத்தல் செய்யாவிட்டால் Companies Act கீழ் அபராதம் விதிக்கப்படலாம்",
+      ],
+
+      processingTime:
+        "சாதாரணமாக, சரிபார்ப்பு மற்றும் MCA வேலைப்பளுவின் அடிப்படையில் 7–15 நாட்கள் ஆகும்",
+
+      fees: [
+        "Director KYC ஆன்லைனில் சமர்ப்பிப்பதற்கான கட்டணம் இல்லை; உதவி எடுத்தால் தொழில்முறை கட்டணங்கள் பொருந்தலாம்",
+      ],
+
+      authority:
+        "Ministry of Corporate Affairs (MCA), இந்திய அரசு; Companies Act, 2013",
+
+      note: "அனைத்து ஆவணங்களும் செல்லுபடியானவை மற்றும் புதுப்பிக்கப்பட்டவை என்பதை உறுதிப்படுத்தவும். தாமதம் அல்லது ஒழுங்குபடுத்தல் செய்யாவிட்டால் Companies Act கீழ் அபராதம் விதிக்கப்படும்.",
+    },
   },
   te: {
     title: "డైరెక్టర్ KYC",
@@ -309,6 +567,49 @@ export const directorKycData: Record<
           "మార్పులు జరిగినట్లయితే డైరెక్టర్లు తమ వివరాలను వెంటనే నవీకరించాలి.",
       },
     ],
+    howToApply: {
+      mode: ["ఆన్‌లైన్", "ఆఫ్‌లైన్"],
+
+      applyWithin:
+        "Director KYC (Know Your Customer) అన్ని కంపెనీ డైరెక్టర్లు Companies Act, 2013 మరియు MCA నియమాల ప్రకారం పూర్తి చేయాలి. నిర్ణీత గడువులో పూర్తి చేయకపోతే జరిమానా విధించబడవచ్చు.",
+
+      onlineSteps: [
+        "Ministry of Corporate Affairs (MCA) పోర్టల్ సందర్శించండి: https://www.mca.gov.in/",
+        "మీ Director Identification Number (DIN) మరియు క్రెడెన్షియల్స్ ఉపయోగించి లాగిన్ అవ్వండి",
+        "'MCA Services' > 'DIR-3 KYC' లేదా 'Update Director KYC' విభాగానికి వెళ్లండి",
+        "అవసరమైన వ్యక్తిగత, సంప్రదింపు మరియు వృత్తిపరమైన వివరాలను భర్తీ చేయండి",
+        "PAN, Aadhaar, చిరునామా సాక్ష్యాలు మరియు ఫోటో వంటి అవసరమైన డాక్యుమెంట్లు అప్లోడ్ చేయండి",
+        "ఫారం సమర్పించి acknowledgment లేదా SRN నంబర్ గమనించండి",
+        "రికార్డుల కోసం నిర్ధారణ రసీదు (confirmation receipt) డౌన్లోడ్ చేసుకోండి",
+      ],
+
+      offlineSteps: [
+        "ఆఫ్‌లైన్ సమర్పణ అవసరమైతే RoC ఆఫీసు నుండి DIR-3 KYC ఫారం పొందండి",
+        "అన్ని అవసరమైన వ్యక్తిగత, సంప్రదింపు మరియు వృత్తిపరమైన వివరాలను సరిగ్గా భర్తీ చేయండి",
+        "PAN, Aadhaar, చిరునామా సాక్ష్యాలు మరియు ఫోటో వంటి సహాయక డాక్యుమెంట్లు జతచేయండి",
+        "పూర్ణ ఫారం RoC ఆఫీసులో సమర్పించండి",
+        "సమర్పణను ధృవీకరించే acknowledgment రసీదు పొందండి",
+      ],
+
+      afterSubmission: [
+        "MCA సమర్పించిన KYC వివరాలను పరిశీలిస్తుంది",
+        "ఏదైనా అసమ్మతులు ఉంటే, సరిచేయమని అభ్యర్థన చేయవచ్చు",
+        "సక్సెస్ ఫుల్ KYC అప్డేట్ ధృవీకరణ ఇవ్వబడుతుంది",
+        "పాలన చేయకపోతే Companies Act కింద జరిమానాలు విధించబడతాయి",
+      ],
+
+      processingTime:
+        "సాధారణంగా, పరిశీలన మరియు MCA పని భారాన్ని ఆధారపడి 7–15 రోజులు పడతాయి",
+
+      fees: [
+        "Director KYC ఆన్‌లైన్ ఫైలింగ్ కోసం ఫీజు లేదు; సహాయం తీసుకున్నట్లయితే ప్రొఫెషనల్ ఫీజులు వర్తించవచ్చు",
+      ],
+
+      authority:
+        "Ministry of Corporate Affairs (MCA), భారత ప్రభుత్వం; Companies Act, 2013",
+
+      note: "అన్ని డాక్యుమెంట్లు చెల్లుబాటు అయ్యేలా మరియు నవీకరించబడినవి అని నిర్ధారించండి. ఆలస్యంగా లేదా పాటించకపోతే Companies Act కింద జరిమానాలు విధించబడతాయి.",
+    },
   },
   kn: {
     title: "ಡೈರೆಕ್ಟರ್ KYC",
@@ -351,6 +652,49 @@ export const directorKycData: Record<
         details: "ಬದಲಾವಣೆಗಳಾದರೆ ನಿರ್ದೇಶಕರು ತಮ್ಮ ವಿವರಗಳನ್ನು ತಕ್ಷಣ ನವೀಕರಿಸಬೇಕು.",
       },
     ],
+    howToApply: {
+      mode: ["ಆನ್‌ಲೈನ್", "ಆಫ್‌ಲೈನ್"],
+
+      applyWithin:
+        "ಡೈರೆಕ್ಟರ್ KYC (Know Your Customer) ಎಲ್ಲಾ ಕಂಪನಿಗಳ ನಿರ್ದೇಶಕರಿಂದ Companies Act, 2013 ಮತ್ತು MCA ನಿಯಮಗಳ ಪ್ರಕಾರ ಪೂರ್ಣಗೊಳಿಸಬೇಕಾಗಿದೆ. ನಿರ್ಧಿಷ್ಟ ಸಮಯಾವಧಿಯಲ್ಲಿ ಪಾಲನೆ ಮಾಡದಿದ್ದರೆ ದಂಡ ವಿಧಿಸಲಾಗಬಹುದು.",
+
+      onlineSteps: [
+        "Ministry of Corporate Affairs (MCA) ಪೋರ್ಟಲ್‌ಗೆ ಭೇಟಿ ನೀಡಿ: https://www.mca.gov.in/",
+        "ನಿಮ್ಮ Director Identification Number (DIN) ಮತ್ತು ಕ್ರೆಡೆನ್ಷಿಯಲ್ಸ್ ಬಳಸಿ ಲಾಗಿನ್ ಮಾಡಿ",
+        "'MCA Services' > 'DIR-3 KYC' ಅಥವಾ 'Update Director KYC' ವಿಭಾಗಕ್ಕೆ ಹೋಗಿ",
+        "ಅವಶ್ಯಕ ವ್ಯಕ್ತಿಗತ, ಸಂಪರ್ಕ ಮತ್ತು ವೃತ್ತಿಪರ ವಿವರಗಳನ್ನು ಭರ್ತಿ ಮಾಡಿ",
+        "PAN, Aadhaar, ವಿಳಾಸದ ದಾಖಲೆ ಮತ್ತು ಫೋಟೋ ಮುಂತಾದ ಅಗತ್ಯ ದಾಖಲೆಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+        "ಫಾರ್ಮ್ ಸಲ್ಲಿಸಿ acknowledgment ಅಥವಾ SRN ನಂಬರ್ ಅನ್ನು ಗಮನಿಸಿ",
+        "ರೆಕಾರ್ಡ್‌ಗೆ ದೃಢೀಕರಣ ರಸೀದಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
+      ],
+
+      offlineSteps: [
+        "ಆಫ್‌ಲೈನ್ ಸಲ್ಲಿಕೆ ಅಗತ್ಯವಿದ್ದರೆ, RoC ಕಚೇರಿಯಿಂದ DIR-3 KYC ಫಾರ್ಮ್ ಪಡೆದುಕೊಳ್ಳಿ",
+        "ಎಲ್ಲಾ ಅಗತ್ಯ ವ್ಯಕ್ತಿಗತ, ಸಂಪರ್ಕ ಮತ್ತು ವೃತ್ತಿಪರ ವಿವರಗಳನ್ನು ಸರಿಯಾಗಿ ಭರ್ತಿ ಮಾಡಿ",
+        "PAN, Aadhaar, ವಿಳಾಸದ ದಾಖಲೆ ಮತ್ತು ಫೋಟೋ ಮುಂತಾದ ಸಹಾಯಕ ದಾಖಲೆಗಳನ್ನು ಜೋಡಿಸಿ",
+        "ಪೂರ್ಣ ಫಾರ್ಮ್ ಅನ್ನು RoC ಕಚೇರಿಯಲ್ಲಿ ಸಲ್ಲಿಸಿ",
+        "ಸಲ್ಲಿಕೆಯ ದೃಢೀಕರಣಕ್ಕಾಗಿ acknowledgment ರಸೀದಿ ಪಡೆಯಿರಿ",
+      ],
+
+      afterSubmission: [
+        "MCA ಸಲ್ಲಿಸಿದ KYC ವಿವರಗಳನ್ನು ಪರಿಶೀಲಿಸುತ್ತದೆ",
+        "ಯಾವುದೇ ವೈಪರೀತ್ಯ ಕಂಡುಬಂದರೆ, ತಿದ್ದಲು ವಿನಂತಿ ಮಾಡಬಹುದು",
+        "ಯಶಸ್ವಿ KYC ಅಪ್‌ಡೇಟ್ನ ದೃಢೀಕರಣ ನೀಡಲಾಗುತ್ತದೆ",
+        "ಪಾಲನೆ ಮಾಡದಿದ್ದರೆ Companies Act ಅಡಿಯಲ್ಲಿ ದಂಡ ವಿಧಿಸಲಾಗಬಹುದು",
+      ],
+
+      processingTime:
+        "ಸಾಮಾನ್ಯವಾಗಿ ಪರಿಶೀಲನೆ ಮತ್ತು MCA ಕೆಲಸದ ಭಾರದ ಆಧಾರವಾಗಿ 7–15 ದಿನಗಳಷ್ಟು ಸಮಯ ತೆಗೆದುಕೊಳ್ಳಬಹುದು",
+
+      fees: [
+        "ಡೈರೆಕ್ಟರ್ KYC ಆನ್‌ಲೈನ್ ಫೈಲಿಂಗ್‌ಗೆ ಯಾವುದೇ ಶುಲ್ಕ ಇಲ್ಲ; ಸಹಾಯ ಪಡೆಯುತ್ತಿದ್ದರೆ ವೃತ್ತಿಪರ ಶುಲ್ಕ ವಿಧಿಸಲಾಗಬಹುದು",
+      ],
+
+      authority:
+        "Ministry of Corporate Affairs (MCA), ಭಾರತ ಸರ್ಕಾರ; Companies Act, 2013",
+
+      note: "ಎಲ್ಲಾ ದಾಖಲೆಗಳು ಮಾನ್ಯವಾಗಿರುವುದಾಗಿ ಮತ್ತು ಅಪ್‌ಡೇಟೆಡ್ ಆಗಿರುವುದಾಗಿ ಖಾತ್ರಿಪಡಿಸಿ. ತಡವಾಗಿ ಸಲ್ಲಿಸಿದರೆ ಅಥವಾ ಪಾಲನೆ ಮಾಡದಿದ್ದರೆ Companies Act ಅಡಿಯಲ್ಲಿ ದಂಡ ವಿಧಿಸಲಾಗುತ್ತದೆ.",
+    },
   },
   ml: {
     title: "ഡയറക്ടർ KYC",
@@ -394,6 +738,49 @@ export const directorKycData: Record<
           "മാറ്റങ്ങൾ സംഭവിച്ചാൽ ഡയറക്ടർമാർ ഉടനെ അവരുടെ വിവരങ്ങൾ അപ്ഡേറ്റ് ചെയ്യണം.",
       },
     ],
+    howToApply: {
+      mode: ["ഓൺലൈൻ", "ഓഫ്ലൈൻ"],
+
+      applyWithin:
+        "ഡിറക്റ്റർ KYC (Know Your Customer) എല്ലാ കമ്പനികളുടെ ഡയറക്ടർമാർക്കും Companies Act, 2013 ആൻഡ് MCA നിയമങ്ങൾ അനുസരിച്ച് പൂർത്തിയാക്കേണ്ടതാണ്. നിശ്ചിത സമയപരിധിക്കുള്ളിൽ അനുസരണം ഉറപ്പാക്കുക, അതില്ലെങ്കിൽ പിഴ ವಿಧിക്കപ്പെടും.",
+
+      onlineSteps: [
+        "Ministry of Corporate Affairs (MCA) പോർട്ടലിൽ സന്ദർശിക്കുക: https://www.mca.gov.in/",
+        "നിങ്ങളുടെ Director Identification Number (DIN) மற்றும் ക്രെഡൻഷ്യലുകൾ ഉപയോഗിച്ച് ലോഗിൻ ചെയ്യുക",
+        "'MCA Services' > 'DIR-3 KYC' അല്ലെങ്കിൽ 'Update Director KYC' വിഭാഗത്തിലേക്ക് പോയി",
+        "ആവശ്യമായ വ്യക്തിഗത, കോൺടാക്റ്റ്, പ്രൊഫഷണൽ വിശദാംശങ്ങൾ പൂരിപ്പിക്കുക",
+        "PAN, Aadhaar, വിലാസ തെളിവ്, ഫോട്ടോ പോലുള്ള ആവശ്യമായ രേഖകൾ അപ്ലോഡ് ചെയ്യുക",
+        "ഫോം സമർപ്പിച്ച് acknowledgment അല്ലെങ്കിൽ SRN നമ്പർ കുറിക്കുക",
+        "റിക്കോർഡിനായി സ്ഥിരീകരണ രസീത് (confirmation receipt) ഡൗൺലോഡ് ചെയ്യുക",
+      ],
+
+      offlineSteps: [
+        "ഓഫ്ലൈനിൽ സമർപ്പിക്കൽ ആവശ്യമെങ്കിൽ RoC ഓഫീസിൽ നിന്ന് DIR-3 KYC ഫോർം നേടുക",
+        "ആവശ്യമായ എല്ലാ വ്യക്തിഗത, കോൺടാക്റ്റ്, പ്രൊഫഷണൽ വിശദാംശങ്ങൾ കൃത്യമായി പൂരിപ്പിക്കുക",
+        "PAN, Aadhaar, വിലാസ തെളിവ്, ഫോട്ടോ പോലുള്ള സഹായക രേഖകൾ ചേർക്കുക",
+        "പൂര്ണ്ണമായ ഫോം RoC ഓഫീസിൽ സമർപ്പിക്കുക",
+        "സമർപ്പണത്തിനുള്ള acknowledgment രസീത് സ്വീകരിക്കുക",
+      ],
+
+      afterSubmission: [
+        "MCA സമർപ്പിച്ച KYC വിശദാംശങ്ങൾ പരിശോധിക്കും",
+        "എന്തെങ്കിലും തെറ്റുകൾ കണ്ടെത്തിയാൽ തിരുത്തൽ ആവശ്യപ്പെടാം",
+        "വിജയകരമായ KYC അപ്‌ഡേറ്റിന് സ്ഥിരീകരണം നൽകപ്പെടും",
+        "അനുസരണം പാലിക്കാതെ പോവുകയാണെങ്കിൽ Companies Act പ്രകാരം പിഴ ചുമത്തപ്പെടും",
+      ],
+
+      processingTime:
+        "സാധാരണയായി പരിശോധിക്കൽ, MCA പ്രവർത്തന ഭാരം എന്നിവയുടെ അടിസ്ഥാനത്തിൽ 7–15 ദിവസം എടുത്തേക്കാം",
+
+      fees: [
+        "Director KYC ഓൺലൈൻ ഫയലിംഗിന് ഫീസ് ഇല്ല; സഹായം വാങ്ങിയാൽ പ്രൊഫഷണൽ ഫീസ് ബാധകമാണ്",
+      ],
+
+      authority:
+        "Ministry of Corporate Affairs (MCA), ഇന്ത്യ സർക്കാർ; Companies Act, 2013",
+
+      note: "എല്ലാ രേഖകളും സാധുവായതും അപ്‌ഡേറ്റുചെയ്‌തതുമാണെന്ന് ഉറപ്പാക്കുക. വൈകിയാൽ അല്ലെങ്കിൽ അനുസരണം പാലിക്കാത്തത് Companies Act പ്രകാരം പിഴക്ക് കാരണമാകും.",
+    },
   },
   or: {
     title: "ଡାଇରେକ୍ଟର KYC",
@@ -437,6 +824,49 @@ export const directorKycData: Record<
           "ପରିବର୍ତ୍ତନ ହେଲେ ନିର୍ଦ୍ଦେଶକମାନେ ତାଙ୍କର ବିବରଣୀ ତୁରନ୍ତ ଅଦ୍ୟତନ କରିବେ।",
       },
     ],
+    howToApply: {
+      mode: ["ଅନଲାଇନ୍", "ଅଫଲାଇନ୍"],
+
+      applyWithin:
+        "ଡାଇରେକ୍ଟର KYC (Know Your Customer) ସମସ୍ତ କମ୍ପାନୀର ଡାଇରେକ୍ଟରମାନେ Companies Act, 2013 ଏବଂ MCA ନିୟମ ଅନୁଯାୟୀ ସମ୍ପୂର୍ଣ୍ଣ କରିବା ଦରକାର। ନିର୍ଦ୍ଧାରିତ ସମୟସୀମା ମଧ୍ୟରେ ଅନୁସରଣ ନ କରିଲେ ଜରିମାନା ହେବ।",
+
+      onlineSteps: [
+        "Ministry of Corporate Affairs (MCA) ପୋର୍ଟାଲକୁ ଯାଆନ୍ତୁ: https://www.mca.gov.in/",
+        "ଆପଣଙ୍କର Director Identification Number (DIN) ଏବଂ କ୍ରେଡେନ୍ସିଆଲ୍ସ ବ୍ୟବହାର କରି ଲଗଇନ୍ କରନ୍ତୁ",
+        "'MCA Services' > 'DIR-3 KYC' କିମ୍ବା 'Update Director KYC' ଭାଗକୁ ଯାଆନ୍ତୁ",
+        "ଆବଶ୍ୟକ ବ୍ୟକ୍ତିଗତ, ସମ୍ପର୍କ ଏବଂ ବୃତ୍ତିଗତ ତଥ୍ୟ ପୂରଣ କରନ୍ତୁ",
+        "PAN, Aadhaar, ଠିକଣା ପ୍ରମାଣ ପତ୍ର ଏବଂ ଫୋଟୋ ଯେପରି ଆବଶ୍ୟକ ଡକ୍ୟୁମେଣ୍ଟ ଅପଲୋଡ୍ କରନ୍ତୁ",
+        "ଫର୍ମ ସବମିଟ୍ କରନ୍ତୁ ଏବଂ acknowledgment କିମ୍ବା SRN ନମ୍ବର ଲେଖି ରଖନ୍ତୁ",
+        "ରେକର୍ଡ ପାଇଁ ନିଶ୍ଚୟ ପତ୍ର (confirmation receipt) ଡାଉନଲୋଡ୍ କରନ୍ତୁ",
+      ],
+
+      offlineSteps: [
+        "ଯଦି ଅଫଲାଇନ୍ ସବମିସନ୍ ଆବଶ୍ୟକ ହୁଏ, ତେବେ RoC ଅଫିସ୍‌ରୁ DIR-3 KYC ଫର୍ମ ପ୍ରାପ୍ତ କରନ୍ତୁ",
+        "ସମସ୍ତ ଆବଶ୍ୟକ ବ୍ୟକ୍ତିଗତ, ସମ୍ପର୍କ ଏବଂ ବୃତ୍ତିଗତ ତଥ୍ୟ ସଠିକ୍ ଭାବରେ ପୂରଣ କରନ୍ତୁ",
+        "PAN, Aadhaar, ଠିକଣା ପ୍ରମାଣ ଏବଂ ଫୋଟୋ ସହ ଆବଶ୍ୟକ ଡକ୍ୟୁମେଣ୍ଟ ଯୋଡନ୍ତୁ",
+        "ପୂର୍ଣ୍ଣ ଫର୍ମ RoC ଅଫିସ୍‌ରେ ସବମିଟ୍ କରନ୍ତୁ",
+        "ସବମିସନ୍ ପ୍ରମାଣ ପତ୍ର ନେଉନ୍ତୁ",
+      ],
+
+      afterSubmission: [
+        "MCA ସବମିଟ୍ ହୋଇଥିବା KYC ତଥ୍ୟ ଯାଞ୍ଚ କରିବେ",
+        "ଯଦି କୌଣସି ତ୍ରୁଟି ମିଳିଲେ, ସଂଶୋଧନ ପାଇଁ ଅନୁରୋଧ କରାଯିବ",
+        "ସଫଳ KYC ଅପଡେଟ୍‌ର ନିଶ୍ଚୟ ପତ୍ର ଦିଆଯିବ",
+        "ଅନୁସରଣ ନ କଲେ Companies Act ଅନୁସାରେ ଜରିମାନା ଲାଗିପାରେ",
+      ],
+
+      processingTime:
+        "ସାଧାରଣତଃ, ଯାଞ୍ଚ ଏବଂ MCA କାର୍ଯ୍ୟଭାର ଉପରେ ନିର୍ଭର କରି 7–15 ଦିନ ଲାଗିପାରେ",
+
+      fees: [
+        "Director KYC ଅନଲାଇନ୍ ଫାଇଲିଙ୍ଗ ପାଇଁ କୌଣସି ଶୁଳ୍କ ନାହିଁ; ସାହାଯ୍ୟ ନେଲେ ପ୍ରୋଫେସନାଲ୍ ଶୁଳ୍କ ଲାଗିପାରେ",
+      ],
+
+      authority:
+        "Ministry of Corporate Affairs (MCA), ଭାରତ ସରକାର; Companies Act, 2013",
+
+      note: "ସମସ୍ତ ଡକ୍ୟୁମେଣ୍ଟ ସଠିକ୍ ଏବଂ ଅଦ୍ୟତିତ ଅଟେ ବୋଲି ନିଶ୍ଚିତ କରନ୍ତୁ। ବିଳମ୍ବ କିମ୍ବା ଅନୁସରଣ ନ କରିବାରେ Companies Act ଅନୁସାରେ ଜରିମାନା ହୋଇପାରେ।",
+    },
   },
   kok: {
     title: "डायरेक्टर KYC",
@@ -479,5 +909,48 @@ export const directorKycData: Record<
         details: "फेर बदल झाल्यार डायरेक्टरानी तांची माहिती तात्काळ अपडेट करप.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "डायरेक्टर KYC (Know Your Customer) सर्व कंपन्याचेर डिरेक्तोरांकांक Companies Act, 2013 आनी MCA नियमानुसार पुर्ण करपाची आसा. तय केलेल्या कालावधीत पालन करपाचेर पनजी दंड लागूं शकता.",
+
+      onlineSteps: [
+        "Ministry of Corporate Affairs (MCA) पोर्टलाक भेट द्या: https://www.mca.gov.in/",
+        "तुमचो Director Identification Number (DIN) आनी credentials वापरून लॉगिन करा",
+        "'MCA Services' > 'DIR-3 KYC' वा 'Update Director KYC' विभागाक भेट द्या",
+        "आवश्यक वैयक्तिक, संपर्क आनी व्यावसायिक माहिती भरा",
+        "PAN, Aadhaar, पत्तो प्रमाण आनी फोटो हांवय अश्या आवश्यक कागदपत्र अपलोड करा",
+        "फॉर्म सबमिट करा आनी acknowledgment वा SRN नंबर नोंद करा",
+        "रेकॉर्डसाठी पुष्टी रसीद (confirmation receipt) डाउनलोड करा",
+      ],
+
+      offlineSteps: [
+        "जर ऑफलाइन सबमिशन आवश्यक आसा, तर RoC कार्यालयाकून DIR-3 KYC फॉर्म मिळवा",
+        "सर्व आवश्यक वैयक्तिक, संपर्क आनी व्यावसायिक माहिती बरोबर भरा",
+        "PAN, Aadhaar, पत्तो प्रमाण आनी फोटो हांवय अश्या सहाय्यक कागदपत्र जोडून ठेवा",
+        "पूर्ण फॉर्म RoC कार्यालयाक सबमिट करा",
+        "सबमिशनाची पुष्टी करणारी acknowledgment रसीद मिळवा",
+      ],
+
+      afterSubmission: [
+        "MCA सबमिट केलेल्या KYC माहितीची पडताळणी करील",
+        "कुडलें विसंगती आसा तर सुधार करपाचेर विनंती करू शकतात",
+        "यशस्वी KYC अपडेटाची पुष्टी दिली जाईल",
+        "पालन न केल्यास Companies Act अंतर्गत दंड लागूं शकता",
+      ],
+
+      processingTime:
+        "सामान्यतः पडताळणी आनी MCA च्या कामाचा भारानुसार 7–15 दिवस लागतात",
+
+      fees: [
+        "डायरेक्टर KYC ऑनलाइन फाइलिंगाक फुकट आसा; मदत घेतल्यास व्यावसायिक फी लागू शकता",
+      ],
+
+      authority:
+        "Ministry of Corporate Affairs (MCA), भारत सरकार; Companies Act, 2013",
+
+      note: "सर्व कागदपत्र वैध आनी अपडेटेड आसा हांव खात्री करा. उशीर वा पालन न केल्यास Companies Act अंतर्गत दंड लागूं शकता.",
+    },
   },
 };

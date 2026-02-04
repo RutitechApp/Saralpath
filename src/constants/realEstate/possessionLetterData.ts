@@ -5,6 +5,7 @@ export const possessionLetterFormData: Record<
     description?: string;
     eligibility: string[];
     steps: { step: number; title: string; details: string }[];
+    howToApply: any;
   }
 > = {
   en: {
@@ -49,6 +50,44 @@ export const possessionLetterFormData: Record<
           "The possession letter is issued as an official acknowledgment that the property has been handed over to the buyer.",
       },
     ],
+    howToApply: {
+      mode: ["Online", "Offline"],
+
+      applyWithin:
+        "A Possession Letter is issued by the developer or authority certifying the official handover of property or premises to the buyer.",
+
+      onlineSteps: [
+        "Visit the official website of the developer or housing authority.",
+        "Login and select 'Possession Letter' service.",
+        "Enter property and buyer details.",
+        "Upload necessary documents such as payment proof, agreement copy, and identity proof.",
+        "Submit the application and note the reference number.",
+        "Download the possession letter after approval.",
+      ],
+
+      offlineSteps: [
+        "Visit the developer's office or authority office.",
+        "Collect and fill the Possession Letter application form.",
+        "Attach required documents.",
+        "Submit the form and pay any applicable fees.",
+        "Receive acknowledgment slip and possession letter.",
+      ],
+
+      afterSubmission: [
+        "Authority or developer verifies documents and payment status.",
+        "Physical possession is handed over.",
+        "Possession Letter is issued and should be kept for records.",
+      ],
+
+      processingTime:
+        "7–21 days depending on verification and developer/authority workload.",
+
+      fees: ["Fees may vary based on property type and developer rules."],
+
+      authority: "Developer / Housing Authority",
+
+      note: "Keep the possession letter safely as proof of ownership and handover.",
+    },
   },
 
   hi: {
@@ -93,6 +132,37 @@ export const possessionLetterFormData: Record<
           "स्वामित्व पत्र जारी किया जाता है, जो यह आधिकारिक रूप से पुष्टि करता है कि संपत्ति खरीदार को सौंप दी गई है।",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "पॉसेशन लेटर संपत्ति के अधिकारिक हस्तांतरण का प्रमाण पत्र है।",
+
+      onlineSteps: [
+        "डेवलपर या प्राधिकरण की वेबसाइट पर लॉगिन करें।",
+        "पॉसेशन लेटर सेवा चुनें।",
+        "आवश्यक दस्तावेज अपलोड करें।",
+        "आवेदन जमा करें और रसीद नंबर नोट करें।",
+      ],
+
+      offlineSteps: [
+        "कार्यालय में आवेदन फॉर्म भरें।",
+        "दस्तावेज जमा करें और रसीद प्राप्त करें।",
+      ],
+
+      afterSubmission: [
+        "दस्तावेज़ और भुगतान की जांच होगी।",
+        "भौतिक कब्जा सौंपा जाएगा।",
+      ],
+
+      processingTime: "7–21 कार्यदिवस।",
+
+      fees: ["संपत्ति और नियम अनुसार।"],
+
+      authority: "डेवलपर / हाउसिंग प्राधिकरण",
+
+      note: "पॉसेशन लेटर सुरक्षित रखें।",
+    },
   },
 
   gu: {
@@ -136,6 +206,35 @@ export const possessionLetterFormData: Record<
           "પોસેશન લેટર આ અધિકૃત પુષ્ટિ તરીકે જારી થાય છે કે મિલકત ખરીદદારને હસ્તાંતરિત કરી દેવામાં આવી છે.",
       },
     ],
+    howToApply: {
+      mode: ["ઓનલાઇન", "ઓફલાઇન"],
+
+      applyWithin: "પોસેશન લેટર સંપત્તિ હસ્તાંતરણનો પ્રમાણપત્ર છે.",
+
+      onlineSteps: [
+        "ડેવલપરની વેબસાઇટ પર જાઓ.",
+        "પોસેશન લેટર સેવા પસંદ કરો.",
+        "દસ્તાવેજ અપલોડ કરો અને અરજી સબમિટ કરો.",
+      ],
+
+      offlineSteps: [
+        "કચેરીમાં ફોર્મ ભરો અને દસ્તાવેજો સબમિટ કરો.",
+        "રસીદ મેળવો.",
+      ],
+
+      afterSubmission: [
+        "દસ્તાવેજો અને ચુકવણીની તપાસ કરવામાં આવશે.",
+        "ફિઝિકલ પોસેશન આપવામાં આવશે.",
+      ],
+
+      processingTime: "7–21 દિવસ.",
+
+      fees: ["સંપત્તિ અને નિયમ અનુસાર."],
+
+      authority: "ડેવલપર / હાઉસિંગ ઓથોરિટી",
+
+      note: "પોસેશન લેટર સુરક્ષિત રાખો.",
+    },
   },
 
   bn: {
@@ -180,6 +279,35 @@ export const possessionLetterFormData: Record<
           "পজেশন লেটার একটি সরকারী স্বীকৃতি হিসেবে ইস্যু করা হয় যে সম্পত্তি ক্রেতার হাতে হস্তান্তরিত হয়েছে।",
       },
     ],
+    howToApply: {
+      mode: ["অনলাইন", "অফলাইন"],
+
+      applyWithin: "পসেশন লেটার হলো সম্পত্তির অফিসিয়াল হস্তান্তরের প্রমাণ।",
+
+      onlineSteps: [
+        "ডেভেলপার বা কর্তৃপক্ষের ওয়েবসাইটে যান।",
+        "পসেশন লেটার সেবা নির্বাচন করুন।",
+        "নথি আপলোড করুন এবং আবেদন জমা দিন।",
+      ],
+
+      offlineSteps: [
+        "অফিসে গিয়ে ফর্ম পূরণ করুন এবং নথি জমা দিন।",
+        "রসিদ গ্রহণ করুন।",
+      ],
+
+      afterSubmission: [
+        "নথি এবং পেমেন্ট যাচাই করা হবে।",
+        "শারীরিক হস্তান্তর সম্পন্ন হবে।",
+      ],
+
+      processingTime: "7–21 কার্যদিবস।",
+
+      fees: ["সম্পত্তি এবং নিয়ম অনুযায়ী।"],
+
+      authority: "ডেভেলপার / হাউজিং অথরিটি",
+
+      note: "পসেশন লেটার রেকর্ডের জন্য সংরক্ষণ করুন।",
+    },
   },
 
   kok: {
@@ -223,6 +351,36 @@ export const possessionLetterFormData: Record<
           "हे पत्र अधिकृत पुष्टी म्हणून जारी केले जाते की संपत्ती खरेदीदाराकडे सुपूर्त केली गेली आहे.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "पोसेशन लेटर ह्या मालमत्तेचो अधिकृत हस्तांतरणाचो पुरावो आसा.",
+
+      onlineSteps: [
+        "डेवलपर वा अधिकाऱ्याचेर वेबसाइटाक भेट द्या.",
+        "पोसेशन लेटर सेवा निवडा.",
+        "दस्तऐवज अपलोड करून अर्ज सादर करा.",
+      ],
+
+      offlineSteps: [
+        "कार्यालयांत फॉर्म भरा व दस्तऐवज सादर करा.",
+        "रसिद आनी पोसेशन लेटर घ्या.",
+      ],
+
+      afterSubmission: [
+        "दस्तऐवज आनी पेमेंट तपासणी केली जातली.",
+        "भौतिक पोसेशन दिले जातले.",
+      ],
+
+      processingTime: "7–21 दीस.",
+
+      fees: ["मालमत्ता आणि नियमांप्रमाणे."],
+
+      authority: "डेव्हलपर / हाऊसिंग अधिकारी",
+
+      note: "पोसेशन लेटर सुरक्षित ठेवतले.",
+    },
   },
 
   kn: {
@@ -266,6 +424,35 @@ export const possessionLetterFormData: Record<
         details: "ಹಸ್ತಾಂತರ ಪತ್ರವನ್ನು ಅಧಿಕೃತ ದೃಢೀಕರಣವಾಗಿ ನೀಡಲಾಗುತ್ತದೆ.",
       },
     ],
+    howToApply: {
+      mode: ["ಆನ್‌ಲೈನ್", "ಆಫ್‌ಲೈನ್"],
+
+      applyWithin: "ಪೊಸೆಷನ್ ಲೆಟರ್ವು ಆಸ್ತಿಯ ಅಧಿಕೃತ ಹಸ್ತಾಂತರವನ್ನು ದೃಢಪಡಿಸುತ್ತದೆ.",
+
+      onlineSteps: [
+        "ಡೆವೆಲಪರ್ ಅಥವಾ ಅಧಿಕಾರಿಯ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಹೋಗಿ.",
+        "ಪೊಸೆಷನ್ ಲೆಟರ್ ಸೇವೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ.",
+        "ದಾಖಲೆ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ ಮತ್ತು ಅರ್ಜಿ ಸಲ್ಲಿಸಿ.",
+      ],
+
+      offlineSteps: [
+        "ಕಚೇರಿಯಲ್ಲಿ ಫಾರ್ಮ್ ಭರ್ತಿ ಮಾಡಿ ದಾಖಲೆ ಸಲ್ಲಿಸಿ.",
+        "ಅಧಿಕೃತ ರಸೀದಿ ಮತ್ತು ಪೊಸೆಷನ್ ಲೆಟರ್ ಪಡೆಯಿರಿ.",
+      ],
+
+      afterSubmission: [
+        "ದಾಖಲೆಗಳು ಪರಿಶೀಲಿಸಲಾಗುತ್ತದೆ.",
+        "ಭೌತಿಕ ಹಸ್ತಾಂತರ ಮಾಡಲಾಗುತ್ತದೆ.",
+      ],
+
+      processingTime: "7–21 ಕಾರ್ಯದಿನಗಳು.",
+
+      fees: ["ಆಸ್ತಿ ಮತ್ತು ಡೆವೆಲಪರ್ ನಿಯಮಗಳ ಪ್ರಕಾರ."],
+
+      authority: "ಡೆವೆಲಪರ್ / ಹೌಸಿಂಗ್ ಅಧಿಕಾರಿಗಳು",
+
+      note: "ಪೊಸೆಷನ್ ಲೆಟರ್ ಸುರಕ್ಷಿತವಾಗಿ ಉಳಿಸಿ.",
+    },
   },
 
   ml: {
@@ -308,6 +495,36 @@ export const possessionLetterFormData: Record<
         details: "പോസഷൻ ലെറ്റർ ഔദ്യോഗിക അംഗീകാരം ആയി ജാരീ ചെയ്യും.",
       },
     ],
+    howToApply: {
+      mode: ["ഓൺലൈൻ", "ഓഫ്‌ലൈൻ"],
+
+      applyWithin:
+        "പോസഷൻ ലെറ്റർ പ്രോപ്പർട്ടി ഔദ്യോഗികമായി കൈമാറിയിരിക്കുന്നതിന്റെ തെളിവാണ്.",
+
+      onlineSteps: [
+        "ഡെവലപ്പർ അല്ലെങ്കിൽ അധികാരിയുടെ വെബ്‌സൈറ്റ് സന്ദർശിക്കുക.",
+        "പോസഷൻ ലെറ്റർ സേവനം തിരഞ്ഞെടുക്കുക.",
+        "ഡോക്യുമെന്റുകൾ അപ്‌ലോഡ് ചെയ്ത് അപേക്ഷ സമർപ്പിക്കുക.",
+      ],
+
+      offlineSteps: [
+        "ഓഫീസ് സന്ദർശിച്ച് ഫോം പൂരിപ്പിക്കുക, ഡോക്യുമെന്റുകൾ സമർപ്പിക്കുക.",
+        "അംഗീകൃത റസീറ്റ് ലഭിക്കുകയും പോസഷൻ ലെറ്റർ സ്വീകരിക്കുകയും ചെയ്യുക.",
+      ],
+
+      afterSubmission: [
+        "ഡോക്യുമെന്റുകളും പെയ്മെന്റും പരിശോധിക്കും.",
+        "ഫിസിക്കൽ പോസഷൻ നൽകും.",
+      ],
+
+      processingTime: "7–21 പ്രവർത്തിദിവസങ്ങൾ.",
+
+      fees: ["പ്രോപ്പർട്ടി പ്രകാരം ഫീസ് വ്യത്യാസപ്പെടും."],
+
+      authority: "ഡെവലപ്പർ / ഹൗസിംഗ് അധികാരികൾ",
+
+      note: "പോസഷൻ ലെറ്റർ സുരക്ഷിതമായി സൂക്ഷിക്കുക.",
+    },
   },
 
   mr: {
@@ -350,6 +567,36 @@ export const possessionLetterFormData: Record<
           "हे पत्र अधिकृत पुष्टी म्हणून जारी केले जाते की संपत्ती खरेदीदाराकडे सुपुर्त केली गेली आहे.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "पोसेशन लेटर हे मालमत्तेच्या अधिकृत हस्तांतरणाचे प्रमाण आहे.",
+
+      onlineSteps: [
+        "डेव्हलपर किंवा अधिकार्याच्या वेबसाइटवर लॉगिन करा.",
+        "पोसेशन लेटर सेवा निवडा.",
+        "दस्तऐवज अपलोड करा व अर्ज सादर करा.",
+      ],
+
+      offlineSteps: [
+        "कार्यालयात अर्ज भरा, दस्तऐवज सादर करा.",
+        "रसिद आणि पोसेशन लेटर मिळवा.",
+      ],
+
+      afterSubmission: [
+        "दस्तऐवज आणि पेमेंट तपासणी केली जाईल.",
+        "भौतिक पोसेशन दिले जाईल.",
+      ],
+
+      processingTime: "7–21 कार्यदिवस.",
+
+      fees: ["मालमत्ता आणि नियमानुसार."],
+
+      authority: "डेव्हलपर / हाऊसिंग अधिकारी",
+
+      note: "पोसेशन लेटर सुरक्षित ठेवा.",
+    },
   },
 
   or: {
@@ -393,6 +640,35 @@ export const possessionLetterFormData: Record<
           "ପୋସେସନ୍ ଲେଟର୍ ଏକ ଅଧିକାରିକ ସ୍ୱୀକୃତି ଭାବେ ଜାରି କରାଯାଇଥାଏ ଯେ ସଂପତ୍ତି ଖରିଦ୍ଦାରଙ୍କୁ ହସ୍ତାନ୍ତରିତ ହୋଇଛି।",
       },
     ],
+    howToApply: {
+      mode: ["ଅନଲାଇନ୍", "ଅଫଲାଇନ୍"],
+
+      applyWithin: "ପୋସେସନ୍ ଲେଟର୍ ହେଉଛି ସମ୍ପତ୍ତିର ଅଧିକୃତ ହସ୍ତାନ୍ତରର ପ୍ରମାଣ।",
+
+      onlineSteps: [
+        "ଡେଭେଲପର୍ କିମ୍ବା କାର୍ଯ୍ୟାଳୟର ଓୱେବସାଇଟକୁ ଯାଆନ୍ତୁ।",
+        "ପୋସେସନ୍ ଲେଟର୍ ସେବା ବାଛନ୍ତୁ।",
+        "ଦସ୍ତାବେଜ ଅପଲୋଡ୍ କରନ୍ତୁ ଏବଂ ଆବେଦନ ସମର୍ପଣ କରନ୍ତୁ।",
+      ],
+
+      offlineSteps: [
+        "କାର୍ଯ୍ୟାଳୟକୁ ଯାଆନ୍ତୁ, ଫର୍ମ ଭରନ୍ତୁ ଏବଂ ଦସ୍ତାବେଜ ଦିଅନ୍ତୁ।",
+        "ପୋସେସନ୍ ଲେଟର୍ ଓ ରସିଦ ମିଳନ୍ତୁ।",
+      ],
+
+      afterSubmission: [
+        "ଦସ୍ତାବେଜ ଓ ପେମେଣ୍ଟ ଯାଞ୍ଚ କରାଯିବ।",
+        "ଭୌତିକ ପୋସେସନ୍ ଦିଆଯିବ।",
+      ],
+
+      processingTime: "7–21 କାର୍ଯ୍ୟଦିନ।",
+
+      fees: ["ସମ୍ପତ୍ତି ଓ ନିୟମ ପ୍ରକାର।"],
+
+      authority: "ଡେଭେଲପର୍ / ହାଉସିଙ୍ଗ ଅଧିକାରୀ",
+
+      note: "ପୋସେସନ୍ ଲେଟର୍ ସୁରକ୍ଷିତ ରଖନ୍ତୁ।",
+    },
   },
 
   te: {
@@ -436,6 +712,36 @@ export const possessionLetterFormData: Record<
           "పొజెషన్ లెటర్ అధికారికంగా ఆస్తి హస్తాంతరమైందని ధృవీకరిస్తుంది.",
       },
     ],
+    howToApply: {
+      mode: ["ఆన్‌లైన్", "ఆఫ్‌లైన్"],
+
+      applyWithin:
+        "పొసెషన్ లెటర్ అనేది భవనం అధికారికంగా బహిష్కరణ పొందినట్టు ధృవీకరించే పత్రం.",
+
+      onlineSteps: [
+        "డెవలపర్ లేదా అధికార వెబ్‌సైట్‌కి వెళ్లండి.",
+        "పొసెషన్ లెటర్ సేవను ఎంచుకోండి.",
+        "డాక్యుమెంట్లు అప్‌లోడ్ చేసి దరఖాస్తు సమర్పించండి.",
+      ],
+
+      offlineSteps: [
+        "కార్యాలయంలో ఫారం నింపండి, డాక్యుమెంట్లు సమర్పించండి.",
+        "రసీదు మరియు పొసెషన్ లెటర్ పొందండి.",
+      ],
+
+      afterSubmission: [
+        "డాక్యుమెంట్లు మరియు చెల్లింపును ధృవీకరిస్తారు.",
+        "భౌతిక పొసెషన్ ఇవ్వబడుతుంది.",
+      ],
+
+      processingTime: "7–21 పని రోజులలో.",
+
+      fees: ["సొంతం మరియు డెవలపర్ నియమాల ఆధారంగా."],
+
+      authority: "డెవలపర్ / హౌసింగ్ అధికారులు",
+
+      note: "పొసెషన్ లెటర్ సురక్షితంగా ఉంచండి.",
+    },
   },
 
   ta: {
@@ -479,5 +785,35 @@ export const possessionLetterFormData: Record<
           "பொசெஷன் கடிதம் அதிகாரப்பூர்வ ஒப்புதல் ஆகச் வழங்கப்படுகிறது, சொத்து கைமாற்றம் செய்யப்பட்டுள்ளதாகக் குறிக்கிறது.",
       },
     ],
+    howToApply: {
+      mode: ["ஆன்லைன்", "ஆஃப்லைன்"],
+
+      applyWithin:
+        "பொசெஷன் லெட்டர் சொத்தின் அதிகாரப்பூர்வ கைமாற்றத்தை உறுதிப்படுத்துகிறது.",
+
+      onlineSteps: [
+        "டெவலப்பர் அல்லது அதிகாரியின் இணையதளத்திற்கு செல்லவும்.",
+        "பொசெஷன் லெட்டர் சேவையை தேர்ந்தெடுக்கவும்.",
+        "ஆவணங்களை பதிவேற்றவும், விண்ணப்பத்தை சமர்ப்பிக்கவும்.",
+      ],
+
+      offlineSteps: [
+        "அலுவலகத்தில் படிவம் நிரப்பவும்.",
+        "ஆவணங்கள் சமர்ப்பித்து ரசீது பெறவும்.",
+      ],
+
+      afterSubmission: [
+        "ஆவணங்கள் மற்றும் கட்டண நிலை சரிபார்க்கப்படும்.",
+        "பொசெஷன் வழங்கப்படும்.",
+      ],
+
+      processingTime: "7–21 வேலை நாட்கள்.",
+
+      fees: ["சொத்து மற்றும் விதிகள் பொருந்தும்."],
+
+      authority: "டெவலப்பர் / ஹவுசிங் அதிகாரி",
+
+      note: "பொசெஷன் லெட்டரை பாதுகாப்பாக வைக்கவும்.",
+    },
   },
 };

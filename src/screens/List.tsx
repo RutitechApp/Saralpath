@@ -821,7 +821,7 @@ const List = () => {
               </View>
             ))}
           </ScrollView>
-        ) : (
+        ) : activeIndex === 1 ? (
           <View>
             {selectedData?.eligibility?.map((item, index) => (
               <Text
@@ -837,8 +837,118 @@ const List = () => {
               </Text>
             ))}
           </View>
+        ) : (
+          <ScrollView showsVerticalScrollIndicator={false}>
+            {/* Apply Time Info */}
+            <Text
+              style={{
+                fontSize: 16 * fontScale,
+                color: colors.subText,
+                marginTop: verticalScale(8),
+              }}
+            >
+              {selectedData?.howToApply?.applyWithin}
+            </Text>
+
+            {/* Online Steps */}
+            <Text
+              style={{
+                fontSize: 18 * fontScale,
+                fontWeight: "600",
+                color: colors.text,
+                marginTop: verticalScale(12),
+              }}
+            >
+              Online Process
+            </Text>
+
+            {selectedData?.howToApply?.onlineSteps?.map((step, index) => (
+              <Text
+                key={index}
+                style={{
+                  fontSize: 16 * fontScale,
+                  color: colors.subText,
+                  marginTop: verticalScale(6),
+                }}
+              >
+                {index + 1}. {step}
+              </Text>
+            ))}
+
+            {/* Offline Steps */}
+            <Text
+              style={{
+                fontSize: 18 * fontScale,
+                fontWeight: "600",
+                color: colors.text,
+                marginTop: verticalScale(14),
+              }}
+            >
+              Offline Process
+            </Text>
+
+            {selectedData?.howToApply?.offlineSteps?.map((step, index) => (
+              <Text
+                key={index}
+                style={{
+                  fontSize: 16 * fontScale,
+                  color: colors.subText,
+                  marginTop: verticalScale(6),
+                }}
+              >
+                {index + 1}. {step}
+              </Text>
+            ))}
+
+            {/* Processing Time */}
+            <Text
+              style={{
+                fontSize: 16 * fontScale,
+                fontWeight: "500",
+                color: colors.text,
+                marginTop: verticalScale(14),
+              }}
+            >
+              ⏱ Processing Time
+            </Text>
+            <Text style={{ color: colors.subText }}>
+              {selectedData?.howToApply?.processingTime}
+            </Text>
+
+            {/* Fees */}
+            <Text
+              style={{
+                fontSize: 16 * fontScale,
+                fontWeight: "500",
+                color: colors.text,
+                marginTop: verticalScale(10),
+              }}
+            >
+              💰 Fees
+            </Text>
+            {selectedData?.howToApply?.fees?.map((fee, index) => (
+              <Text key={index} style={{ color: colors.subText }}>
+                • {fee}
+              </Text>
+            ))}
+
+            {/* Authority */}
+            <Text
+              style={{
+                fontSize: 16 * fontScale,
+                fontWeight: "500",
+                color: colors.text,
+                marginTop: verticalScale(10),
+              }}
+            >
+              🏢 Authority
+            </Text>
+            <Text style={{ color: colors.subText }}>
+              {selectedData?.howToApply?.authority}
+            </Text>
+          </ScrollView>
         )}
-        {activeIndex === 0 ? (
+        {activeIndex === 0 || activeIndex === 2 ? (
           <BannerAd
             ref={bannerRef}
             unitId={adUnitId}

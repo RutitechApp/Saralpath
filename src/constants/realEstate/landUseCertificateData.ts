@@ -5,6 +5,7 @@ export const landUseCertificateData: Record<
     description?: string;
     eligibility: string[];
     steps: { step: number; title: string; details: string }[];
+    howToApply: any;
   }
 > = {
   en: {
@@ -49,6 +50,45 @@ export const landUseCertificateData: Record<
           "Download or collect the certificate confirming the approved land use for the property.",
       },
     ],
+    howToApply: {
+      mode: ["Online", "Offline"],
+
+      applyWithin:
+        "A Land Use Certificate (LUC) is an official document issued by the local planning or revenue authority certifying the permitted use of land (residential, commercial, industrial, or agricultural). It is required for building approvals, loans, conversion, and legal verification.",
+
+      onlineSteps: [
+        "Visit the State Revenue or Town Planning Department portal.",
+        "Select ‘Land Use Certificate’ or ‘Land Use Permission’ service.",
+        "Enter land details such as survey number, village, taluk, and district.",
+        "Upload required supporting documents if asked.",
+        "Pay the prescribed fee online.",
+        "Submit the application and download the acknowledgment.",
+        "Track application status or download the certificate once approved.",
+      ],
+
+      offlineSteps: [
+        "Visit the local Tahsildar, Revenue Office, or Town Planning Authority.",
+        "Collect the Land Use Certificate application form.",
+        "Fill in land ownership and survey details.",
+        "Attach supporting documents and identity proof.",
+        "Submit the application and pay applicable fees.",
+        "Collect the certificate after approval.",
+      ],
+
+      afterSubmission: [
+        "Verify land classification mentioned in the certificate.",
+        "Use the certificate for approvals, loans, or land conversion.",
+      ],
+
+      processingTime:
+        "Typically 7–30 working days depending on authority and verification.",
+
+      fees: ["Fees vary as per State Government rules."],
+
+      authority: "Revenue Department / Town & Country Planning Authority",
+
+      note: "Land details must exactly match revenue records; discrepancies may delay approval.",
+    },
   },
 
   hi: {
@@ -92,6 +132,37 @@ export const landUseCertificateData: Record<
           "भूमि के स्वीकृत उपयोग की पुष्टि करने वाला प्रमाण पत्र डाउनलोड या प्राप्त करें।",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "भूमि उपयोग प्रमाणपत्र भूमि के स्वीकृत उपयोग (आवासीय, वाणिज्यिक, औद्योगिक या कृषि) को प्रमाणित करने वाला आधिकारिक दस्तावेज़ है।",
+
+      onlineSteps: [
+        "राज्य राजस्व या नगर नियोजन विभाग की वेबसाइट पर जाएँ।",
+        "‘Land Use Certificate’ सेवा चुनें।",
+        "सर्वे नंबर और भूमि विवरण दर्ज करें।",
+        "शुल्क का ऑनलाइन भुगतान करें।",
+        "आवेदन जमा कर रसीद प्राप्त करें।",
+      ],
+
+      offlineSteps: [
+        "तहसील या नगर नियोजन कार्यालय जाएँ।",
+        "आवेदन पत्र भरें और दस्तावेज़ जमा करें।",
+        "शुल्क का भुगतान करें।",
+        "प्रमाणपत्र प्राप्त करें।",
+      ],
+
+      afterSubmission: ["भूमि उपयोग विवरण की जाँच करें।"],
+
+      processingTime: "7–30 कार्य दिवस।",
+
+      fees: ["राज्य सरकार द्वारा निर्धारित शुल्क।"],
+
+      authority: "राजस्व विभाग / नगर नियोजन प्राधिकरण",
+
+      note: "रिकॉर्ड से मेल खाती जानकारी आवश्यक है।",
+    },
   },
 
   gu: {
@@ -135,6 +206,36 @@ export const landUseCertificateData: Record<
           "પ્રમાણપત્ર ડાઉનલોડ અથવા મેળવીને જમીન માટે મંજૂર ઉપયોગની પુષ્ટિ મેળવો.",
       },
     ],
+    howToApply: {
+      mode: ["ઓનલાઇન", "ઓફલાઇન"],
+
+      applyWithin:
+        "લેન્ડ યુઝ સર્ટિફિકેટ જમીનના માન્ય ઉપયોગની પુષ્ટિ કરતું અધિકૃત દસ્તાવેજ છે.",
+
+      onlineSteps: [
+        "રાજ્ય રેવન્યુ અથવા ટાઉન પ્લાનિંગ વેબસાઇટ પર જાઓ.",
+        "‘Land Use Certificate’ પસંદ કરો.",
+        "સર્વે અને જમીન વિગતો દાખલ કરો.",
+        "ફી ઓનલાઇન ચૂકવો.",
+        "અરજી સબમિટ કરો.",
+      ],
+
+      offlineSteps: [
+        "તાલુકા અથવા ટાઉન પ્લાનિંગ કચેરીમાં અરજી કરો.",
+        "દસ્તાવેજો અને ફી સબમિટ કરો.",
+        "સર્ટિફિકેટ મેળવો.",
+      ],
+
+      afterSubmission: ["જમીન ઉપયોગ પ્રકાર ચકાસો."],
+
+      processingTime: "7–30 કાર્ય દિવસ.",
+
+      fees: ["રાજ્ય મુજબ નક્કી થયેલ ફી."],
+
+      authority: "રેવન્યુ વિભાગ / ટાઉન પ્લાનિંગ ઓથોરિટી",
+
+      note: "જમીન રેકોર્ડ સાથે વિગતો સુસંગત હોવી જોઈએ.",
+    },
   },
 
   bn: {
@@ -177,6 +278,36 @@ export const landUseCertificateData: Record<
         details: "জমির অনুমোদিত ব্যবহারের প্রমাণপত্র ডাউনলোড বা সংগ্রহ করুন।",
       },
     ],
+    howToApply: {
+      mode: ["অনলাইন", "অফলাইন"],
+
+      applyWithin:
+        "ল্যান্ড ইউজ সার্টিফিকেট জমির অনুমোদিত ব্যবহারের প্রমাণ হিসেবে জারি করা হয়।",
+
+      onlineSteps: [
+        "রাজ্য রাজস্ব বা নগর পরিকল্পনা দপ্তরের ওয়েবসাইটে যান।",
+        "‘Land Use Certificate’ নির্বাচন করুন।",
+        "জমির বিবরণ প্রদান করুন।",
+        "ফি পরিশোধ করুন।",
+        "আবেদন জমা দিন।",
+      ],
+
+      offlineSteps: [
+        "তহসিল বা পরিকল্পনা অফিসে আবেদন করুন।",
+        "নথি জমা ও ফি প্রদান করুন।",
+        "সার্টিফিকেট সংগ্রহ করুন।",
+      ],
+
+      afterSubmission: ["জমির ব্যবহার যাচাই করুন।"],
+
+      processingTime: "৭–৩০ কার্যদিবস।",
+
+      fees: ["সরকার নির্ধারিত ফি।"],
+
+      authority: "রাজ্য রাজস্ব বিভাগ / পরিকল্পনা কর্তৃপক্ষ",
+
+      note: "ভুল তথ্য দিলে বিলম্ব হতে পারে।",
+    },
   },
 
   kok: {
@@ -220,6 +351,35 @@ export const landUseCertificateData: Record<
           "डाऊनलोड करा किंवा प्रमाणपत्र प्राप्त करा ज्यात जमिनीच्या मंजूर वापराची पुष्टी असते.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "लँड यूज प्रमाणपत्र हें जमिनीचो मान्य वापर दाखोवन दिवपी अधिकृत दस्तावेज आसा.",
+
+      onlineSteps: [
+        "राज्य महसूल वा टाउन प्लानिंग वेबसाइटाक भेट दियात.",
+        "‘Land Use Certificate’ सेवा निवडात.",
+        "जमीन तपशील भरात.",
+        "फी भरात.",
+        "अर्ज सादर करात.",
+      ],
+
+      offlineSteps: [
+        "तहसील वा प्लानिंग कार्यालयांत अर्ज करात.",
+        "प्रमाणपत्र घेवप.",
+      ],
+
+      afterSubmission: ["जमीन वापर तपासात."],
+
+      processingTime: "7–30 दीस.",
+
+      fees: ["सरकार ठरयले फी."],
+
+      authority: "महसूल खाते / टाउन प्लानिंग अथॉरिटी",
+
+      note: "रेकॉर्डांशी जुळप गरजेचें.",
+    },
   },
 
   kn: {
@@ -263,6 +423,36 @@ export const landUseCertificateData: Record<
           "ಅನುಮೋದಿತ ಭೂಮಿ ಬಳಕೆಯನ್ನು ದೃಢಪಡಿಸುವ ಪ್ರಮಾಣಪತ್ರ ಡೌನ್‌ಲೋಡ್ ಅಥವಾ ಪಡೆದುಕೊಳ್ಳಿ.",
       },
     ],
+    howToApply: {
+      mode: ["ಆನ್‌ಲೈನ್", "ಆಫ್‌ಲೈನ್"],
+
+      applyWithin:
+        "ಭೂ ಬಳಕೆ ಪ್ರಮಾಣಪತ್ರವು ಭೂಮಿಯ ಅನುಮತಿತ ಬಳಕೆಯನ್ನು ದೃಢೀಕರಿಸುವ ಅಧಿಕೃತ ದಾಖಲೆಯಾಗಿದೆ.",
+
+      onlineSteps: [
+        "ರಾಜ್ಯ ಆದಾಯ ಅಥವಾ ನಗರ ಯೋಜನಾ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಭೇಟಿ ನೀಡಿ.",
+        "‘Land Use Certificate’ ಆಯ್ಕೆಮಾಡಿ.",
+        "ಸರ್ವೇ ವಿವರ ನಮೂದಿಸಿ.",
+        "ಶುಲ್ಕ ಪಾವತಿಸಿ.",
+        "ಅರ್ಜಿಯನ್ನು ಸಲ್ಲಿಸಿ.",
+      ],
+
+      offlineSteps: [
+        "ತಹಸೀಲ್ದಾರ್ ಅಥವಾ ಯೋಜನಾ ಕಚೇರಿಗೆ ಭೇಟಿ ನೀಡಿ.",
+        "ಅರ್ಜಿಯನ್ನು ಸಲ್ಲಿಸಿ.",
+        "ಪ್ರಮಾಣಪತ್ರ ಪಡೆಯಿರಿ.",
+      ],
+
+      afterSubmission: ["ಭೂ ಬಳಕೆ ವರ್ಗ ಪರಿಶೀಲಿಸಿ."],
+
+      processingTime: "7–30 ಕಾರ್ಯದಿನಗಳು.",
+
+      fees: ["ನಿಯಮಾನುಸಾರ ಶುಲ್ಕ."],
+
+      authority: "ಆದಾಯ ಇಲಾಖೆ / ನಗರ ಯೋಜನಾ ಪ್ರಾಧಿಕಾರ",
+
+      note: "ದಾಖಲೆಗಳೊಂದಿಗೆ ಹೊಂದಿಕೆಯಾಗಬೇಕು.",
+    },
   },
 
   ml: {
@@ -307,6 +497,36 @@ export const landUseCertificateData: Record<
           "അനുമതിപ്രाप्त ഭൂമി ഉപയോഗം സ്ഥിരീകരിക്കുന്ന സർട്ടിഫിക്കറ്റ് ഡൗൺലോഡ് ചെയ്യുക അല്ലെങ്കിൽ സ്വീകരിക്കുക.",
       },
     ],
+    howToApply: {
+      mode: ["ഓൺലൈൻ", "ഓഫ്‌ലൈൻ"],
+
+      applyWithin:
+        "ലാൻഡ് യൂസ് സർട്ടിഫിക്കറ്റ് ഭൂമിയുടെ അനുവദിച്ച ഉപയോഗം തെളിയിക്കുന്ന ഔദ്യോഗിക രേഖയാണ്.",
+
+      onlineSteps: [
+        "സംസ്ഥാന വരുമാന അല്ലെങ്കിൽ ടൗൺ പ്ലാനിംഗ് വെബ്‌സൈറ്റ് സന്ദർശിക്കുക.",
+        "‘Land Use Certificate’ തിരഞ്ഞെടുക്കുക.",
+        "ഭൂവിവരങ്ങൾ നൽകുക.",
+        "ഫീസ് അടയ്ക്കുക.",
+        "അപേക്ഷ സമർപ്പിക്കുക.",
+      ],
+
+      offlineSteps: [
+        "തഹസീൽദാർ അല്ലെങ്കിൽ പദ്ധതിയിടൽ ഓഫീസിൽ പോകുക.",
+        "അപേക്ഷ നൽകുക.",
+        "സർട്ടിഫിക്കറ്റ് സ്വീകരിക്കുക.",
+      ],
+
+      afterSubmission: ["ഭൂ ഉപയോഗ വിഭാഗം പരിശോധിക്കുക."],
+
+      processingTime: "7–30 പ്രവർത്തിദിവസങ്ങൾ.",
+
+      fees: ["സർക്കാർ നിശ്ചയിച്ച ഫീസ്."],
+
+      authority: "വരുമാന വകുപ്പ് / ടൗൺ പ്ലാനിംഗ് അതോറിറ്റി",
+
+      note: "രേഖകളോട് പൊരുത്തപ്പെടണം.",
+    },
   },
 
   mr: {
@@ -349,6 +569,35 @@ export const landUseCertificateData: Record<
         details: "डाऊनलोड किंवा प्राप्त करून जमीन वापराची मान्यता मिळवा.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "लँड युज प्रमाणपत्र हे जमिनीच्या मान्य वापराची अधिकृत नोंद आहे.",
+
+      onlineSteps: [
+        "राज्य महसूल किंवा नगर नियोजन वेबसाइटला भेट द्या.",
+        "‘Land Use Certificate’ निवडा.",
+        "जमीन तपशील भरा.",
+        "फी भरा.",
+        "अर्ज सादर करा.",
+      ],
+
+      offlineSteps: [
+        "तहसील किंवा नियोजन कार्यालयात अर्ज करा.",
+        "प्रमाणपत्र घ्या.",
+      ],
+
+      afterSubmission: ["जमीन वापर प्रकार तपासा."],
+
+      processingTime: "7–30 कार्यदिवस.",
+
+      fees: ["नियमानुसार शुल्क."],
+
+      authority: "महसूल विभाग / नगर नियोजन प्राधिकरण",
+
+      note: "नोंदी अचूक असणे आवश्यक.",
+    },
   },
 
   or: {
@@ -392,6 +641,35 @@ export const landUseCertificateData: Record<
           "ଡାଉନଲୋଡ୍ କରନ୍ତୁ କିମ୍ବା ସର୍ଟିଫିକେଟ୍ ପ୍ରାପ୍ତ କରନ୍ତୁ ଯାହା ଜମିର ଅନୁମୋଦିତ ବ୍ୟବହାରକୁ ସତ୍ୟାପିତ କରେ।",
       },
     ],
+    howToApply: {
+      mode: ["ଅନଲାଇନ୍", "ଅଫଲାଇନ୍"],
+
+      applyWithin:
+        "ଲ୍ୟାଣ୍ଡ ୟୁଜ୍ ସର୍ଟିଫିକେଟ୍ ଜମିର ଅନୁମୋଦିତ ବ୍ୟବହାରକୁ ପ୍ରମାଣ କରେ।",
+
+      onlineSteps: [
+        "ରାଜ୍ୟ ରେଭେନ୍ୟୁ କିମ୍ବା ପ୍ଲାନିଂ ୱେବସାଇଟକୁ ଯାଆନ୍ତୁ।",
+        "‘Land Use Certificate’ ବାଛନ୍ତୁ।",
+        "ଜମି ବିବରଣୀ ଦିଅନ୍ତୁ।",
+        "ଶୁଳ୍କ ଦିଅନ୍ତୁ।",
+        "ଆବେଦନ କରନ୍ତୁ।",
+      ],
+
+      offlineSteps: [
+        "ତହସିଲ କାର୍ଯ୍ୟାଳୟରେ ଆବେଦନ କରନ୍ତୁ।",
+        "ସର୍ଟିଫିକେଟ୍ ପାଆନ୍ତୁ।",
+      ],
+
+      afterSubmission: ["ଜମି ବ୍ୟବହାର ଯାଞ୍ଚ କରନ୍ତୁ।"],
+
+      processingTime: "7–30 କାର୍ଯ୍ୟଦିନ।",
+
+      fees: ["ନିର୍ଦ୍ଧାରିତ ଶୁଳ୍କ।"],
+
+      authority: "ରାଜସ୍ୱ ବିଭାଗ / ପ୍ଲାନିଂ ଅଥରିଟି",
+
+      note: "ସଠିକ୍ ତଥ୍ୟ ଆବଶ୍ୟକ।",
+    },
   },
 
   te: {
@@ -436,6 +714,36 @@ export const landUseCertificateData: Record<
           "డౌన్‌లోడ్ చేయండి లేదా సర్టిఫికేట్ పొందండి, భూమి కోసం అనుమతించబడిన వినియోగాన్ని ధృవీకరిస్తుంది.",
       },
     ],
+    howToApply: {
+      mode: ["ఆన్‌లైన్", "ఆఫ్‌లైన్"],
+
+      applyWithin:
+        "ల్యాండ్ యూజ్ సర్టిఫికేట్ అనేది భూమి అనుమతించబడిన వినియోగాన్ని నిర్ధారించే అధికారిక పత్రం.",
+
+      onlineSteps: [
+        "రాష్ట్ర రెవెన్యూ లేదా టౌన్ ప్లానింగ్ వెబ్‌సైట్‌ను సందర్శించండి.",
+        "‘Land Use Certificate’ ఎంపిక చేయండి.",
+        "సర్వే వివరాలు నమోదు చేయండి.",
+        "ఫీజు చెల్లించండి.",
+        "దరఖాస్తు సమర్పించండి.",
+      ],
+
+      offlineSteps: [
+        "తహసీల్దార్ లేదా ప్రణాళిక కార్యాలయానికి వెళ్లండి.",
+        "దరఖాస్తు చేసి పత్రాలు సమర్పించండి.",
+        "సర్టిఫికేట్ పొందండి.",
+      ],
+
+      afterSubmission: ["భూమి వినియోగాన్ని ధృవీకరించండి."],
+
+      processingTime: "7–30 పని రోజులు.",
+
+      fees: ["ప్రభుత్వం నిర్ణయించిన ఫీజు."],
+
+      authority: "రెవెన్యూ శాఖ / టౌన్ ప్లానింగ్ అథారిటీ",
+
+      note: "రికార్డులకు సరిపోలాలి.",
+    },
   },
 
   ta: {
@@ -480,5 +788,35 @@ export const landUseCertificateData: Record<
           "அனுமதிக்கப்பட்ட நில பயன்பாட்டை உறுதிப்படுத்தும் சான்றிதழை ஆன்லைனில் பதிவிறக்கம் செய்யவோ அல்லது அலுவலகத்தில் பெற்றுக்கொள்ளவோ செய்யவும்.",
       },
     ],
+    howToApply: {
+      mode: ["ஆன்லைன்", "ஆஃப்லைன்"],
+
+      applyWithin:
+        "நில பயன்பாடு சான்றிதழ் என்பது நிலத்தின் அனுமதிக்கப்பட்ட பயன்பாட்டை உறுதிப்படுத்தும் அதிகாரப்பூர்வ ஆவணம்.",
+
+      onlineSteps: [
+        "மாநில வருவாய் அல்லது நகர திட்டமிடல் தளத்தை அணுகவும்.",
+        "‘Land Use Certificate’ தேர்வு செய்யவும்.",
+        "நில விவரங்களை உள்ளிடவும்.",
+        "கட்டணம் செலுத்தவும்.",
+        "விண்ணப்பத்தை சமர்ப்பிக்கவும்.",
+      ],
+
+      offlineSteps: [
+        "தாசில்தார் அல்லது திட்டமிடல் அலுவலகத்தில் விண்ணப்பிக்கவும்.",
+        "ஆவணங்கள் மற்றும் கட்டணத்தை சமர்ப்பிக்கவும்.",
+        "சான்றிதழ் பெறவும்.",
+      ],
+
+      afterSubmission: ["பயன்பாட்டு வகையை சரிபார்க்கவும்."],
+
+      processingTime: "7–30 வேலை நாட்கள்.",
+
+      fees: ["அரசால் நிர்ணயிக்கப்பட்ட கட்டணம்."],
+
+      authority: "வருவாய் துறை / நகர திட்டமிடல் ஆணையம்",
+
+      note: "நில பதிவுகளுடன் பொருந்த வேண்டும்.",
+    },
   },
 };

@@ -5,6 +5,7 @@ export const jointDevelopmentAgreementFormData: Record<
     description?: string;
     eligibility: string[];
     steps: { step: number; title: string; details: string }[];
+    howToApply: any;
   }
 > = {
   en: {
@@ -49,6 +50,52 @@ export const jointDevelopmentAgreementFormData: Record<
           "After registration, the developer starts construction and both parties follow the agreement terms.",
       },
     ],
+    howToApply: {
+      mode: ["Online", "Offline"],
+
+      applyWithin:
+        "A Joint Development Agreement (JDA) is executed when a landowner and developer agree to jointly develop a property by sharing rights, responsibilities, and benefits. The agreement should be completed before construction begins.",
+
+      onlineSteps: [
+        "Draft the Joint Development Agreement based on mutually agreed terms.",
+        "Visit a State-authorized e-stamping or legal documentation portal.",
+        "Select 'Joint Development Agreement' as the document type.",
+        "Enter landowner and developer details.",
+        "Provide property details, development rights, revenue sharing ratio, and timelines.",
+        "Upload supporting documents if required.",
+        "Pay applicable stamp duty and registration fees online.",
+        "Download the e-stamped Joint Development Agreement.",
+        "Get the agreement digitally or physically signed by all parties.",
+      ],
+
+      offlineSteps: [
+        "Prepare the Joint Development Agreement on appropriate stamp paper as per State Stamp Act.",
+        "Clearly mention land details, developer obligations, profit sharing, and project timelines.",
+        "Visit the Sub-Registrar Office for registration, if applicable.",
+        "All parties must sign the agreement in presence of witnesses.",
+        "Submit identity proofs, property documents, and photographs.",
+        "Collect the registered or stamped agreement copy.",
+      ],
+
+      afterSubmission: [
+        "Ensure all parties receive signed copies of the agreement.",
+        "Use the agreement for approvals, loans, and project execution.",
+        "Any changes must be documented through a written supplementary agreement.",
+        "The agreement may be required for legal, taxation, or regulatory purposes.",
+      ],
+
+      processingTime:
+        "Immediate to 7 working days depending on stamping and registration requirements.",
+
+      fees: [
+        "Stamp duty as per State Stamp Act.",
+        "Registration fees if registration is required.",
+      ],
+
+      authority: "State Stamp Authority / Sub-Registrar Office",
+
+      note: "It is advisable to obtain legal review to ensure clarity of development rights, revenue sharing, and dispute resolution clauses.",
+    },
   },
 
   hi: {
@@ -93,6 +140,43 @@ export const jointDevelopmentAgreementFormData: Record<
           "पंजीकरण के बाद, डेवलपर निर्माण शुरू करता है और दोनों पक्ष समझौते का पालन करते हैं।",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "Joint Development Agreement (JDA) तब किया जाता है जब भूमि स्वामी और डेवलपर संयुक्त रूप से संपत्ति का विकास करने पर सहमत होते हैं। निर्माण शुरू होने से पहले यह अनुबंध किया जाना चाहिए।",
+
+      onlineSteps: [
+        "आपसी सहमति से Joint Development Agreement का ड्राफ्ट तैयार करें।",
+        "राज्य मान्यता प्राप्त ई-स्टैम्पिंग या लीगल पोर्टल पर जाएँ।",
+        "'Joint Development Agreement' चुनें।",
+        "भूमि स्वामी और डेवलपर की जानकारी भरें।",
+        "संपत्ति विवरण, शेयरिंग अनुपात और समयसीमा दर्ज करें।",
+        "स्टैम्प ड्यूटी व अन्य शुल्क ऑनलाइन जमा करें।",
+        "ई-स्टैम्प किया हुआ अनुबंध डाउनलोड करें।",
+        "सभी पक्षों से हस्ताक्षर करवाएँ।",
+      ],
+
+      offlineSteps: [
+        "राज्य नियमों के अनुसार स्टैम्प पेपर पर JDA तैयार करें।",
+        "सब-रजिस्ट्रार कार्यालय में पंजीकरण कराएँ।",
+        "गवाहों की उपस्थिति में हस्ताक्षर करें।",
+        "दस्तावेज़ जमा कर प्रमाणित प्रति प्राप्त करें।",
+      ],
+
+      afterSubmission: [
+        "सभी पक्षों के पास हस्ताक्षरित प्रति होनी चाहिए।",
+        "सरकारी अनुमतियों और ऋण हेतु उपयोग करें।",
+      ],
+
+      processingTime: "तुरंत से 7 कार्य दिवस।",
+
+      fees: ["स्टैम्प ड्यूटी एवं पंजीकरण शुल्क।"],
+
+      authority: "स्टैम्प प्राधिकरण / सब-रजिस्ट्रार कार्यालय",
+
+      note: "कानूनी सलाह लेना अनुशंसित है।",
+    },
   },
 
   gu: {
@@ -137,6 +221,37 @@ export const jointDevelopmentAgreementFormData: Record<
           "રજીસ્ટ્રેશન પછી, ડેવલપર કન્સ્ટ્રક્શન શરૂ કરે છે અને બંને પક્ષ કરારનું પાલન કરે છે.",
       },
     ],
+    howToApply: {
+      mode: ["ઓનલાઇન", "ઓફલાઇન"],
+
+      applyWithin:
+        "Joint Development Agreement ત્યારે થાય છે જ્યારે જમીનમાલિક અને ડેવલપર મિલકતનું સંયુક્ત વિકાસ કરવા સહમત થાય છે.",
+
+      onlineSteps: [
+        "Joint Development Agreementનો ડ્રાફ્ટ તૈયાર કરો.",
+        "રાજ્ય માન્ય ઇ-સ્ટેમ્પિંગ પોર્ટલ પર જાઓ.",
+        "'Joint Development Agreement' પસંદ કરો.",
+        "જમીનમાલિક અને ડેવલપર વિગતો દાખલ કરો.",
+        "સ્ટેમ્પ ડ્યૂટી અને ફી ઓનલાઇન ચૂકવો.",
+        "ઇ-સ્ટેમ્પ કરાર ડાઉનલોડ કરો.",
+      ],
+
+      offlineSteps: [
+        "સ્ટેમ્પ પેપર પર કરાર તૈયાર કરો.",
+        "સબ-રજિસ્ટ્રાર કચેરીમાં નોંધણી કરાવો.",
+        "ગવાહોની હાજરીમાં સહી કરો.",
+      ],
+
+      afterSubmission: ["કરારની પ્રતિ તમામ પક્ષો પાસે હોવી જોઈએ."],
+
+      processingTime: "તત્કાલથી 7 દિવસ.",
+
+      fees: ["સ્ટેમ્પ ડ્યૂટી અને નોંધણી ફી."],
+
+      authority: "સ્ટેમ્પ ઓથોરિટી / સબ-રજિસ્ટ્રાર",
+
+      note: "સ્પષ્ટ કરાર શરતો મહત્વપૂર્ણ છે.",
+    },
   },
 
   bn: {
@@ -180,6 +295,35 @@ export const jointDevelopmentAgreementFormData: Record<
           "নিবন্ধনের পরে, ডেভেলপার নির্মাণ শুরু করে এবং উভয় পক্ষ চুক্তির শর্তাবলী মেনে চলে।",
       },
     ],
+    howToApply: {
+      mode: ["অনলাইন", "অফলাইন"],
+
+      applyWithin:
+        "Joint Development Agreement তখন করা হয় যখন জমির মালিক ও ডেভেলপার যৌথভাবে সম্পত্তি উন্নয়নে সম্মত হন।",
+
+      onlineSteps: [
+        "চুক্তির খসড়া প্রস্তুত করুন।",
+        "স্টেট অনুমোদিত ই-স্ট্যাম্পিং পোর্টালে যান।",
+        "'Joint Development Agreement' নির্বাচন করুন।",
+        "প্রয়োজনীয় বিবরণ পূরণ করুন।",
+        "ফি প্রদান করে চুক্তি ডাউনলোড করুন।",
+      ],
+
+      offlineSteps: [
+        "স্ট্যাম্প পেপারে চুক্তি প্রস্তুত করুন।",
+        "সাব-রেজিস্ট্রার অফিসে নথিভুক্ত করুন।",
+      ],
+
+      afterSubmission: ["স্বাক্ষরিত কপি সংরক্ষণ করুন।"],
+
+      processingTime: "তাৎক্ষণিক থেকে 7 দিন।",
+
+      fees: ["স্ট্যাম্প ডিউটি ও রেজিস্ট্রেশন ফি।"],
+
+      authority: "স্টেট রেজিস্ট্রেশন ডিপার্টমেন্ট",
+
+      note: "আইনি যাচাই উপকারী।",
+    },
   },
 
   kok: {
@@ -223,6 +367,38 @@ export const jointDevelopmentAgreementFormData: Record<
           "नोंदणी नंतर डेव्हलपर बांधकाम सुरू करतात आनी दोन्ही पक्ष कराराचे पालन करतात.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "Joint Development Agreement (JDA) हो जमीन मालक आनी डेव्हलपर हांवय संयुक्तरित्यान मालमत्तो विकास करपाचो करार आसा. बांधकाम सुरू जावपापूर्वी तो करप जरूरी आसा.",
+
+      onlineSteps: [
+        "परस्पर संमतीनुसार Joint Development Agreement चो मसुदो तयार करात.",
+        "राज्य मान्य ई-स्टॅम्पिंग वा कायदेशीर कागदपत्र पोर्टलाक भेट दियात.",
+        "'Joint Development Agreement' निवडात.",
+        "जमीन मालक आनी डेव्हलपराची माहिती भरात.",
+        "मालमत्तेची माहिती, विकास हक्क आनी नफा वाटप नमूद करात.",
+        "स्टॅम्प ड्युटी आनी फी भरात.",
+        "ई-स्टॅम्प करार डाउनलोड करात.",
+      ],
+
+      offlineSteps: [
+        "स्टॅम्प पेपरार JDA तयार करात.",
+        "सबस्ट्रार ऑफिसांत नोंदणी करात.",
+        "साक्षीदारांच्या मर्जी सह्या करात.",
+      ],
+
+      afterSubmission: ["कराराची प्रत जपून धरात."],
+
+      processingTime: "तत्काळ ते 7 दिसां.",
+
+      fees: ["स्टॅम्प ड्युटी.", "नोंदणी फी (लागू जाल्यार)."],
+
+      authority: "स्टॅम्प अथॉरिटी / सबस्ट्रार ऑफिस",
+
+      note: "कायदेशीर अटी स्पष्ट आसप हें महत्वाचें.",
+    },
   },
 
   kn: {
@@ -267,6 +443,44 @@ export const jointDevelopmentAgreementFormData: Record<
           "ನೋಂದಣಿಯ ನಂತರ, ಡೆವೆಲಪರ್ ನಿರ್ಮಾಣ ಪ್ರಾರಂಭಿಸುತ್ತಾನೆ ಮತ್ತು ಎರಡು ಪಕ್ಷಗಳು ಒಪ್ಪಂದದ ನಿಯಮಗಳನ್ನು ಅನುಸರಿಸುತ್ತಾರೆ.",
       },
     ],
+    howToApply: {
+      mode: ["ಆನ್‌ಲೈನ್", "ಆಫ್‌ಲೈನ್"],
+
+      applyWithin:
+        "Joint Development Agreement (JDA) ಎನ್ನುವುದು ಭೂಮಿಯ ಮಾಲೀಕ ಮತ್ತು ಡೆವಲಪರ್ ಒಟ್ಟಾಗಿ ಆಸ್ತಿಯನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಲು ಮಾಡಿಕೊಂಡಿರುವ ಒಪ್ಪಂದವಾಗಿದೆ. ನಿರ್ಮಾಣ ಪ್ರಾರಂಭಕ್ಕೂ ಮೊದಲು ಇದನ್ನು ಮಾಡಬೇಕು.",
+
+      onlineSteps: [
+        "ಒಪ್ಪಿಕೊಂಡ ಷರತ್ತುಗಳ ಆಧಾರದ ಮೇಲೆ Joint Development Agreement ಕರಡು ತಯಾರಿಸಿ.",
+        "ರಾಜ್ಯ ಮಾನ್ಯತೆ ಪಡೆದ ಇ-ಸ್ಟ್ಯಾಂಪಿಂಗ್ ಅಥವಾ ಲೀಗಲ್ ಡಾಕ್ಯುಮೆಂಟ್ ಪೋರ್ಟಲ್‌ಗೆ ಭೇಟಿ ನೀಡಿ.",
+        "'Joint Development Agreement' ಆಯ್ಕೆಮಾಡಿ.",
+        "ಭೂಮಿಯ ಮಾಲೀಕ ಮತ್ತು ಡೆವಲಪರ್ ವಿವರಗಳನ್ನು ನಮೂದಿಸಿ.",
+        "ಆಸ್ತಿ ವಿವರಗಳು, ಅಭಿವೃದ್ಧಿ ಹಕ್ಕುಗಳು ಮತ್ತು ಲಾಭ ಹಂಚಿಕೆ ಅನುಪಾತವನ್ನು ನೀಡಿ.",
+        "ಅಗತ್ಯವಿದ್ದರೆ ದಾಖಲೆಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ.",
+        "ಸ್ಟ್ಯಾಂಪ್ ಡ್ಯೂಟಿ ಮತ್ತು ಅನ್ವಯಿಸುವ ನೋಂದಣಿ ಶುಲ್ಕ ಪಾವತಿಸಿ.",
+        "ಇ-ಸ್ಟ್ಯಾಂಪ್ ಮಾಡಿದ JDA ಅನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ.",
+        "ಎಲ್ಲಾ ಪಕ್ಷಗಳಿಂದ ಸಹಿ ಪಡೆಯಿರಿ.",
+      ],
+
+      offlineSteps: [
+        "ರಾಜ್ಯ ಸ್ಟ್ಯಾಂಪ್ ಕಾಯ್ದೆಯ ಪ್ರಕಾರ ಸ್ಟ್ಯಾಂಪ್ ಪೇಪರ್ ಮೇಲೆ JDA ತಯಾರಿಸಿ.",
+        "ಸಬ್-ರಿಜಿಸ್ಟ್ರಾರ್ ಕಚೇರಿಗೆ ಭೇಟಿ ನೀಡಿ ಹಾಗೂ ನೋಂದಣಿ ಮಾಡಿಸಿ.",
+        "ಸಾಕ್ಷಿಗಳ ಸಮ್ಮುಖದಲ್ಲಿ ಎಲ್ಲರು ಸಹಿ ಮಾಡಿ.",
+        "ದಾಖಲೆಗಳ ಪ್ರತಿಯನ್ನು ಪಡೆದುಕೊಳ್ಳಿ.",
+      ],
+
+      afterSubmission: [
+        "ಒಪ್ಪಂದದ ಸಹಿ ಮಾಡಿದ ಪ್ರತಿಗಳನ್ನು ಸಂರಕ್ಷಿಸಿ.",
+        "ಯೋಜನೆ ಅನುಮೋದನೆ ಮತ್ತು ಸಾಲಗಳಿಗೆ ಬಳಸಿ.",
+      ],
+
+      processingTime: "ತಕ್ಷಣದಿಂದ 7 ಕಾರ್ಯ ದಿನಗಳು.",
+
+      fees: ["ಸ್ಟ್ಯಾಂಪ್ ಡ್ಯೂಟಿ.", "ನೋಂದಣಿ ಶುಲ್ಕ (ಅನ್ವಯಿಸಿದರೆ)."],
+
+      authority: "ಸ್ಟ್ಯಾಂಪ್ ಇಲಾಖೆ / ಸಬ್-ರಿಜಿಸ್ಟ್ರಾರ್ ಕಚೇರಿ",
+
+      note: "ಕಾನೂನು ಸ್ಪಷ್ಟತೆಗಾಗಿ ನ್ಯಾಯವಾದಿಯ ಪರಿಶೀಲನೆ ಶಿಫಾರಸು ಮಾಡಲಾಗಿದೆ.",
+    },
   },
 
   ml: {
@@ -311,6 +525,43 @@ export const jointDevelopmentAgreementFormData: Record<
           "രജിസ്ട്രേഷനുശേഷം, ഡെവലപ്പർ നിർമ്മാണം ആരംഭിക്കുന്നു, രണ്ടുപാർട്ടികളും കരാർ പാലിക്കുന്നു.",
       },
     ],
+    howToApply: {
+      mode: ["ഓൺലൈൻ", "ഓഫ്‌ലൈൻ"],
+
+      applyWithin:
+        "Joint Development Agreement (JDA) എന്നത് ഭൂമിയുടമയും ഡെവലപ്പറും ചേർന്ന് സ്വത്ത് വികസിപ്പിക്കാൻ ചെയ്യുന്ന കരാറാണ്. നിർമ്മാണം ആരംഭിക്കുന്നതിന് മുമ്പ് ഇത് നടത്തണം.",
+
+      onlineSteps: [
+        "സംയുക്തമായി സമ്മതിച്ച നിബന്ധനകൾ പ്രകാരം JDA കരട് തയ്യാറാക്കുക.",
+        "സംസ്ഥാന അംഗീകൃത ഇ-സ്റ്റാമ്പിംഗ് അല്ലെങ്കിൽ നിയമ രേഖാ പോർട്ടൽ സന്ദർശിക്കുക.",
+        "'Joint Development Agreement' തിരഞ്ഞെടുക്കുക.",
+        "ഭൂമിയുടമയുടെയും ഡെവലപ്പറുടെയും വിവരങ്ങൾ നൽകുക.",
+        "സ്വത്ത് വിവരങ്ങൾ, വികസന അവകാശങ്ങൾ, ലാഭവിഹിതം ചേർക്കുക.",
+        "ആവശ്യമായ രേഖകൾ അപ്‌ലോഡ് ചെയ്യുക.",
+        "സ്റ്റാമ്പ് ഡ്യൂട്ടിയും രജിസ്ട്രേഷൻ ഫീസും അടയ്ക്കുക.",
+        "ഇ-സ്റ്റാമ്പ് ചെയ്ത കരാർ ഡൗൺലോഡ് ചെയ്യുക.",
+        "എല്ലാ പാർട്ടികളും ഒപ്പിടുക.",
+      ],
+
+      offlineSteps: [
+        "സ്റ്റാമ്പ് പേപ്പറിൽ JDA തയ്യാറാക്കുക.",
+        "സബ്-രജിസ്ട്രാർ ഓഫീസിൽ രജിസ്റ്റർ ചെയ്യുക.",
+        "സാക്ഷികളുടെ സാന്നിധ്യത്തിൽ ഒപ്പിടുക.",
+      ],
+
+      afterSubmission: [
+        "ഒപ്പിട്ട പകർപ്പുകൾ എല്ലാവർക്കും കൈവശം വെക്കുക.",
+        "നിയമപരമായും ധനകാര്യപരമായും ഉപയോഗിക്കുക.",
+      ],
+
+      processingTime: "ഉടൻ മുതൽ 7 പ്രവർത്തി ദിവസങ്ങൾ.",
+
+      fees: ["സ്റ്റാമ്പ് ഡ്യൂട്ടി.", "രജിസ്ട്രേഷൻ ഫീസ് (ബാധകമാണെങ്കിൽ)."],
+
+      authority: "സ്റ്റാമ്പ് വകുപ്പ് / സബ്-രജിസ്ട്രാർ ഓഫീസ്",
+
+      note: "വികസന അവകാശങ്ങൾ വ്യക്തമായി നിർവ്വചിക്കണം.",
+    },
   },
 
   mr: {
@@ -354,6 +605,38 @@ export const jointDevelopmentAgreementFormData: Record<
           "नोंदणी नंतर, डेव्हलपर बांधकाम सुरू करतात, दोन्ही पक्ष कराराचे पालन करतात.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "Joint Development Agreement (JDA) हा जमीन मालक व डेव्हलपर यांच्यात मालमत्तेच्या संयुक्त विकासासाठी केला जाणारा करार आहे. बांधकाम सुरू होण्यापूर्वी करणे आवश्यक आहे.",
+
+      onlineSteps: [
+        "परस्पर संमतीनुसार JDA चा मसुदा तयार करा.",
+        "राज्य मान्य ई-स्टॅम्पिंग किंवा कायदेशीर पोर्टलला भेट द्या.",
+        "'Joint Development Agreement' निवडा.",
+        "जमीन मालक व डेव्हलपरची माहिती भरा.",
+        "मालमत्तेचे तपशील, विकास हक्क व नफा वाटप नमूद करा.",
+        "शुल्क व स्टॅम्प ड्युटी भरा.",
+        "ई-स्टॅम्प केलेला करार डाउनलोड करा.",
+      ],
+
+      offlineSteps: [
+        "स्टॅम्प पेपरवर JDA तयार करा.",
+        "सब-रजिस्ट्रार कार्यालयात नोंदणी करा.",
+        "साक्षीदारांच्या उपस्थितीत सह्या करा.",
+      ],
+
+      afterSubmission: ["सर्व पक्षांकडे स्वाक्षरीत प्रती असाव्यात."],
+
+      processingTime: "तात्काळ ते 7 कार्यदिवस.",
+
+      fees: ["स्टॅम्प ड्युटी.", "नोंदणी शुल्क (लागू असल्यास)."],
+
+      authority: "स्टॅम्प विभाग / सब-रजिस्ट्रार कार्यालय",
+
+      note: "कायदेशीर तपासणी शिफारसीय आहे.",
+    },
   },
 
   or: {
@@ -398,6 +681,38 @@ export const jointDevelopmentAgreementFormData: Record<
           "ନୋନଦଣୀ ପରେ, ବିକାଶକାରୀ ନିର୍ମାଣ ଆରମ୍ଭ କରନ୍ତି ଏବଂ ଦୁଇ ପକ୍ଷ ସମ୍ମତିପତ୍ରର ନିୟମ ଅନୁସରଣ କରନ୍ତି।",
       },
     ],
+    howToApply: {
+      mode: ["ଅନଲାଇନ୍", "ଅଫଲାଇନ୍"],
+
+      applyWithin:
+        "Joint Development Agreement (JDA) ହେଉଛି ଜମି ମାଲିକ ଓ ଡିଭେଲପର ମିଶି ଜମି ବିକାଶ କରିବା ପାଇଁ କରାଯାଇଥିବା ଚୁକ୍ତି। ନିର୍ମାଣ ପୂର୍ବରୁ ଏହା କରିବା ଆବଶ୍ୟକ।",
+
+      onlineSteps: [
+        "Joint Development Agreement ଖସଡା ପ୍ରସ୍ତୁତ କରନ୍ତୁ।",
+        "ରାଜ୍ୟ ଅନୁମୋଦିତ ଇ-ଷ୍ଟାମ୍ପିଂ ପୋର୍ଟାଲକୁ ଯାଆନ୍ତୁ।",
+        "'Joint Development Agreement' ବାଛନ୍ତୁ।",
+        "ପକ୍ଷମାନଙ୍କର ବିବରଣୀ ଦିଅନ୍ତୁ।",
+        "ଜମି ତଥ୍ୟ, ବିକାଶ ଅଧିକାର ଏବଂ ଲାଭ ବଣ୍ଟନ ଉଲ୍ଲେଖ କରନ୍ତୁ।",
+        "ଶୁଳ୍କ ଦେୟ କରନ୍ତୁ।",
+        "ଇ-ଷ୍ଟାମ୍ପ କରାଯାଇଥିବା ଚୁକ୍ତି ଡାଉନଲୋଡ୍ କରନ୍ତୁ।",
+      ],
+
+      offlineSteps: [
+        "ଷ୍ଟାମ୍ପ ପେପରରେ JDA ପ୍ରସ୍ତୁତ କରନ୍ତୁ।",
+        "ସବ-ରେଜିଷ୍ଟ୍ରାର କାର୍ଯ୍ୟାଳୟରେ ପଞ୍ଜିକରଣ କରନ୍ତୁ।",
+        "ସାକ୍ଷୀଙ୍କ ଉପସ୍ଥିତିରେ ସହି କରନ୍ତୁ।",
+      ],
+
+      afterSubmission: ["ଚୁକ୍ତିର ପ୍ରତି ସୁରକ୍ଷିତ ରଖନ୍ତୁ।"],
+
+      processingTime: "ତତ୍କାଳରୁ 7 କାର୍ଯ୍ୟଦିନ।",
+
+      fees: ["ଷ୍ଟାମ୍ପ ଶୁଳ୍କ।", "ପଞ୍ଜିକରଣ ଶୁଳ୍କ (ଲାଗୁ ହେଲେ)।"],
+
+      authority: "ରାଜ୍ୟ ଷ୍ଟାମ୍ପ କର୍ତ୍ତୃପକ୍ଷ / ସବ-ରେଜିଷ୍ଟ୍ରାର କାର୍ଯ୍ୟାଳୟ",
+
+      note: "କାନୁନଗତ ସ୍ପଷ୍ଟତା ପାଇଁ ଆଇନ ପରାମର୍ଶ ଉପଯୁକ୍ତ।",
+    },
   },
 
   te: {
@@ -442,6 +757,51 @@ export const jointDevelopmentAgreementFormData: Record<
           "నమోదు తర్వాత, డెవలపర్ నిర్మాణం ప్రారంభిస్తుంది, రెండు పక్షాలు ఒప్పందం నియమాలను పాటిస్తాయి.",
       },
     ],
+    howToApply: {
+      mode: ["ఆన్‌లైన్", "ఆఫ్‌లైన్"],
+
+      applyWithin:
+        "Joint Development Agreement (JDA) అనేది భూమి యజమాని మరియు డెవలపర్ కలిసి ఆస్తి అభివృద్ధి చేయడానికి కుదుర్చుకునే ఒప్పందం. నిర్మాణ పనులు ప్రారంభించడానికి ముందు ఇది చేయాలి.",
+
+      onlineSteps: [
+        "ఒప్పుకున్న షరతుల ఆధారంగా Joint Development Agreement ముసాయిదా సిద్ధం చేయండి.",
+        "రాష్ట్ర ప్రభుత్వం అనుమతించిన ఈ-స్టాంపింగ్ లేదా లీగల్ డాక్యుమెంట్ పోర్టల్‌ను సందర్శించండి.",
+        "'Joint Development Agreement' డాక్యుమెంట్‌ను ఎంచుకోండి.",
+        "భూమి యజమాని మరియు డెవలపర్ వివరాలను నమోదు చేయండి.",
+        "ఆస్తి వివరాలు, అభివృద్ధి హక్కులు, ఆదాయ భాగస్వామ్యం మరియు టైమ్‌లైన్ పేర్కొనండి.",
+        "అవసరమైతే మద్దతు పత్రాలు అప్లోడ్ చేయండి.",
+        "స్టాంప్ డ్యూటీ మరియు వర్తించే రిజిస్ట్రేషన్ ఫీజులను ఆన్‌లైన్‌లో చెల్లించండి.",
+        "ఈ-స్టాంప్ చేసిన Joint Development Agreement ను డౌన్‌లోడ్ చేసుకోండి.",
+        "అన్ని పక్షాలచే డిజిటల్ లేదా భౌతికంగా సంతకాలు చేయించండి.",
+      ],
+
+      offlineSteps: [
+        "రాష్ట్ర స్టాంప్ చట్టం ప్రకారం స్టాంప్ పేపర్‌పై Joint Development Agreement సిద్ధం చేయండి.",
+        "భూమి వివరాలు, డెవలపర్ బాధ్యతలు, లాభభాగస్వామ్యం మరియు ప్రాజెక్ట్ టైమ్‌లైన్ స్పష్టంగా నమోదు చేయండి.",
+        "అవసరమైతే సబ్-రిజిస్ట్రార్ కార్యాలయానికి వెళ్లి రిజిస్ట్రేషన్ చేయించండి.",
+        "సాక్షుల సమక్షంలో అన్ని పక్షాలు సంతకాలు చేయాలి.",
+        "గుర్తింపు పత్రాలు మరియు ఆస్తి పత్రాలు సమర్పించండి.",
+        "నమోదైన లేదా స్టాంప్ చేసిన ఒప్పంద ప్రతిని పొందండి.",
+      ],
+
+      afterSubmission: [
+        "అన్ని పక్షాలు సంతకం చేసిన ప్రతులను కలిగి ఉండాలి.",
+        "అనుమతులు, రుణాలు మరియు ప్రాజెక్ట్ అమలుకు ఒప్పందాన్ని ఉపయోగించండి.",
+        "ఏవైనా మార్పులు వ్రాతపూర్వకంగా సప్లిమెంటరీ ఒప్పందం ద్వారా నమోదు చేయాలి.",
+      ],
+
+      processingTime:
+        "స్టాంపింగ్ మరియు రిజిస్ట్రేషన్ ప్రక్రియపై ఆధారపడి తక్షణం నుండి 7 పని రోజులు.",
+
+      fees: [
+        "రాష్ట్ర స్టాంప్ చట్టం ప్రకారం స్టాంప్ డ్యూటీ.",
+        "అవసరమైతే రిజిస్ట్రేషన్ ఫీజు.",
+      ],
+
+      authority: "రాష్ట్ర స్టాంప్ శాఖ / సబ్-రిజిస్ట్రార్ కార్యాలయం",
+
+      note: "అభివృద్ధి హక్కులు మరియు ఆదాయ భాగస్వామ్యంపై స్పష్టత ఉండేందుకు చట్టపరమైన సలహా మంచిది.",
+    },
   },
 
   ta: {
@@ -486,5 +846,34 @@ export const jointDevelopmentAgreementFormData: Record<
           "பதிவு முடிந்த பிறகு, டெவலப்பர் கட்டுமானத்தை தொடங்குகிறார், இரு தரப்பினரும் ஒப்பந்த விதிகளை பின்பற்றுகிறார்கள்.",
       },
     ],
+    howToApply: {
+      mode: ["ஆன்லைன்", "ஆஃப்லைன்"],
+
+      applyWithin:
+        "Joint Development Agreement என்பது நில உரிமையாளர் மற்றும் மேம்பாட்டாளர் இணைந்து சொத்தை மேம்படுத்த உடன்படிக்கை செய்வதாகும்.",
+
+      onlineSteps: [
+        "Joint Development Agreement வரைவு தயார் செய்யவும்.",
+        "அரசு அங்கீகார பெற்ற இ-ஸ்டாம்பிங் தளத்திற்கு செல்லவும்.",
+        "Joint Development Agreement தேர்வு செய்யவும்.",
+        "விவரங்களை நிரப்பி கட்டணம் செலுத்தவும்.",
+        "இ-ஸ்டாம்ப் செய்யப்பட்ட ஒப்பந்தத்தை பதிவிறக்கம் செய்யவும்.",
+      ],
+
+      offlineSteps: [
+        "ஸ்டாம்ப் பேப்பரில் ஒப்பந்தம் தயாரிக்கவும்.",
+        "சப்-ரெஜிஸ்ட்ரார் அலுவலகத்தில் பதிவு செய்யவும்.",
+      ],
+
+      afterSubmission: ["கையெழுத்திட்ட நகலை பாதுகாக்கவும்."],
+
+      processingTime: "உடனடி – 7 நாட்கள்.",
+
+      fees: ["ஸ்டாம்ப் கட்டணம் மற்றும் பதிவு கட்டணம்."],
+
+      authority: "ஸ்டாம்ப் துறை / சப்-ரெஜிஸ்ட்ரார்",
+
+      note: "சட்ட ஆலோசனை பரிந்துரைக்கப்படுகிறது.",
+    },
   },
 };

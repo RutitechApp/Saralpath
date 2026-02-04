@@ -5,6 +5,7 @@ export const itCybersecurityData: Record<
     description: string;
     eligibility: string[];
     steps: { step: number; title: string; details: string }[];
+    howToApply: any;
   }
 > = {
   en: {
@@ -46,6 +47,51 @@ export const itCybersecurityData: Record<
           "Adherence to laws, standards, and regulations for cybersecurity.",
       },
     ],
+    howToApply: {
+      mode: ["Online", "Offline"],
+
+      applyWithin:
+        "IT & Cybersecurity compliance involves adopting policies, controls, and practices to protect information systems, networks, and data from cyber threats. Organizations must comply with applicable IT laws, cybersecurity frameworks, and regulatory guidelines to ensure data security and business continuity.",
+
+      onlineSteps: [
+        "Identify applicable IT and cybersecurity regulations or frameworks (IT Act, CERT-In, ISO 27001, RBI, SEBI, etc.)",
+        "Conduct an internal IT and cybersecurity risk assessment",
+        "Prepare required policies such as Information Security Policy, Incident Response Plan, and Data Protection Policy",
+        "Implement technical and organizational security controls",
+        "Engage a certified auditor or consultant if compliance certification is required",
+        "Submit compliance reports or declarations through the respective regulatory portals, if applicable",
+        "Implement incident reporting and monitoring mechanisms",
+      ],
+
+      offlineSteps: [
+        "Review applicable IT and cybersecurity compliance requirements",
+        "Document internal IT infrastructure, systems, and data flows",
+        "Prepare and approve cybersecurity and information security policies",
+        "Conduct internal audits and vulnerability assessments",
+        "Submit physical compliance reports or audit documents where required",
+        "Maintain compliance and audit records for inspection",
+      ],
+
+      afterSubmission: [
+        "Regulatory authorities or auditors review compliance submissions",
+        "Clarifications or additional evidence may be requested",
+        "Corrective actions are implemented in case of gaps",
+        "Compliance certification or acknowledgment is issued, where applicable",
+        "Continuous monitoring and periodic audits are required",
+      ],
+
+      processingTime:
+        "Varies based on regulation and scope; typically 30–90 days for audits or certifications",
+
+      fees: [
+        "No government fee in most cases; audit, certification, or consultant fees may apply",
+      ],
+
+      authority:
+        "Ministry of Electronics and Information Technology (MeitY), CERT-In, and sectoral regulators such as RBI, SEBI, IRDAI",
+
+      note: "IT and cybersecurity compliance is an ongoing process. Regular audits, employee awareness, and incident response readiness are critical for effective protection.",
+    },
   },
   hi: {
     title: "आईटी और साइबर सुरक्षा",
@@ -85,6 +131,43 @@ export const itCybersecurityData: Record<
         details: "साइबर सुरक्षा के लिए कानूनों, मानकों और नियमों का पालन।",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "आईटी और साइबर सुरक्षा अनुपालन का उद्देश्य सूचना प्रणालियों, नेटवर्क और डेटा को साइबर खतरों से सुरक्षित रखना है। संगठनों को लागू आईटी कानूनों और साइबर सुरक्षा दिशानिर्देशों का पालन करना आवश्यक है।",
+
+      onlineSteps: [
+        "लागू आईटी व साइबर सुरक्षा नियमों की पहचान करें (IT Act, CERT-In, ISO 27001 आदि)",
+        "आंतरिक आईटी और साइबर जोखिम मूल्यांकन करें",
+        "सूचना सुरक्षा एवं डेटा सुरक्षा नीतियाँ तैयार करें",
+        "तकनीकी एवं संगठनात्मक सुरक्षा नियंत्रण लागू करें",
+        "आवश्यक होने पर प्रमाणित ऑडिटर की सहायता लें",
+        "संबंधित पोर्टल पर अनुपालन रिपोर्ट जमा करें",
+        "घटना रिपोर्टिंग और निगरानी तंत्र लागू करें",
+      ],
+
+      offlineSteps: [
+        "साइबर सुरक्षा आवश्यकताओं की समीक्षा करें",
+        "आईटी सिस्टम और डेटा प्रवाह का दस्तावेज़ीकरण करें",
+        "सुरक्षा नीतियों को स्वीकृत करें",
+        "आंतरिक ऑडिट एवं सुरक्षा जांच करें",
+        "आवश्यक होने पर भौतिक रिपोर्ट जमा करें",
+      ],
+
+      afterSubmission: [
+        "अनुपालन की समीक्षा की जाती है",
+        "अतिरिक्त जानकारी माँगी जा सकती है",
+        "कमियाँ दूर की जाती हैं",
+        "प्रमाणन या स्वीकृति दी जाती है",
+        "नियमित निगरानी आवश्यक होती है",
+      ],
+
+      processingTime: "30–90 दिन",
+      fees: ["सरकारी शुल्क सामान्यतः नहीं; ऑडिट शुल्क लागू हो सकता है"],
+      authority: "MeitY, CERT-In, RBI, SEBI",
+      note: "साइबर सुरक्षा एक सतत प्रक्रिया है।",
+    },
   },
   gu: {
     title: "આઇટી અને સાઇબર સુરક્ષા",
@@ -124,6 +207,41 @@ export const itCybersecurityData: Record<
         details: "સાયબરસુરક્ષા માટે કાયદા, ધોરણો અને નિયમોનું પાલન.",
       },
     ],
+    howToApply: {
+      mode: ["ઓનલાઇન", "ઓફલાઇન"],
+
+      applyWithin:
+        "આઈટી અને સાઇબર સુરક્ષા અનુપાલનનો હેતુ સિસ્ટમ, નેટવર્ક અને ડેટાને સાઇબર જોખમોથી સુરક્ષિત રાખવાનો છે.",
+
+      onlineSteps: [
+        "લાગુ આઈટી અને સાઇબર નિયમો ઓળખો",
+        "આંતરિક રિસ્ક એસેસમેન્ટ કરો",
+        "માહિતી સુરક્ષા નીતિઓ તૈયાર કરો",
+        "સુરક્ષા નિયંત્રણો અમલમાં મૂકો",
+        "જરૂર પડે તો ઓડિટર સાથે કામ કરો",
+        "સંબંધિત પોર્ટલ પર રિપોર્ટ સબમિટ કરો",
+        "ઇન્સિડન્ટ રિપોર્ટિંગ સુનિશ્ચિત કરો",
+      ],
+
+      offlineSteps: [
+        "સાઈબર નિયમોની સમીક્ષા કરો",
+        "આઈટી સિસ્ટમ દસ્તાવેજીકરણ કરો",
+        "સુરક્ષા નીતિઓ મંજૂર કરો",
+        "આંતરિક ઓડિટ કરો",
+        "રેકોર્ડ સાચવો",
+      ],
+
+      afterSubmission: [
+        "અધિકારીઓ સમીક્ષા કરે છે",
+        "સુધારા જરૂરી થઈ શકે છે",
+        "પ્રમાણપત્ર આપવામાં આવે છે",
+      ],
+
+      processingTime: "30–90 દિવસ",
+      fees: ["સરકારી ફી નથી"],
+      authority: "MeitY, CERT-In",
+      note: "નિયમિત ઓડિટ જરૂરી છે.",
+    },
   },
   bn: {
     title: "আইটি এবং সাইবার সুরক্ষা",
@@ -163,6 +281,34 @@ export const itCybersecurityData: Record<
         details: "সাইবার সুরক্ষার জন্য আইন, মান এবং নিয়মাবলীর প্রতি সম্মতি।",
       },
     ],
+    howToApply: {
+      mode: ["অনলাইন", "অফলাইন"],
+
+      applyWithin:
+        "আইটি ও সাইবার নিরাপত্তা সম্মতির উদ্দেশ্য হলো তথ্য ও সিস্টেমকে সাইবার হুমকি থেকে রক্ষা করা।",
+
+      onlineSteps: [
+        "প্রযোজ্য সাইবার আইন চিহ্নিত করুন",
+        "সাইবার ঝুঁকি মূল্যায়ন করুন",
+        "নিরাপত্তা নীতি প্রস্তুত করুন",
+        "প্রযুক্তিগত নিয়ন্ত্রণ বাস্তবায়ন করুন",
+        "প্রয়োজন হলে অডিট করুন",
+        "কমপ্লায়েন্স রিপোর্ট জমা দিন",
+      ],
+
+      offlineSteps: [
+        "আইটি অবকাঠামোর নথি প্রস্তুত করুন",
+        "নিরাপত্তা নীতি অনুমোদন করুন",
+        "রেকর্ড সংরক্ষণ করুন",
+      ],
+
+      afterSubmission: ["সম্মতি যাচাই হয়", "সংশোধনের নির্দেশ দেওয়া হতে পারে"],
+
+      processingTime: "৩০–৯০ দিন",
+      fees: ["অডিট ফি প্রযোজ্য হতে পারে"],
+      authority: "MeitY, CERT-In",
+      note: "নিয়মিত মনিটরিং প্রয়োজন।",
+    },
   },
   mr: {
     title: "आयटी आणि सायबर सुरक्षा",
@@ -203,6 +349,29 @@ export const itCybersecurityData: Record<
         details: "सायबर सुरक्षा नियम, कायदे आणि मानकांचे पालन.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "आयटी व सायबर सुरक्षा अनुपालनाचा उद्देश माहिती व प्रणाली सायबर धोकेपासून सुरक्षित ठेवणे आहे.",
+
+      onlineSteps: [
+        "लागू नियम ओळखा",
+        "सायबर जोखीम मूल्यांकन करा",
+        "सुरक्षा धोरणे तयार करा",
+        "सुरक्षा उपाय अंमलात आणा",
+        "अनुपालन अहवाल सादर करा",
+      ],
+
+      offlineSteps: ["आयटी पायाभूत माहिती नोंदवा", "अंतर्गत ऑडिट करा"],
+
+      afterSubmission: ["तपासणी केली जाते", "दुरुस्त्या सुचवल्या जातात"],
+
+      processingTime: "३०–९० दिवस",
+      fees: ["सरकारी शुल्क नाही"],
+      authority: "MeitY, CERT-In",
+      note: "सतत अनुपालन आवश्यक आहे.",
+    },
   },
   ta: {
     title: "ஐடி மற்றும் சைபர் பாதுகாப்பு",
@@ -246,6 +415,32 @@ export const itCybersecurityData: Record<
           "சைபர் பாதுகாப்பு சட்டங்கள், தரநிலைகள் மற்றும் விதிகளுக்கு இணக்கம்.",
       },
     ],
+    howToApply: {
+      mode: ["ஆன்லைன்", "ஆஃப்லைன்"],
+
+      applyWithin:
+        "ஐடி மற்றும் சைபர் பாதுகாப்பு இணக்கம் தகவல் அமைப்புகளை பாதுகாக்க உதவுகிறது.",
+
+      onlineSteps: [
+        "சைபர் சட்டங்களை அடையாளம் காணவும்",
+        "ஆபத்து மதிப்பீடு செய்யவும்",
+        "பாதுகாப்பு கொள்கைகள் உருவாக்கவும்",
+        "பாதுகாப்பு கட்டுப்பாடுகளை செயல்படுத்தவும்",
+        "அறிக்கைகளை சமர்ப்பிக்கவும்",
+      ],
+
+      offlineSteps: [
+        "ஐடி அமைப்பு ஆவணங்கள் தயாரிக்கவும்",
+        "உள்ளக ஆய்வு செய்யவும்",
+      ],
+
+      afterSubmission: ["மதிப்பாய்வு நடைபெறும்", "திருத்தங்கள் செய்யப்படும்"],
+
+      processingTime: "30–90 நாட்கள்",
+      fees: ["ஆடிட் கட்டணம் இருக்கலாம்"],
+      authority: "MeitY, CERT-In",
+      note: "தொடர்ச்சியான கண்காணிப்பு அவசியம்.",
+    },
   },
   te: {
     title: "ఐటీ మరియు సైబర్ భద్రత",
@@ -286,6 +481,28 @@ export const itCybersecurityData: Record<
         details: "సైబర్ భద్రత కోసం చట్టాలు, ప్రమాణాలు మరియు నియమాలను పాటించడం.",
       },
     ],
+    howToApply: {
+      mode: ["ఆన్‌లైన్", "ఆఫ్‌లైన్"],
+
+      applyWithin: "ఐటి మరియు సైబర్ భద్రతా అనుసరణ డేటా రక్షణకు అవసరం.",
+
+      onlineSteps: [
+        "సంబంధిత నిబంధనలు గుర్తించండి",
+        "సైబర్ రిస్క్ అంచనా చేయండి",
+        "భద్రతా విధానాలు రూపొందించండి",
+        "భద్రతా నియంత్రణలు అమలు చేయండి",
+        "అనుసరణ నివేదికలు సమర్పించండి",
+      ],
+
+      offlineSteps: ["ఐటి డాక్యుమెంటేషన్ తయారు చేయండి", "ఆడిట్ చేయండి"],
+
+      afterSubmission: ["సమీక్ష జరుగుతుంది", "సవరణలు సూచిస్తారు"],
+
+      processingTime: "30–90 రోజులు",
+      fees: ["ఆడిట్ ఫీజులు ఉండవచ్చు"],
+      authority: "MeitY, CERT-In",
+      note: "నిరంతర అనుసరణ అవసరం.",
+    },
   },
   kn: {
     title: "ಐಟಿ ಮತ್ತು ಸೈಬರ್ ಭದ್ರತೆ",
@@ -327,6 +544,23 @@ export const itCybersecurityData: Record<
         details: "ಸೈಬರ್ ಭದ್ರತೆಗಾಗಿ ಕಾನೂನು, ಮಾನದಂಡ ಮತ್ತು ನಿಯಮ ಪಾಲನೆ.",
       },
     ],
+    howToApply: {
+      mode: ["ಆನ್‌ಲೈನ್", "ಆಫ್‌ಲೈನ್"],
+      applyWithin:
+        "ಐಟಿ ಮತ್ತು ಸೈಬರ್ ಭದ್ರತಾ ಅನುಪಾಲನೆ ಡೇಟಾ ಮತ್ತು ವ್ಯವಸ್ಥೆಗಳನ್ನು ರಕ್ಷಿಸಲು ಅಗತ್ಯವಾಗಿದೆ.",
+      onlineSteps: [
+        "ಅನ್ವಯಿಸುವ ನಿಯಮಗಳನ್ನು ಗುರುತಿಸಿ",
+        "ಸೈಬರ್ ಅಪಾಯ ಮೌಲ್ಯಮಾಪನ ಮಾಡಿ",
+        "ಭದ್ರತಾ ನೀತಿಗಳನ್ನು ಸಿದ್ಧಪಡಿಸಿ",
+        "ಭದ್ರತಾ ನಿಯಂತ್ರಣೆಗಳನ್ನು ಅಳವಡಿಸಿ",
+      ],
+      offlineSteps: ["ಐಟಿ ದಾಖಲೆಗಳನ್ನು ಸಿದ್ಧಪಡಿಸಿ", "ಆಂತರಿಕ ಆಡಿಟ್ ಮಾಡಿ"],
+      afterSubmission: ["ಪರಿಶೀಲನೆ ನಡೆಯುತ್ತದೆ", "ತಿದ್ದುಪಡಿ ಸೂಚನೆ ಬರಬಹುದು"],
+      processingTime: "30–90 ದಿನಗಳು",
+      fees: ["ಆಡಿಟ್ ಶುಲ್ಕ ಅನ್ವಯಿಸಬಹುದು"],
+      authority: "MeitY, CERT-In",
+      note: "ನಿರಂತರ ಅನುಪಾಲನೆ ಅಗತ್ಯ.",
+    },
   },
   ml: {
     title: "ഐടി ആൻഡ് സൈബർസെക്യൂരിറ്റി",
@@ -370,6 +604,23 @@ export const itCybersecurityData: Record<
           "സൈബർസെക്യൂരിറ്റി നിയമങ്ങൾ, സ്റ്റാൻഡേർഡുകൾ, റഗുലേഷൻസ് പാലിക്കൽ.",
       },
     ],
+    howToApply: {
+      mode: ["ഓൺലൈൻ", "ഓഫ്‌ലൈൻ"],
+      applyWithin:
+        "ഐടി & സൈബർ സുരക്ഷാ അനുസരണം ഡാറ്റയും സിസ്റ്റവും സംരക്ഷിക്കുന്നതിനാണ്.",
+      onlineSteps: [
+        "പ്രയോഗയോഗ്യമായ നിയമങ്ങൾ തിരിച്ചറിയുക",
+        "റിസ്ക് അസസ്മെന്റ് നടത്തുക",
+        "സുരക്ഷാ നയങ്ങൾ തയ്യാറാക്കുക",
+        "നിയന്ത്രണങ്ങൾ നടപ്പിലാക്കുക",
+      ],
+      offlineSteps: ["ഡോക്യുമെന്റേഷൻ തയ്യാറാക്കുക", "ഓഡിറ്റ് നടത്തുക"],
+      afterSubmission: ["പരിശോധന നടക്കും", "തിരുത്തലുകൾ നിർദ്ദേശിക്കും"],
+      processingTime: "30–90 ദിവസം",
+      fees: ["ഓഡിറ്റ് ഫീസ് ബാധകമാകാം"],
+      authority: "MeitY, CERT-In",
+      note: "തുടർച്ചയായ അനുസരണം ആവശ്യമാണ്.",
+    },
   },
   or: {
     title: "ଆଇଟି ଏବଂ ସାଇବର ସୁରକ୍ଷା",
@@ -409,6 +660,22 @@ export const itCybersecurityData: Record<
         details: "ସାଇବର ସୁରକ୍ଷା ନିୟମ, ମାନକ ଏବଂ ନିୟମାବଳୀକୁ ପାଳନ କରିବା।",
       },
     ],
+    howToApply: {
+      mode: ["ଅନଲାଇନ୍", "ଅଫଲାଇନ୍"],
+      applyWithin: "ଆଇଟି ଏବଂ ସାଇବର ସୁରକ୍ଷା ଅନୁପାଳନ ତଥ୍ୟ ସୁରକ୍ଷା ପାଇଁ ଆବଶ୍ୟକ।",
+      onlineSteps: [
+        "ଲାଗୁ ନିୟମ ଚିହ୍ନଟ କରନ୍ତୁ",
+        "ରିସ୍କ ଆକଲନ କରନ୍ତୁ",
+        "ସୁରକ୍ଷା ନୀତି ପ୍ରସ୍ତୁତ କରନ୍ତୁ",
+        "ନିୟନ୍ତ୍ରଣ ଲାଗୁ କରନ୍ତୁ",
+      ],
+      offlineSteps: ["ଡକ୍ୟୁମେଣ୍ଟସ୍ ତିଆରି କରନ୍ତୁ", "ଅଡିଟ୍ କରନ୍ତୁ"],
+      afterSubmission: ["ସମୀକ୍ଷା କରାଯିବ", "ସୁଧାର ପାଇଁ ସୂଚନା ମିଳିପାରେ"],
+      processingTime: "30–90 ଦିନ",
+      fees: ["ଅଡିଟ୍ ଶୁଳ୍କ ଥାଇପାରେ"],
+      authority: "MeitY, CERT-In",
+      note: "ନିୟମିତ ଅନୁପାଳନ ଆବଶ୍ୟକ।",
+    },
   },
   kok: {
     title: "आयटी आणि सायबर सुरक्षा",
@@ -448,5 +715,22 @@ export const itCybersecurityData: Record<
         details: "सायबर सुरक्षा नियम, कायदे आणि मानकांचे पालन.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाईन", "ऑफलाईन"],
+      applyWithin:
+        "आयटी आनी सायबर सुरक्षा पालन म्हळ्यार प्रणाली आनी माहितीचे संरक्षण करप.",
+      onlineSteps: [
+        "लागू नियम ओळखा",
+        "सायबर जोखीम तपासा",
+        "सुरक्षा धोरण तयार करा",
+        "सुरक्षा उपाय लागू करा",
+      ],
+      offlineSteps: ["आयटी कागदपत्रां तयार करा", "आडिट करा"],
+      afterSubmission: ["तपासणी जाता", "सुधारणा सांगूंक येता"],
+      processingTime: "30–90 दीस",
+      fees: ["आडिट शुल्क लागू जावंक शकता"],
+      authority: "MeitY, CERT-In",
+      note: "निरंतर पालन गरजेचें.",
+    },
   },
 };

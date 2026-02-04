@@ -5,6 +5,7 @@ export const landDocumentsData: Record<
     description?: string;
     eligibility: string[];
     steps: { step: number; title: string; details: string }[];
+    howToApply: any;
   }
 > = {
   en: {
@@ -49,6 +50,44 @@ export const landDocumentsData: Record<
           "After verification, receive officially validated or updated property documents.",
       },
     ],
+    howToApply: {
+      mode: ["Online", "Offline"],
+
+      applyWithin:
+        "Land documents are official records that establish ownership, title, and legal status of a property. These documents are required for sale, mutation, loans, construction approvals, and legal verification.",
+
+      onlineSteps: [
+        "Visit the official State Land Records or Registration Department portal.",
+        "Select the required land document service (Record of Rights, Sale Deed copy, Encumbrance, etc.).",
+        "Enter property details such as survey number, village, taluk, or district.",
+        "Verify owner and land details displayed on the screen.",
+        "Pay the applicable fees online.",
+        "Download the digitally signed land document or receipt.",
+      ],
+
+      offlineSteps: [
+        "Visit the local Tahsildar, Revenue Office, or Sub-Registrar Office.",
+        "Request the specific land document application form.",
+        "Fill in land and ownership details.",
+        "Submit copies of identity proof and property-related documents.",
+        "Pay the prescribed fees and collect acknowledgment.",
+        "Collect the certified land document after processing.",
+      ],
+
+      afterSubmission: [
+        "Verify the details mentioned in the issued document.",
+        "Use the document for legal, financial, or administrative purposes.",
+      ],
+
+      processingTime:
+        "Immediate to 15 working days depending on document type and authority.",
+
+      fees: ["Nominal fees as prescribed by the respective State Government."],
+
+      authority: "State Revenue Department / Registration Department",
+
+      note: "Details may vary by state; ensure correct survey and ownership information is provided.",
+    },
   },
 
   hi: {
@@ -93,6 +132,37 @@ export const landDocumentsData: Record<
           "सत्यापन प्रक्रिया पूरी होने के बाद अद्यतन या सत्यापित दस्तावेज़ प्राप्त करें।",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "भूमि दस्तावेज़ संपत्ति के स्वामित्व, शीर्षक और कानूनी स्थिति को प्रमाणित करने वाले आधिकारिक रिकॉर्ड होते हैं।",
+
+      onlineSteps: [
+        "राज्य भूमि रिकॉर्ड या पंजीकरण विभाग की वेबसाइट पर जाएँ।",
+        "आवश्यक भूमि दस्तावेज़ सेवा चुनें।",
+        "सर्वे नंबर और क्षेत्र विवरण दर्ज करें।",
+        "शुल्क का ऑनलाइन भुगतान करें।",
+        "दस्तावेज़ डाउनलोड करें।",
+      ],
+
+      offlineSteps: [
+        "तहसील या उप-पंजीयक कार्यालय जाएँ।",
+        "आवेदन पत्र भरें।",
+        "दस्तावेज़ जमा कर शुल्क भुगतान करें।",
+        "प्रमाणित प्रति प्राप्त करें।",
+      ],
+
+      afterSubmission: ["दस्तावेज़ विवरण सत्यापित करें।"],
+
+      processingTime: "तुरंत से 15 कार्य दिवस।",
+
+      fees: ["राज्य सरकार द्वारा निर्धारित शुल्क।"],
+
+      authority: "राज्य राजस्व विभाग / पंजीकरण विभाग",
+
+      note: "सही भूमि विवरण देना आवश्यक है।",
+    },
   },
 
   gu: {
@@ -135,6 +205,36 @@ export const landDocumentsData: Record<
         details: "ચકાસણી પછી સત્તાવાર રીતે અપડેટ કરેલા જમીન દસ્તાવેજો મેળવો.",
       },
     ],
+    howToApply: {
+      mode: ["ઓનલાઇન", "ઓફલાઇન"],
+
+      applyWithin:
+        "જમીન દસ્તાવેજો માલિકી અને કાનૂની સ્થિતિ સાબિત કરતા અધિકૃત રેકોર્ડ છે.",
+
+      onlineSteps: [
+        "રાજ્ય જમીન રેકોર્ડ પોર્ટલ પર જાઓ.",
+        "જમીન દસ્તાવેજ સેવા પસંદ કરો.",
+        "સર્વે નંબર અને વિગત દાખલ કરો.",
+        "ફી ઓનલાઇન ચૂકવો.",
+        "દસ્તાવેજ ડાઉનલોડ કરો.",
+      ],
+
+      offlineSteps: [
+        "તલાટી અથવા સબ-રજિસ્ટ્રાર કચેરી જાઓ.",
+        "અરજી ફોર્મ ભરો.",
+        "ફી ચૂકવો અને દસ્તાવેજ મેળવો.",
+      ],
+
+      afterSubmission: ["દસ્તાવેજ ચકાસણી કરો."],
+
+      processingTime: "7–15 કાર્ય દિવસ.",
+
+      fees: ["નિયત સરકારી ફી."],
+
+      authority: "રાજ્ય રેવન્યુ વિભાગ",
+
+      note: "ખોટી માહિતીથી અરજી રદ થઈ શકે.",
+    },
   },
 
   bn: {
@@ -176,6 +276,36 @@ export const landDocumentsData: Record<
         details: "যাচাই সম্পন্ন হলে সংশোধিত বা অনুমোদিত নথি সংগ্রহ করুন।",
       },
     ],
+    howToApply: {
+      mode: ["অনলাইন", "অফলাইন"],
+
+      applyWithin:
+        "ভূমি সংক্রান্ত নথি সম্পত্তির মালিকানা ও আইনি অবস্থার প্রমাণ দেয়।",
+
+      onlineSteps: [
+        "রাজ্য ভূমি রেকর্ড ওয়েবসাইটে যান।",
+        "প্রয়োজনীয় নথি নির্বাচন করুন।",
+        "জমির বিবরণ দিন।",
+        "ফি পরিশোধ করুন।",
+        "নথি ডাউনলোড করুন।",
+      ],
+
+      offlineSteps: [
+        "রাজস্ব বা সাব-রেজিস্ট্রার অফিসে আবেদন করুন।",
+        "নথি জমা দিন।",
+        "ফি প্রদান করুন।",
+      ],
+
+      afterSubmission: ["নথির তথ্য যাচাই করুন।"],
+
+      processingTime: "তাৎক্ষণিক থেকে ১৫ কার্যদিবস।",
+
+      fees: ["নির্ধারিত সরকারি ফি।"],
+
+      authority: "রাজ্য রাজস্ব বিভাগ",
+
+      note: "সঠিক জমির তথ্য আবশ্যক।",
+    },
   },
 
   kok: {
@@ -218,6 +348,35 @@ export const landDocumentsData: Record<
         details: "तपासणी पूर्ण झाल्यावर अधिकृतरित्या अद्ययावत कागदपत्रे मिळवा.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "जमीन दस्तावेज हे मालमत्तेचो मालकी हक्क आनी कायदेशीर स्थिती दाखोवन दिवपी अधिकृत रेकॉर्ड आसतात.",
+
+      onlineSteps: [
+        "राज्य भूंय रेकॉर्ड वेबसाइटाक भेट दियात.",
+        "जमीन दस्तावेज सेवा निवडात.",
+        "सर्वे तपशील भरात.",
+        "फी भरात.",
+        "दस्तावेज डाउनलोड करात.",
+      ],
+
+      offlineSteps: [
+        "तहसील वा सब-रजिस्ट्रार कार्यालयांत अर्ज करात.",
+        "फी भरून दस्तावेज घेवप.",
+      ],
+
+      afterSubmission: ["दस्तावेज तपासात."],
+
+      processingTime: "तुरंत ते 15 दीस.",
+
+      fees: ["सरकारी ठरविल्ली फी."],
+
+      authority: "राज्य महसूल खाते",
+
+      note: "बरोबर माहिती दिवप गरजेचें.",
+    },
   },
 
   kn: {
@@ -260,6 +419,36 @@ export const landDocumentsData: Record<
         details: "ಪರಿಶೀಲನೆ ಪೂರ್ಣಗೊಂಡ ನಂತರ ಅಧಿಕೃತ ದಾಖಲೆಗಳನ್ನು ಪಡೆಯಿರಿ.",
       },
     ],
+    howToApply: {
+      mode: ["ಆನ್‌ಲೈನ್", "ಆಫ್‌ಲೈನ್"],
+
+      applyWithin:
+        "ಭೂ ದಾಖಲೆಗಳು ಆಸ್ತಿಯ ಮಾಲೀಕತ್ವ ಮತ್ತು ಕಾನೂನು ಸ್ಥಿತಿಯನ್ನು ದೃಢೀಕರಿಸುವ ದಾಖಲೆಗಳು.",
+
+      onlineSteps: [
+        "ರಾಜ್ಯ ಭೂ ದಾಖಲೆ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಭೇಟಿ ನೀಡಿ.",
+        "ಅಗತ್ಯ ದಾಖಲೆ ಆಯ್ಕೆಮಾಡಿ.",
+        "ಸರ್ವೇ ವಿವರ ನಮೂದಿಸಿ.",
+        "ಶುಲ್ಕ ಪಾವತಿಸಿ.",
+        "ದಾಖಲೆ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ.",
+      ],
+
+      offlineSteps: [
+        "ತಹಸೀಲ್ದಾರ್ ಅಥವಾ ಉಪ-ನೋಂದಣಿ ಕಚೇರಿಗೆ ಹೋಗಿ.",
+        "ಅರ್ಜಿಯನ್ನು ಸಲ್ಲಿಸಿ.",
+        "ಶುಲ್ಕ ಪಾವತಿಸಿ.",
+      ],
+
+      afterSubmission: ["ದಾಖಲೆ ವಿವರ ಪರಿಶೀಲಿಸಿ."],
+
+      processingTime: "ತಕ್ಷಣದಿಂದ 15 ಕಾರ್ಯದಿನಗಳು.",
+
+      fees: ["ನಿಗದಿತ ಸರ್ಕಾರಿ ಶುಲ್ಕ."],
+
+      authority: "ರಾಜ್ಯ ಆದಾಯ ಇಲಾಖೆ",
+
+      note: "ಸರಿಯಾದ ಭೂ ವಿವರ ಅಗತ್ಯ.",
+    },
   },
 
   ml: {
@@ -301,6 +490,36 @@ export const landDocumentsData: Record<
         details: "പരിശോധന പൂർത്തിയായ ശേഷം പുതുക്കിയ രേഖകൾ നേടുക.",
       },
     ],
+    howToApply: {
+      mode: ["ഓൺലൈൻ", "ഓഫ്‌ലൈൻ"],
+
+      applyWithin:
+        "ഭൂമി രേഖകൾ ഒരു സ്വത്തിന്റെയുള്ള ഉടമസ്ഥതയും നിയമപരമായ നിലയും തെളിയിക്കുന്ന ഔദ്യോഗിക രേഖകളാണ്.",
+
+      onlineSteps: [
+        "സംസ്ഥാന ഭൂ രേഖ വെബ്‌സൈറ്റ് സന്ദർശിക്കുക.",
+        "ആവശ്യമായ രേഖ തിരഞ്ഞെടുക്കുക.",
+        "സർവേ വിവരങ്ങൾ നൽകുക.",
+        "ഫീസ് അടയ്ക്കുക.",
+        "രേഖ ഡൗൺലോഡ് ചെയ്യുക.",
+      ],
+
+      offlineSteps: [
+        "തഹസീൽദാർ അല്ലെങ്കിൽ സബ്-റജിസ്ട്രാർ ഓഫീസിൽ പോകുക.",
+        "അപേക്ഷ നൽകുക.",
+        "ഫീസ് അടയ്ക്കുക.",
+      ],
+
+      afterSubmission: ["രേഖകൾ പരിശോധിക്കുക."],
+
+      processingTime: "ഉടൻ മുതൽ 15 പ്രവർത്തിദിവസങ്ങൾ.",
+
+      fees: ["സർക്കാർ നിശ്ചയിച്ച ഫീസ്."],
+
+      authority: "സംസ്ഥാന വരുമാന വകുപ്പ്",
+
+      note: "ശരിയായ വിവരങ്ങൾ നൽകണം.",
+    },
   },
 
   mr: {
@@ -342,6 +561,35 @@ export const landDocumentsData: Record<
         details: "तपासणीनंतर अद्ययावत कागदपत्रे मिळवा.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "जमीन दस्तऐवज हे मालकी हक्क व कायदेशीर स्थिती दर्शवणारे अधिकृत नोंदी आहेत.",
+
+      onlineSteps: [
+        "राज्य जमीन नोंदणी वेबसाइटला भेट द्या.",
+        "आवश्यक दस्तऐवज निवडा.",
+        "सर्वे माहिती भरा.",
+        "फी भरा.",
+        "दस्तऐवज डाउनलोड करा.",
+      ],
+
+      offlineSteps: [
+        "तहसील किंवा उपनिबंधक कार्यालयात अर्ज करा.",
+        "फी भरून दस्तऐवज घ्या.",
+      ],
+
+      afterSubmission: ["माहिती तपासा."],
+
+      processingTime: "तुरंत ते 15 कार्यदिवस.",
+
+      fees: ["सरकारी नियमानुसार."],
+
+      authority: "राज्य महसूल विभाग",
+
+      note: "योग्य माहिती आवश्यक.",
+    },
   },
 
   or: {
@@ -383,6 +631,32 @@ export const landDocumentsData: Record<
           "ଯାଞ୍ଚ ସମ୍ମାପ୍ତ ହେଲେ ସଂଶୋଧିତ କିମ୍ବା ଅନୁମୋଦିତ ପତ୍ର ପ୍ରାପ୍ତ କରନ୍ତୁ।",
       },
     ],
+    howToApply: {
+      mode: ["ଅନଲାଇନ୍", "ଅଫଲାଇନ୍"],
+
+      applyWithin:
+        "ଜମି ଡକ୍ୟୁମେଣ୍ଟଗୁଡ଼ିକ ହେଉଛି ମାଲିକାନା ଓ କାନୁନିକ ସ୍ଥିତିର ପ୍ରମାଣ।",
+
+      onlineSteps: [
+        "ରାଜ୍ୟ ଭୂମି ରେକର୍ଡ ୱେବସାଇଟକୁ ଯାଆନ୍ତୁ।",
+        "ଆବଶ୍ୟକ ଡକ୍ୟୁମେଣ୍ଟ ବାଛନ୍ତୁ।",
+        "ସର୍ଭେ ତଥ୍ୟ ଦିଅନ୍ତୁ।",
+        "ଶୁଳ୍କ ପେୟ କରନ୍ତୁ।",
+        "ଡକ୍ୟୁମେଣ୍ଟ ଡାଉନଲୋଡ୍ କରନ୍ତୁ।",
+      ],
+
+      offlineSteps: ["ତହସିଲ କାର୍ଯ୍ୟାଳୟରେ ଆବେଦନ କରନ୍ତୁ।", "ଶୁଳ୍କ ଦିଅନ୍ତୁ।"],
+
+      afterSubmission: ["ଡକ୍ୟୁମେଣ୍ଟ ଯାଞ୍ଚ କରନ୍ତୁ।"],
+
+      processingTime: "ତୁରନ୍ତରୁ 15 କାର୍ଯ୍ୟଦିନ।",
+
+      fees: ["ନିର୍ଦ୍ଧାରିତ ସରକାରୀ ଶୁଳ୍କ।"],
+
+      authority: "ରାଜ୍ୟ ରାଜସ୍ୱ ବିଭାଗ",
+
+      note: "ଠିକ୍ ତଥ୍ୟ ଆବଶ୍ୟକ।",
+    },
   },
 
   te: {
@@ -426,6 +700,36 @@ export const landDocumentsData: Record<
           "పరిశీలన పూర్తయిన తర్వాత అధికారికంగా సవరించిన పత్రాలు పొందండి.",
       },
     ],
+    howToApply: {
+      mode: ["ఆన్‌లైన్", "ఆఫ్‌లైన్"],
+
+      applyWithin:
+        "భూమి పత్రాలు ఆస్తి యాజమాన్యం మరియు చట్టబద్ధతను నిరూపించే అధికారిక రికార్డులు.",
+
+      onlineSteps: [
+        "రాష్ట్ర భూ రికార్డ్స్ వెబ్‌సైట్‌ను సందర్శించండి.",
+        "అవసరమైన భూమి పత్రాన్ని ఎంచుకోండి.",
+        "సర్వే వివరాలు నమోదు చేయండి.",
+        "ఫీజు చెల్లించండి.",
+        "పత్రాన్ని డౌన్‌లోడ్ చేయండి.",
+      ],
+
+      offlineSteps: [
+        "తహసీల్దార్ లేదా సబ్-రిజిస్ట్రార్ కార్యాలయానికి వెళ్లండి.",
+        "దరఖాస్తు సమర్పించండి.",
+        "ఫీజు చెల్లించండి.",
+      ],
+
+      afterSubmission: ["పత్ర వివరాలను ధృవీకరించండి."],
+
+      processingTime: "తక్షణం నుండి 15 పని రోజులు.",
+
+      fees: ["ప్రభుత్వం నిర్ణయించిన ఫీజు."],
+
+      authority: "రాష్ట్ర రెవెన్యూ శాఖ",
+
+      note: "సరైన భూమి వివరాలు అవసరం.",
+    },
   },
 
   ta: {
@@ -469,5 +773,35 @@ export const landDocumentsData: Record<
           "சரிபார்ப்பு முடிந்த பிறகு அதிகாரப்பூர்வ புதுப்பிக்கப்பட்ட ஆவணங்களைப் பெறவும்.",
       },
     ],
+    howToApply: {
+      mode: ["ஆன்லைன்", "ஆஃப்லைன்"],
+
+      applyWithin:
+        "நில ஆவணங்கள் சொத்தின் உரிமை மற்றும் சட்டபூர்வ நிலையை உறுதிப்படுத்தும் அதிகாரப்பூர்வ பதிவுகள் ஆகும்.",
+
+      onlineSteps: [
+        "மாநில நில பதிவுகள் இணையதளத்தை அணுகவும்.",
+        "தேவையான நில ஆவணத்தை தேர்வு செய்யவும்.",
+        "சர்வே விவரங்களை உள்ளிடவும்.",
+        "கட்டணம் செலுத்தவும்.",
+        "ஆவணத்தை பதிவிறக்கம் செய்யவும்.",
+      ],
+
+      offlineSteps: [
+        "வருவாய் அல்லது சப்-ரெஜிஸ்ட்ரார் அலுவலகத்தை அணுகவும்.",
+        "விண்ணப்பத்தை சமர்ப்பிக்கவும்.",
+        "கட்டணம் செலுத்தி ஆவணத்தை பெறவும்.",
+      ],
+
+      afterSubmission: ["ஆவண விவரங்களை சரிபார்க்கவும்."],
+
+      processingTime: "உடனடி முதல் 15 வேலை நாட்கள்.",
+
+      fees: ["அரசு நிர்ணயித்த கட்டணம்."],
+
+      authority: "மாநில வருவாய் துறை",
+
+      note: "சரியான நில விவரங்கள் அவசியம்.",
+    },
   },
 };

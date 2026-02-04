@@ -5,6 +5,7 @@ export const motherDeedData: Record<
     description?: string;
     eligibility: string[];
     steps: { step: number; title: string; details: string }[];
+    howToApply: any;
   }
 > = {
   en: {
@@ -49,6 +50,35 @@ export const motherDeedData: Record<
           "Keep the original or certified copy safely as it serves as the basis for all subsequent property transactions.",
       },
     ],
+    howToApply: {
+      mode: ["Offline"],
+
+      applyWithin:
+        "A Mother Deed is a legal document that traces the ownership history of a property from the first owner to the current owner. It is required for title verification, sale, loan processing, and legal due diligence.",
+
+      offlineSteps: [
+        "Identify the property registration office where the earliest deed was registered.",
+        "Visit the Sub-Registrar Office (SRO) having jurisdiction over the property.",
+        "Submit an application requesting copies of previous title documents.",
+        "Provide property details such as survey number, document numbers, year of registration, and owner names.",
+        "Pay the prescribed search and copying fees.",
+        "Collect certified copies of all title deeds forming the ownership chain.",
+        "Compile the documents chronologically to form the Mother Deed.",
+      ],
+
+      afterSubmission: [
+        "Verify continuity of ownership without missing links.",
+        "Ensure no conflicting transactions exist in the ownership chain.",
+      ],
+
+      processingTime: "3–15 working days depending on record availability.",
+
+      fees: ["Search fee and document copy charges as per State rules."],
+
+      authority: "Sub-Registrar Office / Department of Registration",
+
+      note: "Any missing or unclear ownership link may require legal clarification or affidavit.",
+    },
   },
 
   hi: {
@@ -93,6 +123,30 @@ export const motherDeedData: Record<
           "मूल या प्रमाणित प्रति को सुरक्षित रखें क्योंकि यह सभी बाद की संपत्ति लेन-देन का आधार बनती है।",
       },
     ],
+    howToApply: {
+      mode: ["ऑफलाइन"],
+
+      applyWithin:
+        "मदर डीड संपत्ति के स्वामित्व का पूरा इतिहास दर्शाने वाला दस्तावेज़ है।",
+
+      offlineSteps: [
+        "संबंधित उप-निबंधक कार्यालय जाएँ।",
+        "पुराने स्वामित्व दस्तावेज़ों की प्रति के लिए आवेदन करें।",
+        "सर्वे नंबर व पंजीकरण विवरण दें।",
+        "निर्धारित शुल्क जमा करें।",
+        "प्रमाणित प्रतियाँ प्राप्त करें।",
+      ],
+
+      afterSubmission: ["स्वामित्व श्रृंखला की जाँच करें।"],
+
+      processingTime: "3–15 कार्य दिवस।",
+
+      fees: ["राज्य नियम अनुसार शुल्क।"],
+
+      authority: "उप-निबंधक कार्यालय",
+
+      note: "स्वामित्व में कोई अंतर नहीं होना चाहिए।",
+    },
   },
 
   gu: {
@@ -137,6 +191,30 @@ export const motherDeedData: Record<
           "મૂળ અથવા પ્રમાણિત નકલ સુરક્ષિત રીતે રાખો, કારણ કે તે તમામ અનુગામી મિલકત વ્યવહારો માટે આધારરૂપ છે.",
       },
     ],
+    howToApply: {
+      mode: ["ઓફલાઇન"],
+
+      applyWithin:
+        "મધર ડીડમાં જમીન અથવા મિલકતના માલિકીની સંપૂર્ણ હિસ્ટ્રી હોય છે.",
+
+      offlineSteps: [
+        "સબ-રજીસ્ટ્રાર કચેરીમાં અરજી કરો.",
+        "જૂના દસ્તાવેજોની નકલ માંગો.",
+        "જમીન વિગતો આપો.",
+        "ફી ચૂકવો.",
+        "પ્રમાણિત નકલો મેળવો.",
+      ],
+
+      afterSubmission: ["માલિકીની સતત કડી ચકાસો."],
+
+      processingTime: "3–15 કાર્યદિવસ.",
+
+      fees: ["રાજ્ય મુજબ ફી."],
+
+      authority: "સબ-રજીસ્ટ્રાર ઓફિસ",
+
+      note: "અપૂરતી કડી કાયદાકીય મુશ્કેલી ઊભી કરી શકે છે.",
+    },
   },
 
   bn: {
@@ -181,6 +259,29 @@ export const motherDeedData: Record<
           "মূল বা প্রমাণিত কপি নিরাপদে সংরক্ষণ করুন কারণ এটি সমস্ত পরবর্তী সম্পত্তি লেনদেনের ভিত্তি।",
       },
     ],
+    howToApply: {
+      mode: ["অফলাইন"],
+
+      applyWithin: "মাদার ডিড সম্পত্তির মালিকানার সম্পূর্ণ ইতিহাস নির্দেশ করে।",
+
+      offlineSteps: [
+        "সাব-রেজিস্ট্রার অফিসে যান।",
+        "পুরানো দলিলের কপি চেয়ে আবেদন করুন।",
+        "সম্পত্তির বিবরণ দিন।",
+        "ফি প্রদান করুন।",
+        "প্রত্যয়িত কপি সংগ্রহ করুন।",
+      ],
+
+      afterSubmission: ["মালিকানা ধারাবাহিকতা যাচাই করুন।"],
+
+      processingTime: "৩–১৫ কার্যদিবস।",
+
+      fees: ["সরকার নির্ধারিত ফি।"],
+
+      authority: "সাব-রেজিস্ট্রার অফিস",
+
+      note: "কোনও লিংক অনুপস্থিত থাকা উচিত নয়।",
+    },
   },
 
   kok: {
@@ -224,6 +325,29 @@ export const motherDeedData: Record<
           "मूळ वा प्रमाणित प्रत सुरक्षित ठेवा, ही सर्व पुढील व्यवहारांची पाया आहे.",
       },
     ],
+    howToApply: {
+      mode: ["ऑफलाइन"],
+
+      applyWithin:
+        "मदर डीड हें मालमत्तेचो पूर्ण मालकी इतिहास दाखोवपी दस्तावेज आसा.",
+
+      offlineSteps: [
+        "सब-रजिस्ट्रार कार्यालयांत अर्ज करात.",
+        "जुणे दस्तावेज मागात.",
+        "फी भरात.",
+        "प्रमाणित प्रती घेवप.",
+      ],
+
+      afterSubmission: ["मालकी साखळी तपासात."],
+
+      processingTime: "3–15 दीस.",
+
+      fees: ["सरकारान ठरयले फी."],
+
+      authority: "सब-रजिस्ट्रार ऑफिस",
+
+      note: "मालकीत खंड नासलो जाय.",
+    },
   },
 
   kn: {
@@ -268,6 +392,29 @@ export const motherDeedData: Record<
           "ಮೂಲ ಅಥವಾ ಪ್ರಮಾಣಿತ ಪ್ರತಿಯನ್ನು ಸುರಕ್ಷಿತವಾಗಿ ಇರಿಸಿ, ಇದು ಎಲ್ಲಾ ಮುಂದಿನ ಆಸ್ತಿ ವ್ಯವಹಾರಗಳ ಮೂಲವಾಗಿದೆ.",
       },
     ],
+    howToApply: {
+      mode: ["ಆಫ್‌ಲೈನ್"],
+
+      applyWithin: "ಮದರ್ ಡೀಡ್ ಆಸ್ತಿಯ ಸಂಪೂರ್ಣ ಮಾಲೀಕತ್ವ ಇತಿಹಾಸವನ್ನು ತೋರಿಸುತ್ತದೆ.",
+
+      offlineSteps: [
+        "ಉಪ-ನೋಂದಣಿ ಕಚೇರಿಗೆ ಭೇಟಿ ನೀಡಿ.",
+        "ಹಳೆಯ ದಾಖಲೆಗಳ ಪ್ರತಿ ಪಡೆಯಲು ಅರ್ಜಿ ಸಲ್ಲಿಸಿ.",
+        "ಆಸ್ತಿ ವಿವರ ನೀಡಿ.",
+        "ಶುಲ್ಕ ಪಾವತಿಸಿ.",
+        "ಪ್ರಮಾಣಿತ ಪ್ರತಿಗಳು ಪಡೆಯಿರಿ.",
+      ],
+
+      afterSubmission: ["ಮಾಲೀಕತ್ವ ಸರಣಿ ಪರಿಶೀಲಿಸಿ."],
+
+      processingTime: "3–15 ಕಾರ್ಯದಿನಗಳು.",
+
+      fees: ["ನಿಯಮಾನುಸಾರ ಶುಲ್ಕ."],
+
+      authority: "ಉಪ-ನೋಂದಣಿ ಕಚೇರಿ",
+
+      note: "ಮಾಲೀಕತ್ವದಲ್ಲಿ ಅಂತರ ಇರಬಾರದು.",
+    },
   },
 
   ml: {
@@ -312,6 +459,30 @@ export const motherDeedData: Record<
           "മൂല ഡീഡ് അല്ലെങ്കിൽ സർട്ടിഫൈഡ് കോപി സുരക്ഷിതമായി സൂക്ഷിക്കുക, ഇത് എല്ലാ ഭാവി ഇടപാടുകൾക്കും അടിസ്ഥാനമാണ്.",
       },
     ],
+    howToApply: {
+      mode: ["ഓഫ്‌ലൈൻ"],
+
+      applyWithin:
+        "മദർ ഡീഡ് ഭൂമിയുടെ ഉടമസ്ഥതാ ചരിത്രം വ്യക്തമാക്കുന്ന രേഖയാണ്.",
+
+      offlineSteps: [
+        "സബ് രജിസ്ട്രാർ ഓഫീസിൽ അപേക്ഷിക്കുക.",
+        "പഴയ രേഖകളുടെ പകർപ്പ് ആവശ്യപ്പെടുക.",
+        "ഭൂവിശദാംശങ്ങൾ നൽകുക.",
+        "ഫീസ് അടയ്ക്കുക.",
+        "സർട്ടിഫൈഡ് പകർപ്പുകൾ നേടുക.",
+      ],
+
+      afterSubmission: ["ഉടമസ്ഥതാ തുടർച്ച പരിശോധിക്കുക."],
+
+      processingTime: "3–15 പ്രവർത്തിദിവസങ്ങൾ.",
+
+      fees: ["സർക്കാർ നിശ്ചയിച്ച ഫീസ്."],
+
+      authority: "സബ് രജിസ്ട്രാർ ഓഫീസ്",
+
+      note: "ഉടമസ്ഥതയിൽ വിടവ് ഉണ്ടാകരുത്.",
+    },
   },
 
   mr: {
@@ -356,6 +527,29 @@ export const motherDeedData: Record<
           "मूळ किंवा प्रमाणित प्रत सुरक्षित ठेवा, जी सर्व पुढील व्यवहारांसाठी आधार ठरते.",
       },
     ],
+    howToApply: {
+      mode: ["ऑफलाइन"],
+
+      applyWithin: "मदर डीडमध्ये जमिनीच्या मालकीचा संपूर्ण इतिहास असतो.",
+
+      offlineSteps: [
+        "उप-नोंदणी कार्यालयात अर्ज करा.",
+        "जुने दस्तऐवज मागवा.",
+        "मालमत्ता तपशील द्या.",
+        "शुल्क भरा.",
+        "प्रमाणित प्रती घ्या.",
+      ],
+
+      afterSubmission: ["मालकीची साखळी तपासा."],
+
+      processingTime: "3–15 कार्यदिवस.",
+
+      fees: ["नियमांनुसार शुल्क."],
+
+      authority: "उप-नोंदणी कार्यालय",
+
+      note: "मालकीमध्ये खंड नसावा.",
+    },
   },
 
   or: {
@@ -400,6 +594,28 @@ export const motherDeedData: Record<
           "ମୂଳ କିମ୍ବା ପ୍ରମାଣିତ କପି ସୁରକ୍ଷିତ ରଖନ୍ତୁ, ଯାହା ସମସ୍ତ ପରବର୍ତ୍ତୀ ଡିଡ୍‌ଗୁଡିକର ଆଧାର।",
       },
     ],
+    howToApply: {
+      mode: ["ଅଫଲାଇନ୍"],
+
+      applyWithin: "ମଦର ଡିଡ୍ ଜମିର ସମ୍ପୂର୍ଣ୍ଣ ମାଲିକାନା ଇତିହାସକୁ ପ୍ରମାଣ କରେ।",
+
+      offlineSteps: [
+        "ସବ୍-ରେଜିଷ୍ଟ୍ରାର କାର୍ଯ୍ୟାଳୟକୁ ଯାଆନ୍ତୁ।",
+        "ପୁରୁଣା ଦସ୍ତାବେଜ ପାଇଁ ଆବେଦନ କରନ୍ତୁ।",
+        "ଫି ଦିଅନ୍ତୁ।",
+        "ସର୍ଟିଫାଇଡ୍ କପି ନିଅନ୍ତୁ।",
+      ],
+
+      afterSubmission: ["ମାଲିକାନା ସତତା ଯାଞ୍ଚ କରନ୍ତୁ।"],
+
+      processingTime: "3–15 କାର୍ଯ୍ୟଦିନ।",
+
+      fees: ["ନିର୍ଦ୍ଧାରିତ ଶୁଳ୍କ।"],
+
+      authority: "ସବ୍-ରେଜିଷ୍ଟ୍ରାର କାର୍ଯ୍ୟାଳୟ",
+
+      note: "କୌଣସି ଖାଲି ସଂଯୋଗ ନଥିବା ଜରୁରୀ।",
+    },
   },
 
   te: {
@@ -444,6 +660,29 @@ export const motherDeedData: Record<
           "మూల డీడ్ లేదా సర్టిఫైడ్ కాపీని భద్రంగా ఉంచండి, ఇది అన్ని తదుపరి ఆస్తి లావాదేవీలకు ఆధారంగా ఉంటుంది.",
       },
     ],
+    howToApply: {
+      mode: ["ఆఫ్‌లైన్"],
+
+      applyWithin: "మదర్ డీడ్ భూమి లేదా ఆస్తి యాజమాన్య చరిత్రను చూపిస్తుంది.",
+
+      offlineSteps: [
+        "సబ్-రిజిస్ట్రార్ కార్యాలయాన్ని సందర్శించండి.",
+        "పాత డాక్యుమెంట్ల ప్రతుల కోసం దరఖాస్తు చేయండి.",
+        "ఆస్తి వివరాలు ఇవ్వండి.",
+        "ఫీజు చెల్లించండి.",
+        "సర్టిఫైడ్ కాపీలు పొందండి.",
+      ],
+
+      afterSubmission: ["యాజమాన్య సరళిని పరిశీలించండి."],
+
+      processingTime: "3–15 పని రోజులు.",
+
+      fees: ["ప్రభుత్వం నిర్ణయించిన ఫీజు."],
+
+      authority: "సబ్-రిజిస్ట్రార్ కార్యాలయం",
+
+      note: "లింక్ గ్యాప్ ఉండకూడదు.",
+    },
   },
 
   ta: {
@@ -488,5 +727,29 @@ export const motherDeedData: Record<
           "மூல டீட் அல்லது சான்றிதழ் நகலை பாதுகாப்பாக வைக்கவும், இது அனைத்து எதிர்கால சொத்து பரிவர்த்தனைகளுக்கும் அடிப்படையாக அமையும்.",
       },
     ],
+    howToApply: {
+      mode: ["ஆஃப்லைன்"],
+
+      applyWithin:
+        "மதர் டீட் என்பது சொத்தின் முழு உரிமை வரலாற்றைக் காட்டும் ஆவணம்.",
+
+      offlineSteps: [
+        "சார் பதிவாளர் அலுவலகத்தை அணுகவும்.",
+        "பழைய பத்திர நகல்களுக்கு விண்ணப்பிக்கவும்.",
+        "சொத்து விவரங்களை வழங்கவும்.",
+        "கட்டணம் செலுத்தவும்.",
+        "சான்று பெற்ற நகல்களை பெறவும்.",
+      ],
+
+      afterSubmission: ["உரிமை தொடர்ச்சியை சரிபார்க்கவும்."],
+
+      processingTime: "3–15 வேலை நாட்கள்.",
+
+      fees: ["அரசு நிர்ணயித்த கட்டணம்."],
+
+      authority: "சார் பதிவாளர் அலுவலகம்",
+
+      note: "உரிமை இணைப்பு முழுமையாக இருக்க வேண்டும்.",
+    },
   },
 };

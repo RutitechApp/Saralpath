@@ -5,6 +5,7 @@ export const khataCertificateData: Record<
     description?: string;
     eligibility: string[];
     steps: { step: number; title: string; details: string }[];
+    howToApply: any;
   }
 > = {
   en: {
@@ -48,6 +49,44 @@ export const khataCertificateData: Record<
           "Retain a copy of the certificate for property transactions, tax payments, or legal purposes.",
       },
     ],
+    howToApply: {
+      mode: ["Online", "Offline"],
+
+      applyWithin:
+        "A Khata Certificate is an official document issued by the municipal authority confirming that a property is recorded in its assessment register. It is required for property registration, building approvals, loans, and legal transactions.",
+
+      onlineSteps: [
+        "Visit the official website of BBMP or the respective Municipal Corporation.",
+        "Select the ‘Khata Certificate / Khata Extract’ service.",
+        "Enter Property ID (PID) or Application Number.",
+        "Verify owner and property details.",
+        "Upload required documents if prompted.",
+        "Pay the applicable fee online.",
+        "Download the Khata Certificate or track application status.",
+      ],
+
+      offlineSteps: [
+        "Visit the BBMP or local municipal office.",
+        "Obtain the Khata Certificate application form.",
+        "Fill in property and ownership details.",
+        "Attach required supporting documents.",
+        "Pay the prescribed fee and collect the receipt.",
+        "Receive the certificate after verification.",
+      ],
+
+      afterSubmission: [
+        "Track application status with acknowledgment number.",
+        "Use the Khata Certificate for property-related approvals and transactions.",
+      ],
+
+      processingTime: "Generally 7–15 working days.",
+
+      fees: ["As prescribed by the municipal authority."],
+
+      authority: "BBMP / Local Municipal Corporation",
+
+      note: "All outstanding property tax dues must be cleared before applying.",
+    },
   },
 
   hi: {
@@ -91,6 +130,38 @@ export const khataCertificateData: Record<
           "संपत्ति लेन-देन, कर भुगतान या कानूनी उद्देश्यों के लिए प्रमाणपत्र की प्रति सुरक्षित रखें।",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "खाता प्रमाणपत्र यह दर्शाने वाला आधिकारिक दस्तावेज़ है कि संपत्ति नगरपालिका रिकॉर्ड में दर्ज है। यह संपत्ति लेन-देन और निर्माण अनुमतियों के लिए आवश्यक है।",
+
+      onlineSteps: [
+        "BBMP या संबंधित नगर निगम की वेबसाइट पर जाएं।",
+        "‘Khata Certificate / Extract’ सेवा चुनें।",
+        "PID या आवेदन संख्या दर्ज करें।",
+        "मालिक और संपत्ति विवरण सत्यापित करें।",
+        "ऑनलाइन शुल्क का भुगतान करें।",
+        "खाता प्रमाणपत्र डाउनलोड करें।",
+      ],
+
+      offlineSteps: [
+        "नगर निगम कार्यालय में आवेदन करें।",
+        "आवश्यक दस्तावेज़ संलग्न करें।",
+        "निर्धारित शुल्क जमा करें।",
+        "सत्यापन के बाद प्रमाणपत्र प्राप्त करें।",
+      ],
+
+      afterSubmission: ["आवेदन स्थिति की निगरानी करें।"],
+
+      processingTime: "7–15 कार्य दिवस।",
+
+      fees: ["नगर निगम द्वारा निर्धारित शुल्क।"],
+
+      authority: "BBMP / नगर निगम",
+
+      note: "संपत्ति कर का भुगतान अनिवार्य है।",
+    },
   },
 
   gu: {
@@ -134,6 +205,36 @@ export const khataCertificateData: Record<
           "મિલકત ટ્રાન્ઝેક્શન, કર ચુકવણી અથવા કાનૂની હેતુ માટે પ્રમાણપત્રની નકલ સાચવો.",
       },
     ],
+    howToApply: {
+      mode: ["ઓનલાઇન", "ઓફલાઇન"],
+
+      applyWithin:
+        "ખાતા સર્ટિફિકેટ એ સંપત્તિ મ્યુનિસિપલ રેકોર્ડમાં નોંધાયેલ હોવાનું અધિકૃત પુરાવું છે.",
+
+      onlineSteps: [
+        "BBMP અથવા મ્યુનિસિપલ વેબસાઇટ પર જાઓ.",
+        "‘Khata Certificate / Extract’ પસંદ કરો.",
+        "PID અથવા અરજી નંબર દાખલ કરો.",
+        "ફી ઓનલાઇન ચૂકવો.",
+        "ખાતા સર્ટિફિકેટ ડાઉનલોડ કરો.",
+      ],
+
+      offlineSteps: [
+        "મ્યુનિસિપલ કચેરીમાં અરજી કરો.",
+        "દસ્તાવેજો જમા કરો.",
+        "ફી ચૂકવી રસીદ મેળવો.",
+      ],
+
+      afterSubmission: ["અરજીની સ્થિતિ તપાસો."],
+
+      processingTime: "7 થી 15 કાર્ય દિવસ.",
+
+      fees: ["નક્કી કરેલી અરજી ફી."],
+
+      authority: "BBMP / મ્યુનિસિપલ કોર્પોરેશન",
+
+      note: "બધા કર ચૂકવેલા હોવા જોઈએ.",
+    },
   },
 
   bn: {
@@ -177,6 +278,36 @@ export const khataCertificateData: Record<
           "সম্পত্তি লেনদেন, কর প্রদান বা আইনি উদ্দেশ্যে সনদের একটি কপি সংরক্ষণ করুন।",
       },
     ],
+    howToApply: {
+      mode: ["অনলাইন", "অফলাইন"],
+
+      applyWithin:
+        "খাতা সার্টিফিকেট হলো একটি সরকারি নথি যা প্রমাণ করে সম্পত্তি পৌরসভার নথিতে নিবন্ধিত।",
+
+      onlineSteps: [
+        "পৌরসভার অফিসিয়াল ওয়েবসাইটে যান।",
+        "‘Khata Certificate / Extract’ পরিষেবা নির্বাচন করুন।",
+        "PID বা আবেদন নম্বর দিন।",
+        "ফি প্রদান করুন।",
+        "সার্টিফিকেট ডাউনলোড করুন।",
+      ],
+
+      offlineSteps: [
+        "পৌরসভা অফিসে আবেদন করুন।",
+        "প্রয়োজনীয় নথি জমা দিন।",
+        "ফি পরিশোধ করুন।",
+      ],
+
+      afterSubmission: ["আবেদনের অবস্থা যাচাই করুন।"],
+
+      processingTime: "৭–১৫ কার্যদিবস।",
+
+      fees: ["নির্ধারিত আবেদন ফি।"],
+
+      authority: "পৌরসভা / BBMP",
+
+      note: "সম্পত্তি কর পরিশোধ আবশ্যক।",
+    },
   },
 
   kok: {
@@ -219,6 +350,28 @@ export const khataCertificateData: Record<
           "भविष्यातील व्यवहार, कर भरणे किंवा कायदेशीर हेतूसाठी प्रमाणपत्र जतन करा.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+      applyWithin:
+        "खाता प्रमाणपत्र हे मालमत्त नगरपालिका नोंदींत नोंद आसा हाचो अधिकृत पुरावो आसा.",
+      onlineSteps: [
+        "नगरपालिका किंवा BBMP वेबसाइटाक भेट दियात.",
+        "‘Khata Certificate / Extract’ सेवा निवडात.",
+        "PID / मालमत्ता आयडी भरात.",
+        "फी भरात.",
+        "प्रमाणपत्र डाउनलोड करात.",
+      ],
+      offlineSteps: [
+        "नगरपालिका कार्यालयांत अर्ज करात.",
+        "दस्तावेज सादर करात.",
+        "फी भरून प्रमाणपत्र घेवप.",
+      ],
+      afterSubmission: ["अर्ज स्थिती तपासात."],
+      processingTime: "7–15 दीस.",
+      fees: ["नगरपालिका ठरयले फीय."],
+      authority: "नगरपालिका / BBMP",
+      note: "सगळे कर भरलेले आसप गरजेचे.",
+    },
   },
 
   kn: {
@@ -262,6 +415,28 @@ export const khataCertificateData: Record<
           "ಭವಿಷ್ಯದ ವ್ಯವಹಾರ, ತೆರಿಗೆ ಪಾವತಿ ಅಥವಾ ಕಾನೂನಾತ್ಮಕ ಉದ್ದೇಶಕ್ಕಾಗಿ ಪ್ರತಿಯನ್ನು ಉಳಿಸಿ.",
       },
     ],
+    howToApply: {
+      mode: ["ಆನ್‌ಲೈನ್", "ಆಫ್‌ಲೈನ್"],
+      applyWithin:
+        "ಖಾತಾ ಪ್ರಮಾಣಪತ್ರವು ಆಸ್ತಿ ಮಹಾನಗರ ಪಾಲಿಕೆ ದಾಖಲೆಯಲ್ಲಿ ನೋಂದಾಯಿತವಾಗಿದೆ ಎಂಬ ಅಧಿಕೃತ ಸಾಕ್ಷಿಯಾಗಿದೆ.",
+      onlineSteps: [
+        "BBMP ಅಥವಾ ಮಹಾನಗರ ಪಾಲಿಕೆ ವೆಬ್‌ಸೈಟ್‌ಗೆ ಭೇಟಿ ನೀಡಿ.",
+        "‘Khata Certificate / Extract’ ಆಯ್ಕೆಮಾಡಿ.",
+        "PID / ಆಸ್ತಿ ಐಡಿ ನಮೂದಿಸಿ.",
+        "ಶುಲ್ಕ ಪಾವತಿಸಿ.",
+        "ಪ್ರಮಾಣಪತ್ರ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ.",
+      ],
+      offlineSteps: [
+        "ಮಹಾನಗರ ಪಾಲಿಕೆ ಕಚೇರಿಗೆ ಭೇಟಿ ನೀಡಿ.",
+        "ಅರ್ಜಿಯನ್ನು ಸಲ್ಲಿಸಿ.",
+        "ದಾಖಲೆಗಳನ್ನು ಜೋಡಿಸಿ ಶುಲ್ಕ ಪಾವತಿಸಿ.",
+      ],
+      afterSubmission: ["ಅರ್ಜಿಯ ಸ್ಥಿತಿಯನ್ನು ಪರಿಶೀಲಿಸಿ."],
+      processingTime: "7–15 ಕಾರ್ಯದಿನಗಳು.",
+      fees: ["ನಿರ್ಧರಿತ ಶುಲ್ಕ."],
+      authority: "BBMP / ಸ್ಥಳೀಯ ಸಂಸ್ಥೆ",
+      note: "ಬಾಕಿ ತೆರಿಗೆಗಳಿಲ್ಲದೆ ಇರಬೇಕು.",
+    },
   },
 
   ml: {
@@ -305,6 +480,28 @@ export const khataCertificateData: Record<
           "ഭാവി ഇടപാടുകൾ, നികുതി അടയ്‌ക്കൽ, അല്ലെങ്കിൽ നിയമപരമായ ആവശ്യങ്ങൾക്ക് കോപ്പി സൂക്ഷിക്കുക.",
       },
     ],
+    howToApply: {
+      mode: ["ഓൺലൈൻ", "ഓഫ്‌ലൈൻ"],
+      applyWithin:
+        "ഖാതാ സർട്ടിഫിക്കറ്റ് ഒരു സ്വത്ത് മുനിസിപ്പൽ രേഖകളിൽ രജിസ്റ്റർ ചെയ്തിട്ടുണ്ടെന്ന ഔദ്യോഗിക തെളിവാണ്.",
+      onlineSteps: [
+        "മുനിസിപ്പൽ അല്ലെങ്കിൽ BBMP വെബ്‌സൈറ്റ് സന്ദർശിക്കുക.",
+        "‘Khata Certificate / Extract’ തിരഞ്ഞെടുക്കുക.",
+        "PID / Property ID നൽകുക.",
+        "ഫീസ് അടയ്ക്കുക.",
+        "സർട്ടിഫിക്കറ്റ് ഡൗൺലോഡ് ചെയ്യുക.",
+      ],
+      offlineSteps: [
+        "ബന്ധപ്പെട്ട മുനിസിപ്പൽ ഓഫീസ് സന്ദർശിക്കുക.",
+        "അപേക്ഷ സമർപ്പിക്കുക.",
+        "രേഖകൾ നൽകി ഫീസ് അടയ്ക്കുക.",
+      ],
+      afterSubmission: ["അപേക്ഷയുടെ നില പരിശോധിക്കുക."],
+      processingTime: "7–15 പ്രവർത്തിദിവസങ്ങൾ.",
+      fees: ["മുനിസിപ്പൽ നിശ്ചയിച്ച ഫീസ്."],
+      authority: "മുനിസിപ്പൽ കോർപ്പറേഷൻ / BBMP",
+      note: "സ്വത്ത് നികുതി പൂർണ്ണമായി അടച്ചിരിക്കണം.",
+    },
   },
 
   mr: {
@@ -347,6 +544,28 @@ export const khataCertificateData: Record<
           "भविष्यातील व्यवहार, कर भरणे किंवा कायदेशीर हेतूसाठी प्रमाणपत्र जतन करा.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+      applyWithin:
+        "खाता प्रमाणपत्र हे मालमत्ता स्थानिक स्वराज्य संस्थेच्या नोंदीत असल्याचा अधिकृत पुरावा आहे.",
+      onlineSteps: [
+        "महापालिकेच्या अधिकृत वेबसाइटला भेट द्या.",
+        "‘Khata Certificate / Extract’ सेवा निवडा.",
+        "PID किंवा मालमत्ता आयडी टाका.",
+        "फी भरा.",
+        "प्रमाणपत्र डाउनलोड करा.",
+      ],
+      offlineSteps: [
+        "महापालिका कार्यालयात अर्ज करा.",
+        "कागदपत्रे सादर करा.",
+        "फी भरून प्रमाणपत्र मिळवा.",
+      ],
+      afterSubmission: ["अर्ज स्थिती तपासा."],
+      processingTime: "7–15 कार्यदिवस.",
+      fees: ["महापालिकेच्या नियमांनुसार."],
+      authority: "महापालिका / BBMP",
+      note: "मालमत्ता कर भरलेला असावा.",
+    },
   },
 
   or: {
@@ -390,6 +609,28 @@ export const khataCertificateData: Record<
           "ଭବିଷ୍ୟତ ଟ୍ରାଞ୍ଜାକ୍ସନ, କର ଦେୟ ଅଥବା କାନୁନୀ ଉଦ୍ଦେଶ୍ୟ ପାଇଁ ସଂରକ୍ଷଣ କରନ୍ତୁ।",
       },
     ],
+    howToApply: {
+      mode: ["ଅନଲାଇନ୍", "ଅଫଲାଇନ୍"],
+      applyWithin:
+        "ଖାତା ସର୍ଟିଫିକେଟ୍ ହେଉଛି ଘର ବା ଜମି ମୁନିସିପାଲ୍ ରେକର୍ଡରେ ନୋନ୍ଦିତ ଥିବାର ସରକାରୀ ପ୍ରମାଣ।",
+      onlineSteps: [
+        "ମୁନିସିପାଲ୍ ୱେବସାଇଟକୁ ଯାଆନ୍ତୁ।",
+        "‘Khata Certificate / Extract’ ବାଛନ୍ତୁ।",
+        "PID / Property ID ଦିଅନ୍ତୁ।",
+        "ଶୁଳ୍କ ପ୍ରଦାନ କରନ୍ତୁ।",
+        "ସର୍ଟିଫିକେଟ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ।",
+      ],
+      offlineSteps: [
+        "ମୁନିସିପାଲ୍ କାର୍ଯ୍ୟାଳୟରେ ଆବେଦନ କରନ୍ତୁ।",
+        "ଦଲିଲ ଦାଖଲ କରନ୍ତୁ।",
+        "ଶୁଳ୍କ ଦିଅନ୍ତୁ।",
+      ],
+      afterSubmission: ["ଆବେଦନ ସ୍ଥିତି ଯାଞ୍ଚ କରନ୍ତୁ।"],
+      processingTime: "7–15 କାର୍ଯ୍ୟଦିନ।",
+      fees: ["ନିର୍ଦ୍ଧାରିତ ଶୁଳ୍କ।"],
+      authority: "ମୁନିସିପାଲ୍ ସଂସ୍ଥା",
+      note: "ଟାକ୍ସ ବକେୟା ନ ଥିବା ଆବଶ୍ୟକ।",
+    },
   },
 
   te: {
@@ -433,6 +674,30 @@ export const khataCertificateData: Record<
           "భవిష్యత్తులో లావాదేవీలు, పన్ను చెల్లింపులు లేదా చట్టపరమైన అవసరాల కోసం కాపీని ఉంచండి.",
       },
     ],
+    howToApply: {
+      mode: ["ఆన్‌లైన్", "ఆఫ్‌లైన్"],
+      applyWithin:
+        "ఖాతా సర్టిఫికెట్ అనేది ఆస్తి మున్సిపల్ రికార్డుల్లో నమోదు అయిందని నిర్ధారించే అధికారిక పత్రం. ఇది రిజిస్ట్రేషన్, నిర్మాణ అనుమతులు మరియు రుణాల కోసం అవసరం.",
+      onlineSteps: [
+        "BBMP లేదా సంబంధిత మున్సిపల్ వెబ్‌సైట్‌ను సందర్శించండి.",
+        "‘Khata Certificate / Extract’ సేవను ఎంచుకోండి.",
+        "PID లేదా ఆస్తి ఐడీని నమోదు చేయండి.",
+        "వివరాలను ధృవీకరించండి.",
+        "ఆన్‌లైన్‌లో ఫీజు చెల్లించండి.",
+        "ఖాతా సర్టిఫికెట్‌ను డౌన్‌లోడ్ చేయండి.",
+      ],
+      offlineSteps: [
+        "సంబంధిత మున్సిపల్ కార్యాలయాన్ని సందర్శించండి.",
+        "ఖాతా సర్టిఫికెట్ దరఖాస్తు ఫారమ్‌ను పూరించండి.",
+        "పత్రాలు సమర్పించి ఫీజు చెల్లించండి.",
+        "సర్టిఫికెట్‌ను పొందండి.",
+      ],
+      afterSubmission: ["దరఖాస్తు స్థితిని ట్రాక్ చేయండి."],
+      processingTime: "7–15 పని రోజులలోపు.",
+      fees: ["మున్సిపల్ నియమాల ప్రకారం."],
+      authority: "BBMP / మున్సిపల్ కార్పొరేషన్",
+      note: "ఆస్తి పన్ను పూర్తిగా చెల్లించి ఉండాలి.",
+    },
   },
 
   ta: {
@@ -476,5 +741,35 @@ export const khataCertificateData: Record<
           "எதிர்கால பரிவர்த்தனை, வரி செலுத்தல் அல்லது சட்டப்பூர்வ நோக்கங்களுக்கு சான்றிதழின் நகலை வைத்திருங்கள்.",
       },
     ],
+    howToApply: {
+      mode: ["ஆன்லைன்", "ஆஃப்லைன்"],
+
+      applyWithin:
+        "காத்தா சான்றிதழ் என்பது சொத்து நகராட்சி பதிவுகளில் பதிவு செய்யப்பட்டுள்ளதாக உறுதி செய்யும் அதிகாரப்பூர்வ ஆவணம்.",
+
+      onlineSteps: [
+        "BBMP அல்லது நகராட்சி இணையதளத்தை அணுகவும்.",
+        "‘Khata Certificate / Extract’ சேவையைத் தேர்வு செய்யவும்.",
+        "PID அல்லது விண்ணப்ப எண்ணை உள்ளிடவும்.",
+        "கட்டணம் செலுத்தவும்.",
+        "சான்றிதழை பதிவிறக்கம் செய்யவும்.",
+      ],
+
+      offlineSteps: [
+        "நகராட்சி அலுவலகத்தில் விண்ணப்பிக்கவும்.",
+        "தேவையான ஆவணங்களை சமர்ப்பிக்கவும்.",
+        "கட்டணம் செலுத்தவும்.",
+      ],
+
+      afterSubmission: ["விண்ணப்ப நிலையை சரிபார்க்கவும்."],
+
+      processingTime: "7–15 வேலை நாட்கள்.",
+
+      fees: ["நகராட்சி விதிப்படி கட்டணம்."],
+
+      authority: "BBMP / நகராட்சி நிர்வாகம்",
+
+      note: "சொத்து வரி முழுமையாக செலுத்தப்பட்டிருக்க வேண்டும்.",
+    },
   },
 };

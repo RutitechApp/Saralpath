@@ -1,10 +1,6 @@
 import React from "react";
 import { View, Text, Pressable, StyleSheet } from "react-native";
-import {
-  fontScale,
-  horizontalScale,
-  verticalScale,
-} from "../constants/responsive";
+import { horizontalScale, verticalScale } from "../constants/responsive";
 import { useTranslation } from "react-i18next";
 import { useThemeColors } from "../constants/ThemeContext";
 import { useFontSize } from "../constants/FontSizeContext";
@@ -40,8 +36,8 @@ const TabView: React.FC<TabViewProps> = ({
                 activeIndex === _index ? colors.primary : colors.imageBg,
               width: horizontalScale(100),
               alignItems: "center",
-              height: verticalScale(30),
               justifyContent: "center",
+              paddingVertical: verticalScale(5),
             }}
           >
             <Text
@@ -80,5 +76,6 @@ const styles = StyleSheet.create({
   },
   textStyle: {
     marginLeft: horizontalScale(4),
+    textAlign: "center",
   },
 });

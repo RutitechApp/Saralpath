@@ -5,6 +5,7 @@ export const constructionAgreementData: Record<
     description?: string;
     eligibility: string[];
     steps: { step: number; title: string; details: string }[];
+    howToApply: any;
   }
 > = {
   en: {
@@ -49,6 +50,52 @@ export const constructionAgreementData: Record<
           "Start construction according to the agreement, maintaining records of work, payments, and approvals.",
       },
     ],
+    howToApply: {
+      mode: ["Online", "Offline"],
+
+      applyWithin:
+        "A Construction Agreement should be executed before the commencement of construction work. It defines the terms, responsibilities, timelines, and payment conditions agreed between the property owner and the contractor.",
+
+      onlineSteps: [
+        "Prepare a draft Construction Agreement based on mutually agreed terms between the owner and contractor.",
+        "Visit a legal document or e-stamping portal authorized by the respective State Government.",
+        "Select 'Construction Agreement' or 'Agreement for Construction' as the document type.",
+        "Enter required details such as party names, property details, scope of work, payment terms, and construction timeline.",
+        "Upload supporting documents if required (ID proof, property documents, approved plans).",
+        "Pay applicable stamp duty and registration fees online.",
+        "Download the e-stamped Construction Agreement.",
+        "Get the agreement digitally signed or physically signed by both parties.",
+      ],
+
+      offlineSteps: [
+        "Draft the Construction Agreement on stamp paper of applicable value as per state laws.",
+        "Include all agreed terms such as scope of work, payment schedule, completion timeline, penalties, and dispute resolution.",
+        "Visit the Sub-Registrar Office if registration is required.",
+        "Both parties must sign the agreement in the presence of witnesses.",
+        "Submit the document along with identity proofs and supporting documents.",
+        "Collect the registered or stamped agreement copy.",
+      ],
+
+      afterSubmission: [
+        "Ensure both parties receive a signed copy of the Construction Agreement.",
+        "Use the agreement as a legal reference during construction execution.",
+        "Any changes to terms should be documented through a written amendment.",
+        "The agreement may be required for bank loans, compliance checks, or legal purposes.",
+      ],
+
+      processingTime:
+        "Immediate for drafting and signing; 1–7 days if registration is required, depending on local authority workload.",
+
+      fees: [
+        "Stamp duty as per state-specific Stamp Act.",
+        "Registration fees if the agreement is registered at the Sub-Registrar Office.",
+      ],
+
+      authority:
+        "State Stamp Authority / Sub-Registrar Office (for registered agreements)",
+
+      note: "It is advisable to have the Construction Agreement reviewed by a legal professional. Proper stamping and registration enhance legal enforceability.",
+    },
   },
 
   hi: {
@@ -93,6 +140,45 @@ export const constructionAgreementData: Record<
           "अनुबंध के अनुसार निर्माण शुरू करें और कार्य, भुगतान और अनुमोदनों का रिकॉर्ड रखें।",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "निर्माण कार्य शुरू होने से पहले Construction Agreement करना आवश्यक है। इसमें मालिक और ठेकेदार के बीच कार्य, समयसीमा और भुगतान की शर्तें निर्धारित होती हैं।",
+
+      onlineSteps: [
+        "आपसी सहमति से Construction Agreement का ड्राफ्ट तैयार करें।",
+        "राज्य-मान्यता प्राप्त ई-स्टैम्पिंग या लीगल पोर्टल पर जाएँ।",
+        "'Construction Agreement' चुनें।",
+        "पक्षकारों, संपत्ति, कार्य विवरण, भुगतान और समयसीमा भरें।",
+        "आवश्यक दस्तावेज़ अपलोड करें।",
+        "स्टैम्प ड्यूटी व पंजीकरण शुल्क ऑनलाइन भुगतान करें।",
+        "ई-स्टैम्प्ड अनुबंध डाउनलोड करें।",
+        "दोनों पक्षों से हस्ताक्षर करवाएँ।",
+      ],
+
+      offlineSteps: [
+        "राज्य नियमों अनुसार स्टैम्प पेपर पर अनुबंध तैयार करें।",
+        "कार्य विवरण, भुगतान शर्तें और विवाद समाधान शामिल करें।",
+        "आवश्यक होने पर सब-रजिस्ट्रार कार्यालय जाएँ।",
+        "गवाहों की उपस्थिति में हस्ताक्षर करें।",
+        "दस्तावेज़ जमा करें और प्रति प्राप्त करें।",
+      ],
+
+      afterSubmission: [
+        "दोनों पक्षों के पास हस्ताक्षरित प्रति होनी चाहिए।",
+        "निर्माण के दौरान कानूनी संदर्भ हेतु प्रयोग करें।",
+        "संशोधन लिखित रूप में दर्ज करें।",
+      ],
+
+      processingTime: "तुरंत से 7 दिन तक।",
+
+      fees: ["राज्य अनुसार स्टैम्प ड्यूटी और पंजीकरण शुल्क।"],
+
+      authority: "राज्य स्टैम्प प्राधिकरण / सब-रजिस्ट्रार कार्यालय",
+
+      note: "कानूनी सलाह लेना उचित है।",
+    },
   },
 
   gu: {
@@ -137,6 +223,43 @@ export const constructionAgreementData: Record<
           "કરાર મુજબ નિર્માણ શરૂ કરો અને કાર્ય, ચુકવણી અને મંજૂરીઓનો રેકોર્ડ રાખો.",
       },
     ],
+    howToApply: {
+      mode: ["ઓનલાઇન", "ઓફલાઇન"],
+
+      applyWithin:
+        "બાંધકામ શરૂ કરતા પહેલા Construction Agreement કરવો આવશ્યક છે. તે માલિક અને કોન્ટ્રાકટર વચ્ચેની શરતો નિર્ધારિત કરે છે.",
+
+      onlineSteps: [
+        "સહમતિ અનુસાર Construction Agreement તૈયાર કરો.",
+        "રાજ્ય માન્ય ઈ-સ્ટેમ્પિંગ પોર્ટલ પર જાઓ.",
+        "'Construction Agreement' પસંદ કરો.",
+        "પાર્ટી વિગતો, મિલકત, કામ અને ચુકવણી વિગતો ભરો.",
+        "દસ્તાવેજો અપલોડ કરો.",
+        "સ્ટેમ્પ ડ્યૂટી ઓનલાઇન ભરો.",
+        "ઈ-સ્ટેમ્પ કરેલ દસ્તાવેજ ડાઉનલોડ કરો.",
+        "બંને પક્ષો પાસેથી સહી લો.",
+      ],
+
+      offlineSteps: [
+        "યોગ્ય સ્ટેમ્પ પેપર પર કરાર બનાવો.",
+        "સબ-રજીસ્ટ્રાર ઓફિસમાં નોંધણી કરાવો.",
+        "ગવાહોની હાજરીમાં સહી કરો.",
+        "દસ્તાવેજોની નકલ મેળવો.",
+      ],
+
+      afterSubmission: [
+        "કરારની નકલ બંને પક્ષ પાસે રાખો.",
+        "કાયદેસર પુરાવા તરીકે ઉપયોગ કરો.",
+      ],
+
+      processingTime: "તત્કાલથી 7 દિવસ.",
+
+      fees: ["સ્ટેમ્પ ડ્યૂટી અને નોંધણી ફી."],
+
+      authority: "સ્ટેમ્પ ઓથોરિટી / સબ-રજીસ્ટ્રાર",
+
+      note: "કાયદેસર માન્યતા માટે નોંધણી યોગ્ય છે.",
+    },
   },
 
   bn: {
@@ -181,6 +304,37 @@ export const constructionAgreementData: Record<
           "চুক্তি অনুযায়ী নির্মাণ শুরু করুন এবং কাজ, পেমেন্ট ও অনুমোদনের নথি সংরক্ষণ করুন।",
       },
     ],
+    howToApply: {
+      mode: ["অনলাইন", "অফলাইন"],
+
+      applyWithin:
+        "নির্মাণ কাজ শুরুর আগে Construction Agreement করা আবশ্যক। এতে মালিক ও ঠিকাদারের দায়িত্ব ও শর্তাবলী নির্ধারিত থাকে।",
+
+      onlineSteps: [
+        "সম্মত শর্তে চুক্তির খসড়া তৈরি করুন।",
+        "স্টেট অথরাইজড ই-স্ট্যাম্প পোর্টালে যান।",
+        "'Construction Agreement' নির্বাচন করুন।",
+        "পক্ষ ও সম্পত্তির তথ্য পূরণ করুন।",
+        "প্রয়োজনীয় ফি পরিশোধ করুন।",
+        "ই-স্ট্যাম্পড চুক্তি ডাউনলোড করুন।",
+      ],
+
+      offlineSteps: [
+        "স্ট্যাম্প পেপারে চুক্তি প্রস্তুত করুন।",
+        "সাব-রেজিস্ট্রার অফিসে রেজিস্ট্রেশন করুন।",
+        "উভয় পক্ষ স্বাক্ষর করুন।",
+      ],
+
+      afterSubmission: ["স্বাক্ষরিত কপি সংরক্ষণ করুন।"],
+
+      processingTime: "তাৎক্ষণিক থেকে 7 দিন।",
+
+      fees: ["স্ট্যাম্প ডিউটি ও রেজিস্ট্রেশন ফি।"],
+
+      authority: "স্ট্যাম্প অথরিটি / সাব-রেজিস্ট্রার",
+
+      note: "আইনি যাচাই উপকারী।",
+    },
   },
 
   kok: {
@@ -225,6 +379,38 @@ export const constructionAgreementData: Record<
           "करारानुसार काम सुरू करा आनी काम, भरणा आनी मंजुरींचा रेकॉर्ड ठेवा.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "बांधकाम सुरू करण्यापूर्वी Construction Agreement करणें गरजेचें आसा. हाच करार मालक आनी कंत्राटदाराकडल्या अटी सांगता.",
+
+      onlineSteps: [
+        "Construction Agreement चो मसुदो तयार करात.",
+        "राज्य मान्य ई-स्टॅम्पिंग पोर्टलाक भेट दियात.",
+        "'Construction Agreement' निवडात.",
+        "पक्षां, मालमत्तेची आनी कामाची माहिती भरात.",
+        "स्टॅम्प शुल्क भरात.",
+        "ई-स्टॅम्प करार डाउनलोड करात.",
+        "दोन्ही पक्षांकडल्या सह्या घेवप.",
+      ],
+
+      offlineSteps: [
+        "स्टॅम्प पेपरार करार तयार करात.",
+        "सबस्ट्रार ऑफिसांत नोंदणी करात.",
+        "साक्षीदारां मर्जी सह्या करात.",
+      ],
+
+      afterSubmission: ["कराराची प्रत जपून धरात."],
+
+      processingTime: "तत्काळ ते 7 दिसां.",
+
+      fees: ["स्टॅम्प शुल्क.", "नोंदणी शुल्क (लागू जाल्यार)."],
+
+      authority: "स्टॅम्प अथॉरिटी / सबस्ट्रार ऑफिस",
+
+      note: "कायद्याची खात्री करपाखातीर नोंदणी उपयुक्त आसा.",
+    },
   },
 
   kn: {
@@ -269,6 +455,43 @@ export const constructionAgreementData: Record<
           "ಒಪ್ಪಂದದಂತೆ ನಿರ್ಮಾಣ ಪ್ರಾರಂಭಿಸಿ ಮತ್ತು ಕೆಲಸ, ಪಾವತಿ ಮತ್ತು ಅನುಮೋದನೆಯ ದಾಖಲೆಗಳನ್ನು ಇಡಿ.",
       },
     ],
+    howToApply: {
+      mode: ["ಆನ್‌ಲೈನ್", "ಆಫ್‌ಲೈನ್"],
+
+      applyWithin:
+        "ನಿರ್ಮಾಣ ಕಾರ್ಯ ಪ್ರಾರಂಭಿಸುವ ಮೊದಲು Construction Agreement ಮಾಡುವುದು ಅಗತ್ಯ. ಇದು ಮಾಲೀಕ ಮತ್ತು ಗುತ್ತಿಗೆದಾರರ ನಡುವೆ ಷರತ್ತುಗಳನ್ನು ನಿರ್ಧರಿಸುತ್ತದೆ.",
+
+      onlineSteps: [
+        "ಒಪ್ಪಂದದ ಕರಡು ತಯಾರಿಸಿ.",
+        "ರಾಜ್ಯ ಮಾನ್ಯತೆ ಪಡೆದ ಇ-ಸ್ಟ್ಯಾಂಪಿಂಗ್ ಪೋರ್ಟಲ್‌ಗೆ ಭೇಟಿ ನೀಡಿ.",
+        "'Construction Agreement' ಆಯ್ಕೆಮಾಡಿ.",
+        "ಪಕ್ಷಗಳ ವಿವರಗಳು, ಆಸ್ತಿಯ ಮಾಹಿತಿ ಮತ್ತು ಕೆಲಸದ ವಿವರಗಳನ್ನು ಭರ್ತಿ ಮಾಡಿ.",
+        "ಅವಶ್ಯಕ ದಾಖಲೆಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ.",
+        "ಸ್ಟ್ಯಾಂಪ್ ಡ್ಯೂಟಿ ಮತ್ತು ಶುಲ್ಕ ಪಾವತಿಸಿ.",
+        "ಇ-ಸ್ಟ್ಯಾಂಪ್ ಮಾಡಿದ ಒಪ್ಪಂದವನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ.",
+        "ಎರಡೂ ಪಕ್ಷಗಳಿಂದ ಸಹಿ ಪಡೆಯಿರಿ.",
+      ],
+
+      offlineSteps: [
+        "ಸ್ಟ್ಯಾಂಪ್ ಪೇಪರ್ ಮೇಲೆ ಒಪ್ಪಂದವನ್ನು ತಯಾರಿಸಿ.",
+        "ಅಗತ್ಯವಿದ್ದರೆ ಸಬ್-ರಿಜಿಸ್ಟ್ರಾರ್ ಕಚೇರಿಗೆ ಭೇಟಿ ನೀಡಿ.",
+        "ಸಾಕ್ಷಿಗಳ ಮುಂದೆ ಸಹಿ ಮಾಡಿ.",
+        "ಒಪ್ಪಂದದ ಪ್ರತಿಯನ್ನು ಪಡೆದುಕೊಳ್ಳಿ.",
+      ],
+
+      afterSubmission: [
+        "ಸಹಿ ಮಾಡಿದ ಪ್ರತಿಗಳನ್ನು ಸಂರಕ್ಷಿಸಿ.",
+        "ನಿರ್ಮಾಣ ಸಮಯದಲ್ಲಿ ಕಾನೂನು ದಾಖಲೆ ಆಗಿ ಬಳಸಿ.",
+      ],
+
+      processingTime: "ತಕ್ಷಣದಿಂದ 7 ದಿನಗಳು.",
+
+      fees: ["ರಾಜ್ಯ ಸ್ಟ್ಯಾಂಪ್ ಡ್ಯೂಟಿ.", "ಅನ್ವಯವಾಗುವ ರಿಜಿಸ್ಟ್ರೇಶನ್ ಶುಲ್ಕ."],
+
+      authority: "ಸ್ಟ್ಯಾಂಪ್ ಇಲಾಖೆ / ಸಬ್-ರಿಜಿಸ್ಟ್ರಾರ್ ಕಚೇರಿ",
+
+      note: "ಸರಿಯಾದ ಸ್ಟ್ಯಾಂಪಿಂಗ್ ಮತ್ತು ರಿಜಿಸ್ಟ್ರೇಶನ್ ಕಾನೂನು ಮಾನ್ಯತೆಯನ್ನು ಹೆಚ್ಚಿಸುತ್ತದೆ.",
+    },
   },
 
   ml: {
@@ -313,6 +536,41 @@ export const constructionAgreementData: Record<
           "കരാറുപ്രകാരം നിർമ്മാണം ആരംഭിക്കുക, പ്രവർത്തനങ്ങൾ, പണമടയ്‌ക്കലുകൾ, അംഗീകാരങ്ങൾ രേഖപ്പെടുത്തുക.",
       },
     ],
+    howToApply: {
+      mode: ["ഓൺലൈൻ", "ഓഫ്‌ലൈൻ"],
+
+      applyWithin:
+        "നിർമ്മാണം ആരംഭിക്കുന്നതിന് മുമ്പ് Construction Agreement നടത്തണം. ഉടമയും കോൺട്രാക്ടറും തമ്മിലുള്ള നിബന്ധനകൾ ഇതിൽ വ്യക്തമാക്കുന്നു.",
+
+      onlineSteps: [
+        "Construction Agreement കരട് തയ്യാറാക്കുക.",
+        "സംസ്ഥാന അംഗീകൃത ഇ-സ്റ്റാമ്പിംഗ് പോർട്ടലിലേക്ക് പോകുക.",
+        "'Construction Agreement' തിരഞ്ഞെടുക്കുക.",
+        "പാർട്ടി വിവരങ്ങൾ, സ്വത്ത് വിവരങ്ങൾ നൽകുക.",
+        "ആവശ്യമായ ഫീസ് അടയ്ക്കുക.",
+        "ഇ-സ്റ്റാമ്പ് ചെയ്ത കരാർ ഡൗൺലോഡ് ചെയ്യുക.",
+        "ഇരു പാർട്ടികളും ഒപ്പിടുക.",
+      ],
+
+      offlineSteps: [
+        "സ്റ്റാമ്പ് പേപ്പറിൽ കരാർ തയ്യാറാക്കുക.",
+        "സബ്-രജിസ്ട്രാർ ഓഫീസിൽ രജിസ്റ്റർ ചെയ്യുക.",
+        "സാക്ഷികളുടെ സാന്നിധ്യത്തിൽ ഒപ്പിടുക.",
+      ],
+
+      afterSubmission: [
+        "ഒപ്പിട്ട പകർപ്പുകൾ സൂക്ഷിക്കുക.",
+        "നിയമപരമായ രേഖയായി ഉപയോഗിക്കുക.",
+      ],
+
+      processingTime: "ഉടൻ മുതൽ 7 ദിവസം വരെ.",
+
+      fees: ["സ്റ്റാമ്പ് ഡ്യൂട്ടി.", "രജിസ്ട്രേഷൻ ഫീസ് (ബാധകമാണെങ്കിൽ)."],
+
+      authority: "സ്റ്റാമ്പ് വകുപ്പ് / സബ്-രജിസ്ട്രാർ ഓഫീസ്",
+
+      note: "നിയമപരമായ ഉറപ്പ് ലഭിക്കാൻ ശരിയായ രജിസ്ട്രേഷൻ നിർദ്ദേശിക്കുന്നു.",
+    },
   },
 
   mr: {
@@ -356,6 +614,37 @@ export const constructionAgreementData: Record<
           "करारानुसार बांधकाम सुरू करा, काम, भरणा आणि मंजुरींचा नोंद ठेवा.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "बांधकाम सुरू करण्यापूर्वी Construction Agreement करणे आवश्यक आहे. यामध्ये मालक व कंत्राटदाराच्या अटी नमूद केल्या जातात.",
+
+      onlineSteps: [
+        "कराराचा मसुदा तयार करा.",
+        "राज्य मान्य ई-स्टॅम्पिंग पोर्टलवर जा.",
+        "'Construction Agreement' निवडा.",
+        "पक्षकार, मालमत्ता व कामाचे तपशील भरा.",
+        "शुल्क व स्टॅम्प ड्युटी भरा.",
+        "ई-स्टॅम्प केलेला करार डाउनलोड करा.",
+      ],
+
+      offlineSteps: [
+        "स्टॅम्प पेपरवर करार तयार करा.",
+        "सब-रजिस्ट्रार कार्यालयात नोंदणी करा.",
+        "साक्षीदारांच्या उपस्थितीत सह्या करा.",
+      ],
+
+      afterSubmission: ["स्वाक्षरीत प्रती सुरक्षित ठेवा."],
+
+      processingTime: "तात्काळ ते 7 दिवस.",
+
+      fees: ["स्टॅम्प ड्युटी.", "नोंदणी शुल्क (लागू असल्यास)."],
+
+      authority: "स्टॅम्प विभाग / सब-रजिस्ट्रार कार्यालय",
+
+      note: "कायदेशीर वैधतेसाठी नोंदणी शिफारसीय आहे.",
+    },
   },
 
   or: {
@@ -400,6 +689,36 @@ export const constructionAgreementData: Record<
           "ଚୁକ୍ତିପତ୍ର ପ୍ରକାରେ ନିର୍ମାଣ ଆରମ୍ଭ କରନ୍ତୁ ଏବଂ କାର୍ଯ୍ୟ, ଭୁଗତାନ ଏବଂ ମନ୍ୟତାର ରେକର୍ଡ ରଖନ୍ତୁ।",
       },
     ],
+    howToApply: {
+      mode: ["ଅନଲାଇନ୍", "ଅଫଲାଇନ୍"],
+
+      applyWithin:
+        "ନିର୍ମାଣ କାର୍ଯ୍ୟ ଆରମ୍ଭ ପୂର୍ବରୁ Construction Agreement କରିବା ଆବଶ୍ୟକ।",
+
+      onlineSteps: [
+        "Construction Agreement ଖସଡା ପ୍ରସ୍ତୁତ କରନ୍ତୁ।",
+        "ରାଜ୍ୟ ଅନୁମୋଦିତ ଇ-ଷ୍ଟାମ୍ପିଂ ପୋର୍ଟାଲକୁ ଯାଆନ୍ତୁ।",
+        "Construction Agreement ବାଛନ୍ତୁ।",
+        "ଦଲିଲ ତଥ୍ୟ ପୁରଣ କରନ୍ତୁ।",
+        "ଷ୍ଟାମ୍ପ ଶୁଳ୍କ ଦେୟ କରନ୍ତୁ।",
+        "ଇ-ଷ୍ଟାମ୍ପ୍ କରାଯାଇଥିବା ଦଲିଲ ଡାଉନଲୋଡ୍ କରନ୍ତୁ।",
+      ],
+
+      offlineSteps: [
+        "ଷ୍ଟାମ୍ପ ପେପରରେ ଦଲିଲ ପ୍ରସ୍ତୁତ କରନ୍ତୁ।",
+        "ସବ-ରେଜିଷ୍ଟ୍ରାର କାର୍ଯ୍ୟାଳୟରେ ପଞ୍ଜିକରଣ କରନ୍ତୁ।",
+      ],
+
+      afterSubmission: ["ଦଲିଲର ପ୍ରତି ସୁରକ୍ଷିତ ରଖନ୍ତୁ।"],
+
+      processingTime: "ତତ୍କାଳରୁ 7 ଦିନ।",
+
+      fees: ["ଷ୍ଟାମ୍ପ ଶୁଳ୍କ ଏବଂ ପଞ୍ଜିକରଣ ଶୁଳ୍କ।"],
+
+      authority: "ଷ୍ଟାମ୍ପ କର୍ତ୍ତୃପକ୍ଷ / ସବ-ରେଜିଷ୍ଟ୍ରାର କାର୍ଯ୍ୟାଳୟ",
+
+      note: "କାନୁନଗତ ମାନ୍ୟତା ପାଇଁ ପଞ୍ଜିକରଣ ଉଚିତ।",
+    },
   },
 
   te: {
@@ -444,6 +763,47 @@ export const constructionAgreementData: Record<
           "ఒప్పందం ప్రకారం నిర్మాణం ప్రారంభించండి, పనులు, చెల్లింపులు మరియు అప్రూవల్స్ ను రికార్డ్ చేయండి.",
       },
     ],
+    howToApply: {
+      mode: ["ఆన్‌లైన్", "ఆఫ్‌లైన్"],
+
+      applyWithin:
+        "నిర్మాణ పనులు ప్రారంభించడానికి ముందు Construction Agreement చేయాలి. ఈ ఒప్పందం యజమాని మరియు కాంట్రాక్టర్ మధ్య పని నిబంధనలు, బాధ్యతలు మరియు చెల్లింపు షరతులను నిర్దేశిస్తుంది.",
+
+      onlineSteps: [
+        "ఒప్పుకున్న షరతుల ఆధారంగా Construction Agreement ముసాయిదా తయారు చేయండి.",
+        "రాష్ట్ర ప్రభుత్వం అనుమతించిన ఈ-స్టాంపింగ్ లేదా లీగల్ డాక్యుమెంట్ పోర్టల్‌కు వెళ్లండి.",
+        "'Construction Agreement' డాక్యుమెంట్‌ను ఎంచుకోండి.",
+        "పక్షాల వివరాలు, ఆస్తి సమాచారం, పని పరిధి మరియు చెల్లింపు నిబంధనలు నమోదు చేయండి.",
+        "అవసరమైన పత్రాలు అప్లోడ్ చేయండి.",
+        "స్టాంప్ డ్యూటీ మరియు వర్తించే ఫీజులను ఆన్‌లైన్‌లో చెల్లించండి.",
+        "ఈ-స్టాంప్ చేసిన ఒప్పందాన్ని డౌన్‌లోడ్ చేసుకోండి.",
+        "రెండు పక్షాలు డిజిటల్ లేదా భౌతికంగా సంతకాలు చేయాలి.",
+      ],
+
+      offlineSteps: [
+        "రాష్ట్ర నిబంధనల ప్రకారం స్టాంప్ పేపర్‌పై ఒప్పందాన్ని తయారు చేయండి.",
+        "సబ్-రిజిస్ట్రార్ కార్యాలయానికి వెళ్లండి (అవసరమైతే).",
+        "గواهుల సమక్షంలో రెండు పక్షాలు సంతకాలు చేయాలి.",
+        "పత్రాలను సమర్పించి ఒప్పంద ప్రతిని పొందండి.",
+      ],
+
+      afterSubmission: [
+        "ఒప్పందానికి సంబంధించిన సంతకం చేసిన ప్రతులను భద్రపరచండి.",
+        "నిర్మాణ సమయంలో ఇది చట్టపరమైన ఆధారంగా ఉపయోగించవచ్చు.",
+        "ఏదైనా మార్పులు వ్రాతపూర్వకంగా నమోదు చేయాలి.",
+      ],
+
+      processingTime: "తక్షణమే నుండి 7 రోజుల వరకు.",
+
+      fees: [
+        "రాష్ట్ర స్టాంప్ చట్టం ప్రకారం స్టాంప్ డ్యూటీ.",
+        "వర్తించే పక్షంలో రిజిస్ట్రేషన్ ఫీజు.",
+      ],
+
+      authority: "రాష్ట్ర స్టాంప్ శాఖ / సబ్-రిజిస్ట్రార్ కార్యాలయం",
+
+      note: "చట్టపరమైన అమలు సామర్థ్యం కోసం సరైన స్టాంపింగ్ మరియు రిజిస్ట్రేషన్ చేయడం మంచిది.",
+    },
   },
 
   ta: {
@@ -488,5 +848,34 @@ export const constructionAgreementData: Record<
           "ஒப்பந்தத்தின் படி கட்டுமானத்தை தொடங்கி, பணிகள், கட்டணங்கள் மற்றும் ஒப்புதல்களை பதிவு செய்யவும்.",
       },
     ],
+    howToApply: {
+      mode: ["ஆன்லைன்", "ஆஃப்லைன்"],
+
+      applyWithin:
+        "கட்டுமானத்தை தொடங்குவதற்கு முன் Construction Agreement செய்வது கட்டாயம்.",
+
+      onlineSteps: [
+        "ஒப்பந்த வரைவினை தயார் செய்யவும்.",
+        "அரசு அங்கீகார பெற்ற இ-ஸ்டாம்பிங் தளத்திற்கு செல்லவும்.",
+        "Construction Agreement தேர்வு செய்யவும்.",
+        "விவரங்களை நிரப்பி கட்டணம் செலுத்தவும்.",
+        "இ-ஸ்டாம்ப் ஆவணத்தை பதிவிறக்கம் செய்யவும்.",
+      ],
+
+      offlineSteps: [
+        "ஸ்டாம்ப் பேப்பரில் ஒப்பந்தம் தயாரிக்கவும்.",
+        "சப்-ரெஜிஸ்ட்ரார் அலுவலகத்தில் பதிவு செய்யவும்.",
+      ],
+
+      afterSubmission: ["கையெழுத்திட்ட நகலை பாதுகாக்கவும்."],
+
+      processingTime: "உடனடி – 7 நாட்கள்.",
+
+      fees: ["ஸ்டாம்ப் டியூட்டி, பதிவு கட்டணம்."],
+
+      authority: "ஸ்டாம்ப் துறை / சப்-ரெஜிஸ்ட்ரார்",
+
+      note: "சட்ட ஆலோசனை பெற பரிந்துரைக்கப்படுகிறது。",
+    },
   },
 };

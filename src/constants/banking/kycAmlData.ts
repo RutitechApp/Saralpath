@@ -5,6 +5,7 @@ export const kycAmlData: Record<
     description: string;
     eligibility: string[];
     steps: { step: number; title: string; details: string }[];
+    howToApply: any;
   }
 > = {
   en: {
@@ -50,6 +51,54 @@ export const kycAmlData: Record<
           "Report suspicious activities to authorities and ensure adherence to regulations.",
       },
     ],
+    howToApply: {
+      mode: ["Online", "Offline"],
+
+      applyWithin:
+        "KYC and AML compliance refers to the process of verifying customer identity and monitoring transactions to prevent money laundering, terrorist financing, and financial fraud. Entities must comply with KYC and AML regulations before onboarding customers and during ongoing business relationships.",
+
+      onlineSteps: [
+        "Identify applicable KYC and AML regulations based on business type (PMLA, RBI, SEBI, IRDAI guidelines, etc.)",
+        "Collect customer information such as name, date of birth, address, and identification details",
+        "Obtain officially valid documents (PAN, Aadhaar, Passport, Voter ID, or equivalent)",
+        "Perform electronic KYC (e-KYC) using OTP, biometric, or video-based verification where permitted",
+        "Screen customers against sanctions, watchlists, and politically exposed person (PEP) databases",
+        "Conduct customer risk assessment and assign risk categories",
+        "Record and store KYC data securely as per regulatory requirements",
+        "Enable ongoing transaction monitoring and suspicious activity detection",
+        "File Suspicious Transaction Reports (STR) or Cash Transaction Reports (CTR) with authorities where applicable",
+      ],
+
+      offlineSteps: [
+        "Provide physical KYC application forms to customers",
+        "Collect self-attested copies of identity and address proof",
+        "Verify documents against originals",
+        "Capture customer photograph and signature",
+        "Conduct in-person verification, if required",
+        "Record KYC details in internal systems",
+        "Maintain physical records and verification logs",
+      ],
+
+      afterSubmission: [
+        "KYC records are reviewed and approved by the compliance team",
+        "Customers are onboarded after successful verification",
+        "High-risk customers may require enhanced due diligence",
+        "Ongoing monitoring of transactions is conducted",
+        "Periodic KYC updates are carried out as per regulations",
+      ],
+
+      processingTime:
+        "Online KYC is usually completed instantly to 2 days; offline verification may take 3–7 working days",
+
+      fees: [
+        "Generally no direct government fee; service providers may charge for KYC or AML screening services",
+      ],
+
+      authority:
+        "Financial Intelligence Unit – India (FIU-IND), Reserve Bank of India (RBI), SEBI, IRDAI under the Prevention of Money Laundering Act (PMLA), 2002",
+
+      note: "Strict KYC and AML compliance is mandatory for financial institutions and regulated entities. Non-compliance may result in heavy penalties and regulatory action.",
+    },
   },
   hi: {
     title: "KYC / AML",
@@ -93,6 +142,44 @@ export const kycAmlData: Record<
           "संदिग्ध गतिविधियों की रिपोर्ट प्राधिकरण को करें और नियमों का पालन सुनिश्चित करें।",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "KYC और AML अनुपालन का उद्देश्य ग्राहक की पहचान सत्यापित करना और मनी लॉन्ड्रिंग, आतंकी वित्तपोषण एवं वित्तीय धोखाधड़ी को रोकना है। ग्राहक ऑनबोर्डिंग और निरंतर निगरानी के दौरान KYC अनिवार्य है।",
+
+      onlineSteps: [
+        "लागू KYC/AML नियमों की पहचान करें (PMLA, RBI, SEBI आदि)",
+        "ग्राहक की व्यक्तिगत जानकारी एकत्र करें",
+        "वैध पहचान दस्तावेज़ प्राप्त करें",
+        "e-KYC या वीडियो KYC करें",
+        "सैंक्शन और PEP सूची से जांच करें",
+        "जोखिम श्रेणी निर्धारित करें",
+        "KYC डेटा सुरक्षित रूप से संग्रहित करें",
+        "संदिग्ध लेन-देन की निगरानी करें",
+        "STR/CTR रिपोर्ट दाखिल करें",
+      ],
+
+      offlineSteps: [
+        "भौतिक KYC फॉर्म प्रदान करें",
+        "स्वप्रमाणित दस्तावेज़ एकत्र करें",
+        "मूल दस्तावेज़ से सत्यापन करें",
+        "फोटो और हस्ताक्षर लें",
+        "इन-पर्सन वेरिफिकेशन करें",
+      ],
+
+      afterSubmission: [
+        "KYC अनुमोदन किया जाता है",
+        "ग्राहक ऑनबोर्ड किया जाता है",
+        "उच्च जोखिम मामलों में अतिरिक्त जांच होती है",
+        "निरंतर निगरानी की जाती है",
+      ],
+
+      processingTime: "तुरंत से 7 कार्य दिवस",
+      fees: ["सरकारी शुल्क नहीं; सेवा शुल्क लागू हो सकता है"],
+      authority: "FIU-IND, RBI, SEBI, IRDAI",
+      note: "KYC/AML अनुपालन अनिवार्य है।",
+    },
   },
   gu: {
     title: "KYC / AML",
@@ -136,6 +223,39 @@ export const kycAmlData: Record<
           "સંદિગ્ધ પ્રવૃત્તિઓની અહેવાલ સત્તાવાળાઓને આપો અને નિયમનનું પાલન સુનિશ્ચિત કરો.",
       },
     ],
+    howToApply: {
+      mode: ["ઓનલાઇન", "ઓફલાઇન"],
+
+      applyWithin:
+        "KYC અને AML અનુપાલનનો હેતુ ગ્રાહકની ઓળખ ચકાસવી અને મની લોન્ડરિંગ અટકાવવાનો છે.",
+
+      onlineSteps: [
+        "લાગુ નિયમો ઓળખો",
+        "ગ્રાહકની માહિતી એકત્ર કરો",
+        "માન્ય દસ્તાવેજો લો",
+        "e-KYC અથવા વિડિઓ KYC કરો",
+        "સેન્ક્શન અને PEP ચેક કરો",
+        "જોખમ શ્રેણી નક્કી કરો",
+        "ડેટા સુરક્ષિત રીતે સંગ્રહ કરો",
+        "સંદિગ્ધ વ્યવહારો પર નજર રાખો",
+      ],
+
+      offlineSteps: [
+        "ફિઝિકલ KYC ફોર્મ લો",
+        "દસ્તાવેજોની ચકાસણી કરો",
+        "ઇન-પર્સન વેરિફિકેશન કરો",
+      ],
+
+      afterSubmission: [
+        "KYC સમીક્ષા થાય છે",
+        "ગ્રાહકને ઓનબોર્ડ કરવામાં આવે છે",
+      ],
+
+      processingTime: "1–7 દિવસ",
+      fees: ["સર્વિસ ચાર્જ લાગુ પડી શકે"],
+      authority: "FIU-IND, RBI",
+      note: "નિયમિત અપડેટ જરૂરી છે.",
+    },
   },
   bn: {
     title: "KYC / AML",
@@ -179,6 +299,35 @@ export const kycAmlData: Record<
           "সন্দেহজনক কার্যক্রম কর্তৃপক্ষকে রিপোর্ট করুন এবং নিয়ম মেনে চলা নিশ্চিত করুন।",
       },
     ],
+    howToApply: {
+      mode: ["অনলাইন", "অফলাইন"],
+
+      applyWithin:
+        "KYC ও AML সম্মতির উদ্দেশ্য হলো গ্রাহকের পরিচয় যাচাই এবং অর্থ পাচার রোধ করা।",
+
+      onlineSteps: [
+        "প্রযোজ্য KYC/AML নীতিমালা চিহ্নিত করুন",
+        "গ্রাহকের তথ্য সংগ্রহ করুন",
+        "বৈধ নথি যাচাই করুন",
+        "e-KYC বা ভিডিও KYC সম্পন্ন করুন",
+        "স্যানকশন ও PEP তালিকা পরীক্ষা করুন",
+        "ঝুঁকি শ্রেণিবিন্যাস করুন",
+        "লেনদেন পর্যবেক্ষণ করুন",
+      ],
+
+      offlineSteps: [
+        "ফিজিক্যাল KYC ফর্ম পূরণ করুন",
+        "নথি যাচাই করুন",
+        "ইন-পার্সন ভেরিফিকেশন করুন",
+      ],
+
+      afterSubmission: ["KYC অনুমোদন করা হয়", "গ্রাহক অনবোর্ড করা হয়"],
+
+      processingTime: "১–৭ দিন",
+      fees: ["সার্ভিস ফি প্রযোজ্য হতে পারে"],
+      authority: "FIU-IND",
+      note: "নিয়মিত নজরদারি আবশ্যক।",
+    },
   },
   mr: {
     title: "KYC / AML",
@@ -222,6 +371,30 @@ export const kycAmlData: Record<
           "संदिग्ध क्रियाकलाप अधिकाऱ्यांना अहवाल द्या आणि नियमांचे पालन सुनिश्चित करा.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "KYC आणि AML अनुपालनाचा उद्देश ग्राहक ओळख पटवणे व आर्थिक गुन्हे रोखणे आहे.",
+
+      onlineSteps: [
+        "लागू नियम ओळखा",
+        "ग्राहक माहिती संकलित करा",
+        "वैध कागदपत्रे पडताळा",
+        "e-KYC/व्हिडिओ KYC करा",
+        "जोखीम वर्ग ठरवा",
+        "संशयास्पद व्यवहारांचे निरीक्षण करा",
+      ],
+
+      offlineSteps: ["KYC फॉर्म भरा", "इन-पर्सन पडताळणी करा"],
+
+      afterSubmission: ["KYC मान्यता दिली जाते", "ग्राहक ऑनबोर्ड होतो"],
+
+      processingTime: "१–७ दिवस",
+      fees: ["सेवा शुल्क लागू शकते"],
+      authority: "FIU-IND, RBI",
+      note: "सतत अनुपालन आवश्यक आहे.",
+    },
   },
   ta: {
     title: "KYC / AML",
@@ -266,6 +439,33 @@ export const kycAmlData: Record<
           "சந்தேகமான செயல்பாடுகளை அதிகாரிகளுக்கு அறிக்கை செய்யவும் மற்றும் விதிகளை பின்பற்றுவதை உறுதிசெய்க.",
       },
     ],
+    howToApply: {
+      mode: ["ஆன்லைன்", "ஆஃப்லைன்"],
+
+      applyWithin:
+        "KYC & AML இணக்கத்தின் நோக்கம் வாடிக்கையாளர் அடையாளத்தை உறுதிப்படுத்தி பணம் சுழற்சியை தடுப்பதாகும்.",
+
+      onlineSteps: [
+        "பொருந்தும் விதிகளை கண்டறியவும்",
+        "வாடிக்கையாளர் விவரங்களை சேகரிக்கவும்",
+        "செல்லுபடியாகும் ஆவணங்களை சரிபார்க்கவும்",
+        "e-KYC அல்லது வீடியோ KYC செய்யவும்",
+        "ஆபத்து வகைப்பாடு செய்யவும்",
+        "பரிவர்த்தனைகளை கண்காணிக்கவும்",
+      ],
+
+      offlineSteps: ["KYC படிவம் நிரப்பவும்", "நேரடி சரிபார்ப்பு செய்யவும்"],
+
+      afterSubmission: [
+        "KYC அங்கீகாரம் செய்யப்படும்",
+        "வாடிக்கையாளர் இணைக்கப்படுவார்",
+      ],
+
+      processingTime: "1–7 நாட்கள்",
+      fees: ["சேவை கட்டணம் இருக்கலாம்"],
+      authority: "FIU-IND",
+      note: "தொடர்ச்சியான கண்காணிப்பு அவசியம்.",
+    },
   },
   te: {
     title: "KYC / AML",
@@ -310,6 +510,30 @@ export const kycAmlData: Record<
           "సందేహాస్పద కార్యకలాపాలను అధికారులకు నివేదించండి మరియు నియమాలకు అనుగుణంగా ఉండండి.",
       },
     ],
+    howToApply: {
+      mode: ["ఆన్‌లైన్", "ఆఫ్‌లైన్"],
+
+      applyWithin:
+        "KYC మరియు AML అనుసరణ లక్ష్యం కస్టమర్ గుర్తింపు ధృవీకరణ మరియు అక్రమ లావాదేవీలను నిరోధించడం.",
+
+      onlineSteps: [
+        "సంబంధిత నిబంధనలు గుర్తించండి",
+        "కస్టమర్ వివరాలు సేకరించండి",
+        "గుర్తింపు పత్రాలు ధృవీకరించండి",
+        "e-KYC లేదా వీడియో KYC చేయండి",
+        "రిస్క్ స్థాయి నిర్ణయించండి",
+        "లావాదేవీలను మానిటర్ చేయండి",
+      ],
+
+      offlineSteps: ["KYC ఫారమ్ పూర్తి చేయండి", "ప్రత్యక్ష ధృవీకరణ చేయండి"],
+
+      afterSubmission: ["KYC ఆమోదం ఇస్తారు", "కస్టమర్ ఆన్‌బోర్డ్ అవుతారు"],
+
+      processingTime: "1–7 రోజులు",
+      fees: ["సేవా రుసుములు ఉండవచ్చు"],
+      authority: "FIU-IND",
+      note: "నిరంతర అనుసరణ అవసరం.",
+    },
   },
   kn: {
     title: "KYC / AML",
@@ -354,6 +578,29 @@ export const kycAmlData: Record<
           "ಸಂದೇಹಾಸ್ಪದ ಚಟುವಟಿಕೆಗಳನ್ನು ಅಧಿಕಾರಿಗಳಿಗೆ ವರದಿ ಮಾಡಿ ಮತ್ತು ನಿಯಮ ಪಾಲನೆ ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.",
       },
     ],
+    howToApply: {
+      mode: ["ಆನ್‌ಲೈನ್", "ಆಫ್‌ಲೈನ್"],
+
+      applyWithin:
+        "KYC ಮತ್ತು AML ಅನುಪಾಲನೆಯ ಉದ್ದೇಶ ಗ್ರಾಹಕ ಗುರುತಿನ ಪರಿಶೀಲನೆ ಹಾಗೂ ಹಣ ಅಕ್ರಮವನ್ನು ತಡೆಯುವುದು.",
+
+      onlineSteps: [
+        "ಅನ್ವಯಿಸುವ ನಿಯಮಗಳನ್ನು ಗುರುತಿಸಿ",
+        "ಗ್ರಾಹಕ ಮಾಹಿತಿಯನ್ನು ಸಂಗ್ರಹಿಸಿ",
+        "ದಾಖಲೆಗಳನ್ನು ಪರಿಶೀಲಿಸಿ",
+        "e-KYC/ವೀಡಿಯೋ KYC ಮಾಡಿ",
+        "ಅಪಾಯ ವರ್ಗೀಕರಣ ಮಾಡಿ",
+      ],
+
+      offlineSteps: ["KYC ಫಾರ್ಮ್ ಭರ್ತಿ ಮಾಡಿ", "ನೇರ ಪರಿಶೀಲನೆ ಮಾಡಿ"],
+
+      afterSubmission: ["KYC ಅನುಮೋದನೆ ನೀಡಲಾಗುತ್ತದೆ"],
+
+      processingTime: "1–7 ದಿನಗಳು",
+      fees: ["ಸೇವೆ ಶುಲ್ಕ ಇರಬಹುದು"],
+      authority: "FIU-IND",
+      note: "ನಿಯಮಿತ ನಿಗಾವಹಣೆ ಅಗತ್ಯ.",
+    },
   },
   ml: {
     title: "KYC / AML",
@@ -397,6 +644,33 @@ export const kycAmlData: Record<
           "സന്ദേഹാസ്പദ പ്രവർത്തനങ്ങൾ അധികാരികളക്ക് റിപ്പോർട്ട് ചെയ്യുക, നിയമാനുസൃതമായ പാലന ഉറപ്പാക്കുക.",
       },
     ],
+    howToApply: {
+      mode: ["ഓൺലൈൻ", "ഓഫ്‌ലൈൻ"],
+
+      applyWithin:
+        "KYC & AML അനുസരണം ഉപഭോക്താവിന്റെ തിരിച്ചറിയൽ ഉറപ്പാക്കി മണി ലോണ്ടറിംഗ് തടയുന്നതിനാണ്.",
+
+      onlineSteps: [
+        "പ്രയോഗയോഗ്യമായ ചട്ടങ്ങൾ തിരിച്ചറിയുക",
+        "ഉപഭോക്തൃ വിവരങ്ങൾ ശേഖരിക്കുക",
+        "ഡോക്യുമെന്റുകൾ പരിശോധിക്കുക",
+        "e-KYC / വീഡിയോ KYC നടത്തുക",
+        "റിസ്ക് ക്ലാസിഫിക്കേഷൻ ചെയ്യുക",
+        "ഇടപാടുകൾ നിരീക്ഷിക്കുക",
+      ],
+
+      offlineSteps: ["KYC ഫോം പൂരിപ്പിക്കുക", "നേരിട്ടുള്ള പരിശോധന നടത്തുക"],
+
+      afterSubmission: [
+        "KYC അംഗീകാരം നൽകുന്നു",
+        "ഉപഭോക്താവ് ഓൺബോർഡ് ചെയ്യപ്പെടുന്നു",
+      ],
+
+      processingTime: "1–7 ദിവസം",
+      fees: ["സേവന ഫീസ് ഉണ്ടായേക്കാം"],
+      authority: "FIU-IND",
+      note: "നിരന്തര നിരീക്ഷണം നിർബന്ധമാണ്.",
+    },
   },
   or: {
     title: "KYC / AML",
@@ -440,6 +714,29 @@ export const kycAmlData: Record<
           "ସନ୍ଦେହଜନକ କାର୍ଯ୍ୟକଳାପକୁ ଅଧିକାରୀଙ୍କୁ ରିପୋର୍ଟ କରନ୍ତୁ ଏବଂ ନିୟମ ମାନାକୁ ସୁନିଶ୍ଚିତ କରନ୍ତୁ।",
       },
     ],
+    howToApply: {
+      mode: ["ଅନଲାଇନ୍", "ଅଫଲାଇନ୍"],
+
+      applyWithin:
+        "KYC ଏବଂ AML ଅନୁପାଳନର ଲକ୍ଷ୍ୟ ହେଉଛି ଗ୍ରାହକ ପରିଚୟ ସତ୍ୟାପନ ଏବଂ ଧନ ଧୋଇବାକୁ ବାଧା ଦେବା।",
+
+      onlineSteps: [
+        "ଲାଗୁ ନିୟମ ଚିହ୍ନଟ କରନ୍ତୁ",
+        "ଗ୍ରାହକ ସୂଚନା ସଂଗ୍ରହ କରନ୍ତୁ",
+        "ଦଲିଲ୍ ସତ୍ୟାପନ କରନ୍ତୁ",
+        "e-KYC / ଭିଡିଓ KYC କରନ୍ତୁ",
+        "ରିସ୍କ ବର୍ଗୀକରଣ କରନ୍ତୁ",
+      ],
+
+      offlineSteps: ["KYC ଫର୍ମ ପୁରଣ କରନ୍ତୁ", "ସ୍ଥଳୀୟ ସତ୍ୟାପନ କରନ୍ତୁ"],
+
+      afterSubmission: ["KYC ଅନୁମୋଦନ ମିଳେ"],
+
+      processingTime: "1–7 ଦିନ",
+      fees: ["ସେବା ଶୁଳ୍କ ଲାଗିପାରେ"],
+      authority: "FIU-IND",
+      note: "ନିୟମିତ ନିରୀକ୍ଷଣ ଆବଶ୍ୟକ।",
+    },
   },
   kok: {
     title: "KYC / AML",
@@ -483,5 +780,29 @@ export const kycAmlData: Record<
           "संदेहजनक क्रियाकलाप अधिकार्यांक अहवाल दवं ani नियमांचे पालन सुनिश्चित करचें.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाईन", "ऑफलाईन"],
+
+      applyWithin:
+        "KYC आनी AML पालनाचो अर्थ म्हळ्यार ग्राहकाची ओळख निश्चित करप आनी मनी लॉन्डरिंग थांबोवप.",
+
+      onlineSteps: [
+        "लागू नियम ओळखा",
+        "ग्राहक माहिती जमा करा",
+        "वैध कागदपत्रे तपासा",
+        "e-KYC / व्हिडिओ KYC करा",
+        "जोखीम वर्ग ठरवा",
+        "व्यवहारांवर नजर ठेवा",
+      ],
+
+      offlineSteps: ["KYC फॉर्म भरा", "प्रत्यक्ष तपासणी करा"],
+
+      afterSubmission: ["KYC मान्य जाता", "ग्राहक ऑनबोर्ड जाता"],
+
+      processingTime: "1–7 दीस",
+      fees: ["सेवा शुल्क लागू जावंक शकता"],
+      authority: "FIU-IND",
+      note: "निरंतर पालन गरजेचें.",
+    },
   },
 };

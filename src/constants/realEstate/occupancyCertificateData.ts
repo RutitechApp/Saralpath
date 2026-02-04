@@ -5,6 +5,7 @@ export const occupancyCertificateData: Record<
     description?: string;
     eligibility: string[];
     steps: { step: number; title: string; details: string }[];
+    howToApply: any;
   }
 > = {
   en: {
@@ -43,6 +44,45 @@ export const occupancyCertificateData: Record<
           "Upon successful verification, the authority issues the Occupancy Certificate allowing legal use of the building.",
       },
     ],
+    howToApply: {
+      mode: ["Online", "Offline"],
+
+      applyWithin:
+        "An Occupancy Certificate (OC) is issued by the local authority certifying that the building has been constructed as per the approved plan and is fit for occupation.",
+
+      onlineSteps: [
+        "Visit the official website of the local municipal corporation or development authority.",
+        "Login and select the 'Occupancy Certificate' application service.",
+        "Enter building and approved plan details.",
+        "Upload required documents such as approved building plan, completion certificate, and NOCs.",
+        "Pay the applicable fees online.",
+        "Submit the application and note the reference number.",
+        "Download the Occupancy Certificate after approval.",
+      ],
+
+      offlineSteps: [
+        "Visit the local municipal office or development authority.",
+        "Collect and fill the Occupancy Certificate application form.",
+        "Attach required documents.",
+        "Submit the application and pay prescribed fees.",
+        "Receive acknowledgment slip.",
+      ],
+
+      afterSubmission: [
+        "Authorities conduct site inspection.",
+        "Compliance with approved plans is verified.",
+        "Occupancy Certificate is issued upon successful verification.",
+      ],
+
+      processingTime:
+        "15–30 days depending on inspection and authority workload.",
+
+      fees: ["Fees vary based on building type and local authority rules."],
+
+      authority: "Municipal Corporation / Development Authority",
+
+      note: "Occupation of the building without an Occupancy Certificate may attract penalties.",
+    },
   },
 
   hi: {
@@ -80,6 +120,33 @@ export const occupancyCertificateData: Record<
         details: "सफल सत्यापन के बाद आवासन प्रमाण पत्र जारी किया जाता है।",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "ऑक्यूपेंसी सर्टिफिकेट यह प्रमाणित करता है कि भवन स्वीकृत नक्शे के अनुसार बना है और रहने योग्य है।",
+
+      onlineSteps: [
+        "नगर निगम की वेबसाइट पर जाएँ।",
+        "ऑक्यूपेंसी सर्टिफिकेट के लिए आवेदन करें।",
+        "दस्तावेज अपलोड कर शुल्क दें।",
+      ],
+
+      offlineSteps: [
+        "नगर निगम कार्यालय में आवेदन करें।",
+        "आवश्यक दस्तावेज जमा करें।",
+      ],
+
+      afterSubmission: ["साइट निरीक्षण किया जाएगा।"],
+
+      processingTime: "15–30 कार्यदिवस।",
+
+      fees: ["भवन प्रकार अनुसार।"],
+
+      authority: "नगर निगम / विकास प्राधिकरण",
+
+      note: "प्रमाणपत्र के बिना उपयोग अवैध हो सकता है।",
+    },
   },
 
   gu: {
@@ -115,6 +182,33 @@ export const occupancyCertificateData: Record<
         details: "તપાસ બાદ ઓક્યુપન્સી સર્ટિફિકેટ આપવામાં આવે છે.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "ऑक्यूपेंसी सर्टिफिकेट यह प्रमाणित करता है कि भवन स्वीकृत नक्शे के अनुसार बना है और रहने योग्य है।",
+
+      onlineSteps: [
+        "नगर निगम की वेबसाइट पर जाएँ।",
+        "ऑक्यूपेंसी सर्टिफिकेट के लिए आवेदन करें।",
+        "दस्तावेज अपलोड कर शुल्क दें।",
+      ],
+
+      offlineSteps: [
+        "नगर निगम कार्यालय में आवेदन करें।",
+        "आवश्यक दस्तावेज जमा करें।",
+      ],
+
+      afterSubmission: ["साइट निरीक्षण किया जाएगा।"],
+
+      processingTime: "15–30 कार्यदिवस।",
+
+      fees: ["भवन प्रकार अनुसार।"],
+
+      authority: "नगर निगम / विकास प्राधिकरण",
+
+      note: "प्रमाणपत्र के बिना उपयोग अवैध हो सकता है।",
+    },
   },
 
   bn: {
@@ -149,6 +243,26 @@ export const occupancyCertificateData: Record<
         details: "যাচাই শেষে অকুপেন্সি সার্টিফিকেট ইস্যু করা হয়।",
       },
     ],
+    howToApply: {
+      mode: ["অনলাইন", "অফলাইন"],
+
+      applyWithin:
+        "অকুপেন্সি সার্টিফিকেট ভবন ব্যবহারের উপযোগী হওয়ার প্রমাণ দেয়।",
+
+      onlineSteps: ["পৌরসভার ওয়েবসাইটে আবেদন করুন।"],
+
+      offlineSteps: ["পৌরসভা অফিসে আবেদন জমা দিন।"],
+
+      afterSubmission: ["পরিদর্শন সম্পন্ন হবে।"],
+
+      processingTime: "১৫–৩০ কার্যদিবস।",
+
+      fees: ["নির্ধারিত ফি।"],
+
+      authority: "পৌরসভা / উন্নয়ন কর্তৃপক্ষ",
+
+      note: "ওসি ছাড়া ভবন ব্যবহার নিষিদ্ধ হতে পারে।",
+    },
   },
 
   kok: {
@@ -183,6 +297,25 @@ export const occupancyCertificateData: Record<
         details: "तपास पूर्ण जाल्यार ऑक्युपन्सी सर्टिफिकेट दिवपात.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin: "ऑक्युपन्सी प्रमाणपत्र इमारत वापराक योग्य आसा हाचो दाखलो.",
+
+      onlineSteps: ["नगरपालिका वेबसाइटाक अर्ज करात."],
+
+      offlineSteps: ["नगरपालिका कार्यालयांत अर्ज दियात."],
+
+      afterSubmission: ["साइट तपासणी जाता."],
+
+      processingTime: "15–30 दीस.",
+
+      fees: ["नियमांप्रमाणें."],
+
+      authority: "नगरपालिका / विकास प्राधिकरण",
+
+      note: "OC विना वापर दंडनीय.",
+    },
   },
 
   kn: {
@@ -218,6 +351,26 @@ export const occupancyCertificateData: Record<
         details: "ಪರಿಶೀಲನೆ ನಂತರ ಆಕ್ಯುಪೆನ್ಸಿ ಪ್ರಮಾಣಪತ್ರ ನೀಡಲಾಗುತ್ತದೆ.",
       },
     ],
+    howToApply: {
+      mode: ["ಆನ್‌ಲೈನ್", "ಆಫ್‌ಲೈನ್"],
+
+      applyWithin:
+        "ಆಕುಪೆನ್ಸಿ ಪ್ರಮಾಣಪತ್ರ ಕಟ್ಟಡ ವಾಸಕ್ಕೆ ತಕ್ಕದ್ದು ಎಂದು ದೃಢಪಡಿಸುತ್ತದೆ.",
+
+      onlineSteps: ["ಮಹಾನಗರ ಪಾಲಿಕೆ ವೆಬ್‌ಸೈಟ್‌ನಲ್ಲಿ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ."],
+
+      offlineSteps: ["ಮಹಾನಗರ ಪಾಲಿಕೆ ಕಚೇರಿಗೆ ಭೇಟಿ ನೀಡಿ."],
+
+      afterSubmission: ["ಸ್ಥಳ ಪರಿಶೀಲನೆ ನಡೆಯುತ್ತದೆ."],
+
+      processingTime: "15–30 ಕಾರ್ಯದಿನಗಳು.",
+
+      fees: ["ಸ್ಥಳೀಯ ನಿಯಮಗಳ ಪ್ರಕಾರ."],
+
+      authority: "ಮಹಾನಗರ ಪಾಲಿಕೆ / ಅಭಿವೃದ್ಧಿ ಪ್ರಾಧಿಕಾರ",
+
+      note: "OC ಇಲ್ಲದೇ ಬಳಕೆ ದಂಡನೀಯ.",
+    },
   },
 
   ml: {
@@ -252,6 +405,26 @@ export const occupancyCertificateData: Record<
         details: "പരിശോധനയ്ക്ക് ശേഷം സർട്ടിഫിക്കറ്റ് നൽകപ്പെടും.",
       },
     ],
+    howToApply: {
+      mode: ["ഓൺലൈൻ", "ഓഫ്‌ലൈൻ"],
+
+      applyWithin:
+        "ഓക്കുപ്പൻസി സർട്ടിഫിക്കറ്റ് കെട്ടിടം ഉപയോഗിക്കാൻ യോഗ്യമാണെന്ന് ഉറപ്പാക്കുന്നു.",
+
+      onlineSteps: ["മുനിസിപ്പൽ വെബ്‌സൈറ്റിൽ അപേക്ഷിക്കുക."],
+
+      offlineSteps: ["മുനിസിപ്പൽ ഓഫീസിൽ അപേക്ഷ സമർപ്പിക്കുക."],
+
+      afterSubmission: ["സൈറ്റ് പരിശോധന നടക്കും."],
+
+      processingTime: "15–30 പ്രവർത്തിദിവസങ്ങൾ.",
+
+      fees: ["പ്രാദേശിക ചട്ടങ്ങൾ അനുസരിച്ച്."],
+
+      authority: "മുനിസിപ്പാലിറ്റി / വികസന അതോറിറ്റി",
+
+      note: "OC ഇല്ലാതെ ഉപയോഗം നിയമവിരുദ്ധമാണ്.",
+    },
   },
 
   mr: {
@@ -287,6 +460,26 @@ export const occupancyCertificateData: Record<
         details: "तपासणी पूर्ण झाल्यानंतर अधिवास प्रमाणपत्र जारी केले जाते.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "ऑक्युपन्सी प्रमाणपत्र इमारत वापरासाठी योग्य असल्याचे दर्शवते.",
+
+      onlineSteps: ["महापालिका वेबसाइटवर अर्ज करा."],
+
+      offlineSteps: ["महापालिका कार्यालयात अर्ज करा."],
+
+      afterSubmission: ["साइट तपासणी केली जाईल."],
+
+      processingTime: "15–30 कार्यदिवस.",
+
+      fees: ["नियमांनुसार शुल्क."],
+
+      authority: "महापालिका / विकास प्राधिकरण",
+
+      note: "OC शिवाय वापर दंडनीय आहे.",
+    },
   },
 
   or: {
@@ -321,6 +514,25 @@ export const occupancyCertificateData: Record<
         details: "ଯାଞ୍ଚ ପରେ ଅକ୍ୟୁପାନ୍ସି ସର୍ଟିଫିକେଟ୍ ଜାରି ହୁଏ।",
       },
     ],
+    howToApply: {
+      mode: ["ଅନଲାଇନ୍", "ଅଫଲାଇନ୍"],
+
+      applyWithin: "ଅକ୍ୟୁପାନ୍ସି ସର୍ଟିଫିକେଟ୍ ଭବନ ବ୍ୟବହାରଯୋଗ୍ୟ ବୋଲି ପ୍ରମାଣ କରେ।",
+
+      onlineSteps: ["ମୁନିସିପାଲ୍ ୱେବସାଇଟରେ ଆବେଦନ କରନ୍ତୁ।"],
+
+      offlineSteps: ["ମୁନିସିପାଲ୍ କାର୍ଯ୍ୟାଳୟରେ ଆବେଦନ କରନ୍ତୁ।"],
+
+      afterSubmission: ["ସାଇଟ ଯାଞ୍ଚ କରାଯିବ।"],
+
+      processingTime: "15–30 କାର୍ଯ୍ୟଦିନ।",
+
+      fees: ["ସ୍ଥାନୀୟ ନିୟମ ଅନୁଯାୟୀ।"],
+
+      authority: "ମୁନିସିପାଲ୍ କର୍ପୋରେସନ୍ / ଉନ୍ନୟନ କର୍ତ୍ତୃପକ୍ଷ",
+
+      note: "OC ବିନା ବ୍ୟବହାର ଅବୈଧ।",
+    },
   },
 
   te: {
@@ -357,6 +569,26 @@ export const occupancyCertificateData: Record<
         details: "తనిఖీ తర్వాత ఆక్యుపెన్సీ సర్టిఫికేట్ జారీ అవుతుంది.",
       },
     ],
+    howToApply: {
+      mode: ["ఆన్‌లైన్", "ఆఫ్‌లైన్"],
+
+      applyWithin:
+        "ఆక్యుపెన్సీ సర్టిఫికేట్ భవనం నివాసానికి అనుకూలమని నిర్ధారిస్తుంది.",
+
+      onlineSteps: ["మున్సిపల్ వెబ్‌సైట్‌లో దరఖాస్తు చేయండి."],
+
+      offlineSteps: ["మున్సిపల్ కార్యాలయంలో దరఖాస్తు చేయండి."],
+
+      afterSubmission: ["స్థల తనిఖీ జరుగుతుంది."],
+
+      processingTime: "15–30 పని రోజులు.",
+
+      fees: ["స్థానిక నిబంధనల ప్రకారం."],
+
+      authority: "మున్సిపాలిటీ / అభివృద్ధి సంస్థ",
+
+      note: "OC లేకుండా వినియోగం జరిమానాకు దారి తీస్తుంది.",
+    },
   },
 
   ta: {
@@ -394,5 +626,25 @@ export const occupancyCertificateData: Record<
         details: "ஆய்வு முடிந்த பின் ஆக்கிரமிப்பு சான்றிதழ் வழங்கப்படும்.",
       },
     ],
+    howToApply: {
+      mode: ["ஆன்லைன்", "ஆஃப்லைன்"],
+
+      applyWithin:
+        "ஆக்குபென்சி சான்றிதழ் கட்டிடம் பயன்படுத்தத் தகுதியானது என்பதை உறுதி செய்கிறது.",
+
+      onlineSteps: ["நகராட்சி இணையதளத்தில் விண்ணப்பிக்கவும்."],
+
+      offlineSteps: ["நகராட்சி அலுவலகத்தில் விண்ணப்பிக்கவும்."],
+
+      afterSubmission: ["ஆய்வு நடைபெறும்."],
+
+      processingTime: "15–30 வேலை நாட்கள்.",
+
+      fees: ["நகராட்சி விதிகளின்படி."],
+
+      authority: "நகராட்சி / வளர்ச்சி ஆணையம்",
+
+      note: "OC இல்லாமல் பயன்பாடு சட்டவிரோதம்.",
+    },
   },
 };

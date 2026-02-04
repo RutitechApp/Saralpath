@@ -964,4 +964,8 @@ export const tabData = [
     id: 2,
     title: "eligibility",
   },
+  {
+    id: 3,
+    title: "How To Apply?",
+  },
 ];

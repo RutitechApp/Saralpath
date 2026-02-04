@@ -5,6 +5,7 @@ export const mutationCertificateFormData: Record<
     description?: string;
     eligibility: string[];
     steps: { step: number; title: string; details: string }[];
+    howToApply: any;
   }
 > = {
   en: {
@@ -25,6 +26,44 @@ export const mutationCertificateFormData: Record<
           "Submit the application with sale deed, tax receipts, identity proof, and supporting documents. The authority verifies records and updates the ownership details.",
       },
     ],
+    howToApply: {
+      mode: ["Online", "Offline"],
+
+      applyWithin:
+        "A Mutation Certificate is required to record the transfer of ownership of a property in local revenue or municipal records due to sale, inheritance, gift, or court order.",
+
+      onlineSteps: [
+        "Visit the official land records or municipal portal of the respective State.",
+        "Login and select 'Mutation of Property' or 'Apply for Mutation Certificate'.",
+        "Enter property details such as survey number, plot number, or property ID.",
+        "Upload supporting documents (sale deed, mother deed, death certificate, etc.).",
+        "Submit the application and pay the applicable fees.",
+        "Track application status online.",
+        "Download the mutation certificate after approval.",
+      ],
+
+      offlineSteps: [
+        "Visit the local Revenue Office / Municipal Corporation / Tehsil Office.",
+        "Collect and fill the mutation application form.",
+        "Attach required documents.",
+        "Submit the form and pay the prescribed fee.",
+        "Obtain acknowledgment receipt.",
+      ],
+
+      afterSubmission: [
+        "Authorities verify submitted documents.",
+        "Field verification may be conducted if required.",
+        "Mutation entry is updated in land records.",
+      ],
+
+      processingTime: "15–45 days depending on verification and State rules.",
+
+      fees: ["Nominal mutation fee as prescribed by the State Government."],
+
+      authority: "Revenue Department / Municipal Authority",
+
+      note: "Mutation does not confer ownership but is essential for tax records and future transactions.",
+    },
   },
 
   hi: {
@@ -45,6 +84,36 @@ export const mutationCertificateFormData: Record<
           "सेल डीड, टैक्स रसीदें, पहचान प्रमाण और अन्य आवश्यक दस्तावेजों के साथ आवेदन जमा करें। विभाग दस्तावेजों का सत्यापन कर स्वामित्व अपडेट करता है।",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "म्यूटेशन प्रमाणपत्र संपत्ति के स्वामित्व परिवर्तन को सरकारी रिकॉर्ड में दर्ज करने हेतु आवश्यक है।",
+
+      onlineSteps: [
+        "राज्य की भूमि रिकॉर्ड वेबसाइट पर जाएँ।",
+        "म्यूटेशन सेवा चुनें।",
+        "संपत्ति विवरण भरें।",
+        "दस्तावेज अपलोड करें और शुल्क दें।",
+        "स्वीकृति के बाद प्रमाणपत्र डाउनलोड करें।",
+      ],
+
+      offlineSteps: [
+        "तहसील या नगर निगम कार्यालय जाएँ।",
+        "आवेदन पत्र भरें और दस्तावेज जमा करें।",
+        "शुल्क जमा करें।",
+      ],
+
+      afterSubmission: ["दस्तावेज सत्यापन किया जाएगा।"],
+
+      processingTime: "15–45 कार्यदिवस।",
+
+      fees: ["राज्य द्वारा निर्धारित शुल्क।"],
+
+      authority: "राजस्व विभाग / नगर निगम",
+
+      note: "म्यूटेशन कर रिकॉर्ड के लिए आवश्यक है।",
+    },
   },
 
   gu: {
@@ -65,6 +134,34 @@ export const mutationCertificateFormData: Record<
           "સેલ ડીડ, ટેક્સ રસીદો, ઓળખ પુરાવો અને જરૂરી દસ્તાવેજો સાથે અરજી કરો. સત્તાવાળાઓ તપાસ કરી માલિકી સુધારે છે.",
       },
     ],
+    howToApply: {
+      mode: ["ઓનલાઇન", "ઓફલાઇન"],
+
+      applyWithin:
+        "મ્યુટેશન સર્ટિફિકેટ મિલકતના માલિકી ફેરફારની એન્ટ્રી માટે જરૂરી છે.",
+
+      onlineSteps: [
+        "રાજ્ય લેન્ડ રેકોર્ડ પોર્ટલ પર જાઓ.",
+        "મ્યુટેશન સેવા પસંદ કરો.",
+        "મિલકતની વિગતો દાખલ કરો.",
+        "દસ્તાવેજ અપલોડ કરી ફી ભરો.",
+      ],
+
+      offlineSteps: [
+        "તાલુકા અથવા મ્યુનિસિપલ ઓફિસમાં અરજી કરો.",
+        "દસ્તાવેજો રજૂ કરો અને ફી ચૂકવો.",
+      ],
+
+      afterSubmission: ["ચકાસણી બાદ નોંધણી કરવામાં આવશે."],
+
+      processingTime: "15–45 દિવસ.",
+
+      fees: ["રાજ્ય મુજબ નિર્ધારિત ફી."],
+
+      authority: "રાજસ્વ વિભાગ / નગરપાલિકા",
+
+      note: "કર નોંધણી માટે અનિવાર્ય છે.",
+    },
   },
 
   bn: {
@@ -85,6 +182,33 @@ export const mutationCertificateFormData: Record<
           "সেল ডিড, ট্যাক্স রশিদ, পরিচয়পত্র এবং প্রয়োজনীয় কাগজ জমা দিন। যাচাইয়ের পর মালিকানা নথিতে পরিবর্তন করা হয়।",
       },
     ],
+    howToApply: {
+      mode: ["অনলাইন", "অফলাইন"],
+
+      applyWithin:
+        "মিউটেশন সার্টিফিকেট সম্পত্তির মালিকানা পরিবর্তন নথিভুক্ত করার জন্য প্রয়োজন।",
+
+      onlineSteps: [
+        "রাজ্য ভূমি রেকর্ড পোর্টালে যান।",
+        "মিউটেশন আবেদন করুন।",
+        "দলিল আপলোড করুন এবং ফি প্রদান করুন।",
+      ],
+
+      offlineSteps: [
+        "ভূমি রাজস্ব অফিসে আবেদন করুন।",
+        "প্রয়োজনীয় নথি জমা দিন।",
+      ],
+
+      afterSubmission: ["নথি যাচাই করা হবে।"],
+
+      processingTime: "১৫–৪৫ কার্যদিবস।",
+
+      fees: ["নির্ধারিত ফি।"],
+
+      authority: "রাজস্ব বিভাগ",
+
+      note: "কর সংক্রান্ত কাজে গুরুত্বপূর্ণ।",
+    },
   },
 
   kok: {
@@ -105,6 +229,29 @@ export const mutationCertificateFormData: Record<
           "सेल डीड, कर पावत्या, ओळख पुरावा आनी हवे दस्तावेज जमा करात. खात्री केल्यानंतर मालकी अपडेट केल्या जाता.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "म्युटेशन प्रमाणपत्र मालकी बदल सरकारी नोंदींत नोंद करपाक लागता.",
+
+      onlineSteps: [
+        "राज्य भूरिकॉर्ड वेबसाइटाक भेट दियात.",
+        "म्युटेशन अर्ज करात.",
+      ],
+
+      offlineSteps: ["तहसील कार्यालयांत अर्ज करात.", "दस्तावेज सादर करात."],
+
+      afterSubmission: ["तपासणी जावपी."],
+
+      processingTime: "15–45 दीस.",
+
+      fees: ["सरकारान ठरयले फी."],
+
+      authority: "महसूल विभाग",
+
+      note: "कर नोंदी खातीर गरजेचें.",
+    },
   },
 
   kn: {
@@ -125,6 +272,33 @@ export const mutationCertificateFormData: Record<
           "ಮಾರಾಟದ ದಾಖಲೆ, ತೆರಿಗೆ ರಸೀದಿಗಳು, ಗುರುತುಪತ್ರ ಮತ್ತು ಅಗತ್ಯ ದಾಖಲಾತಿಗಳೊಂದಿಗೆ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ. ಪರಿಶೀಲನೆಯ ನಂತರ ಮಾಲೀಕತ್ವ ನವೀಕರಿಸಲಾಗುತ್ತದೆ.",
       },
     ],
+    howToApply: {
+      mode: ["ಆನ್‌ಲೈನ್", "ಆಫ್‌ಲೈನ್"],
+
+      applyWithin:
+        "ಮ್ಯೂಟೇಷನ್ ಪ್ರಮಾಣಪತ್ರವು ಆಸ್ತಿಯ ಮಾಲೀಕತ್ವ ಬದಲಾವಣೆ ದಾಖಲಿಸಲು ಅಗತ್ಯ.",
+
+      onlineSteps: [
+        "ರಾಜ್ಯ ಭೂಮಿ ದಾಖಲೆ ಪೋರ್ಟಲ್‌ಗೆ ಭೇಟಿ ನೀಡಿ.",
+        "ಮ್ಯೂಟೇಷನ್ ಸೇವೆ ಆಯ್ಕೆಮಾಡಿ.",
+        "ದಾಖಲೆ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ ಶುಲ್ಕ ಪಾವತಿಸಿ.",
+      ],
+
+      offlineSteps: [
+        "ತಹಸೀಲ್ದಾರ್ ಕಚೇರಿಯಲ್ಲಿ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ.",
+        "ದಾಖಲೆಗಳನ್ನು ಒದಗಿಸಿ.",
+      ],
+
+      afterSubmission: ["ಪರಿಶೀಲನೆ ನಡೆಯಲಿದೆ."],
+
+      processingTime: "15–45 ಕಾರ್ಯದಿನಗಳು.",
+
+      fees: ["ನಿಯಮಿತ ಶುಲ್ಕ."],
+
+      authority: "ರಾಜಸ್ವ ಇಲಾಖೆ",
+
+      note: "ತೆರಿಗೆ ದಾಖಲೆಗೆ ಪ್ರಮುಖ.",
+    },
   },
 
   ml: {
@@ -145,6 +319,32 @@ export const mutationCertificateFormData: Record<
           "സെയിൽ ഡീഡ്, നികുതി രസീത്, ഐഡി പ്രൂഫ് തുടങ്ങിയ രേഖകൾ ചേർത്ത് അപേക്ഷിക്കുക. പരിശോധന കഴിഞ്ഞ് ഉടമസ്ഥാവകാശം അപ്‌ഡേറ്റ് ചെയ്യും.",
       },
     ],
+    howToApply: {
+      mode: ["ഓൺലൈൻ", "ഓഫ്‌ലൈൻ"],
+
+      applyWithin:
+        "മ്യൂട്ടേഷൻ സർട്ടിഫിക്കറ്റ് സ്വത്തിന്റേത് ഉടമസ്ഥതാ മാറ്റം രേഖപ്പെടുത്തുന്നതിനാണ്.",
+
+      onlineSteps: [
+        "സംസ്ഥാന ഭൂ രേഖാ വെബ്‌സൈറ്റ് സന്ദർശിക്കുക.",
+        "മ്യൂട്ടേഷൻ അപേക്ഷ സമർപ്പിക്കുക.",
+      ],
+
+      offlineSteps: [
+        "വില്ലേജ് ഓഫീസ് / താലൂക്ക് ഓഫീസ് സന്ദർശിക്കുക.",
+        "രേഖകൾ സമർപ്പിക്കുക.",
+      ],
+
+      afterSubmission: ["രേഖകൾ പരിശോധന ചെയ്യും."],
+
+      processingTime: "15–45 പ്രവർത്തിദിവസങ്ങൾ.",
+
+      fees: ["സർക്കാർ നിശ്ചയിച്ച ഫീസ്."],
+
+      authority: "റവന്യൂ വകുപ്പ്",
+
+      note: "നികുതി ആവശ്യങ്ങൾക്ക് നിർബന്ധമാണ്.",
+    },
   },
 
   mr: {
@@ -165,6 +365,29 @@ export const mutationCertificateFormData: Record<
           "सेल डीड, कर पावत्या, ओळखपत्र आणि आवश्यक कागदपत्रांसह अर्ज करा. तपासणीनंतर नोंद अपडेट केली जाते.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "म्युटेशन प्रमाणपत्र मालकी बदल महसूल नोंदीत नोंदवण्यासाठी आवश्यक आहे.",
+
+      onlineSteps: [
+        "राज्य भू-अभिलेख पोर्टलला भेट द्या.",
+        "म्युटेशनसाठी अर्ज करा.",
+      ],
+
+      offlineSteps: ["तहसील कार्यालयात अर्ज करा.", "कागदपत्रे सादर करा."],
+
+      afterSubmission: ["तपासणी केली जाईल."],
+
+      processingTime: "15–45 कार्यदिवस.",
+
+      fees: ["शासननिर्धारित शुल्क."],
+
+      authority: "महसूल विभाग",
+
+      note: "कर नोंदींसाठी आवश्यक.",
+    },
   },
 
   or: {
@@ -185,6 +408,29 @@ export const mutationCertificateFormData: Record<
           "ସେଲ୍ ଡିଡ୍‍, କରର ସ୍ଲିପ୍, ଚିହ୍ନଟ ପତ୍ର ଇତ୍ୟାଦି ଦଲିଲ୍ ଦେଇ ଆବେଦନ କରନ୍ତୁ। ସତ୍ୟାପନ ପରେ ମାଳିକୀୟତା ଅଦ୍ୟତନ ହୁଏ।",
       },
     ],
+    howToApply: {
+      mode: ["ଅନଲାଇନ୍", "ଅଫଲାଇନ୍"],
+
+      applyWithin:
+        "ମ୍ୟୁଟେସନ୍ ସର୍ଟିଫିକେଟ୍ ମାଲିକାନା ପରିବର୍ତ୍ତନ ନୋନ୍ଦିବା ପାଇଁ ଆବଶ୍ୟକ।",
+
+      onlineSteps: [
+        "ରାଜ୍ୟ ଭୂ ରେକର୍ଡ ପୋର୍ଟାଲକୁ ଯାଆନ୍ତୁ।",
+        "ମ୍ୟୁଟେସନ୍ ପାଇଁ ଆବେଦନ କରନ୍ତୁ।",
+      ],
+
+      offlineSteps: ["ତହସିଲ କାର୍ଯ୍ୟାଳୟକୁ ଯାଆନ୍ତୁ।", "ଦଲିଲ ଦାଖଲ କରନ୍ତୁ।"],
+
+      afterSubmission: ["ଯାଞ୍ଚ କରାଯିବ।"],
+
+      processingTime: "15–45 କାର୍ଯ୍ୟଦିନ।",
+
+      fees: ["ନିର୍ଦ୍ଧାରିତ ଶୁଳ୍କ।"],
+
+      authority: "ରେଭେନ୍ୟୁ ବିଭାଗ",
+
+      note: "ଟ୍ୟାକ୍ସ ରେକର୍ଡ ପାଇଁ ଆବଶ୍ୟକ।",
+    },
   },
 
   te: {
@@ -205,6 +451,33 @@ export const mutationCertificateFormData: Record<
           "సేల్ డీడ్, పన్ను రసీదు, గుర్తింపు పత్రాలు మరియు అవసరమైన డాక్యుమెంట్లు సమర్పించండి. ధృవీకరణ తర్వాత యాజమాన్యం వివరాలు అప్డేట్ అవుతాయి.",
       },
     ],
+    howToApply: {
+      mode: ["ఆన్‌లైన్", "ఆఫ్‌లైన్"],
+
+      applyWithin:
+        "మ్యూటేషన్ సర్టిఫికెట్ ఆస్తి యాజమాన్య మార్పును ప్రభుత్వ రికార్డుల్లో నమోదు చేయడానికి అవసరం.",
+
+      onlineSteps: [
+        "రాష్ట్ర భూ రికార్డ్ పోర్టల్ సందర్శించండి.",
+        "మ్యూటేషన్ సేవ ఎంచుకోండి.",
+        "డాక్యుమెంట్లు అప్లోడ్ చేసి ఫీజు చెల్లించండి.",
+      ],
+
+      offlineSteps: [
+        "తహసీల్దార్ కార్యాలయంలో దరఖాస్తు చేయండి.",
+        "అవసరమైన పత్రాలు సమర్పించండి.",
+      ],
+
+      afterSubmission: ["ధృవీకరణ జరుగుతుంది."],
+
+      processingTime: "15–45 పని రోజులు.",
+
+      fees: ["ప్రభుత్వం నిర్ణయించిన ఫీజు."],
+
+      authority: "రెవెన్యూ శాఖ",
+
+      note: "పన్ను రికార్డులకు అవసరం.",
+    },
   },
 
   ta: {
@@ -225,5 +498,32 @@ export const mutationCertificateFormData: Record<
           "சேல் டீட், வரி ரசீது, அடையாள ஆவணங்கள் உடன் விண்ணப்பிக்கவும். சரிபார்ப்பிற்குப் பின் உரிமை புதுப்பிக்கப்படும்.",
       },
     ],
+    howToApply: {
+      mode: ["ஆன்லைன்", "ஆஃப்லைன்"],
+
+      applyWithin:
+        "மியூட்டேஷன் சான்றிதழ் சொத்து உரிமை மாற்றத்தை அரசு பதிவுகளில் பதிவு செய்ய பயன்படுகிறது.",
+
+      onlineSteps: [
+        "மாநில நில பதிவுகள் இணையதளத்தை பார்வையிடவும்.",
+        "மியூட்டேஷன் விண்ணப்பிக்கவும்.",
+        "ஆவணங்களை பதிவேற்றவும், கட்டணம் செலுத்தவும்.",
+      ],
+
+      offlineSteps: [
+        "தாசில்தார் அலுவலகத்தில் விண்ணப்பிக்கவும்.",
+        "ஆவணங்களை சமர்ப்பிக்கவும்.",
+      ],
+
+      afterSubmission: ["சரிபார்ப்பு நடைபெறும்."],
+
+      processingTime: "15–45 வேலை நாட்கள்.",
+
+      fees: ["அரசு நிர்ணயித்த கட்டணம்."],
+
+      authority: "வருவாய் துறை",
+
+      note: "வரி பதிவுகளுக்கு அவசியம்.",
+    },
   },
 };

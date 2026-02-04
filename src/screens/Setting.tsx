@@ -35,7 +35,7 @@ const Setting = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   useEffect(() => {
     const nearest = ticks.reduce((prev, curr) =>
-      Math.abs(curr - fontScale) < Math.abs(prev - fontScale) ? curr : prev
+      Math.abs(curr - fontScale) < Math.abs(prev - fontScale) ? curr : prev,
     );
     setActiveIndex(ticks.indexOf(nearest));
   }, [fontScale]);
@@ -204,7 +204,7 @@ const Setting = () => {
             CommonActions.reset({
               index: 0,
               routes: [{ name: "Home" }],
-            })
+            }),
           );
         }}
       />

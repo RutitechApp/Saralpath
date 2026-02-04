@@ -1,5 +1,11 @@
 import React from "react";
-import { View, TextInput, StyleSheet } from "react-native";
+import {
+  View,
+  TextInput,
+  StyleSheet,
+  NativeModules,
+  Platform,
+} from "react-native";
 import { SearchIcon } from "../assets/svgs/Home";
 import { useTranslation } from "react-i18next";
 import { useFontSize } from "../constants/FontSizeContext";
@@ -11,9 +17,21 @@ interface SearchProps {
 }
 
 const Search: React.FC<SearchProps> = ({ searchText, onSearchChangeText }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { fontScale } = useFontSize();
   const { colors } = useThemeColors();
+  const { KeyboardLanguage } = NativeModules;
+  console.log("t", i18n);
+  const handleFocus = () => {
+    if (Platform.OS === "android" && KeyboardLanguage) {
+      const lang = i18n.language;
+
+      KeyboardLanguage.changeKeyboardLanguage(lang).catch((err: any) => {
+        console.log("err", err);
+      });
+    }
+  };
+
   return (
     <View
       style={[
@@ -31,6 +49,7 @@ const Search: React.FC<SearchProps> = ({ searchText, onSearchChangeText }) => {
           { fontSize: 12 * fontScale, color: colors.text },
         ]}
         placeholderTextColor={colors.text}
+        onFocus={handleFocus}
       />
     </View>
   );

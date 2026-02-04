@@ -5,6 +5,7 @@ export const encumbranceCertificateData: Record<
     description?: string;
     eligibility: string[];
     steps: { step: number; title: string; details: string }[];
+    howToApply: any;
   }
 > = {
   en: {
@@ -49,6 +50,45 @@ export const encumbranceCertificateData: Record<
           "Download or collect the EC, which serves as proof that the property has no legal/financial burdens.",
       },
     ],
+    howToApply: {
+      mode: ["Online", "Offline"],
+
+      applyWithin:
+        "An Encumbrance Certificate (EC) is applied for to verify whether a property is free from legal or financial liabilities for a specific period.",
+
+      onlineSteps: [
+        "Visit the State Land Records or Registration Department portal.",
+        "Select 'Encumbrance Certificate' service.",
+        "Enter property details such as district, sub-registrar office, survey number, and period.",
+        "Submit the application form online.",
+        "Pay the applicable fees through online payment modes.",
+        "Track application status using reference number.",
+        "Download the Encumbrance Certificate once approved.",
+      ],
+
+      offlineSteps: [
+        "Visit the concerned Sub-Registrar Office.",
+        "Collect and fill the Encumbrance Certificate application form.",
+        "Submit property details and supporting documents.",
+        "Pay the prescribed fee at the counter.",
+        "Collect the acknowledgment slip.",
+        "Receive the Encumbrance Certificate after processing.",
+      ],
+
+      afterSubmission: [
+        "Details are verified against land registration records.",
+        "Nil EC is issued if no encumbrance exists.",
+        "Certificate can be used for loans, sale, or legal verification.",
+      ],
+
+      processingTime: "3 to 15 working days depending on state and records.",
+
+      fees: ["Nominal fee based on search period and state rules."],
+
+      authority: "State Registration Department / Sub-Registrar Office",
+
+      note: "Ensure correct property details and search period to avoid errors in the certificate.",
+    },
   },
 
   hi: {
@@ -91,6 +131,41 @@ export const encumbranceCertificateData: Record<
         details: "प्रमाणपत्र डाउनलोड करें या कार्यालय से प्राप्त करें।",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "Encumbrance Certificate (EC) संपत्ति पर किसी भी कानूनी या वित्तीय दायित्व की जांच के लिए आवेदन किया जाता है।",
+
+      onlineSteps: [
+        "राज्य भूमि अभिलेख या पंजीकरण विभाग की वेबसाइट पर जाएँ।",
+        "Encumbrance Certificate सेवा चुनें।",
+        "संपत्ति विवरण और अवधि भरें।",
+        "ऑनलाइन आवेदन सबमिट करें।",
+        "निर्धारित शुल्क का भुगतान करें।",
+        "स्थिति ट्रैक करें और प्रमाणपत्र डाउनलोड करें।",
+      ],
+
+      offlineSteps: [
+        "संबंधित सब-रजिस्ट्रार कार्यालय जाएँ।",
+        "आवेदन पत्र भरें और दस्तावेज़ जमा करें।",
+        "शुल्क जमा करें।",
+        "Encumbrance Certificate प्राप्त करें।",
+      ],
+
+      afterSubmission: [
+        "रिकॉर्ड सत्यापन किया जाता है।",
+        "कोई बकाया न होने पर Nil EC जारी होता है।",
+      ],
+
+      processingTime: "3 से 15 कार्य दिवस।",
+
+      fees: ["राज्य अनुसार निर्धारित शुल्क।"],
+
+      authority: "राज्य पंजीकरण विभाग / सब-रजिस्ट्रार कार्यालय",
+
+      note: "गलत विवरण से प्रमाणपत्र में त्रुटि हो सकती है।",
+    },
   },
 
   gu: {
@@ -131,6 +206,35 @@ export const encumbranceCertificateData: Record<
         details: "પ્રમાણપત્ર ડાઉનલોડ કરો અથવા કચેરીમાંથી મેળવો.",
       },
     ],
+    howToApply: {
+      mode: ["ઓનલાઇન", "ઓફલાઇન"],
+
+      applyWithin:
+        "Encumbrance Certificate મિલકત પર કોઈ કાનૂની કે નાણાકીય બોજા છે કે નહીં તેની ચકાસણી માટે લેવાય છે.",
+
+      onlineSteps: [
+        "રાજ્ય રજિસ્ટ્રેશન પોર્ટલ પર જાઓ.",
+        "Encumbrance Certificate પસંદ કરો.",
+        "મિલકત વિગતો અને સમયગાળો દાખલ કરો.",
+        "ફી ચૂકવીને અરજી સબમિટ કરો.",
+        "પ્રમાણપત્ર ડાઉનલોડ કરો.",
+      ],
+
+      offlineSteps: [
+        "સબ-રજિસ્ટ્રાર કચેરી ખાતે અરજી કરો.",
+        "શુલ્ક ભરો અને દસ્તાવેજો આપો.",
+      ],
+
+      afterSubmission: ["રેકોર્ડની ચકાસણી કરવામાં આવે છે."],
+
+      processingTime: "3 થી 15 દિવસ.",
+
+      fees: ["રાજ્ય મુજબ ફી."],
+
+      authority: "સ્ટેટ રજિસ્ટ્રેશન ડિપાર્ટમેન્ટ",
+
+      note: "યોગ્ય માહિતી આપવી આવશ્યક છે.",
+    },
   },
 
   bn: {
@@ -170,6 +274,32 @@ export const encumbranceCertificateData: Record<
         details: "অনলাইনে ডাউনলোড করুন অথবা অফিস থেকে সংগ্রহ করুন।",
       },
     ],
+    howToApply: {
+      mode: ["অনলাইন", "অফলাইন"],
+
+      applyWithin:
+        "Encumbrance Certificate সম্পত্তির উপর কোনো ঋণ বা আইনি দায় রয়েছে কিনা তা যাচাই করতে আবেদন করা হয়।",
+
+      onlineSteps: [
+        "রাজ্য রেজিস্ট্রেশন পোর্টালে যান।",
+        "Encumbrance Certificate নির্বাচন করুন।",
+        "সম্পত্তির বিবরণ পূরণ করুন।",
+        "ফি প্রদান করে আবেদন জমা দিন।",
+        "অনুমোদনের পর সার্টিফিকেট ডাউনলোড করুন।",
+      ],
+
+      offlineSteps: ["সাব-রেজিস্ট্রার অফিসে আবেদন করুন।"],
+
+      afterSubmission: ["রেকর্ড যাচাই করা হয়।"],
+
+      processingTime: "৩ থেকে ১৫ কার্যদিবস।",
+
+      fees: ["নির্ধারিত ফি।"],
+
+      authority: "রাজ্য রেজিস্ট্রেশন বিভাগ",
+
+      note: "সঠিক সময়কাল নির্বাচন করা গুরুত্বপূর্ণ।",
+    },
   },
 
   kok: {
@@ -209,6 +339,40 @@ export const encumbranceCertificateData: Record<
         details: "डाऊनलोड करात वा कार्यालयांतून घेवपी.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "Encumbrance Certificate (EC) हें दिल्ल्या वेळेस मालमत्तेवर कसलेंच कायदेशीर वा आर्थिक बोजा आसा की ना हे तपासपाक घेता.",
+
+      onlineSteps: [
+        "राज्य रजिस्ट्रेशन पोर्टलाक भेट दियात.",
+        "Encumbrance Certificate सेवा निवडात.",
+        "मालमत्तेची माहिती आनी कालावधी भरात.",
+        "ऑनलाइन अर्ज सादर करात.",
+        "फी भरात.",
+        "मंजूर जाल्यार प्रमाणपत्र डाउनलोड करात.",
+      ],
+
+      offlineSteps: [
+        "सबस्ट्रार ऑफिसांत अर्ज करात.",
+        "फॉर्म भरून फी जमा करात.",
+        "Encumbrance Certificate मेळयात.",
+      ],
+
+      afterSubmission: [
+        "नोंदणीकृत रेकॉर्ड तपासतात.",
+        "बोजा नासल्यार Nil EC दितात.",
+      ],
+
+      processingTime: "3 ते 15 दिसां.",
+
+      fees: ["राज्यानुसार ठराविक फी."],
+
+      authority: "राज्य रजिस्ट्रेशन खाते / सबस्ट्रार ऑफिस",
+
+      note: "योग्य माहिती आनी कालावधी दिंवप जरूरी आसा.",
+    },
   },
 
   kn: {
@@ -251,6 +415,42 @@ export const encumbranceCertificateData: Record<
         details: "ಡೌನ್‌ಲೋಡ್ ಮಾಡಬಹುದು ಅಥವಾ ಕಚೇರಿಯಿಂದ ಕಾಪಿ ಪಡೆಯಬಹುದು.",
       },
     ],
+    howToApply: {
+      mode: ["ಆನ್‌ಲೈನ್", "ಆಫ್‌ಲೈನ್"],
+
+      applyWithin:
+        "Encumbrance Certificate (EC) ಅನ್ನು ನಿರ್ದಿಷ್ಟ ಅವಧಿಗೆ ಆಸ್ತಿಯ ಮೇಲೆ ಯಾವುದೇ ಕಾನೂನು ಅಥವಾ ಹಣಕಾಸು ಭಾರವಿದೆಯೇ ಎಂಬುದನ್ನು ಪರಿಶೀಲಿಸಲು ಪಡೆಯಲಾಗುತ್ತದೆ.",
+
+      onlineSteps: [
+        "ರಾಜ್ಯ ನೋಂದಣಿ ಅಥವಾ ಭೂ ದಾಖಲೆಗಳ ಪೋರ್ಟಲ್‌ಗೆ ಭೇಟಿ ನೀಡಿ.",
+        "Encumbrance Certificate ಸೇವೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+        "ಜಿಲ್ಲೆ, ಸಬ್-ರಿಜಿಸ್ಟ್ರಾರ್ ಕಚೇರಿ ಮತ್ತು ಆಸ್ತಿ ವಿವರಗಳನ್ನು ನಮೂದಿಸಿ.",
+        "ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ.",
+        "ಅನ್ವಯಿಸುವ ಶುಲ್ಕವನ್ನು ಪಾವತಿಸಿ.",
+        "ಅರ್ಜಿಯ ಸ್ಥಿತಿಯನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ.",
+        "ಅನುಮೋದನೆಯ ನಂತರ ಪ್ರಮಾಣಪತ್ರವನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ.",
+      ],
+
+      offlineSteps: [
+        "ಸಬ್-ರಿಜಿಸ್ಟ್ರಾರ್ ಕಚೇರಿಗೆ ಭೇಟಿ ನೀಡಿ.",
+        "ಅರ್ಜಿಯ ಫಾರ್ಮ್ ಭರ್ತಿ ಮಾಡಿ.",
+        "ದಾಖಲೆಗಳನ್ನು ಸಲ್ಲಿಸಿ ಮತ್ತು ಶುಲ್ಕ ಪಾವತಿಸಿ.",
+        "Encumbrance Certificate ಪಡೆದುಕೊಳ್ಳಿ.",
+      ],
+
+      afterSubmission: [
+        "ದಾಖಲೆಗಳ ಪರಿಶೀಲನೆ ನಡೆಸಲಾಗುತ್ತದೆ.",
+        "ಯಾವುದೇ ಭಾರ ಇಲ್ಲದಿದ್ದರೆ Nil EC ನೀಡಲಾಗುತ್ತದೆ.",
+      ],
+
+      processingTime: "3 ರಿಂದ 15 ಕಾರ್ಯದಿನಗಳು.",
+
+      fees: ["ರಾಜ್ಯ ನಿಯಮಗಳ ಪ್ರಕಾರ ಶುಲ್ಕ."],
+
+      authority: "ರಾಜ್ಯ ನೋಂದಣಿ ಇಲಾಖೆ / ಸಬ್-ರಿಜಿಸ್ಟ್ರಾರ್ ಕಚೇರಿ",
+
+      note: "ಸರಿಯಾದ ವಿವರಗಳು ನೀಡುವುದು ಅತ್ಯಂತ ಮುಖ್ಯ.",
+    },
   },
 
   ml: {
@@ -291,6 +491,42 @@ export const encumbranceCertificateData: Record<
         details: "ഡൗൺലോഡ് ചെയ്യുക അല്ലെങ്കിൽ ഓഫീസിൽ നിന്ന് നേടുക.",
       },
     ],
+    howToApply: {
+      mode: ["ഓൺലൈൻ", "ഓഫ്‌ലൈൻ"],
+
+      applyWithin:
+        "Encumbrance Certificate (EC) എന്നത് ഒരു നിശ്ചിത കാലയളവിൽ സ്വത്തിന്മേൽ നിയമപരമോ സാമ്പത്തികമോ ആയ ബാധ്യതകളുണ്ടോയെന്ന് പരിശോധിക്കാൻ ഉപയോഗിക്കുന്നു.",
+
+      onlineSteps: [
+        "സംസ്ഥാന രജിസ്ട്രേഷൻ അല്ലെങ്കിൽ ഭൂ രേഖാ പോർട്ടൽ സന്ദർശിക്കുക.",
+        "Encumbrance Certificate സേവനം തിരഞ്ഞെടുക്കുക.",
+        "സ്വത്ത് വിവരങ്ങളും കാലയളവും നൽകുക.",
+        "ഓൺലൈനായി അപേക്ഷ സമർപ്പിക്കുക.",
+        "ഫീസ് അടയ്ക്കുക.",
+        "അപേക്ഷയുടെ സ്ഥിതി പരിശോധിക്കുക.",
+        "അംഗീകരിച്ച ശേഷം സർട്ടിഫിക്കറ്റ് ഡൗൺലോഡ് ചെയ്യുക.",
+      ],
+
+      offlineSteps: [
+        "സബ്-രജിസ്ട്രാർ ഓഫീസിൽ എത്തുക.",
+        "അപേക്ഷ ഫോം പൂരിപ്പിക്കുക.",
+        "ഫീസ് അടച്ച് അപേക്ഷ സമർപ്പിക്കുക.",
+        "Encumbrance Certificate കൈപ്പറ്റുക.",
+      ],
+
+      afterSubmission: [
+        "രേഖകൾ പരിശോധിക്കും.",
+        "ബാധ്യതകളില്ലെങ്കിൽ Nil EC നൽകും.",
+      ],
+
+      processingTime: "3 മുതൽ 15 പ്രവർത്തി ദിവസങ്ങൾ.",
+
+      fees: ["സംസ്ഥാന ചട്ടങ്ങൾ അനുസരിച്ച ഫീസ്."],
+
+      authority: "സംസ്ഥാന രജിസ്ട്രേഷൻ വകുപ്പ് / സബ്-രജിസ്ട്രാർ ഓഫീസ്",
+
+      note: "ശരിയായ വിവരങ്ങൾ നൽകേണ്ടതാണ്.",
+    },
   },
 
   mr: {
@@ -330,6 +566,41 @@ export const encumbranceCertificateData: Record<
         details: "ऑनलाइन डाउनलोड करा किंवा कार्यालयातून मिळवा.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "Encumbrance Certificate (EC) हे ठराविक कालावधीत मालमत्तेवर कोणतेही कायदेशीर किंवा आर्थिक बोजा आहेत का हे तपासण्यासाठी घेतले जाते.",
+
+      onlineSteps: [
+        "राज्य नोंदणी किंवा जमीन अभिलेख पोर्टलवर जा.",
+        "Encumbrance Certificate सेवा निवडा.",
+        "मालमत्तेचे तपशील व कालावधी भरा.",
+        "ऑनलाइन अर्ज सादर करा.",
+        "शुल्क भरा.",
+        "अर्जाची स्थिती तपासा.",
+        "मंजुरीनंतर प्रमाणपत्र डाउनलोड करा.",
+      ],
+
+      offlineSteps: [
+        "सब-रजिस्ट्रार कार्यालयात अर्ज करा.",
+        "फॉर्म भरून शुल्क जमा करा.",
+        "Encumbrance Certificate प्राप्त करा.",
+      ],
+
+      afterSubmission: [
+        "नोंदणी अभिलेख तपासले जातात.",
+        "बोजा नसल्यास Nil EC दिला जातो.",
+      ],
+
+      processingTime: "3 ते 15 कार्यदिवस.",
+
+      fees: ["राज्यानुसार शुल्क."],
+
+      authority: "राज्य नोंदणी विभाग / सब-रजिस्ट्रार कार्यालय",
+
+      note: "योग्य कालावधी निवडणे आवश्यक आहे.",
+    },
   },
 
   or: {
@@ -369,6 +640,37 @@ export const encumbranceCertificateData: Record<
         details: "ଅନଲାଇନ ଡାଉନଲୋଡ କରନ୍ତୁ କିମ୍ବା କାର୍ଯ୍ୟାଳୟରୁ ପାଆନ୍ତୁ।",
       },
     ],
+    howToApply: {
+      mode: ["ଅନଲାଇନ୍", "ଅଫଲାଇନ୍"],
+
+      applyWithin:
+        "Encumbrance Certificate (EC) ନିର୍ଦ୍ଦିଷ୍ଟ ସମୟ ପରିଧିରେ ଜମି ଉପରେ କୌଣସି କାନୁନଗତ କିମ୍ବା ଆର୍ଥିକ ବୋଝ ଅଛି କି ନାହିଁ ଯାଞ୍ଚ ପାଇଁ ନିଆଯାଏ।",
+
+      onlineSteps: [
+        "ରାଜ୍ୟ ରେଜିଷ୍ଟ୍ରେସନ୍ ପୋର୍ଟାଲକୁ ଯାଆନ୍ତୁ।",
+        "Encumbrance Certificate ସେବା ବାଛନ୍ତୁ।",
+        "ଜମିର ତଥ୍ୟ ଭରଣ କରନ୍ତୁ।",
+        "ଅନଲାଇନ୍ ଆବେଦନ ସମର୍ପଣ କରନ୍ତୁ।",
+        "ଶୁଳ୍କ ଦେୟ କରନ୍ତୁ।",
+        "ପ୍ରମାଣପତ୍ର ଡାଉନଲୋଡ୍ କରନ୍ତୁ।",
+      ],
+
+      offlineSteps: [
+        "ସବ-ରେଜିଷ୍ଟ୍ରାର କାର୍ଯ୍ୟାଳୟକୁ ଯାଆନ୍ତୁ।",
+        "ଆବେଦନପତ୍ର ଦାଖଲ କରନ୍ତୁ।",
+        "Encumbrance Certificate ପାଉନ୍ତୁ।",
+      ],
+
+      afterSubmission: ["ରେକର୍ଡ ଯାଞ୍ଚ କରାଯାଏ।"],
+
+      processingTime: "3 ରୁ 15 କାର୍ଯ୍ୟଦିନ।",
+
+      fees: ["ରାଜ୍ୟ ନିୟମାନୁସାରେ ଶୁଳ୍କ।"],
+
+      authority: "ରାଜ୍ୟ ରେଜିଷ୍ଟ୍ରେସନ୍ ବିଭାଗ / ସବ-ରେଜିଷ୍ଟ୍ରାର କାର୍ଯ୍ୟାଳୟ",
+
+      note: "ସଠିକ୍ ତଥ୍ୟ ଦେବା ଆବଶ୍ୟକ।",
+    },
   },
 
   te: {
@@ -408,6 +710,44 @@ export const encumbranceCertificateData: Record<
         details: "ఆన్‌లైన్‌గా డౌన్‌లోడ్ చేయండి లేదా కార్యాలయం నుండి పొందండి.",
       },
     ],
+    howToApply: {
+      mode: ["ఆన్‌లైన్", "ఆఫ్‌లైన్"],
+
+      applyWithin:
+        "Encumbrance Certificate (EC) అనేది ఒక నిర్దిష్ట కాలానికి ఆస్తిపై ఎలాంటి చట్టపరమైన లేదా ఆర్థిక భారాలు ఉన్నాయా లేదా నిర్ధారించడానికి పొందబడుతుంది.",
+
+      onlineSteps: [
+        "రాష్ట్ర రిజిస్ట్రేషన్ లేదా భూమి రికార్డుల పోర్టల్‌ను సందర్శించండి.",
+        "'Encumbrance Certificate' సేవను ఎంచుకోండి.",
+        "జిల్లా, సబ్-రిజిస్ట్రార్ కార్యాలయం, సర్వే నంబర్ మరియు కాలాన్ని నమోదు చేయండి.",
+        "ఆన్‌లైన్‌లో దరఖాస్తు సమర్పించండి.",
+        "అవసరమైన ఫీజును ఆన్‌లైన్‌లో చెల్లించండి.",
+        "రిఫరెన్స్ నంబర్ ద్వారా స్టేటస్‌ను ట్రాక్ చేయండి.",
+        "ఆమోదం తర్వాత EC డౌన్‌లోడ్ చేసుకోండి.",
+      ],
+
+      offlineSteps: [
+        "సంబంధిత సబ్-రిజిస్ట్రార్ కార్యాలయాన్ని సందర్శించండి.",
+        "EC దరఖాస్తు ఫారం తీసుకుని పూరించండి.",
+        "ఆస్తి వివరాలు మరియు పత్రాలు సమర్పించండి.",
+        "నిర్దిష్ట ఫీజు చెల్లించండి.",
+        "ప్రాసెసింగ్ అనంతరం Encumbrance Certificate పొందండి.",
+      ],
+
+      afterSubmission: [
+        "భూమి రికార్డులతో వివరాల పరిశీలన జరుగుతుంది.",
+        "ఏ బాకీ లేకపోతే Nil EC జారీ చేయబడుతుంది.",
+        "లోన్లు, అమ్మకం లేదా చట్టపరమైన ధృవీకరణకు ఉపయోగించవచ్చు.",
+      ],
+
+      processingTime: "రాష్ట్రానుసారంగా 3 నుండి 15 పని రోజులు.",
+
+      fees: ["శోధన కాలం మరియు రాష్ట్ర నియమాల ఆధారంగా ఫీజు."],
+
+      authority: "రాష్ట్ర రిజిస్ట్రేషన్ శాఖ / సబ్-రిజిస్ట్రార్ కార్యాలయం",
+
+      note: "ఆస్తి వివరాలు మరియు కాలాన్ని సరిగా నమోదు చేయడం తప్పనిసరి.",
+    },
   },
 
   ta: {
@@ -450,5 +790,31 @@ export const encumbranceCertificateData: Record<
         details: "ஆன்லைனில் பதிவிறக்கம் செய்யலாம் அல்லது அலுவலகத்தில் பெறலாம்.",
       },
     ],
+    howToApply: {
+      mode: ["ஆன்லைன்", "ஆஃப்லைன்"],
+
+      applyWithin:
+        "Encumbrance Certificate என்பது சொத்தில் எந்த கடன் அல்லது சட்டப்பூர்வ சுமை உள்ளதா என்பதை சரிபார்க்கப் பெறப்படுகிறது.",
+
+      onlineSteps: [
+        "மாநில பதிவு துறை இணையதளத்திற்கு செல்லவும்.",
+        "Encumbrance Certificate தேர்வு செய்யவும்.",
+        "சொத்து விவரங்களை உள்ளிடவும்.",
+        "கட்டணம் செலுத்தி விண்ணப்பிக்கவும்.",
+        "சான்றிதழை பதிவிறக்கம் செய்யவும்.",
+      ],
+
+      offlineSteps: ["சப்-ரஜிஸ்ட்ரார் அலுவலகத்தில் விண்ணப்பிக்கவும்."],
+
+      afterSubmission: ["பதிவு விவரங்கள் சரிபார்க்கப்படும்."],
+
+      processingTime: "3–15 வேலை நாட்கள்.",
+
+      fees: ["மாநிலத்தின்படி கட்டணம்."],
+
+      authority: "பதிவு துறை / சப்-ரஜிஸ்ட்ரார்",
+
+      note: "சரியான காலத்தை தேர்வு செய்வது முக்கியம்.",
+    },
   },
 };

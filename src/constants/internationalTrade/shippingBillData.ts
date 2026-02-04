@@ -5,6 +5,7 @@ export const shippingBillData: Record<
     description?: string;
     eligibility: string[];
     steps: { step: number; title: string; details: string }[];
+    howToApply: any;
   }
 > = {
   en: {
@@ -48,6 +49,50 @@ export const shippingBillData: Record<
           "After approval, receive the finalized shipping bill and issue it for shipment.",
       },
     ],
+    howToApply: {
+      mode: ["Online", "Offline"],
+
+      applyWithin:
+        "A Shipping Bill is a mandatory customs document required for exporting goods from India. It contains details of the exporter, consignee, goods, value, and duties, and is used for customs clearance and export incentives.",
+
+      onlineSteps: [
+        "Register on the ICEGATE customs portal",
+        "Login and select Shipping Bill filing option",
+        "Enter exporter, consignee, and goods details",
+        "Declare value, quantity, HS code, and export scheme",
+        "Upload required supporting documents",
+        "Submit the Shipping Bill electronically",
+        "Track status and obtain clearance after customs assessment",
+      ],
+
+      offlineSteps: [
+        "Obtain Shipping Bill form from customs office",
+        "Fill exporter, consignee, and goods details manually",
+        "Attach invoices and packing list",
+        "Submit documents to customs officer",
+        "Respond to queries or inspection if required",
+        "Receive clearance after approval",
+      ],
+
+      afterSubmission: [
+        "Customs authorities assess the Shipping Bill",
+        "Goods may be examined if required",
+        "Export clearance (LEO) is granted",
+        "Shipping Bill is used for export incentives and records",
+      ],
+
+      processingTime:
+        "Usually processed within 1–3 working days depending on customs verification",
+
+      fees: [
+        "No government fee for filing Shipping Bill",
+        "Service charges may apply if filed through a CHA",
+      ],
+
+      authority: "Customs Department (CBIC)",
+
+      note: "Ensure correct HS code, value, and export scheme details to avoid delays or penalties",
+    },
   },
 
   hi: {
@@ -91,6 +136,44 @@ export const shippingBillData: Record<
           "अनुमोदन के बाद अंतिम शिपिंग बिल प्राप्त करें और शिपमेंट के लिए जारी करें।",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "शिपिंग बिल भारत से माल निर्यात करने हेतु आवश्यक कस्टम दस्तावेज़ है, जिसमें निर्यातक, माल और मूल्य का विवरण होता है।",
+
+      onlineSteps: [
+        "ICEGATE पोर्टल पर पंजीकरण करें",
+        "लॉगिन कर शिपिंग बिल विकल्प चुनें",
+        "निर्यातक और माल का विवरण भरें",
+        "HS कोड और निर्यात योजना घोषित करें",
+        "दस्तावेज़ अपलोड करें",
+        "शिपिंग बिल जमा करें",
+        "क्लीयरेंस स्टेटस ट्रैक करें",
+      ],
+
+      offlineSteps: [
+        "कस्टम कार्यालय से फॉर्म प्राप्त करें",
+        "मैन्युअली विवरण भरें",
+        "इनवॉइस और पैकिंग लिस्ट लगाएँ",
+        "कस्टम अधिकारी को जमा करें",
+        "मंजूरी प्राप्त करें",
+      ],
+
+      afterSubmission: [
+        "कस्टम द्वारा जाँच की जाती है",
+        "जरूरत पड़ने पर निरीक्षण होता है",
+        "LEO जारी किया जाता है",
+      ],
+
+      processingTime: "1–3 कार्य दिवस",
+
+      fees: ["सरकारी शुल्क नहीं", "CHA चार्ज लागू हो सकते हैं"],
+
+      authority: "कस्टम विभाग (CBIC)",
+
+      note: "गलत विवरण देने से देरी या जुर्माना हो सकता है",
+    },
   },
 
   gu: {
@@ -133,6 +216,40 @@ export const shippingBillData: Record<
           "મંજૂરી પછી અંતિમ શિપિંગ બિલ મેળવો અને શિપમેન્ટ માટે જારી કરો.",
       },
     ],
+    howToApply: {
+      mode: ["ઓનલાઈન", "ઓફલાઈન"],
+
+      applyWithin:
+        "શિપિંગ બિલ ભારતમાંથી માલની નિકાસ માટે જરૂરી કસ્ટમ્સ દસ્તાવેજ છે.",
+
+      onlineSteps: [
+        "ICEGATE પર નોંધણી કરો",
+        "લોગિન કરીને શિપિંગ બિલ પસંદ કરો",
+        "નિકાસકર્તા અને માલની વિગતો ભરો",
+        "HS કોડ અને યોજના દર્શાવો",
+        "ડોક્યુમેન્ટ અપલોડ કરો",
+        "અરજી સબમિટ કરો",
+        "ક્લિયરન્સ સ્થિતિ તપાસો",
+      ],
+
+      offlineSteps: [
+        "કસ્ટમ્સ ઓફિસથી ફોર્મ લો",
+        "વિગતો મેન્યુઅલી ભરો",
+        "ઇનવોઇસ અને પેકિંગ લિસ્ટ જોડો",
+        "સબમિટ કરો",
+        "મંજুরি મેળવો",
+      ],
+
+      afterSubmission: ["કસ્ટમ્સ ચકાસણી કરે છે", "LEO મંજૂર થાય છે"],
+
+      processingTime: "1–3 કામકાજ દિવસ",
+
+      fees: ["સરકારી ફી નથી"],
+
+      authority: "કસ્ટમ્સ વિભાગ",
+
+      note: "ખોટી માહિતી વિલંબ માટે જવાબદાર બની શકે છે",
+    },
   },
 
   bn: {
@@ -175,6 +292,36 @@ export const shippingBillData: Record<
           "অনুমোদনের পরে চূড়ান্ত শিপিং বিল গ্রহণ করুন এবং শিপমেন্টের জন্য জারি করুন।",
       },
     ],
+    howToApply: {
+      mode: ["অনলাইন", "অফলাইন"],
+
+      applyWithin: "শিপিং বিল রপ্তানির জন্য কাস্টমসের বাধ্যতামূলক নথি।",
+
+      onlineSteps: [
+        "ICEGATE পোর্টালে নিবন্ধন করুন",
+        "শিপিং বিল বিকল্প নির্বাচন করুন",
+        "রপ্তানির বিবরণ দিন",
+        "ডকুমেন্ট আপলোড করুন",
+        "অনলাইনে জমা দিন",
+      ],
+
+      offlineSteps: [
+        "কাস্টমস অফিসে ফর্ম সংগ্রহ করুন",
+        "তথ্য পূরণ করুন",
+        "কাগজপত্র সংযুক্ত করুন",
+        "জমা দিন",
+      ],
+
+      afterSubmission: ["কাস্টমস যাচাই করে", "LEO ইস্যু হয়"],
+
+      processingTime: "১–৩ কার্যদিবস",
+
+      fees: ["সরকারি ফি নেই"],
+
+      authority: "কাস্টমস বিভাগ",
+
+      note: "ভুল তথ্য দিলে বিলম্ব হতে পারে",
+    },
   },
 
   kok: {
@@ -217,6 +364,37 @@ export const shippingBillData: Record<
           "अनुमोदन नंतर अंतिम शिपिंग बिल मिळवात आनी शिपमेंटसाठी जारी करात.",
       },
     ],
+    howToApply: {
+      mode: ["Online", "Offline"],
+
+      applyWithin:
+        "शिपिंग बिल हें भारतांतल्यान माल निर्यात करपाक आवश्यक दस्तावेज आसा.",
+
+      onlineSteps: [
+        "ICEGATE पोर्टलार नोंदणी करची",
+        "लॉगिन करून शिपिंग बिल भरचो",
+        "माल आनी निर्यातदाराची माहिती द्यो",
+        "दस्तावेज अपलोड करचे",
+        "सबमिट करचे",
+      ],
+
+      offlineSteps: [
+        "कस्टम ऑफिसांतून फॉर्म घेवचो",
+        "माहिती भरची",
+        "कागदपत्रां जोडची",
+        "सबमिट करचे",
+      ],
+
+      afterSubmission: ["कस्टम तपास करता", "LEO जारी करता"],
+
+      processingTime: "1–3 दीस",
+
+      fees: ["सरकारी फी ना"],
+
+      authority: "कस्टम विभाग",
+
+      note: "चुकिची माहिती दिल्यार विलंब जाता",
+    },
   },
 
   kn: {
@@ -260,6 +438,34 @@ export const shippingBillData: Record<
           "ಅನುಮೋದನೆ ನಂತರ ಅಂತಿಮ ಶಿಪ್ಪಿಂಗ್ ಬಿಲ್ ಸ್ವೀಕರಿಸಿ ಮತ್ತು ಶಿಪ್ಮೆಂಟ್‌ಗೆ ಜಾರಿ ಮಾಡಿ.",
       },
     ],
+    howToApply: {
+      mode: ["ಆನ್ಲೈನ್", "ಆಫ್ಲೈನ್"],
+
+      applyWithin: "ಶಿಪ್ಪಿಂಗ್ ಬಿಲ್ ರಫ್ತುಗಾಗಿನ ಕಡ್ಡಾಯ ಕಸ್ಟಮ್ಸ್ ದಾಖಲೆ.",
+
+      onlineSteps: [
+        "ICEGATE ನಲ್ಲಿ ನೋಂದಣಿ ಮಾಡಿ",
+        "ಶಿಪ್ಪಿಂಗ್ ಬಿಲ್ ಭರ್ತಿ ಮಾಡಿ",
+        "ದಾಖಲೆಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+        "ಸಲ್ಲಿಸಿರಿ",
+      ],
+
+      offlineSteps: [
+        "ಕಸ್ಟಮ್ಸ್ ಕಚೇರಿಯಿಂದ ಫಾರ್ಮ್ ಪಡೆಯಿರಿ",
+        "ಮಾಹಿತಿ ತುಂಬಿರಿ",
+        "ಸಲ್ಲಿಸಿರಿ",
+      ],
+
+      afterSubmission: ["ಕಸ್ಟಮ್ಸ್ ಪರಿಶೀಲನೆ", "LEO ನೀಡಲಾಗುತ್ತದೆ"],
+
+      processingTime: "1–3 ದಿನಗಳು",
+
+      fees: ["ಸರಕಾರಿ ಶುಲ್ಕ ಇಲ್ಲ"],
+
+      authority: "ಕಸ್ಟಮ್ಸ್ ಇಲಾಖೆ",
+
+      note: "ತಪ್ಪು ಮಾಹಿತಿ ವಿಳಂಬಕ್ಕೆ ಕಾರಣವಾಗಬಹುದು",
+    },
   },
 
   ml: {
@@ -303,6 +509,41 @@ export const shippingBillData: Record<
           "അംഗീകാരത്തിനു ശേഷം അന്തിമ ഷിപ്പിംഗ് ബിൽ സ്വീകരിച്ച് ഷിപ്പ്മെന്റിനായി ജാരി ചെയ്യുക.",
       },
     ],
+    howToApply: {
+      mode: ["ഓൺലൈൻ", "ഓഫ്‌ലൈൻ"],
+
+      applyWithin:
+        "ഷിപ്പിംഗ് ബിൽ ഇന്ത്യയിൽ നിന്ന് സാധനങ്ങൾ കയറ്റുമതി ചെയ്യുന്നതിനുള്ള നിർബന്ധമായ കസ്റ്റംസ് രേഖയാണ്.",
+
+      onlineSteps: [
+        "ICEGATE പോർട്ടലിൽ രജിസ്റ്റർ ചെയ്യുക",
+        "ഷിപ്പിംഗ് ബിൽ ഫയൽ ചെയ്യാനുള്ള ഓപ്ഷൻ തിരഞ്ഞെടുക്കുക",
+        "കയറ്റുമതിക്കാരനും സാധനങ്ങളുടെ വിവരങ്ങളും നൽകുക",
+        "ആവശ്യമായ രേഖകൾ അപ്‌ലോഡ് ചെയ്യുക",
+        "അപേക്ഷ ഓൺലൈനായി സമർപ്പിക്കുക",
+      ],
+
+      offlineSteps: [
+        "കസ്റ്റംസ് ഓഫീസിൽ നിന്ന് ഫോം വാങ്ങുക",
+        "വിശദാംശങ്ങൾ പൂരിപ്പിക്കുക",
+        "ഇൻവോയിസ്, പാക്കിംഗ് ലിസ്റ്റ് ചേർക്കുക",
+        "ഫോം സമർപ്പിക്കുക",
+      ],
+
+      afterSubmission: [
+        "കസ്റ്റംസ് പരിശോധന നടത്തും",
+        "ആവശ്യമായാൽ ഭൗതിക പരിശോധന",
+        "LEO അനുവദിക്കും",
+      ],
+
+      processingTime: "സാധാരണയായി 1–3 ജോലി ദിവസങ്ങൾ",
+
+      fees: ["സർക്കാർ ഫീസ് ഇല്ല", "CHA സേവനചാർജുകൾ ബാധകമായേക്കാം"],
+
+      authority: "കസ്റ്റംസ് വകുപ്പ് (CBIC)",
+
+      note: "തെറ്റായ വിവരങ്ങൾ താമസത്തിനോ പിഴയ്ക്കോ കാരണമാകാം",
+    },
   },
 
   mr: {
@@ -344,6 +585,41 @@ export const shippingBillData: Record<
         details: "अनुमोदनानंतर अंतिम शिपिंग बिल मिळवा व शिपमेंटसाठी जारी करा.",
       },
     ],
+    howToApply: {
+      mode: ["ऑनलाइन", "ऑफलाइन"],
+
+      applyWithin:
+        "शिपिंग बिल हा भारतातून माल निर्यात करण्यासाठी आवश्यक कस्टम दस्तऐवज आहे.",
+
+      onlineSteps: [
+        "ICEGATE पोर्टलवर नोंदणी करा",
+        "शिपिंग बिल भरण्याचा पर्याय निवडा",
+        "निर्यातदार व मालाची माहिती भरा",
+        "आवश्यक कागदपत्रे अपलोड करा",
+        "अर्ज सबमिट करा",
+      ],
+
+      offlineSteps: [
+        "कस्टम कार्यालयातून फॉर्म घ्या",
+        "माहिती भरा",
+        "इनव्हॉइस व पॅकिंग लिस्ट जोडा",
+        "अर्ज सादर करा",
+      ],
+
+      afterSubmission: [
+        "कस्टम तपासणी केली जाते",
+        "आवश्यक असल्यास तपासणी",
+        "LEO मंजूर केला जातो",
+      ],
+
+      processingTime: "१–३ कार्यदिवस",
+
+      fees: ["सरकारी शुल्क नाही", "CHA शुल्क लागू होऊ शकते"],
+
+      authority: "कस्टम विभाग",
+
+      note: "चुकीची माहिती दिल्यास विलंब होऊ शकतो",
+    },
   },
 
   or: {
@@ -387,6 +663,41 @@ export const shippingBillData: Record<
           "ଅନୁମୋଦନ ପରେ ଅନ୍ତିମ ଶିପିଂ ବିଲ୍ ପ୍ରାପ୍ତ କରି ଶିପ୍ମେଣ୍ଟ ପାଇଁ ଜାରି କରନ୍ତୁ।",
       },
     ],
+    howToApply: {
+      mode: ["ଅନଲାଇନ", "ଅଫଲାଇନ"],
+
+      applyWithin:
+        "ଶିପିଙ୍ଗ ବିଲ୍ ଭାରତରୁ ସାମଗ୍ରୀ ରପ୍ତାନି ପାଇଁ ଆବଶ୍ୟକ କଷ୍ଟମ୍ସ ଡକ୍ୟୁମେଣ୍ଟ ଅଟେ।",
+
+      onlineSteps: [
+        "ICEGATE ପୋର୍ଟାଲରେ ପଞ୍ଜିକରଣ କରନ୍ତୁ",
+        "ଶିପିଙ୍ଗ ବିଲ୍ ଫାଇଲ କରନ୍ତୁ",
+        "ରପ୍ତାନିକାରକ ଓ ସାମଗ୍ରୀ ବିବରଣୀ ଭରନ୍ତୁ",
+        "ଡକ୍ୟୁମେଣ୍ଟ ଅପଲୋଡ୍ କରନ୍ତୁ",
+        "ଆବେଦନ ଦାଖଲ କରନ୍ତୁ",
+      ],
+
+      offlineSteps: [
+        "କଷ୍ଟମ୍ସ କାର୍ଯ୍ୟାଳୟରୁ ଫର୍ମ ନିଅନ୍ତୁ",
+        "ସମ୍ପୂର୍ଣ୍ଣ ସୂଚନା ଭରନ୍ତୁ",
+        "ଇନଭଏସ ଓ ପ୍ୟାକିଂ ଲିଷ୍ଟ ଯୋଡ଼ନ୍ତୁ",
+        "ଦାଖଲ କରନ୍ତୁ",
+      ],
+
+      afterSubmission: [
+        "କଷ୍ଟମ୍ସ ଯାଞ୍ଚ କରେ",
+        "ଆବଶ୍ୟକ ହେଲେ ନିରୀକ୍ଷଣ",
+        "LEO ଜାରି ହୁଏ",
+      ],
+
+      processingTime: "୧–୩ କାର୍ଯ୍ୟଦିନ",
+
+      fees: ["ସରକାରୀ ଶୁଳ୍କ ନାହିଁ"],
+
+      authority: "କଷ୍ଟମ୍ସ ବିଭାଗ",
+
+      note: "ଭୁଲ ସୂଚନା ବିଳମ୍ବର କାରଣ ହେବ",
+    },
   },
 
   te: {
@@ -430,6 +741,41 @@ export const shippingBillData: Record<
           "అనుమతికొన్ని తుది షిప్పింగ్ బిల్ స్వీకరించి షిప్మెంట్ కోసం జారీ చేయండి.",
       },
     ],
+    howToApply: {
+      mode: ["ఆన్‌లైన్", "ఆఫ్‌లైన్"],
+
+      applyWithin:
+        "షిప్పింగ్ బిల్ భారతదేశం నుంచి సరుకులను ఎగుమతి చేయడానికి అవసరమైన తప్పనిసరి కస్టమ్స్ పత్రం.",
+
+      onlineSteps: [
+        "ICEGATE పోర్టల్‌లో నమోదు చేసుకోండి",
+        "షిప్పింగ్ బిల్ ఫైలింగ్ ఎంపికను ఎంచుకోండి",
+        "ఎగుమతిదారు మరియు సరుకుల వివరాలు నమోదు చేయండి",
+        "అవసరమైన డాక్యుమెంట్లు అప్‌లోడ్ చేయండి",
+        "దరఖాస్తును సమర్పించండి",
+      ],
+
+      offlineSteps: [
+        "కస్టమ్స్ కార్యాలయం నుంచి ఫారమ్ పొందండి",
+        "వివరాలను పూరించండి",
+        "ఇన్వాయిస్ మరియు ప్యాకింగ్ లిస్ట్ జత చేయండి",
+        "ఫారమ్ సమర్పించండి",
+      ],
+
+      afterSubmission: [
+        "కస్టమ్స్ ధృవీకరణ చేస్తారు",
+        "అవసరమైతే తనిఖీ",
+        "LEO మంజూరు అవుతుంది",
+      ],
+
+      processingTime: "సాధారణంగా 1–3 పని దినాలు",
+
+      fees: ["ప్రభుత్వ ఫీజులు లేవు", "CHA ఛార్జీలు వర్తించవచ్చు"],
+
+      authority: "కస్టమ్స్ విభాగం",
+
+      note: "తప్పు వివరాలు ఆలస్యానికి లేదా జరిమానాకు దారి తీస్తాయి",
+    },
   },
 
   ta: {
@@ -473,5 +819,40 @@ export const shippingBillData: Record<
           "அனுமதிக்குப் பிறகு இறுதி ஷிப்பிங் பில் பெற்று, ஏற்றுமதிக்காக வெளியிடவும்.",
       },
     ],
+    howToApply: {
+      mode: ["ஆன்லைன்", "ஆஃப்லைன்"],
+
+      applyWithin:
+        "ஷிப்பிங் பில் என்பது இந்தியாவில் இருந்து பொருட்களை ஏற்றுமதி செய்ய தேவையான கட்டாயமான சுங்க ஆவணம்.",
+
+      onlineSteps: [
+        "ICEGATE போர்டலில் பதிவு செய்யவும்",
+        "ஷிப்பிங் பில் தாக்கல் செய்வதற்கான விருப்பத்தை தேர்வு செய்யவும்",
+        "ஏற்றுமதியாளர் மற்றும் பொருட்களின் விவரங்களை உள்ளிடவும்",
+        "தேவையான ஆவணங்களை பதிவேற்றவும்",
+        "விண்ணப்பத்தை சமர்ப்பிக்கவும்",
+      ],
+
+      offlineSteps: [
+        "சுங்க அலுவலகத்தில் இருந்து படிவம் பெறவும்",
+        "விவரங்களை நிரப்பவும்",
+        "இன்வாய்ஸ் மற்றும் பேக்கிங் லிஸ்டை இணைக்கவும்",
+        "படிவத்தை சமர்ப்பிக்கவும்",
+      ],
+
+      afterSubmission: [
+        "சுங்கத்துறை சரிபார்ப்பு செய்யும்",
+        "தேவையானால் ஆய்வு",
+        "LEO வழங்கப்படும்",
+      ],
+
+      processingTime: "பொதுவாக 1–3 வேலை நாட்கள்",
+
+      fees: ["அரசு கட்டணம் இல்லை", "CHA சேவை கட்டணங்கள் பொருந்தலாம்"],
+
+      authority: "சுங்கத் துறை (CBIC)",
+
+      note: "தவறான தகவல்கள் தாமதம் அல்லது அபராதத்திற்கு காரணமாகலாம்",
+    },
   },
 };
