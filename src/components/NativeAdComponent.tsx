@@ -7,7 +7,6 @@ import {
   NativeMediaAspectRatio,
   NativeMediaView,
 } from "react-native-google-mobile-ads";
-import { verticalScale } from "../constants/responsive";
 
 const NativeAdCard = () => {
   const [nativeAd, setNativeAd] = useState<NativeAd>();
@@ -60,7 +59,7 @@ const NativeAdCard = () => {
   }
 
   return (
-    <NativeAdView nativeAd={nativeAd} style={{ paddingTop: verticalScale(20) }}>
+    <NativeAdView nativeAd={nativeAd}>
       <NativeMediaView />
     </NativeAdView>
   );

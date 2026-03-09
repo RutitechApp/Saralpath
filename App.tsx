@@ -7,16 +7,14 @@ import { Platform, StatusBar } from "react-native";
 import SplashScreen from "react-native-splash-screen";
 import { ThemeProvider } from "./src/constants/ThemeContext";
 import AppContent from "./src/navigation/AppContent";
+import { preloadInterstitial } from "./src/ads/InterstitialManager";
 
 const App = () => {
   useEffect(() => {
     const initializeAds = async () => {
       try {
         const result = await MobileAds().initialize();
-        console.log("Google Mobile Ads initialized successfully ✅", result);
-      } catch (error) {
-        console.log("Ads initialization failed ❌", error);
-      }
+      } catch (error) {}
     };
 
     initializeAds();
@@ -25,6 +23,9 @@ const App = () => {
     setTimeout(() => {
       Platform.OS === "android" && SplashScreen.hide();
     }, 2000);
+  }, []);
+  useEffect(() => {
+    preloadInterstitial();
   }, []);
   return (
     <ThemeProvider>

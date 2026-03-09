@@ -203,5 +203,9 @@
   "regulatory_compliance": "Regulatory compliance",
   "risk_assessment": "Risk assessment",
   "info": "Information",
-  "eligibility": "Eligibility"
+  "eligibility": "Eligibility",
+  "disclaimer":"Disclaimer",
+  "model_one":"This app helps users review and verify documents only. We do not process applications and are not affiliated with any governmentn authority.",
+  "model_two":"All submissions must be completed through official government portals.",
+  "got_it":"GOT IT"
 }

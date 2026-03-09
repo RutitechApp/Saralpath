@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
   View,
   Text,
@@ -214,6 +214,12 @@ import { complianceManagementSystemData } from "../constants/renewableEnergy/com
 import { codeOfEthicsData } from "../constants/renewableEnergy/codeOfEthicsData";
 import { reportingAndDisclosureData } from "../constants/renewableEnergy/reportingAndDisclosureData";
 import TabView from "../components/TabView";
+import NativeAdCard from "../components/NativeAdComponent";
+import {
+  handleInterstitialClick,
+  initializeInterstitialConfig,
+  preloadInterstitial,
+} from "../ads/InterstitialManager";
 
 const List = () => {
   const bannerRef = useRef<BannerAd>(null);
@@ -275,6 +281,30 @@ const List = () => {
     refRBSheet.current?.open();
     setActiveIndex(0);
   };
+
+  useEffect(() => {
+    initializeInterstitialConfig();
+    preloadInterstitial();
+  }, []);
+
+  const AD_INTERVAL = 5;
+
+  const finalData = useMemo(() => {
+    const result: any[] = [];
+
+    fData.forEach((item, index) => {
+      result.push({ type: "item", data: item });
+
+      if ((index + 1) % AD_INTERVAL === 0) {
+        result.push({
+          type: "ad",
+          id: `native-ad-${index}`,
+        });
+      }
+    });
+
+    return result;
+  }, [fData]);
 
   const dataMap: { [key: string]: any } = {
     // identity_doc
@@ -719,11 +749,36 @@ const List = () => {
         <Pressable style={styles.headerViewStyle}></Pressable>
       </View>
       <FlatList
-        data={fData}
+        data={finalData}
         showsVerticalScrollIndicator={false}
+        keyExtractor={(item, index) =>
+          item.type === "ad" ? item.id : `item-${index}`
+        }
         renderItem={({ item }) => {
+          if (item.type === "ad") {
+            return (
+              <View style={{ marginTop: 16 }}>
+                <BannerAd
+                  ref={bannerRef}
+                  unitId={adUnitId}
+                  size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
+                  width={horizontalScale(345)}
+                />
+              </View>
+            );
+          }
+
           return (
-            <ListCard data={item} onPress={() => handleOpen(item.title)} />
+            <ListCard
+              data={item.data}
+              onPress={() => {
+                handleInterstitialClick(() => {
+                  setTimeout(() => {
+                    handleOpen(item.data.title);
+                  }, 200);
+                });
+              }}
+            />
           );
         }}
       />
@@ -782,10 +837,7 @@ const List = () => {
           activeIndex={activeIndex}
         />
         {activeIndex === 0 ? (
-          <ScrollView
-            contentContainerStyle={{}}
-            showsVerticalScrollIndicator={false}
-          >
+          <ScrollView showsVerticalScrollIndicator={false}>
             <Text
               style={{
                 color: colors.subText,
@@ -796,7 +848,6 @@ const List = () => {
             >
               {selectedData?.description}
             </Text>
-            {console.log("Selected Data:", selectedData)}
             {selectedData?.steps?.map((stepObj: any, index: number) => (
               <View key={index} style={{ marginTop: verticalScale(6) }}>
                 <Text
@@ -822,7 +873,7 @@ const List = () => {
             ))}
           </ScrollView>
         ) : activeIndex === 1 ? (
-          <View>
+          <ScrollView showsVerticalScrollIndicator={false}>
             {selectedData?.eligibility?.map((item, index) => (
               <Text
                 style={{
@@ -836,10 +887,9 @@ const List = () => {
                 {item}
               </Text>
             ))}
-          </View>
+          </ScrollView>
         ) : (
           <ScrollView showsVerticalScrollIndicator={false}>
-            {/* Apply Time Info */}
             <Text
               style={{
                 fontSize: 16 * fontScale,
@@ -850,7 +900,6 @@ const List = () => {
               {selectedData?.howToApply?.applyWithin}
             </Text>
 
-            {/* Online Steps */}
             <Text
               style={{
                 fontSize: 18 * fontScale,
@@ -875,7 +924,6 @@ const List = () => {
               </Text>
             ))}
 
-            {/* Offline Steps */}
             <Text
               style={{
                 fontSize: 18 * fontScale,
@@ -900,7 +948,6 @@ const List = () => {
               </Text>
             ))}
 
-            {/* Processing Time */}
             <Text
               style={{
                 fontSize: 16 * fontScale,
@@ -915,7 +962,6 @@ const List = () => {
               {selectedData?.howToApply?.processingTime}
             </Text>
 
-            {/* Fees */}
             <Text
               style={{
                 fontSize: 16 * fontScale,
@@ -932,7 +978,6 @@ const List = () => {
               </Text>
             ))}
 
-            {/* Authority */}
             <Text
               style={{
                 fontSize: 16 * fontScale,
@@ -948,32 +993,15 @@ const List = () => {
             </Text>
           </ScrollView>
         )}
-        {activeIndex === 0 || activeIndex === 2 ? (
+        <View style={{ marginTop: verticalScale(10) }}>
           <BannerAd
             ref={bannerRef}
             unitId={adUnitId}
             size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
             width={horizontalScale(345)}
           />
-        ) : (
-          <View
-            style={{ position: "absolute", alignSelf: "center", bottom: 0 }}
-          >
-            <BannerAd
-              ref={bannerRef}
-              unitId={adUnitId}
-              size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
-              width={horizontalScale(345)}
-            />
-          </View>
-        )}
+        </View>
       </RBSheet>
-      <BannerAd
-        ref={bannerRef}
-        unitId={adUnitId}
-        size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
-        width={horizontalScale(345)}
-      />
     </Container>
   );
 };

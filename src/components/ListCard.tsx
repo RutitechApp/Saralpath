@@ -54,8 +54,8 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     padding: 16,
-    marginTop: verticalScale(15),
     borderRadius: 15,
+    marginTop: 16 
   },
   textStyle: {
     flex: 1,

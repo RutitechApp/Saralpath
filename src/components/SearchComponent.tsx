@@ -21,13 +21,11 @@ const Search: React.FC<SearchProps> = ({ searchText, onSearchChangeText }) => {
   const { fontScale } = useFontSize();
   const { colors } = useThemeColors();
   const { KeyboardLanguage } = NativeModules;
-  console.log("t", i18n);
   const handleFocus = () => {
     if (Platform.OS === "android" && KeyboardLanguage) {
       const lang = i18n.language;
 
       KeyboardLanguage.changeKeyboardLanguage(lang).catch((err: any) => {
-        console.log("err", err);
       });
     }
   };

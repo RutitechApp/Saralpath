@@ -53,7 +53,6 @@ const Setting = () => {
       setFontScale(newScale);
     }
   };
-  console.log("theme", theme);
   return (
     <Container subContainer={styles.container}>
       <Text

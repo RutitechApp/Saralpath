@@ -26,7 +26,7 @@ class MainActivity : ReactActivity() {
      * Show splash screen before the React root view is created
      */
     override fun onCreate(savedInstanceState: Bundle?) {
-        SplashScreen.show(this) // show splash screen
+//        SplashScreen.show(this) // show splash screen
         super.onCreate(savedInstanceState)
     }
 }

@@ -55,7 +55,6 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     alignItems: "center",
     padding: horizontalScale(13),
-    marginTop: verticalScale(15),
   },
   vStyle: {
     marginTop: verticalScale(10),
