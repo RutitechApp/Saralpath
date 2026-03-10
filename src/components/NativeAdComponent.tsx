@@ -7,14 +7,13 @@ import {
   NativeMediaAspectRatio,
   NativeMediaView,
 } from "react-native-google-mobile-ads";
+import { useAds } from "../context/remoteConfig";
 
 const NativeAdCard = () => {
   const [nativeAd, setNativeAd] = useState<NativeAd>();
+  const { ads } = useAds();
 
-  const adUnitId = __DEV__
-    ? TestIds.NATIVE
-    : "ca-app-pub-3810123126111899/9189489022";
-
+  const adUnitId = __DEV__ ? TestIds.NATIVE : ads.nativeAdId;
   useEffect(() => {
     NativeAd.createForAdRequest(adUnitId, {
       aspectRatio: NativeMediaAspectRatio.LANDSCAPE,

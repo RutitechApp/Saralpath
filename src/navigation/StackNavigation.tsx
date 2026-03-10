@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { View, Text, Pressable, StyleSheet } from "react-native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -15,65 +15,82 @@ import { useThemeColors } from "../constants/ThemeContext";
 import { useTranslation } from "react-i18next";
 import { useFontSize } from "../constants/FontSizeContext";
 import fonts from "../utils/fonts";
+import { useAds } from "../context/remoteConfig";
 
 const Stack = createNativeStackNavigator();
 
-const adUnitId = __DEV__
-  ? TestIds.APP_OPEN
-  : "ca-app-pub-3810123126111899/5224055130";
-
-let appOpenAd = AppOpenAd.createForAdRequest(adUnitId);
-
 const StackNavigation = () => {
-  const [initialRoute, setInitialRoute] = useState(null);
+  const [initialRoute, setInitialRoute] = useState<string | null>(null);
   const [showPopup, setShowPopup] = useState(false);
+
   const { colors } = useThemeColors();
   const { fontScale } = useFontSize();
+  const { ads } = useAds();
+  const { t } = useTranslation();
 
-  const { t, i18n } = useTranslation();
+  const appOpenAdRef = useRef<AppOpenAd | null>(null);
+
   useEffect(() => {
     checkFirstLaunch();
-    loadAd();
   }, []);
 
-  const loadAd = () => {
-    const unsubscribeLoaded = appOpenAd.addAdEventListener(
+  useEffect(() => {
+    const adUnitId = __DEV__
+      ? TestIds.APP_OPEN
+      : ads?.appOpenAdId?.trim()
+      ? ads.appOpenAdId
+      : TestIds.APP_OPEN;
+
+    console.log("Remote Ads Config:", ads);
+    console.log("Using App Open Ad ID:", adUnitId);
+
+    appOpenAdRef.current = AppOpenAd.createForAdRequest(adUnitId);
+
+    const unsubscribeLoaded = appOpenAdRef.current.addAdEventListener(
       AdEventType.LOADED,
       () => {
-        appOpenAd.show();
+        console.log("AppOpenAd loaded");
+        appOpenAdRef.current?.show();
       },
     );
 
-    const unsubscribeClosed = appOpenAd.addAdEventListener(
+    const unsubscribeClosed = appOpenAdRef.current.addAdEventListener(
       AdEventType.CLOSED,
       () => {
+        console.log("AppOpenAd closed");
         setShowPopup(true);
       },
     );
 
-    const unsubscribeError = appOpenAd.addAdEventListener(
+    const unsubscribeError = appOpenAdRef.current.addAdEventListener(
       AdEventType.ERROR,
       (error) => {
-        console.log("AppOpen error:", error);
+        console.log("AppOpenAd error:", error);
+        setShowPopup(true);
       },
     );
 
-    appOpenAd.load();
+    appOpenAdRef.current.load();
 
     return () => {
       unsubscribeLoaded();
       unsubscribeClosed();
       unsubscribeError();
     };
-  };
+  }, [ads]);
 
+  // 🔹 Check first launch
   const checkFirstLaunch = async () => {
-    const hasLaunched = await AsyncStorage.getItem("hasLaunched");
+    try {
+      const hasLaunched = await AsyncStorage.getItem("hasLaunched");
 
-    if (hasLaunched === null) {
-      await AsyncStorage.setItem("hasLaunched", "true");
-      setInitialRoute("Setting");
-    } else {
+      if (hasLaunched === null) {
+        await AsyncStorage.setItem("hasLaunched", "true");
+        setInitialRoute("Setting");
+      } else {
+        setInitialRoute("Home");
+      }
+    } catch (error) {
       setInitialRoute("Home");
     }
   };
@@ -147,7 +164,6 @@ export default StackNavigation;
 
 const styles = StyleSheet.create({
   modalContainer: {
-    backgroundColor: "white",
     padding: 25,
     borderRadius: 12,
     alignItems: "center",

@@ -12,11 +12,8 @@ import { useTranslation } from "react-i18next";
 import { useFontSize } from "../constants/FontSizeContext";
 import { SettingIcon } from "../assets/svgs/Home";
 import { useThemeColors } from "../constants/ThemeContext";
-import {
-  handleInterstitialClick,
-  initializeInterstitialConfig,
-  preloadInterstitial,
-} from "../ads/InterstitialManager";
+import { useInterstitialAds } from "../ads/InterstitialManager";
+import analytics from "@react-native-firebase/analytics";
 
 type GridItem = {
   id: number;
@@ -46,13 +43,13 @@ const Home: React.FC = () => {
   const { t } = useTranslation();
   const { fontScale } = useFontSize();
   const { colors } = useThemeColors();
+  const { handleInterstitialClick, preloadInterstitial } = useInterstitialAds();
 
   const [searchText, setSearchText] = useState("");
   const [filteredData, setFilteredData] = useState<GridItem[]>(
     homeGridData as GridItem[],
   );
   useEffect(() => {
-    initializeInterstitialConfig();
     preloadInterstitial();
   }, []);
 
@@ -140,13 +137,18 @@ const Home: React.FC = () => {
                 <View key={card.id} style={styles.cardWrapper}>
                   <GridCard
                     data={card}
-                    onPress={() => {
+                    onPress={async () => {
                       handleInterstitialClick(() => {
                         try {
                           navigation.navigate("List", { data: card });
                         } catch (err) {
                           console.warn("Navigation failed:", err);
                         }
+                      });
+
+                      await analytics().logEvent("home_cards", {
+                        id: card?.id,
+                        item: card?.title,
                       });
                     }}
                   />

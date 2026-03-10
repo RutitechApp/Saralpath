@@ -214,12 +214,9 @@ import { complianceManagementSystemData } from "../constants/renewableEnergy/com
 import { codeOfEthicsData } from "../constants/renewableEnergy/codeOfEthicsData";
 import { reportingAndDisclosureData } from "../constants/renewableEnergy/reportingAndDisclosureData";
 import TabView from "../components/TabView";
-import NativeAdCard from "../components/NativeAdComponent";
-import {
-  handleInterstitialClick,
-  initializeInterstitialConfig,
-  preloadInterstitial,
-} from "../ads/InterstitialManager";
+import { useInterstitialAds } from "../ads/InterstitialManager";
+import { useAds } from "../context/remoteConfig";
+import analytics from "@react-native-firebase/analytics";
 
 const List = () => {
   const bannerRef = useRef<BannerAd>(null);
@@ -231,9 +228,11 @@ const List = () => {
   const { t, i18n } = useTranslation();
   const [fData, setFData] = useState([{}]);
   const data = route?.params?.data;
-
+  const { ads } = useAds();
   const [selectedData, setSelectedData] = useState(null);
   const [activeIndex, setActiveIndex] = useState(0);
+  const { handleInterstitialClick, preloadInterstitial } = useInterstitialAds();
+
   const currentLanguage = i18n.language as Language;
   useEffect(() => {
     switch (route?.params?.data?.title) {
@@ -283,7 +282,6 @@ const List = () => {
   };
 
   useEffect(() => {
-    initializeInterstitialConfig();
     preloadInterstitial();
   }, []);
 
@@ -718,10 +716,8 @@ const List = () => {
       reportingAndDisclosureData[currentLanguage] ||
       reportingAndDisclosureData["en"],
   };
+  const adUnitId = __DEV__ ? TestIds.NATIVE : ads.nativeAdId;
 
-  const adUnitId = __DEV__
-    ? TestIds.BANNER
-    : "ca-app-pub-3810123126111899/5904850139";
   return (
     <Container subContainer={styles.container}>
       <View style={styles.viewStyle}>
@@ -771,11 +767,16 @@ const List = () => {
           return (
             <ListCard
               data={item.data}
-              onPress={() => {
+              onPress={async () => {
                 handleInterstitialClick(() => {
                   setTimeout(() => {
                     handleOpen(item.data.title);
                   }, 200);
+                });
+
+                await analytics().logEvent("list_cards", {
+                  id: item?.id,
+                  item: item?.title,
                 });
               }}
             />
@@ -833,7 +834,16 @@ const List = () => {
         </View>
         <TabView
           tabData={tabData}
-          onPress={(index) => setActiveIndex(index)}
+          onPress={async (index) => {
+            setActiveIndex(index);
+
+            const selectedTab = tabData?.[index];
+
+            await analytics().logEvent("tab", {
+              id: selectedTab?.id,
+              item: selectedTab?.title,
+            });
+          }}
           activeIndex={activeIndex}
         />
         {activeIndex === 0 ? (
