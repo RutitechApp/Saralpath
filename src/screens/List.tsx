@@ -716,7 +716,7 @@ const List = () => {
       reportingAndDisclosureData[currentLanguage] ||
       reportingAndDisclosureData["en"],
   };
-  const adUnitId = __DEV__ ? TestIds.NATIVE : ads.nativeAdId;
+  const adUnitId = __DEV__ ? TestIds.BANNER : ads.bannerAdId;
 
   return (
     <Container subContainer={styles.container}>
@@ -759,6 +759,9 @@ const List = () => {
                   unitId={adUnitId}
                   size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
                   width={horizontalScale(345)}
+                  onAdFailedToLoad={(e) => {
+                    console.log(e);
+                  }}
                 />
               </View>
             );
@@ -1009,6 +1012,9 @@ const List = () => {
             unitId={adUnitId}
             size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
             width={horizontalScale(345)}
+            onAdFailedToLoad={(e) => {
+              console.log(e);
+            }}
           />
         </View>
       </RBSheet>
