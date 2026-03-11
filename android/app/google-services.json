@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "959129453",
-    "project_id": "saralpath-f41f1",
-    "storage_bucket": "saralpath-f41f1.firebasestorage.app"
+    "project_number": "311481015747",
+    "project_id": "saralpath-ac190",
+    "storage_bucket": "saralpath-ac190.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:959129453:android:4229d797c696ebd4149c64",
+        "mobilesdk_app_id": "1:311481015747:android:2504f3d80118501ff1b176",
         "android_client_info": {
           "package_name": "com.compliancechecklist"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBwz0phH75_kPo7TlDhLqJwK1e2DyF32gU"
+          "current_key": "AIzaSyB6E7RqqVOmsabVFx4QKF49C8-MHLj7FT0"
         }
       ],
       "services": {
