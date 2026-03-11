@@ -41,9 +41,6 @@ const StackNavigation = () => {
       ? ads.appOpenAdId
       : TestIds.APP_OPEN;
 
-    console.log("Remote Ads Config:", ads);
-    console.log("Using App Open Ad ID:", adUnitId);
-
     appOpenAdRef.current = AppOpenAd.createForAdRequest(adUnitId);
 
     const unsubscribeLoaded = appOpenAdRef.current.addAdEventListener(
@@ -79,7 +76,6 @@ const StackNavigation = () => {
     };
   }, [ads]);
 
-  // 🔹 Check first launch
   const checkFirstLaunch = async () => {
     try {
       const hasLaunched = await AsyncStorage.getItem("hasLaunched");

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Saralpath</string>
+    <string name="facebook_app_id">Saralpath</string>
+    <string name="facebook_client_token">Saralpath</string>
 </resources>

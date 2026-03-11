@@ -8,6 +8,7 @@ import SplashScreen from "react-native-splash-screen";
 import { ThemeProvider } from "./src/constants/ThemeContext";
 import AppContent from "./src/navigation/AppContent";
 import { RemoteConfig } from "./src/context/remoteConfig";
+import { Settings } from "react-native-fbsdk-next";
 
 const App = () => {
   useEffect(() => {
@@ -16,7 +17,7 @@ const App = () => {
         const result = await MobileAds().initialize();
       } catch (error) {}
     };
-
+    Settings.initializeSDK();
     initializeAds();
   }, []);
   useEffect(() => {

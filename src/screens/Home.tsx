@@ -38,7 +38,7 @@ type NavigationProp = NativeStackNavigationProp<RootStackParamList, "Home">;
 
 const AD_INTERVAL = 4;
 
-const Home: React.FC = () => {
+const Home = () => {
   const navigation = useNavigation<NavigationProp>();
   const { t } = useTranslation();
   const { fontScale } = useFontSize();
